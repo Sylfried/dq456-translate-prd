@@ -12,8 +12,8 @@ The tool's interface is available in English, French, German, Spanish, Italian, 
 |---|---|
 | `DQ_Patch_FR.exe` | The tool |
 | `roms/` | Folder for your DS ROMs (`.nds`, or a `.zip` containing them) |
-| `dépendances/` | Filled by the tool: the installed tool, settings, log and downloaded programs |
-| `jeux/DQ4/`, `jeux/DQ5/`, `jeux/DQ6/` | Filled by the tool, one folder per game: `apks`, `textes`, `fabrication`, `patched_apks`, `ecran_titre`, `signes`, `saves` |
+| `dependencies/` | Filled by the tool: the installed tool, settings, log and downloaded programs |
+| `games/DQ4/`, `games/DQ5/`, `games/DQ6/` | Filled by the tool, one folder per game: `apks`, `texts`, `build`, `patched_apks`, `title_screen`, `signed`, `saves` |
 
 Empty folders only contain a `.gitkeep` file, which keeps them in the repository.
 
@@ -36,7 +36,7 @@ Empty folders only contain a `.gitkeep` file, which keeps them in the repository
 
 1. Download the repository (**Code** button, then **Download ZIP**) and extract it to a folder of your own, not inside "Program Files".
 2. Copy your DS ROMs into `roms`.
-3. Run `DQ_Patch_FR.exe`. On first launch it installs itself into `dépendances`, then offers to download any missing programs.
+3. Run `DQ_Patch_FR.exe`. On first launch it installs itself into `dependencies`, then offers to download any missing programs.
 4. Click "Choose the ROM folder…" and select `roms`.
 5. Follow the steps in the game's tab: 1 (copy the game from the phone), 2 (prepare the texts), 3 (patch), 4 (install).
 
@@ -44,7 +44,7 @@ Each step, the options and troubleshooting are described in the tool's Help menu
 
 ## Updating
 
-Close the tool, replace `DQ_Patch_FR.exe` with the new version in the same folder, then run it again. Settings, downloaded programs and the `jeux` folder are kept.
+Close the tool, replace `DQ_Patch_FR.exe` with the new version in the same folder, then run it again. Settings, downloaded programs and the `games` folder are kept (folders of older versions are renamed automatically).
 
 ## What the tool does not contain
 

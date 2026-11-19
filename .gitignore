@@ -1,4 +1,4 @@
-# Fichiers personnels et fichiers créés par l'outil : jamais dans le dépôt
+# Personal files and files created by the tool: never in the repository
 *.nds
 *.zip
 *.apk
@@ -6,9 +6,9 @@
 *.obb
 roms/*
 !roms/.gitkeep
-dépendances/*
-!dépendances/.gitkeep
-jeux/*/*
-!jeux/*/*/
-jeux/*/*/*
-!jeux/*/*/.gitkeep
+dependencies/*
+!dependencies/.gitkeep
+games/*/*
+!games/*/*/
+games/*/*/*
+!games/*/*/.gitkeep
