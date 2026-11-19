@@ -1,58 +1,60 @@
-# Dragon Quest IV, V et VI (Android) : patch français
+# Dragon Quest IV, V and VI (Android): French patch
 
-`DQ_Patch_FR.exe` est un outil pour Windows qui met en français les versions Android (Google Play) de Dragon Quest IV, V et VI.
+`DQ_Patch_FR.exe` is a Windows tool that translates the Android (Google Play) versions of Dragon Quest IV, V and VI into French.
 
-Il lit le français officiel dans la ROM DS européenne de chaque jeu. Les textes propres à la version mobile sont traduits par le patch. Le jeu patché est ensuite installé sur le téléphone par USB.
+It reads the official French text from the European DS ROM of each game. Texts that only exist in the mobile versions are translated by the patch. The patched game is then installed on the phone over USB.
 
-## Contenu
+The tool's interface is available in English, French, German, Spanish, Italian, Japanese, Chinese and Korean. The full user guide (`readme.txt`) is in French.
 
-| Élément | Rôle |
+## Contents
+
+| Item | Purpose |
 |---|---|
-| `DQ_Patch_FR.exe` | L'outil |
-| `readme.txt` | Mode d'emploi complet |
-| `roms/` | Dossier prévu pour vos ROM DS (`.nds`, ou `.zip` qui les contient) |
-| `dépendances/` | Rempli par l'outil : l'outil installé, les réglages, le journal et les programmes téléchargés |
-| `jeux/DQ4/`, `jeux/DQ5/`, `jeux/DQ6/` | Remplis par l'outil, un dossier par jeu : `apks`, `textes`, `fabrication`, `patched_apks`, `ecran_titre`, `signes`, `saves` |
+| `DQ_Patch_FR.exe` | The tool |
+| `readme.txt` | Full user guide (French) |
+| `roms/` | Folder for your DS ROMs (`.nds`, or a `.zip` containing them) |
+| `dépendances/` | Filled by the tool: the installed tool, settings, log and downloaded programs |
+| `jeux/DQ4/`, `jeux/DQ5/`, `jeux/DQ6/` | Filled by the tool, one folder per game: `apks`, `textes`, `fabrication`, `patched_apks`, `ecran_titre`, `signes`, `saves` |
 
-Les dossiers vides contiennent seulement un fichier `.gitkeep`, qui sert à les garder dans le dépôt.
+Empty folders only contain a `.gitkeep` file, which keeps them in the repository.
 
-## Ce qu'il faut
+## Requirements
 
-- Le jeu (IV, V ou VI), installé depuis le Google Play Store sur un téléphone Android.
-- La ROM DS européenne du même jeu, copiée depuis votre propre cartouche :
+- The game (IV, V or VI), installed from the Google Play Store on an Android phone.
+- The European DS ROM of the same game, dumped from your own cartridge:
 
-| Jeu | ROM DS européenne | Code |
+| Game | European DS ROM | Code |
 |---|---|---|
-| Dragon Quest IV | Dragon Quest : L'Épopée des Élus | NTR-YIVP-EUR |
-| Dragon Quest V | Dragon Quest : La Fiancée céleste | NTR-YV5P-EUR |
-| Dragon Quest VI | Dragon Quest VI : Le Royaume des songes | NTR-YVIP-EUR |
+| Dragon Quest IV | Dragon Quest: The Chapters of the Chosen | NTR-YIVP-EUR |
+| Dragon Quest V | Dragon Quest: The Hand of the Heavenly Bride | NTR-YV5P-EUR |
+| Dragon Quest VI | Dragon Quest VI: Realms of Reverie | NTR-YVIP-EUR |
 
-- Un PC sous Windows 10 ou 11, avec environ 3 Go d'espace libre.
-- Un câble USB qui transfère les données, et le débogage USB activé sur le téléphone.
-- Une connexion Internet au premier lancement, pour télécharger les programmes nécessaires (adb, Java portable, uber-apk-signer). Rien n'est installé dans Windows.
+- A PC running Windows 10 or 11, with about 3 GB of free space.
+- A USB cable that transfers data, and USB debugging enabled on the phone.
+- An Internet connection on first launch, to download the required programs (adb, portable Java, uber-apk-signer). Nothing is installed in Windows.
 
-## Utilisation
+## Usage
 
-1. Téléchargez le dépôt (bouton **Code**, puis **Download ZIP**) et décompressez-le dans un dossier à vous, pas dans « Program Files ».
-2. Copiez vos ROM DS dans `roms`.
-3. Lancez `DQ_Patch_FR.exe`. Au premier lancement, il s'installe dans `dépendances`, puis il propose de télécharger les programmes qui manquent.
-4. Cliquez sur « Choisir le dossier des ROM... » et choisissez `roms`.
-5. Suivez les étapes de l'onglet du jeu : 1 (copie du jeu depuis le téléphone), 2 (création des textes), 3 (fabrication), 4 (installation).
+1. Download the repository (**Code** button, then **Download ZIP**) and extract it to a folder of your own, not inside "Program Files".
+2. Copy your DS ROMs into `roms`.
+3. Run `DQ_Patch_FR.exe`. On first launch it installs itself into `dépendances`, then offers to download any missing programs.
+4. Click "Choose the ROM folder…" and select `roms`.
+5. Follow the steps in the game's tab: 1 (copy the game from the phone), 2 (prepare the texts), 3 (patch), 4 (install).
 
-Le détail de chaque étape, les options et le dépannage sont dans `readme.txt` et dans le menu Aide de l'outil.
+Each step, the options and troubleshooting are described in `readme.txt` and in the tool's Help menu.
 
-## Mise à jour
+## Updating
 
-Fermez l'outil, remplacez `DQ_Patch_FR.exe` par la nouvelle version dans le même dossier, puis relancez-le. Les réglages, les programmes téléchargés et le dossier `jeux` sont gardés.
+Close the tool, replace `DQ_Patch_FR.exe` with the new version in the same folder, then run it again. Settings, downloaded programs and the `jeux` folder are kept.
 
-## Ce que l'outil ne contient pas
+## What the tool does not contain
 
-L'outil ne contient aucune ROM, aucun fichier du jeu et aucun texte officiel : tout est lu sur votre ordinateur, dans votre ROM et votre jeu. Ne partagez pas vos ROM, les APK fabriqués ni le fichier des textes créé par l'outil.
+The tool contains no ROM, no game file and no official text: everything is read on your computer, from your ROM and your game. Do not share your ROMs, the generated APKs or the text file created by the tool.
 
-## Mentions
+## Legal
 
-Projet non officiel, sans lien avec Square Enix, Armor Project, Bird Studio, ArtePiazza, Nintendo ni Google. DRAGON QUEST est une marque de Square Enix.
+Unofficial project, not affiliated with Square Enix, Armor Project, Bird Studio, ArtePiazza, Nintendo or Google. DRAGON QUEST is a trademark of Square Enix.
 
-L'outil est fourni tel quel, sans garantie, pour un usage personnel, avec des jeux et des cartouches que vous possédez légalement.
+The tool is provided as is, without warranty, for personal use with games and cartridges you legally own.
 
-Programmes téléchargés par l'outil, chacun sous sa propre licence : SDK Platform-Tools (Google), Java Temurin (Eclipse Adoptium), uber-apk-signer (licence Apache 2.0).
+Programs downloaded by the tool, each under its own license: SDK Platform-Tools (Google), Java Temurin (Eclipse Adoptium), uber-apk-signer (Apache 2.0 license).
