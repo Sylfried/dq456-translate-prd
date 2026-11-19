@@ -1,0 +1,2397 @@
+{
+ "readme": [
+  "Texts of the DQ_Patch_FR tool for one language: file tool_texts_<code>.json of the languages folder, code in the xx-xx form (fr-fr, en-us, pt-br...).",
+  "language = name shown in the Language menu. texts = the texts, by part of the tool: only change the \"text\" lines; \"english\" = original English text (reference, the tool does not read it). An empty \"text\" shows the English.",
+  "Keep {0}, {1}... and the codes as they are: \\n = line break, **...** = bold, # at the start of a line = title. A double quote in a text is written \\\".",
+  "Save the file (UTF-8), then menu Language > Reload the texts. To create a new language: menu Language > Add a language."
+ ],
+ "language": "Italiano",
+ "texts": {
+  "lang": {
+   "system_language": {
+    "english": "System language ({0})",
+    "text": "Lingua di sistema ({0})"
+   },
+   "other_english_interface": {
+    "english": "Other (English interface)",
+    "text": "Altra (interfaccia in inglese)"
+   },
+   "add_language": {
+    "english": "Add a language…",
+    "text": "Aggiungi una lingua…"
+   },
+   "open_languages_folder": {
+    "english": "Open the languages folder",
+    "text": "Apri la cartella delle lingue"
+   },
+   "reload_texts": {
+    "english": "Reload the texts",
+    "text": "Ricarica i testi"
+   },
+   "reload_texts_restart": {
+    "english": "The texts of the “languages” folder are read when the tool starts.\n\nRestart now to see your changes?",
+    "text": "I testi della cartella «languages» vengono letti all'avvio dello strumento.\n\nRiavviare adesso per vedere le modifiche?"
+   },
+   "reload_busy": {
+    "english": "An operation is in progress: the texts will be reloaded the next time the tool starts.",
+    "text": "È in corso un'operazione: i testi saranno ricaricati al prossimo avvio dello strumento."
+   },
+   "language": {
+    "english": "Language",
+    "text": "Lingua"
+   },
+   "interface_language_next": {
+    "english": "Interface language: {0} (at the next start).",
+    "text": "Lingua dell'interfaccia: {0} (al prossimo avvio)."
+   },
+   "change_language": {
+    "english": "Change language",
+    "text": "Cambia lingua"
+   },
+   "interface_language_changes": {
+    "english": "The interface language changes when the tool restarts.\n\nRestart now?",
+    "text": "La lingua dell'interfaccia cambia al riavvio dello strumento.\n\nRiavviare adesso?"
+   },
+   "operation_progress_new": {
+    "english": "An operation is in progress: the new language will be used the next time the tool starts.",
+    "text": "È in corso un'operazione: la nuova lingua verrà usata al prossimo avvio dello strumento."
+   },
+   "restart_now": {
+    "english": "Restart now",
+    "text": "Riavvia adesso"
+   },
+   "unable_restart_tool": {
+    "english": "Unable to restart the tool ({0}): close it and start it again.",
+    "text": "Impossibile riavviare lo strumento ({0}): chiudilo e riavvialo tu."
+   },
+   "new_language": {
+    "english": "New language",
+    "text": "Nuova lingua"
+   },
+   "unable_create_file": {
+    "english": "Unable to create the file: {0}",
+    "text": "Impossibile creare il file: {0}"
+   },
+   "language_file_created": {
+    "english": "Language file created ({0}): {1}",
+    "text": "File della lingua creato ({0}): {1}"
+   },
+   "file_created_translate": {
+    "english": "File created:\n{0}\n\nTo translate the tool into this language:\n• Open this file with **Notepad++** or **VS Code** (never Word) and save it as **UTF-8**.\n• Only fill in the **“text”** lines: the “english” line just above gives the original English text. An empty “text” shows the English.\n• Keep {{0}}, {{1}}… and the codes (\\n…) as they are.\n• To see your texts in the tool: menu **Language › Reload the texts**.\n\nThe English file ({1}) is in the same folder. To offer this language to everyone: propose the file on the project page, github.com/Sylfried/dq456-translate-prd.",
+    "text": "File creato:\n{0}\n\nPer tradurre lo strumento in questa lingua:\n• Apri questo file con **Notepad++** o **VS Code** (mai Word) e salvalo in **UTF-8**.\n• Compila solo le righe **«text»**: la riga «english» appena sopra dà il testo inglese originale. Un «text» vuoto mostra l'inglese.\n• Lascia {{0}}, {{1}}… e i codici (\\n…) così come sono.\n• Per vedere i tuoi testi nello strumento: menu **Lingua › Ricarica i testi**.\n\nIl file inglese ({1}) è nella stessa cartella. Per offrire questa lingua a tutti: proponi il file sulla pagina del progetto, github.com/Sylfried/dq456-translate-prd."
+   },
+   "use_language_now": {
+    "english": "Use this language now",
+    "text": "Usa questa lingua adesso"
+   },
+   "creates_new_language": {
+    "english": "Creates the file of a new language in the “languages” folder next to the tool, from the English texts. You then translate the texts directly in this file.",
+    "text": "Crea il file di una nuova lingua nella cartella «languages» accanto allo strumento, a partire dai testi inglesi. Poi traduci i testi direttamente in questo file."
+   },
+   "language_code": {
+    "english": "Language code (xx-xx, for example pt-br):",
+    "text": "Codice della lingua (xx-xx, per esempio pt-br):"
+   },
+   "name_language_menu": {
+    "english": "Name in the Language menu (for example Português):",
+    "text": "Nome nel menu Lingua (per esempio Português):"
+   },
+   "create": {
+    "english": "Create",
+    "text": "Crea"
+   },
+   "code_must_have": {
+    "english": "The code must have the xx-xx form: 2 letters, a dash, 2 letters (for example pt-br).",
+    "text": "Il codice deve avere la forma xx-xx: 2 lettere, un trattino, 2 lettere (per esempio pt-br)."
+   },
+   "language_already_exists": {
+    "english": "The language {0} already exists: choose another code, or edit its file in the “languages” folder.",
+    "text": "La lingua {0} esiste già: scegli un altro codice, oppure modifica il suo file nella cartella «languages»."
+   },
+   "enter_name_shown": {
+    "english": "Enter the name shown in the Language menu.",
+    "text": "Indica il nome mostrato nel menu Lingua."
+   }
+  },
+  "menu": {
+   "open_game_folder": {
+    "english": "Open the game folder",
+    "text": "Apri la cartella del gioco"
+   },
+   "open_texts_folder": {
+    "english": "Open the texts folder",
+    "text": "Apri la cartella dei testi"
+   },
+   "quit": {
+    "english": "Quit",
+    "text": "Esci"
+   },
+   "file": {
+    "english": "File",
+    "text": "File"
+   },
+   "dependencies": {
+    "english": "Dependencies",
+    "text": "Dipendenze"
+   },
+   "about_project": {
+    "english": "About the project",
+    "text": "Presentazione del progetto"
+   },
+   "folders_troubleshooting": {
+    "english": "Folders and troubleshooting",
+    "text": "Cartelle e risoluzione dei problemi"
+   },
+   "how_edit_texts": {
+    "english": "How to edit the texts",
+    "text": "Come modificare i testi"
+   },
+   "to_do": {
+    "english": "To do",
+    "text": "Cose da fare"
+   },
+   "about": {
+    "english": "About",
+    "text": "Informazioni"
+   },
+   "help": {
+    "english": "Help",
+    "text": "Aiuto"
+   },
+   "open_dq_folder": {
+    "english": "Open the DQ{0} folder",
+    "text": "Apri la cartella di DQ{0}"
+   },
+   "open_dq_texts": {
+    "english": "Open the DQ{0} texts folder",
+    "text": "Apri la cartella dei testi di DQ{0}"
+   }
+  },
+  "tab": {
+   "android_copies_original": {
+    "english": "{0} for Android: copies the original APKs and the saves of the phone to this PC.",
+    "text": "{0} per Android: copia gli APK originali e i salvataggi dal telefono su questo PC."
+   },
+   "android_already_contains": {
+    "english": "{0} for Android already contains this language: the tool copies its APKs and its saves from the phone to this PC, for example to play it with the PC port. The French patch is available with the French interface (Language menu).",
+    "text": "{0} per Android contiene già questa lingua: lo strumento copia i suoi APK e i suoi salvataggi dal telefono su questo PC, per esempio per giocarci con il porting per PC. La patch francese è disponibile con l'interfaccia in francese (menu Lingua)."
+   },
+   "french_patch_android": {
+    "english": "French patch of {0} for Android: most of the French texts come from the European DS ROM ({1}) that you own. The rest is modified or added by the tool.",
+    "text": "Patch francese di {0} per Android: la maggior parte dei testi francesi proviene dalla ROM DS europea ({1}) che possiedi. Il resto è modificato o aggiunto dallo strumento."
+   },
+   "checks": {
+    "english": " Checks ",
+    "text": " Verifiche "
+   },
+   "everything_tool_checks": {
+    "english": "Everything the tool checks before running a step: green dot = ready, red = to fix, grey = checking. Hover over a line for details.",
+    "text": "Tutto ciò che lo strumento verifica prima di avviare un passaggio: punto verde = pronto, rosso = da sistemare, grigio = verifica in corso. Passa il mouse su una riga per i dettagli."
+   },
+   "ds_rom": {
+    "english": "DS ROM",
+    "text": "ROM DS"
+   },
+   "programs": {
+    "english": "Programs",
+    "text": "Programmi"
+   },
+   "installed_game": {
+    "english": "Installed game",
+    "text": "Gioco installato"
+   },
+   "texts": {
+    "english": "Texts",
+    "text": "Testi"
+   },
+   "next": {
+    "english": "Next",
+    "text": "Da fare dopo"
+   },
+   "european_ds_rom": {
+    "english": "The European DS ROM of {0} ({1}, .nds file or a .zip containing it), looked for in the chosen ROM folder (and its direct subfolders). The folder is the same for the 3 games.\nCurrent folder: {2}",
+    "text": "La ROM DS europea di {0} ({1}, file .nds o .zip che lo contiene), cercata nella cartella delle ROM scelta (e nelle sue sottocartelle dirette). La cartella è la stessa per i 3 giochi.\nCartella attuale: {2}"
+   },
+   "not_chosen_yet": {
+    "english": "not chosen yet",
+    "text": "non ancora scelta"
+   },
+   "programs_needed_steps": {
+    "english": "Programs needed by the steps (adb):\n",
+    "text": "Programmi necessari ai passaggi (adb):\n"
+   },
+   "programs_needed_steps_adb": {
+    "english": "Programs needed by the steps (adb, Java, uber-apk-signer) and by the logo / title screen option:\n",
+    "text": "Programmi necessari ai passaggi (adb, Java, uber-apk-signer) e all'opzione logo / schermata del titolo:\n"
+   },
+   "details_download_dependencies": {
+    "english": "\n\nDetails and download: Dependencies menu.",
+    "text": "\n\nDettagli e download: menu Dipendenze."
+   },
+   "state_usb_link": {
+    "english": "State of the USB link with the phone (checked every 3 seconds). Enable “USB debugging” in the developer options, plug in the cable, then accept the authorisation request on the phone screen. Steps 2 and 3 do not need it.",
+    "text": "Stato del collegamento USB con il telefono (verificato ogni 3 secondi). Attiva «Debug USB» nelle opzioni sviluppatore, collega il cavo, poi accetta la richiesta di autorizzazione sullo schermo del telefono. I passaggi 2 e 3 non ne hanno bisogno."
+   },
+   "version_game_installed": {
+    "english": "Version of the game installed on the phone, and whether it is already patched (mark placed in the game by the patch).",
+    "text": "Versione del gioco installato sul telefono, e se è già patchato (segno lasciato nel gioco dalla patch)."
+   },
+   "file_all_game": {
+    "english": "The file of all the game texts, written by step 2 (menu File › Open the texts folder). If you edit it, run steps 3 and 4 again. Rules: menu Help › How to edit the texts.",
+    "text": "Il file di tutti i testi del gioco, scritto dal passaggio 2 (menu File › Apri la cartella dei testi). Se lo modifichi, ripeti i passaggi 3 e 4. Regole: menu Aiuto › Come modificare i testi."
+   },
+   "what_run_now": {
+    "english": "What to run now (step or saves button), or what prevents it. The log also says it at the end of each step.",
+    "text": "Cosa avviare adesso (passaggio o pulsante dei salvataggi), o cosa lo impedisce. Anche il registro lo dice alla fine di ogni passaggio."
+   },
+   "choose_rom_folder": {
+    "english": "Choose the ROM folder…",
+    "text": "Scegli la cartella delle ROM…"
+   },
+   "chooses_folder_contains": {
+    "english": "Chooses the folder that contains your European DS ROMs (.nds, or .zip containing them). The tool finds the ROM of each game in it automatically; the choice is remembered for the 3 tabs.",
+    "text": "Sceglie la cartella che contiene le tue ROM DS europee (.nds, o .zip che le contiene). Lo strumento vi trova da solo la ROM di ogni gioco; la scelta viene ricordata per le 3 schede."
+   },
+   "download_what_s": {
+    "english": "Download what's missing…",
+    "text": "Scarica ciò che manca…"
+   },
+   "downloads_all_missing": {
+    "english": "Downloads all the missing programs, after a single confirmation. These are portable versions: nothing is installed in Windows.",
+    "text": "Scarica tutti i programmi mancanti, dopo una sola conferma. Sono versioni portatili: non viene installato niente in Windows."
+   },
+   "several_devices_plugged": {
+    "english": "Several devices are plugged in: choose the one to use.",
+    "text": "Sono collegati più dispositivi: scegli quello da usare."
+   },
+   "steps": {
+    "english": " Steps ",
+    "text": " Passaggi "
+   },
+   "patch_steps": {
+    "english": " Patch steps ",
+    "text": " Passaggi della patch "
+   },
+   "button_stays_greyed": {
+    "english": "The button stays greyed out as long as the copy is not possible (phone not connected, game not installed); the icon on its right tells whether it is done.",
+    "text": "Il pulsante resta grigio finché la copia non è possibile (telefono non collegato, gioco non installato); l'icona alla sua destra indica se è fatta."
+   },
+   "4_steps_run": {
+    "english": "The 4 steps are run by hand, in order: a button stays greyed out as long as the step is not possible, the icon on its right tells whether it is done. Each one becomes available when what it needs is ready (“Checks” area). On the right of step 3: the box of the “FR title screen” option (ticked = on).",
+    "text": "I 4 passaggi si avviano a mano, in ordine: un pulsante resta grigio finché il passaggio non è possibile, l'icona alla sua destra dice se è fatto. Ognuno si attiva quando ciò che gli serve è pronto (riquadro «Verifiche»). A destra del passaggio 3: la casella dell'opzione «Schermata titolo FR» (spuntata = attiva)."
+   },
+   "saves": {
+    "english": " Saves ",
+    "text": " Salvataggi "
+   },
+   "local_saves_game": {
+    "english": "Your local saves of the game, copied from the phone (for example to continue your game with the PC port).",
+    "text": "I salvataggi locali del gioco, copiati dal telefono (per esempio per continuare la partita con il porting per PC)."
+   },
+   "local_saves_game_extract": {
+    "english": "Your local saves of the game: to extract BEFORE step 4 (it uninstalls the original game, which erases them), then to restore AFTER, once the translated version has been started once and closed.",
+    "text": "I salvataggi locali del gioco: da estrarre PRIMA del passaggio 4 (disinstalla il gioco originale, il che li cancella), poi da ripristinare DOPO, una volta avviata e chiusa la versione tradotta."
+   },
+   "fr_title_screen": {
+    "english": "FR title screen",
+    "text": "Schermata titolo FR"
+   },
+   "ticked_unticked_off": {
+    "english": "Ticked = on, unticked = off. Step 3 option (translated logo and title screen): also translates the logo (game subtitle) and “Tap to Start”, with redrawn images built into the tool. Uses UnityPy, Pillow and numpy (built into the tool or downloaded from the Dependencies menu). Longer and uses more memory (1 to 2 GB).\nOff: the logo and “Tap to Start” stay the original ones, in English (the rest of the game is translated). Turn it off if there is a problem: the game remains playable without it.\nAfter a change, run steps 3 and 4 again. The first step 3 with the option is long (several minutes); the result is then kept.",
+    "text": "Spuntata = attiva, non spuntata = disattivata. Opzione del passaggio 3 (logo e schermata del titolo tradotti): traduce anche il logo (sottotitolo del gioco) e «Tap to Start», con immagini ridisegnate integrate nello strumento. Usa UnityPy, Pillow e numpy (integrati nello strumento o scaricati dal menu Dipendenze). Più lungo e richiede più memoria (da 1 a 2 GB).\nDisattivata: il logo e «Tap to Start» restano quelli originali, in inglese (il resto del gioco è tradotto). Disattivala in caso di problemi: il gioco resta giocabile senza.\nDopo una modifica, ripeti i passaggi 3 e 4. Il primo passaggio 3 con l'opzione è lungo (diversi minuti); poi il risultato viene conservato."
+   },
+   "option_unavailable_logo": {
+    "english": "⛔ Option unavailable: the logo and title screen modules are missing from this exe (it was built without UnityPy, Pillow and numpy).\n\n",
+    "text": "⛔ Opzione non disponibile: in questo exe mancano i moduli del logo e della schermata del titolo (è stato creato senza UnityPy, Pillow e numpy).\n\n"
+   },
+   "option_available_same": {
+    "english": "⛔ Option available at the same time as step 3: ",
+    "text": "⛔ Opzione disponibile insieme al passaggio 3: "
+   },
+   "file_s": {
+    "english": "• {0} · {1} file(s)",
+    "text": "• {0} · {1} file"
+   },
+   "original_apks": {
+    "english": "✔ {0} original APKs · {1}",
+    "text": "✔ {0} APK originali · {1}"
+   },
+   "apks_folder_contains": {
+    "english": "⚠ The “apks” folder contains already patched APKs: unusable",
+    "text": "⚠ La cartella «apks» contiene APK già patchati: inutilizzabili"
+   },
+   "not_done_yet": {
+    "english": "not done yet",
+    "text": "non ancora fatto"
+   },
+   "run_again_run": {
+    "english": "to run again: {0} has been run again since",
+    "text": "da ripetere: {0} è stato ripetuto da allora"
+   },
+   "step_1": {
+    "english": "step 1",
+    "text": "il passaggio 1"
+   },
+   "done": {
+    "english": "✔ done on {0}",
+    "text": "✔ fatto il {0}"
+   },
+   "text_file_missing": {
+    "english": "⚠ text file missing: run step 2 again",
+    "text": "⚠ file dei testi assente: ripeti il passaggio 2"
+   },
+   "run_again": {
+    "english": "to run again: {0}",
+    "text": "da ripetere: {0}"
+   },
+   "step_2": {
+    "english": "step 2",
+    "text": "il passaggio 2"
+   },
+   "done_change_s": {
+    "english": "✔ done on {0} · {1} change(s) from your file",
+    "text": "✔ fatto il {0} · {1} modifica/he del tuo file"
+   },
+   "not_applied": {
+    "english": " · {0} not applied",
+    "text": " · {0} non applicata/e"
+   },
+   "backup_s_last": {
+    "english": "✔ {0} backup(s) · last {1}",
+    "text": "✔ {0} backup · ultimo {1}"
+   },
+   "no_save_found": {
+    "english": "no save found on the phone",
+    "text": "nessun salvataggio trovato sul telefono"
+   },
+   "step_3": {
+    "english": "step 3",
+    "text": "il passaggio 3"
+   },
+   "all_present": {
+    "english": "All present",
+    "text": "Tutti presenti"
+   },
+   "except_optional_logo": {
+    "english": " (except the optional logo and title screen modules)",
+    "text": " (tranne i moduli facoltativi del logo e della schermata del titolo)"
+   },
+   "run_steps_3": {
+    "english": " · run steps 3 and 4 again",
+    "text": " · ripeti i passaggi 3 e 4"
+   },
+   "texts_label": {
+    "english": "Texts: ",
+    "text": "Testi: "
+   },
+   "no_save": {
+    "english": "no save",
+    "text": "nessun salvataggio"
+   },
+   "all_done_original": {
+    "english": "All done: the original APKs are copied to the “apks” folder (File › Open the game folder).",
+    "text": "Tutto fatto: gli APK originali sono copiati nella cartella «apks» (File › Apri la cartella del gioco)."
+   },
+   "all_steps_done": {
+    "english": "All steps are done: the game is translated.",
+    "text": "Tutti i passaggi sono fatti: il gioco è tradotto."
+   },
+   "ready": {
+    "english": "{0}: ready.",
+    "text": "{0}: pronta."
+   },
+   "unexpected_error": {
+    "english": "Unexpected error: {0}: {1}",
+    "text": "Errore imprevisto: {0}: {1}"
+   },
+   "details_log_copy": {
+    "english": "\n\nThe details are in the log (“Copy log” button).",
+    "text": "\n\nI dettagli sono nel registro (pulsante «Copia il registro»)."
+   },
+   "unexpected_error_2": {
+    "english": "Unexpected error",
+    "text": "Errore imprevisto"
+   }
+  },
+  "steps": {
+   "extract_original_apks": {
+    "english": "Extract original APKs",
+    "text": "Estrarre gli APK originali"
+   },
+   "copies_3_apk": {
+    "english": "Copies the 3 APK files of the installed game from the phone to this PC (“apks” folder of DQx).\n• The phone must be connected over USB (USB debugging enabled) and the original game installed from the Play Store.\n• Reuses the folder already created if the step has already been run.\n• The tool tells you if the installed version is already patched, so that it does not retrieve the wrong APKs or overwrite the existing base.",
+    "text": "Copia dal telefono a questo PC i 3 file APK del gioco installato (cartella «apks» di DQx).\n• Il telefono deve essere collegato via USB (debug USB attivo) e il gioco originale installato dal Play Store.\n• Usa la cartella già creata se il passaggio è già stato eseguito.\n• Lo strumento indica se la versione installata è già patchata, per non recuperare gli APK sbagliati né sovrascrivere la base esistente."
+   },
+   "prepare_texts": {
+    "english": "Prepare texts",
+    "text": "Preparare i testi"
+   },
+   "reads_european_ds": {
+    "english": "Reads your European DS ROM and the original APKs, applies all the patch rules (texts taken from the ROM, retouched or created), then writes ALL the game texts into the “texts\\DQx_game_texts.json” file.\n• No phone connection needed.\n• Takes several minutes.\n• You can then edit this file (menu File › Open the texts folder) before step 3.",
+    "text": "Legge la tua ROM DS europea e gli APK originali, applica tutte le regole della patch (testi ripresi dalla ROM, ritoccati o creati), poi scrive TUTTI i testi del gioco nel file «texts\\DQx_game_texts.json».\n• Non serve la connessione al telefono.\n• Richiede diversi minuti.\n• Puoi poi modificare questo file (menu File › Apri la cartella dei testi) prima del passaggio 3."
+   },
+   "patch_apks": {
+    "english": "Patch APKs",
+    "text": "Patchare gli APK"
+   },
+   "puts_texts_texts": {
+    "english": "Puts the texts of the “texts\\DQx_game_texts.json” file (required), as they are, into the translated APKs in the “patched_apks” folder.\n• No phone connection needed.\n• To run again after each change to the text file (then step 4).\n• With the “FR title screen” option (on the right): also translates the logo and “Tap to Start” from your ROM (several minutes, the first time only).\n• The report (your changes applied, texts to check in game) is in “texts\\step3_report.txt”.",
+    "text": "Mette i testi del file «texts\\DQx_game_texts.json» (obbligatorio), così come sono, negli APK tradotti della cartella «patched_apks».\n• Non serve la connessione al telefono.\n• Da ripetere dopo ogni modifica del file dei testi (poi il passaggio 4).\n• Con l'opzione «Schermata titolo FR» (a destra): traduce anche il logo e «Tap to Start» a partire dalla tua ROM (diversi minuti, solo la prima volta).\n• Il resoconto (modifiche applicate, testi da guardare in gioco) è in «texts\\step3_report.txt»."
+   },
+   "extract_saves": {
+    "english": "Extract saves",
+    "text": "Estrarre i salvataggi"
+   },
+   "copies_local_saves": {
+    "english": "Copies the local saves of the phone (data*.dat) to “saves/YYYYMMDD_HHMMSS”, checking the size of the files.\n• To do before step 4: uninstalling erases the local saves.\n• The game's cloud save does not work with the patched version.",
+    "text": "Copia i salvataggi locali del telefono (data*.dat) in «saves/AAAAMMGG_HHMMSS» verificando la dimensione dei file.\n• Da fare prima del passaggio 4: la disinstallazione cancella i salvataggi locali.\n• Il salvataggio cloud del gioco non funziona con la versione patchata."
+   },
+   "sign_install": {
+    "english": "Sign and install",
+    "text": "Firmare e installare"
+   },
+   "signs_translated_apks": {
+    "english": "Signs the translated APKs, uninstalls the original game, then installs the translated version.\n• If you have never extracted your saves, offers to do it; otherwise, reminds you of the date of the last backup.\n• A confirmation is asked before uninstalling.\n• During the installation, if Google Play Protect offers to scan the app on the phone, tap “Don't send”.",
+    "text": "Firma gli APK tradotti, disinstalla il gioco originale, poi installa la versione tradotta.\n• Se non hai mai estratto i tuoi salvataggi, propone di farlo; altrimenti ricorda la data dell'ultimo backup.\n• Prima della disinstallazione viene chiesta una conferma.\n• Durante l'installazione, se Google Play Protect propone di analizzare l'app sul telefono, tocca «Non inviare»."
+   },
+   "restore_saves": {
+    "english": "Restore saves",
+    "text": "Ripristinare i salvataggi"
+   },
+   "puts_back_phone": {
+    "english": "Puts back on the phone the saves of a backup you choose from the list (sorted by date).\n• To do after step 4, once the game has been started and then closed completely.\n• The saves already on the phone are replaced by those of the chosen backup.",
+    "text": "Rimette sul telefono i salvataggi di un backup che scegli nell'elenco (ordinati per data).\n• Da fare dopo il passaggio 4, una volta avviato e poi chiuso completamente il gioco.\n• I salvataggi già presenti sul telefono vengono sostituiti da quelli del backup scelto."
+   },
+   "step": {
+    "english": "Step {0} · {1}",
+    "text": "Passaggio {0} · {1}"
+   },
+   "before_step_4": {
+    "english": " (before step 4)",
+    "text": " (prima del passaggio 4)"
+   },
+   "after_step_4": {
+    "english": " (after step 4)",
+    "text": " (dopo il passaggio 4)"
+   },
+   "operation_progress": {
+    "english": "⏳ An operation is in progress (",
+    "text": "⏳ È in corso un'operazione ("
+   },
+   "wait_finish_click": {
+    "english": "): wait for it to finish or click “Cancel step”.",
+    "text": "): attendi la fine o clicca su «Annulla il passaggio»."
+   },
+   "checking_required_programs": {
+    "english": "⏳ Checking the required programs …",
+    "text": "⏳ Verifica dei programmi necessari in corso …"
+   },
+   "step_1_first": {
+    "english": "⛔ Do step 1 first (copy the original APKs from the phone).",
+    "text": "⛔ Fai prima il passaggio 1 (copiare gli APK originali dal telefono)."
+   },
+   "step_2_first": {
+    "english": "⛔ Do step 2 first (Prepare texts).",
+    "text": "⛔ Fai prima il passaggio 2 (Preparare i testi)."
+   },
+   "phone_not_available": {
+    "english": "⛔ Phone not available: ",
+    "text": "⛔ Telefono non disponibile: "
+   },
+   "checking_game_phone": {
+    "english": "⏳ Checking the game on the phone …",
+    "text": "⏳ Verifica del gioco sul telefono …"
+   },
+   "step_3_first": {
+    "english": "⛔ Do step 3 first (Patch APKs).",
+    "text": "⛔ Fai prima il passaggio 3 (Patchare gli APK)."
+   },
+   "not_installed_phone": {
+    "english": "⛔ {0} is not installed on this phone: install it from the Play Store.",
+    "text": "⛔ {0} non è installato su questo telefono: installalo dal Play Store."
+   },
+   "no_backup_saves": {
+    "english": "⛔ No backup of the saves: do “Extract saves” first.",
+    "text": "⛔ Nessun backup dei salvataggi: fai prima «Estrarre i salvataggi»."
+   },
+   "game_no_longer": {
+    "english": "ℹ The game is no longer installed on the phone, but the translated version is ready: step 4 can install it.",
+    "text": "ℹ Il gioco non è più installato sul telefono, ma la versione tradotta è pronta: il passaggio 4 può installarla."
+   },
+   "copies_local_saves_phone": {
+    "english": "Copies the local saves of the phone (data*.dat) to “saves/YYYYMMDD_HHMMSS”, checking the size of the files.",
+    "text": "Copia i salvataggi locali del telefono (data*.dat) in «saves/AAAAMMGG_HHMMSS», controllando la dimensione dei file."
+   },
+   "all_steps_done": {
+    "english": "All steps are done: the translated version is installed.",
+    "text": "Tutti i passaggi sono fatti: la versione tradotta è installata."
+   },
+   "next_available": {
+    "english": "▶ Next: {0} (available).",
+    "text": "▶ Da fare dopo: {0} (disponibile)."
+   },
+   "next_few_more": {
+    "english": "Next: {0}, a few more seconds: {1}",
+    "text": "Da fare dopo: {0}, ancora qualche secondo: {1}"
+   },
+   "next": {
+    "english": "Next: {0}, {1}",
+    "text": "Da fare dopo: {0}, {1}"
+   }
+  },
+  "apks": {
+   "no_apk": {
+    "english": "no APK",
+    "text": "nessun APK"
+   },
+   "base_apk_missing": {
+    "english": "base.apk missing",
+    "text": "base.apk mancante"
+   },
+   "split_unitydataassetpack_apk": {
+    "english": "split_UnityDataAssetPack.apk missing",
+    "text": "split_UnityDataAssetPack.apk mancante"
+   },
+   "split_unitydataassetpack_apk_unreadable": {
+    "english": "split_UnityDataAssetPack.apk unreadable (incomplete copy?)",
+    "text": "split_UnityDataAssetPack.apk illeggibile (copia incompleta?)"
+   },
+   "folder_already_exists": {
+    "english": "The folder {0} already exists: it is reused (nothing is recreated).",
+    "text": "La cartella {0} esiste già: viene riutilizzata (non viene ricreato niente)."
+   },
+   "folder_created": {
+    "english": "Folder {0} created: {1}",
+    "text": "Cartella {0} creata: {1}"
+   },
+   "game_installed_phone": {
+    "english": "The game installed on the phone is already patched (version {0}).",
+    "text": "Il gioco installato sul telefono è già patchato (versione {0})."
+   },
+   "game_installed_phone_original": {
+    "english": "The game installed on the phone is the original version (version {0}).",
+    "text": "Il gioco installato sul telefono è la versione originale (versione {0})."
+   },
+   "game_installed_phone_already": {
+    "english": "\n\nThe game installed on the phone is already patched: these original APKs are precious, keep them.",
+    "text": "\n\nIl gioco installato sul telefono è già patchato: questi APK originali sono preziosi, conservali."
+   },
+   "original_apks_already": {
+    "english": "Original APKs already retrieved",
+    "text": "APK originali già recuperati"
+   },
+   "apks_folder_already": {
+    "english": "The “apks” folder already contains the original APKs ({0} files, {1}, copied on {2}).{3}\n\nWhat do you want to do?",
+    "text": "La cartella «apks» contiene già gli APK originali ({0} file, {1}, copiati il {2}).{3}\n\nCosa vuoi fare?"
+   },
+   "keep_them": {
+    "english": "Keep them",
+    "text": "Tienili"
+   },
+   "retrieve_them_again": {
+    "english": "Retrieve them again",
+    "text": "Recuperali di nuovo"
+   },
+   "original_apks_kept": {
+    "english": "Original APKs kept. Step 1 considered done.",
+    "text": "APK originali conservati. Passaggio 1 considerato fatto."
+   },
+   "game_phone_already": {
+    "english": "The game on the phone is already patched: retrieving it again would overwrite your original APKs with patched APKs. Step cancelled.",
+    "text": "Il gioco sul telefono è già patchato: recuperarlo di nuovo sovrascriverebbe i tuoi APK originali con APK patchati. Passaggio annullato."
+   },
+   "retrieval_refused": {
+    "english": "Retrieval refused",
+    "text": "Recupero rifiutato"
+   },
+   "apks_folder_contains": {
+    "english": "The “apks” folder contains already patched APKs (unusable for step 2): they will be replaced if the phone provides the original.",
+    "text": "La cartella «apks» contiene APK già patchati (inutilizzabili per il passaggio 2): saranno sostituiti se il telefono fornisce l'originale."
+   },
+   "not_enough_disk": {
+    "english": "Not enough disk space: {0} needed for the APKs, {1} free on this disk.",
+    "text": "Spazio su disco insufficiente: servono {0} per gli APK, {1} liberi su questo disco."
+   },
+   "copying_apks_phone": {
+    "english": "Copying {0} APKs from the phone ({1}) …",
+    "text": "Copia di {0} APK dal telefono ({1}) …"
+   },
+   "incomplete_retrieval": {
+    "english": "Incomplete retrieval: {0}.",
+    "text": "Recupero incompleto: {0}."
+   },
+   "phone_provides_already": {
+    "english": "The phone provides an already patched version: your original APKs in the “apks” folder are kept.",
+    "text": "Il telefono fornisce una versione già patchata: i tuoi APK originali della cartella «apks» vengono conservati."
+   },
+   "game_installed_phone_already_patched": {
+    "english": "The game installed on the phone is already the patched version: the original APKs are needed.\n\n1) Step 3: extract your saves.\n2) Uninstall the game and reinstall the original from the Play Store.\n3) Run step 1 again.",
+    "text": "Il gioco installato sul telefono è già la versione patchata: servono gli APK originali.\n\n1) Passaggio 3: estrai i tuoi salvataggi.\n2) Disinstalla il gioco e reinstalla l'originale dal Play Store.\n3) Ripeti il passaggio 1."
+   },
+   "game_already_patched": {
+    "english": "Game already patched",
+    "text": "Gioco già patchato"
+   },
+   "warning_3_apks": {
+    "english": "Warning: 3 APKs were expected, {0} copied ({1}).",
+    "text": "Attenzione: erano attesi 3 APK, {0} copiati ({1})."
+   },
+   "copy_done_original": {
+    "english": "Copy done: {0} original APKs in {1}",
+    "text": "Copia completata: {0} APK originali in {1}"
+   },
+   "step_1_done": {
+    "english": "Step 1 done: {0} original APKs in {1}",
+    "text": "Passaggio 1 completato: {0} APK originali in {1}"
+   }
+  },
+  "texts": {
+   "all_texts_step": {
+    "english": "All the texts of {0} as step 2 prepared them from YOUR ROM and YOUR game: do not share this file.",
+    "text": "Tutti i testi di {0} come li ha preparati il passaggio 2 dalla TUA ROM e dal TUO gioco: non condividere questo file."
+   },
+   "sorted_file_number": {
+    "english": "Sorted by file then by number: neighbouring texts are in the game's order; \"english\" = original text of the mobile version.",
+    "text": "Ordinati per file e poi per numero: i testi vicini sono nell'ordine del gioco; «english» = testo originale della versione mobile."
+   },
+   "fix_text_only": {
+    "english": "To fix a text: only change its \"text\" line and keep the codes (@a...@b at the start of a dialogue, @c0@ at the end,",
+    "text": "Per correggere un testo: modifica solo la sua riga «text» e mantieni i codici (@a...@b all'inizio di un dialogo, @c0@ alla fine,"
+   },
+   "variable_name_number": {
+    "english": "%a... = variable name or number, %H...%X...%Y...%Z = variants, \\n = line break, ㈡ = new bubble, ; = possible break in a label).",
+    "text": "%a... = nome o numero variabile, %H...%X...%Y...%Z = varianti, \\n = a capo, ㈡ = nuovo fumetto, ; = interruzione possibile di un'etichetta)."
+   },
+   "double_quote_text": {
+    "english": "A double quote in a text is written \\\". Save the file (UTF-8), then run step 3 (patch the APKs) and step 4 (install) again.",
+    "text": "Una virgoletta in un testo si scrive \\\". Salva il file (UTF-8), poi ripeti il passaggio 3 (patch degli APK) e il passaggio 4 (installazione)."
+   },
+   "running_step_2": {
+    "english": "Running step 2 again offers to keep this file; if it is created again, the old one is first copied to the \"old\" folder.",
+    "text": "Ripetere il passaggio 2 propone di tenere questo file; se viene ricreato, il vecchio viene prima copiato nella cartella «old»."
+   },
+   "all_rules_codes": {
+    "english": "All the rules (codes, line breaks, new bubbles, punctuation): Help menu > How to edit the texts.",
+    "text": "Tutte le regole (codici, a capo, nuovi fumetti, punteggiatura): menu Aiuto > Come modificare i testi."
+   },
+   "origin_rom_official": {
+    "english": "origin: rom = official text of the DS ROM, patch = text of the patch, english = stays in English, french = French text (origin not detailed).",
+    "text": "origin: rom = testo ufficiale della ROM DS, patch = testo della patch, english = resta in inglese, french = testo francese (origine non indicata)."
+   },
+   "empty_text": {
+    "english": "empty text",
+    "text": "testo vuoto"
+   },
+   "b_dialogue_header": {
+    "english": "the @a...@b dialogue header is missing",
+    "text": "manca l'intestazione @a...@b del dialogo"
+   },
+   "end_message_missing": {
+    "english": "the end of the message {0} is missing",
+    "text": "manca la fine del messaggio {0}"
+   },
+   "name_must_keep": {
+    "english": "the name must keep its @1...@ / @4...@7...@ form",
+    "text": "il nome deve mantenere la forma @1...@ / @4...@7...@"
+   },
+   "step_2_redone": {
+    "english": "step 2 redone since",
+    "text": "passaggio 2 rifatto da allora"
+   },
+   "texts_changed_since": {
+    "english": "texts changed since",
+    "text": "testi modificati da allora"
+   },
+   "fr_title_screen": {
+    "english": "“FR title screen” option changed since",
+    "text": "opzione «Schermata titolo FR» cambiata da allora"
+   },
+   "original_apks_not": {
+    "english": "The original APKs are not there ({0}).\nRun step 1 first.",
+    "text": "Gli APK originali non ci sono ({0}).\nEsegui prima il passaggio 1."
+   },
+   "step_1_first": {
+    "english": "Step 1 first",
+    "text": "Prima il passaggio 1"
+   },
+   "apks_apks_folder": {
+    "english": "The APKs in the “apks” folder are already patched: they come from the phone after the patch was installed.\nThe original APKs are needed: uninstall the game, reinstall the original from the Play Store, then run step 1 again (delete the “apks” folder first).",
+    "text": "Gli APK della cartella «apks» sono già patchati: provengono dal telefono dopo l'installazione della patch.\nServono gli APK originali: disinstalla il gioco, reinstalla l'originale dal Play Store, poi ripeti il passaggio 1 (elimina prima la cartella «apks»)."
+   },
+   "apks_already_patched": {
+    "english": "APKs already patched",
+    "text": "APK già patchati"
+   },
+   "no_rom_chosen": {
+    "english": "no ROM chosen",
+    "text": "nessuna ROM scelta"
+   },
+   "unusable_ds_rom": {
+    "english": "Unusable DS ROM: ",
+    "text": "ROM DS inutilizzabile: "
+   },
+   "choose_folder_contains": {
+    "english": "\nChoose the folder that contains the European ROM (“Checks” area, “Choose the ROM folder…” button).",
+    "text": "\nScegli la cartella che contiene la ROM europea (riquadro «Verifiche», pulsante «Scegli la cartella delle ROM…»)."
+   },
+   "invalid_rom": {
+    "english": "Invalid ROM",
+    "text": "ROM non valida"
+   },
+   "program_incomplete_dq": {
+    "english": "The program is incomplete (DQ{0} data missing): download it again.",
+    "text": "Il programma è incompleto (dati di DQ{0} mancanti): scaricalo di nuovo."
+   },
+   "incomplete_program": {
+    "english": "Incomplete program",
+    "text": "Programma incompleto"
+   },
+   "texts_already_prepared": {
+    "english": "Texts already prepared",
+    "text": "Testi già preparati"
+   },
+   "texts_already_prepared_rom": {
+    "english": "The texts were already prepared on {0}\n(ROM: {1}).\n\n",
+    "text": "I testi sono già stati preparati il {0}\n(ROM: {1}).\n\n"
+   },
+   "preparing_them_again": {
+    "english": "Preparing them again takes several minutes. What do you want to do?",
+    "text": "Prepararli di nuovo richiede diversi minuti. Cosa vuoi fare?"
+   },
+   "keep": {
+    "english": "Keep",
+    "text": "Tieni"
+   },
+   "prepare_again": {
+    "english": "Prepare again",
+    "text": "Prepara di nuovo"
+   },
+   "texts_already_prepared_kept": {
+    "english": "Texts already prepared, kept. Step 2 considered done.",
+    "text": "Testi già preparati conservati. Passaggio 2 considerato fatto."
+   },
+   "edited_texts": {
+    "english": "You have edited the texts",
+    "text": "Hai modificato i testi"
+   },
+   "file_edited_since": {
+    "english": "The file {0} has been edited since it was created.\n\n• Keep my texts: only the basic translated version is redone, your file is not touched.\n• Recreate the file: it starts again from the patch texts; the old one is first copied to the “texts\\old” folder.",
+    "text": "Il file {0} è stato modificato dopo la sua creazione.\n\n• Tieni i miei testi: viene rifatta solo la versione tradotta di base, il tuo file non viene toccato.\n• Ricrea il file: riparte dai testi della patch; il vecchio viene prima copiato nella cartella «texts\\old»."
+   },
+   "keep_my_texts": {
+    "english": "Keep my texts",
+    "text": "Tieni i miei testi"
+   },
+   "recreate_file": {
+    "english": "Recreate the file",
+    "text": "Ricrea il file"
+   },
+   "preparing_texts_several": {
+    "english": "Preparing the texts (several minutes) …",
+    "text": "Preparazione dei testi (diversi minuti) …"
+   },
+   "script_ended_without": {
+    "english": "The script ended without producing {0}: see the log.",
+    "text": "Lo script è terminato senza produrre {0}: vedi il registro."
+   },
+   "incomplete_build": {
+    "english": "Incomplete build",
+    "text": "Creazione incompleta"
+   },
+   "text_file_kept": {
+    "english": "Your text file is kept as it is: {0}",
+    "text": "Il tuo file di testi resta così com'è: {0}"
+   },
+   "old_text_file": {
+    "english": "Old text file copied to {0}",
+    "text": "Vecchio file di testi copiato in {0}"
+   },
+   "texts_written": {
+    "english": "{0} texts written to {1}",
+    "text": "{0} testi scritti in {1}"
+   },
+   "step_2_done": {
+    "english": "Step 2 done: all the game texts are in {0}. You can edit them, then run step 3.",
+    "text": "Passaggio 2 completato: tutti i testi del gioco sono in {0}. Puoi modificarli, poi avvia il passaggio 3."
+   },
+   "texts_not_prepared": {
+    "english": "Texts: not prepared yet (step 2).",
+    "text": "Testi: non ancora preparati (passaggio 2)."
+   },
+   "texts_prepared": {
+    "english": "Texts: {0}, prepared on {1}",
+    "text": "Testi: {0}, preparati il {1}"
+   },
+   "edited": {
+    "english": ", edited on {0}",
+    "text": ", modificati il {0}"
+   }
+  },
+  "patch": {
+   "step_3_patch": {
+    "english": "Step 3 · Patch the APKs · {0} · {1}",
+    "text": "Passaggio 3 · Patchare gli APK · {0} · {1}"
+   },
+   "summary": {
+    "english": "SUMMARY",
+    "text": "RIEPILOGO"
+   },
+   "game_texts": {
+    "english": "  Game texts: {0}",
+    "text": "  Testi del gioco: {0}"
+   },
+   "changes_applied_texts": {
+    "english": "  Your changes applied (texts different from step 2): {0}",
+    "text": "  Modifiche applicate (testi diversi dal passaggio 2): {0}"
+   },
+   "texts_identical_step": {
+    "english": "  Texts identical to step 2: {0}",
+    "text": "  Testi identici al passaggio 2: {0}"
+   },
+   "texts_missing_file": {
+    "english": "  Texts missing from the file (step 2 text used): {0}",
+    "text": "  Testi assenti dal file (usato il testo del passaggio 2): {0}"
+   },
+   "changes_not_applied": {
+    "english": "  Changes not applied: {0} (see below)",
+    "text": "  Modifiche non applicate: {0} (vedi sotto)"
+   },
+   "everything_fine_translated": {
+    "english": "Everything is fine: the translated version is ready in the “patched_apks” folder.",
+    "text": "Tutto in ordine: la versione tradotta è pronta nella cartella «patched_apks»."
+   },
+   "next_extract_saves": {
+    "english": "Next: “Extract saves” (if not done yet), then step 4 (Sign and install).",
+    "text": "Poi: «Estrarre i salvataggi» (se non è già stato fatto), quindi il passaggio 4 (Firmare e installare)."
+   },
+   "translated_version_ready": {
+    "english": "The translated version is ready in the “patched_apks” folder. The points below only need checking.",
+    "text": "La versione tradotta è pronta nella cartella «patched_apks». I punti seguenti vanno solo verificati."
+   },
+   "no": {
+    "english": "{0} · no. {1}",
+    "text": "{0} · n. {1}"
+   },
+   "changes_applied": {
+    "english": "YOUR CHANGES APPLIED",
+    "text": "LE TUE MODIFICHE APPLICATE"
+   },
+   "texts_file_differ": {
+    "english": "Texts in the file that differ from those prepared in step 2: they are in the game exactly as you wrote them.",
+    "text": "Testi del file diversi da quelli preparati al passaggio 2: sono nel gioco esattamente come li hai scritti."
+   },
+   "check_game_line": {
+    "english": "CHECK IN GAME: LINE LONGER THAN BEFORE",
+    "text": "DA GUARDARE IN GIOCO: RIGA PIÙ LUNGA DI PRIMA"
+   },
+   "line_these_texts": {
+    "english": "A line of these texts is longer than before: it may go past the edge of the bubble or menu.",
+    "text": "Una riga di questi testi è più lunga di prima: può uscire dal fumetto o dal menu."
+   },
+   "if_so_add": {
+    "english": "If so, add a line break (\\n) or shorten the text, then run steps 3 and 4 again.",
+    "text": "In tal caso, aggiungi un a capo (\\n) o accorcia il testo, poi ripeti i passaggi 3 e 4."
+   },
+   "fix_characters_missing": {
+    "english": "TO FIX: CHARACTERS MISSING FROM THE GAME FONT",
+    "text": "DA CORREGGERE: CARATTERI ASSENTI DAL FONT DEL GIOCO"
+   },
+   "these_characters_not": {
+    "english": "These characters do not exist in the game font and would not display properly.",
+    "text": "Questi caratteri non esistono nel font del gioco e verrebbero mostrati male."
+   },
+   "text_applied_anyway": {
+    "english": "The text is applied anyway; replace these characters in the file, then run steps 3 and 4 again.",
+    "text": "Il testo viene applicato comunque; sostituisci questi caratteri nel file, poi ripeti i passaggi 3 e 4."
+   },
+   "fix_changes_not": {
+    "english": "TO FIX: CHANGES NOT APPLIED",
+    "text": "DA CORREGGERE: MODIFICHE NON APPLICATE"
+   },
+   "these_texts_missing": {
+    "english": "These texts are missing a code the game needs (start @a…@b or end \\n@c0@): the game would display them badly.",
+    "text": "A questi testi manca un codice indispensabile al gioco (inizio @a…@b o fine \\n@c0@): il gioco li mostrerebbe male."
+   },
+   "text_prepared_step": {
+    "english": "The text prepared in step 2 is kept instead. Fix them in the file (menu Help › How to edit the texts), then run step 3 again.",
+    "text": "Al loro posto resta il testo preparato al passaggio 2. Correggili nel file (menu Aiuto › Come modificare i testi), poi ripeti il passaggio 3."
+   },
+   "program_incomplete_download": {
+    "english": "The program is incomplete: download it again.",
+    "text": "Il programma è incompleto: scaricalo di nuovo."
+   },
+   "missing_data": {
+    "english": "Missing data",
+    "text": "Dati mancanti"
+   },
+   "unable_extract_patch": {
+    "english": "Unable to extract the patch data ({0}).",
+    "text": "Impossibile estrarre i dati della patch ({0})."
+   },
+   "texts_not_prepared": {
+    "english": "The texts are not prepared yet.\nRun step 2 first.",
+    "text": "I testi non sono ancora preparati.\nEsegui prima il passaggio 2."
+   },
+   "step_2_first": {
+    "english": "Step 2 first",
+    "text": "Prima il passaggio 2"
+   },
+   "text_file_cannot": {
+    "english": "The text file cannot be found:\n{0}\n\nIt is required: run step 2 again to recreate it.",
+    "text": "Il file dei testi non è stato trovato:\n{0}\n\nÈ obbligatorio: ripeti il passaggio 2 per ricrearlo."
+   },
+   "texts_not_found": {
+    "english": "Texts not found",
+    "text": "Testi non trovati"
+   },
+   "text_file_contains": {
+    "english": "The text file contains an error at line {0}, column {1} ({2}).\n\nCheck the quotes and commas around the edited text: a quote inside a text is written \\\" and each “text” line ends with a comma.",
+    "text": "Il file dei testi contiene un errore alla riga {0}, colonna {1} ({2}).\n\nControlla le virgolette e le virgole attorno al testo modificato: le virgolette dentro un testo si scrivono \\\" e ogni riga «text» termina con una virgola."
+   },
+   "invalid_text_file": {
+    "english": "Invalid text file",
+    "text": "File di testi non valido"
+   },
+   "unable_read": {
+    "english": "Unable to read {0}:\n{1}",
+    "text": "Impossibile leggere {0}:\n{1}"
+   },
+   "unreadable_text_file": {
+    "english": "Unreadable text file",
+    "text": "File di testi illeggibile"
+   },
+   "not_expected_form": {
+    "english": "{0} does not have the expected form (“texts” part missing): run step 2 again to recreate it.",
+    "text": "{0} non ha la forma prevista (parte «texts» assente): ripeti il passaggio 2 per ricrearlo."
+   },
+   "contains_texts_not": {
+    "english": "{0} contains the texts of {1}, not {2}.",
+    "text": "{0} contiene i testi di {1}, non di {2}."
+   },
+   "wrong_game": {
+    "english": "Wrong game",
+    "text": "Gioco sbagliato"
+   },
+   "logo_title_screen": {
+    "english": "Logo and title screen: ",
+    "text": "Logo e schermata del titolo: "
+   },
+   "translated": {
+    "english": "translated.",
+    "text": "tradotti."
+   },
+   "original_english": {
+    "english": "original, in English (",
+    "text": "originali, in inglese ("
+   },
+   "build_failed_see": {
+    "english": "build failed, see above",
+    "text": "creazione impossibile, vedi sopra"
+   },
+   "logo_title_screen_modules": {
+    "english": "logo and title screen modules missing: Dependencies menu",
+    "text": "moduli del logo e della schermata del titolo assenti: menu Dipendenze"
+   },
+   "fr_title_screen": {
+    "english": "“FR title screen” option turned off",
+    "text": "opzione «Schermata titolo FR» disattivata"
+   },
+   "writing_texts_apks": {
+    "english": "Writing the texts into the APKs …",
+    "text": "Scrittura dei testi negli APK …"
+   },
+   "texts_change_s": {
+    "english": "Texts: {0} change(s) from your file applied, {1} text(s) identical to step 2 ({2} in total).",
+    "text": "Testi: {0} modifica/he del tuo file applicata/e, {1} testo/i identico/i al passaggio 2 ({2} in totale)."
+   },
+   "change_s_not": {
+    "english": "{0} change(s) not applied (game code missing): the step 2 text is kept. Details: {1}",
+    "text": "{0} modifica/he non applicata/e (codice del gioco mancante): resta il testo del passaggio 2. Dettagli: {1}"
+   },
+   "text_s_line": {
+    "english": "{0} text(s) with a line longer than before",
+    "text": "{0} testo/i con una riga più lunga di prima"
+   },
+   "text_s_character": {
+    "english": "{0} text(s) with a character missing from the font",
+    "text": "{0} testo/i con un carattere assente dal font"
+   },
+   "look": {
+    "english": "To look at: ",
+    "text": "Da guardare: "
+   },
+   "details": {
+    "english": ". Details: {0}",
+    "text": ". Dettagli: {0}"
+   },
+   "step_3_done": {
+    "english": "Step 3 done: the translated version is in {0}",
+    "text": "Passaggio 3 completato: la versione tradotta è in {0}"
+   },
+   "title_screen_original": {
+    "english": "Title screen: original APKs missing (“apks” folder): it stays original.",
+    "text": "Schermata del titolo: APK originali assenti (cartella «apks»): resta l'originale."
+   },
+   "translated_title_screen": {
+    "english": "Translated title screen: already built, reused as it is.",
+    "text": "Schermata del titolo tradotta: già creata, riutilizzata così com'è."
+   },
+   "title_screen_logo": {
+    "english": "Title screen: logo bundle not found in the asset pack: it stays original.",
+    "text": "Schermata del titolo: bundle del logo non trovato nell'asset pack: resta l'originale."
+   },
+   "title_screen_unable": {
+    "english": "Title screen: unable to read the original APKs ({0}): it stays original.",
+    "text": "Schermata del titolo: impossibile leggere gli APK originali ({0}): resta l'originale."
+   },
+   "translated_title_screen_building": {
+    "english": "Translated title screen: building (several minutes and 1 to 2 GB of memory, only the first time) …",
+    "text": "Schermata del titolo tradotta: creazione (diversi minuti e da 1 a 2 GB di memoria, solo la prima volta) …"
+   },
+   "translated_title_screen_several": {
+    "english": "Translated title screen (several minutes) …",
+    "text": "Schermata del titolo tradotta (diversi minuti) …"
+   },
+   "title_screen_logo_modules": {
+    "english": "Title screen: logo modules unavailable ({0}): it stays original.",
+    "text": "Schermata del titolo: moduli del logo non disponibili ({0}): resta l'originale."
+   },
+   "title_screen": {
+    "english": "  title screen: ",
+    "text": "  schermata del titolo: "
+   },
+   "title_screen_not": {
+    "english": "Title screen: not enough memory, it stays original (close other programs and run step 3 again, or turn off the option).",
+    "text": "Schermata del titolo: memoria insufficiente, resta l'originale (chiudi altri programmi e ripeti il passaggio 3, oppure disattiva l'opzione)."
+   },
+   "title_screen_failed": {
+    "english": "Title screen failed ({0}): it stays original.",
+    "text": "Schermata del titolo impossibile ({0}): resta l'originale."
+   },
+   "title_screen_failed_stays": {
+    "english": "Title screen failed ({0}: {1}): it stays original.",
+    "text": "Schermata del titolo impossibile ({0}: {1}): resta l'originale."
+   },
+   "title_screen_stays": {
+    "english": "Title screen: it stays original (see the message above).",
+    "text": "Schermata del titolo: resta l'originale (vedi il messaggio sopra)."
+   },
+   "translated_title_screen_built": {
+    "english": "Translated title screen built (kept for the next steps 3).",
+    "text": "Schermata del titolo tradotta creata (conservata per i prossimi passaggi 3)."
+   },
+   "script_stopped_code": {
+    "english": "The script stopped (code {0}).",
+    "text": "Lo script si è fermato (codice {0})."
+   },
+   "build_failed": {
+    "english": "Build failed",
+    "text": "Creazione impossibile"
+   },
+   "not_enough_memory": {
+    "english": "Not enough memory during the build. Close other programs, or turn off the “logo and title screen” option, then try again.",
+    "text": "Memoria insufficiente durante la creazione. Chiudi altri programmi oppure disattiva l'opzione «logo e schermata del titolo», poi riprova."
+   },
+   "not_enough_memory_2": {
+    "english": "Not enough memory",
+    "text": "Memoria insufficiente"
+   },
+   "translated_2": {
+    "english": "translated",
+    "text": "tradotti"
+   },
+   "original_english_2": {
+    "english": "original, in English",
+    "text": "originali, in inglese"
+   },
+   "next_step_3": {
+    "english": " at the next step 3 (then run step 4 again).",
+    "text": " al prossimo passaggio 3 (poi ripeti il passaggio 4)."
+   }
+  },
+  "saves": {
+   "no_save_file": {
+    "english": "No save file (data*.dat) found on the phone in {0}.",
+    "text": "Nessun file di salvataggio (data*.dat) trovato sul telefono in {0}."
+   },
+   "no_save_found": {
+    "english": "No save found",
+    "text": "Nessun salvataggio trovato"
+   },
+   "no_save_file_data": {
+    "english": "No save file (data*.dat) was found on the phone.\n\nEither the game has never been started, or no save has been recorded on this device (the game's cloud save does not count). So there is nothing to back up.",
+    "text": "Non è stato trovato alcun file di salvataggio (data*.dat) sul telefono.\n\nO il gioco non è mai stato avviato, oppure su questo dispositivo non è stato registrato alcun salvataggio (il salvataggio cloud del gioco non conta). Non c'è quindi niente da mettere al sicuro."
+   },
+   "save_file_s": {
+    "english": "{0} save file(s) found: {1}",
+    "text": "{0} file di salvataggio trovato/i: {1}"
+   },
+   "these_saves_same": {
+    "english": "These saves have the same size as the previous backup ({0}).",
+    "text": "Questi salvataggi hanno la stessa dimensione del backup precedente ({0})."
+   },
+   "saves_extracted_file": {
+    "english": "Saves extracted: {0} file(s) in {1}",
+    "text": "Salvataggi estratti: {0} file in {1}"
+   },
+   "no_backup_found": {
+    "english": "No backup found in {0}.\nClick “Extract saves” (before the installation), or copy a backup folder (containing data0.dat …) into this folder.",
+    "text": "Nessun backup trovato in {0}.\nClicca su «Estrarre i salvataggi» (prima dell'installazione), oppure copia in questa cartella una cartella di backup (che contenga data0.dat …)."
+   },
+   "no_save": {
+    "english": "No save",
+    "text": "Nessun salvataggio"
+   },
+   "installed_game_not": {
+    "english": "The installed game is not patched",
+    "text": "Il gioco installato non è patchato"
+   },
+   "game_installed_phone": {
+    "english": "The game installed on the phone seems to be the original (English) version and not the translated one. Restoring the saves is possible, but they may be lost when you install the patch.\n\nContinue anyway?",
+    "text": "Il gioco installato sul telefono sembra essere la versione originale (inglese) e non quella tradotta. È possibile ripristinare i salvataggi, ma potrebbero andare persi quando installerai la patch.\n\nContinuare comunque?"
+   },
+   "continue": {
+    "english": "Continue",
+    "text": "Continua"
+   },
+   "file_s": {
+    "english": "{0}   ·   {1} file(s)   ·   {2}",
+    "text": "{0}   ·   {1} file   ·   {2}"
+   },
+   "most_recent": {
+    "english": "   ·   The most recent",
+    "text": "   ·   Il più recente"
+   },
+   "which_backup_saves": {
+    "english": "Which backup of the saves do you want to restore?",
+    "text": "Quale backup dei salvataggi ripristinare?"
+   },
+   "backups_found_most": {
+    "english": "Backups found in {0}\n(the most recent is preselected):",
+    "text": "Backup trovati in {0}\n(il più recente è preselezionato):"
+   },
+   "game_not_created": {
+    "english": "The game has not created its data folder yet",
+    "text": "Il gioco non ha ancora creato la sua cartella dati"
+   },
+   "game_s_data": {
+    "english": "The game's data folder does not exist on the phone yet: the game has probably not been started since the installation.\n\nStart the game once, close it completely, then continue. (You can also let the tool create the folder, but the game may not recognise the saves.)",
+    "text": "La cartella dati del gioco non esiste ancora sul telefono: probabilmente il gioco non è stato avviato dopo l'installazione.\n\nAvvia il gioco una volta, chiudilo completamente, poi continua. (Puoi anche lasciare che lo strumento crei la cartella, ma il gioco potrebbe non riconoscere i salvataggi.)"
+   },
+   "i_started_game": {
+    "english": "I started the game: try again",
+    "text": "Ho avviato il gioco: riprova"
+   },
+   "create_folder_anyway": {
+    "english": "Create the folder anyway",
+    "text": "Crea comunque la cartella"
+   },
+   "data_folder_still": {
+    "english": "The data folder still does not exist: start the game, close it completely, then run “Restore saves” again.",
+    "text": "La cartella dati non esiste ancora: avvia il gioco, chiudilo completamente, poi ripeti «Ripristinare i salvataggi»."
+   },
+   "folder_missing": {
+    "english": "Folder missing",
+    "text": "Cartella assente"
+   },
+   "phone_already_contains": {
+    "english": "The phone already contains {0} save file(s): they will be replaced by the chosen backup.",
+    "text": "Il telefono contiene già {0} file di salvataggio: saranno sostituiti dal backup scelto."
+   },
+   "restoring_file_s": {
+    "english": "Restoring {0} file(s) from {1} …",
+    "text": "Ripristino di {0} file da {1} …"
+   },
+   "sending": {
+    "english": "Sending {0} …",
+    "text": "Invio di {0} …"
+   },
+   "restored": {
+    "english": "  {0}: restored ({1})",
+    "text": "  {0}: ripristinato ({1})"
+   },
+   "failed": {
+    "english": "  {0}: failed... {1}",
+    "text": "  {0}: errore... {1}"
+   },
+   "different_size_phone": {
+    "english": "(different size on the phone)",
+    "text": "(dimensione diversa sul telefono)"
+   },
+   "file_s_restored": {
+    "english": "{0}/{1} file(s) restored.\nIf adb refuses to write: start the game once, close it completely, then run “Restore saves” again.",
+    "text": "{0}/{1} file ripristinati.\nSe adb rifiuta di scrivere: avvia il gioco una volta, chiudilo completamente, poi ripeti «Ripristinare i salvataggi»."
+   },
+   "incomplete_restore": {
+    "english": "Incomplete restore",
+    "text": "Ripristino incompleto"
+   },
+   "saves_restored_file": {
+    "english": "Saves restored: {0} file(s) restored. Start the game: your saves should appear in “Poursuivre votre aventure” (continue your adventure).",
+    "text": "Salvataggi ripristinati: {0} file ripristinati. Avvia il gioco: i tuoi salvataggi dovrebbero comparire in «Poursuivre votre aventure» (continua l'avventura)."
+   },
+   "saves_restored": {
+    "english": "Saves restored",
+    "text": "Salvataggi ripristinati"
+   },
+   "file_s_restored_backup": {
+    "english": "{0} file(s) restored from the backup of {1}.\n\nStart the game: your saves should appear in “Poursuivre votre aventure” (continue your adventure).",
+    "text": "{0} file ripristinati dal backup del {1}.\n\nAvvia il gioco: i tuoi salvataggi dovrebbero comparire in «Poursuivre votre aventure» (continua l'avventura)."
+   }
+  },
+  "install": {
+   "not_enough_space": {
+    "english": "Not enough space on the phone: free up some storage, then run step 4 again.",
+    "text": "Spazio insufficiente sul telefono: libera memoria, poi ripeti il passaggio 4."
+   },
+   "phone_refuses_installation": {
+    "english": "The phone refuses installation over USB. On Xiaomi/Redmi/Poco: enable “Install via USB” in the developer options; on other brands: “Allow installing apps via USB”.",
+    "text": "Il telefono rifiuta l'installazione via USB. Su Xiaomi/Redmi/Poco: attiva «Installa tramite USB» nelle opzioni sviluppatore; su altre marche: «Consenti l'installazione di app tramite USB»."
+   },
+   "another_version_game": {
+    "english": "Another version of the game (different signature) is still installed: uninstall the game yourself, then run step 4 again.",
+    "text": "È ancora installata un'altra versione del gioco (firma diversa): disinstalla il gioco a mano, poi ripeti il passaggio 4."
+   },
+   "game_still_installed": {
+    "english": "The game is still installed: uninstall it yourself, then run step 4 again.",
+    "text": "Il gioco è ancora installato: disinstallalo a mano, poi ripeti il passaggio 4."
+   },
+   "phone_refuses_version": {
+    "english": "The phone refuses a version older than the one installed: uninstall the game, then run step 4 again.",
+    "text": "Il telefono rifiuta una versione più vecchia di quella installata: disinstalla il gioco, poi ripeti il passaggio 4."
+   },
+   "apks_not_signed": {
+    "english": "The APKs are not signed correctly: run step 4 again (signing is redone every time).",
+    "text": "Gli APK non sono firmati correttamente: ripeti il passaggio 4 (la firma viene rifatta ogni volta)."
+   },
+   "part_apks_missing": {
+    "english": "Part of the APKs is missing: run steps 1, 2 and 3 again.",
+    "text": "Manca una parte degli APK: ripeti i passaggi 1, 2 e 3."
+   },
+   "phone_blocked_installation": {
+    "english": "The phone blocked the installation (Play Protect/verification). Temporarily turn off “Verify apps over USB” in Play Protect.",
+    "text": "Il telefono ha bloccato l'installazione (Play Protect/verifica). Disattiva temporaneamente «Verifica app tramite USB» in Play Protect."
+   },
+   "apk_invalid_incomplete": {
+    "english": "An APK is invalid or incomplete: run steps 2 and 3 again.",
+    "text": "Un APK non è valido o è incompleto: ripeti i passaggi 2 e 3."
+   },
+   "translated_version_not": {
+    "english": "The translated version is not built (“patched_apks” folder missing or incomplete).\nRun step 3 first.",
+    "text": "La versione tradotta non è stata creata (cartella «patched_apks» assente o incompleta).\nEsegui prima il passaggio 3."
+   },
+   "step_3_first": {
+    "english": "Step 3 first",
+    "text": "Prima il passaggio 3"
+   },
+   "translated_version_not_up": {
+    "english": "Translated version not up to date",
+    "text": "Versione tradotta non aggiornata"
+   },
+   "translated_version_patched": {
+    "english": "The translated version in the “patched_apks” folder is older than your latest changes ({0}).\nTo include them, run step 3 again first.",
+    "text": "La versione tradotta della cartella «patched_apks» è precedente alle tue ultime modifiche ({0}).\nPer includerle, ripeti prima il passaggio 3."
+   },
+   "install_anyway": {
+    "english": "Install anyway",
+    "text": "Installa comunque"
+   },
+   "step_cancelled_run": {
+    "english": "Step cancelled: run step 3 again to include your changes.",
+    "text": "Passaggio annullato: ripeti il passaggio 3 per includere le tue modifiche."
+   },
+   "java_not_found": {
+    "english": "Java not found. Download it from the Dependencies menu.",
+    "text": "Java non trovato. Scaricalo dal menu Dipendenze."
+   },
+   "java_missing": {
+    "english": "Java missing",
+    "text": "Java mancante"
+   },
+   "uber_apk_signer": {
+    "english": "uber-apk-signer.jar not found. Download it from the Dependencies menu.",
+    "text": "uber-apk-signer.jar non trovato. Scaricalo dal menu Dipendenze."
+   },
+   "signing_tool_missing": {
+    "english": "Signing tool missing",
+    "text": "Strumento di firma mancante"
+   },
+   "saves_last_backup": {
+    "english": "Your saves: last backup on {0} ({1} file(s), “saves” folder). If you have played since, click “Cancel”, then “Extract saves”.",
+    "text": "I tuoi salvataggi: ultimo backup il {0} ({1} file, cartella «saves»). Se hai giocato da allora, clicca su «Annulla», poi su «Estrarre i salvataggi»."
+   },
+   "last_backup_saves": {
+    "english": "Last backup of the saves: {0} ({1} file(s)).",
+    "text": "Ultimo backup dei salvataggi: {0} ({1} file)."
+   },
+   "no_backup_saves": {
+    "english": "No backup of the saves: looking for saves on the phone …",
+    "text": "Nessun backup dei salvataggi: ricerca dei salvataggi sul telefono …"
+   },
+   "extract_saves": {
+    "english": "Extract your saves?",
+    "text": "Estrarre i tuoi salvataggi?"
+   },
+   "not_extracted_saves": {
+    "english": "You have not extracted the saves of this game yet, and the phone contains {0} file(s).\n\nThe installation starts by uninstalling the game, which erases its local saves. Do you want to extract them now?",
+    "text": "Non hai ancora estratto i salvataggi di questo gioco, e il telefono ne contiene {0} file.\n\nL'installazione inizia disinstallando il gioco, il che cancella i suoi salvataggi locali. Vuoi estrarli adesso?"
+   },
+   "extract_saves_now": {
+    "english": "Extract the saves now",
+    "text": "Estrai i salvataggi adesso"
+   },
+   "continue_without_extracting": {
+    "english": "Continue without extracting them",
+    "text": "Continua senza estrarli"
+   },
+   "step_cancelled_nothing": {
+    "english": "Step cancelled: nothing has been changed.",
+    "text": "Passaggio annullato: non è stato modificato niente."
+   },
+   "before_installation": {
+    "english": "before installation",
+    "text": "prima dell'installazione"
+   },
+   "saves_could_not": {
+    "english": "The saves could not be extracted: step cancelled for safety.",
+    "text": "Non è stato possibile estrarre i salvataggi: passaggio annullato per sicurezza."
+   },
+   "backup_failed": {
+    "english": "Backup failed",
+    "text": "Salvataggio impossibile"
+   },
+   "saves_just_extracted": {
+    "english": "Your saves: just extracted ({0} file(s), “saves” folder).",
+    "text": "I tuoi salvataggi: appena estratti ({0} file, cartella «saves»)."
+   },
+   "continuing_without_backup": {
+    "english": "Continuing without a backup of the saves, as you asked.",
+    "text": "Si prosegue senza backup dei salvataggi, come richiesto."
+   },
+   "no_backup_local": {
+    "english": "⚠ No backup: the local saves on the phone will be **lost**.",
+    "text": "⚠ Nessun backup: i salvataggi locali del telefono andranno **persi**."
+   },
+   "phone_contains_no": {
+    "english": "The phone contains no local save for this game: nothing to extract.",
+    "text": "Il telefono non contiene alcun salvataggio locale per questo gioco: niente da estrarre."
+   },
+   "phone_contains_no_local": {
+    "english": "The phone contains no local save for this game (cloud saves do not work with the patched version).",
+    "text": "Il telefono non contiene alcun salvataggio locale per questo gioco (i salvataggi cloud non funzionano con la versione patchata)."
+   },
+   "signing_apks_uber": {
+    "english": "Signing the APKs (uber-apk-signer) …",
+    "text": "Firma degli APK (uber-apk-signer) …"
+   },
+   "signing": {
+    "english": "Signing …",
+    "text": "Firma in corso …"
+   },
+   "signing_failed_see": {
+    "english": "Signing failed (see the log).\n",
+    "text": "La firma non è riuscita (vedi il registro).\n"
+   },
+   "signing_failed": {
+    "english": "Signing failed",
+    "text": "Firma impossibile"
+   },
+   "too_few_apks": {
+    "english": "Too few APKs signed ({0}). Check the “patched_apks” folder (step 3).",
+    "text": "Troppo pochi APK firmati ({0}). Controlla la cartella «patched_apks» (passaggio 3)."
+   },
+   "incomplete_signing": {
+    "english": "Incomplete signing",
+    "text": "Firma incompleta"
+   },
+   "apks_signed": {
+    "english": "{0} APKs signed in {1}",
+    "text": "{0} APK firmati in {1}"
+   },
+   "uninstall_install": {
+    "english": "Uninstall, then install?",
+    "text": "Disinstallare e poi installare?"
+   },
+   "game_currently_installed": {
+    "english": "The game currently installed ({0}) is going to be uninstalled: its signature differs from the patch's.\nIts local saves will be erased from the phone.\n{1}\n\nThe {2} signed APKs will then be installed.\n\nDuring the installation, watch the phone: if Google Play Protect offers to **send the app for scanning**, tap **“Don't send”**.\n\nContinue?",
+    "text": "Il gioco attualmente installato ({0}) sta per essere disinstallato: la sua firma è diversa da quella della patch.\nI suoi salvataggi locali saranno cancellati dal telefono.\n{1}\n\nPoi verranno installati i {2} APK firmati.\n\nDurante l'installazione, guarda il telefono: se Google Play Protect propone di **inviare l'app per l'analisi**, tocca **«Non inviare»**.\n\nContinuare?"
+   },
+   "uninstall_install_2": {
+    "english": "Uninstall and install",
+    "text": "Disinstalla e installa"
+   },
+   "step_cancelled_game": {
+    "english": "Step cancelled: the game was not touched. The signed APKs remain in {0}.",
+    "text": "Passaggio annullato: il gioco non è stato toccato. Gli APK firmati restano in {0}."
+   },
+   "uninstalling": {
+    "english": "Uninstalling …",
+    "text": "Disinstallazione …"
+   },
+   "uninstalling_current_game": {
+    "english": "Uninstalling the current game …",
+    "text": "Disinstallazione del gioco attuale …"
+   },
+   "no_answer": {
+    "english": "(no answer)",
+    "text": "(nessuna risposta)"
+   },
+   "installing_several_minutes": {
+    "english": "Installing (several minutes) …",
+    "text": "Installazione (diversi minuti) …"
+   },
+   "installing_translated_version": {
+    "english": "Installing the translated version (adb install-multiple) …",
+    "text": "Installazione della versione tradotta (adb install-multiple) …"
+   },
+   "phone_if_google": {
+    "english": "On the phone: if Google Play Protect offers to send the app for scanning, tap “Don't send” (if it blocks it: “More details”, then “Install anyway”).",
+    "text": "Sul telefono: se Google Play Protect propone di inviare l'app per l'analisi, tocca «Non inviare» (se la blocca: «Altri dettagli», poi «Installa comunque»)."
+   },
+   "phone_don_t": {
+    "english": "On the phone: “Don't send”",
+    "text": "Sul telefono: «Non inviare»"
+   },
+   "installation_starting_watch": {
+    "english": "The installation is starting. Watch the phone screen:\n\n• if Google Play Protect asks to **send the app for scanning**, tap **“Don't send”**;\n• if it shows “App blocked”, tap “More details”, then **“Install anyway”**.\n\nThis is normal: the translated version is not signed by Square Enix.",
+    "text": "L'installazione sta iniziando. Guarda lo schermo del telefono:\n\n• se Google Play Protect chiede di **inviare l'app per l'analisi**, tocca **«Non inviare»**;\n• se mostra «App bloccata», tocca «Altri dettagli», poi **«Installa comunque»**.\n\nÈ normale: la versione tradotta non è firmata da Square Enix."
+   },
+   "installation_failed": {
+    "english": "The installation failed.\n\n",
+    "text": "L'installazione non è riuscita.\n\n"
+   },
+   "adb_answer": {
+    "english": "adb answer: ",
+    "text": "Risposta di adb: "
+   },
+   "empty": {
+    "english": "(empty)",
+    "text": "(vuoto)"
+   },
+   "original_game_uninstalled": {
+    "english": "\n\nThe original game is uninstalled: your saves are in the “saves” folder. Fix the problem, then run step 4 again.",
+    "text": "\n\nIl gioco originale è disinstallato: i tuoi salvataggi sono nella cartella «saves». Risolvi il problema, poi ripeti il passaggio 4."
+   },
+   "installation_failed_2": {
+    "english": "Installation failed",
+    "text": "Installazione non riuscita"
+   },
+   "step_4_done": {
+    "english": "Step 4 done: the translated version is installed.",
+    "text": "Passaggio 4 completato: la versione tradotta è installata."
+   },
+   "translated_version_installed": {
+    "english": "Translated version installed",
+    "text": "Versione tradotta installata"
+   },
+   "installation_complete_now": {
+    "english": "Installation complete.\n\nNow start the game once, then close it completely (remove it from the recent apps). Then, if you had extracted saves, click “Restore saves” to put them back.\n\nOn first start, the game may ask you to choose a Google account (especially if there are several on the phone): it is not required, skip the screen by tapping outside it, or with “Cancel” or “Continue”.",
+    "text": "Installazione completata.\n\nOra avvia il gioco una volta, poi chiudilo completamente (rimuovilo dalle app recenti). Dopo, se avevi estratto dei salvataggi, clicca su «Ripristinare i salvataggi» per rimetterli.\n\nAl primo avvio, il gioco può chiederti di scegliere un account Google (soprattutto se ce ne sono diversi sul telefono): non è obbligatorio, salta la schermata toccando fuori, oppure con «Annulla» o «Continua»."
+   }
+  },
+  "phone": {
+   "phone_unplugged_not": {
+    "english": "Phone unplugged or not detected: plug the USB cable back in, in file transfer mode, and check that USB debugging is enabled.",
+    "text": "Telefono scollegato o non rilevato: ricollega il cavo USB in modalità trasferimento file e verifica che il debug USB sia attivo."
+   },
+   "phone_not_authorised": {
+    "english": "The phone has not authorised this computer: accept the “Allow USB debugging?” request shown on the phone screen.",
+    "text": "Il telefono non ha autorizzato questo computer: accetta la richiesta «Consentire il debug USB?» mostrata sullo schermo del telefono."
+   },
+   "phone_offline_adb": {
+    "english": "The phone is “offline” for adb: unplug and plug the cable back in, and unlock the phone screen.",
+    "text": "Il telefono è «offline» per adb: scollega e ricollega il cavo, sblocca lo schermo del telefono."
+   },
+   "several_devices_plugged": {
+    "english": "Several devices are plugged in: choose the right one in the “Phone” list.",
+    "text": "Sono collegati più dispositivi: scegli quello giusto nell'elenco «Telefono»."
+   },
+   "connection_phone_lost": {
+    "english": "The connection with the phone was lost (cable unplugged?).",
+    "text": "La connessione con il telefono si è interrotta (cavo scollegato?)."
+   },
+   "adb_not_found": {
+    "english": "adb not found. Download it: Dependencies menu.",
+    "text": "adb non trovato. Scaricalo: menu Dipendenze."
+   },
+   "adb_not_found_2": {
+    "english": "adb not found",
+    "text": "adb non trovato"
+   },
+   "phone_unplugged": {
+    "english": "Phone unplugged",
+    "text": "Telefono scollegato"
+   },
+   "phone_state_unplug": {
+    "english": "The phone is in the “{0}” state: unplug and plug the cable back in.",
+    "text": "Il telefono è nello stato «{0}»: scollega e ricollega il cavo."
+   },
+   "phone_not_ready": {
+    "english": "Phone not ready",
+    "text": "Telefono non pronto"
+   },
+   "several_phones": {
+    "english": "Several phones",
+    "text": "Più telefoni"
+   },
+   "phone_title": {
+    "english": "Phone: {0} ({1})",
+    "text": "Telefono: {0} ({1})"
+   },
+   "phone": {
+    "english": "Phone",
+    "text": "Telefono"
+   },
+   "not_installed_phone": {
+    "english": "{0} is not installed on this phone (package {1}).\nInstall the game from the Play Store, then try again.",
+    "text": "{0} non è installato su questo telefono (pacchetto {1}).\nInstalla il gioco dal Play Store, poi riprova."
+   },
+   "game_not_installed": {
+    "english": "Game not installed",
+    "text": "Gioco non installato"
+   },
+   "adb_could_not": {
+    "english": "adb could not copy {0}:\n{1}",
+    "text": "adb non è riuscito a copiare {0}:\n{1}"
+   },
+   "copy_failed": {
+    "english": "Copy failed",
+    "text": "Copia impossibile"
+   },
+   "incomplete_copy_instead": {
+    "english": "{0}: incomplete copy ({1} instead of {2}). Check the USB cable and try again.",
+    "text": "{0}: copia incompleta ({1} invece di {2}). Controlla il cavo USB e riprova."
+   },
+   "incomplete_copy": {
+    "english": "Incomplete copy",
+    "text": "Copia incompleta"
+   },
+   "phone_label": {
+    "english": "Phone: ",
+    "text": "Telefono: "
+   },
+   "phone_not_available": {
+    "english": "(phone not available)",
+    "text": "(telefono non disponibile)"
+   },
+   "checking_phone": {
+    "english": "Checking the phone …",
+    "text": "Verifica …"
+   },
+   "not_installed_phone_2": {
+    "english": "{0} is not installed on this phone.",
+    "text": "{0} non è installato su questo telefono."
+   },
+   "already_patched": {
+    "english": "already patched ✔",
+    "text": "già patchato ✔"
+   },
+   "original_version_not": {
+    "english": "original version (not patched)",
+    "text": "versione originale (non patchata)"
+   },
+   "patch_state_cannot": {
+    "english": "patch state cannot be checked",
+    "text": "stato della patch non verificabile"
+   },
+   "version": {
+    "english": "Version {0} · {1}",
+    "text": "Versione {0} · {1}"
+   },
+   "phone_unplugged_during": {
+    "english": "The phone was unplugged during the operation: it will fail. Plug it back in, then run the step again.",
+    "text": "Il telefono è stato scollegato durante l'operazione: non riuscirà. Ricollegalo, poi ripeti il passaggio."
+   },
+   "phone_detected": {
+    "english": "Phone detected: ",
+    "text": "Telefono rilevato: "
+   },
+   "adb_not_installed": {
+    "english": "adb is not installed: the phone cannot be detected (Dependencies menu).",
+    "text": "adb non è installato: il telefono non può essere rilevato (menu Dipendenze)."
+   },
+   "no_phone_detected": {
+    "english": "No phone detected: plug in the USB cable (file transfer mode) and enable USB debugging.",
+    "text": "Nessun telefono rilevato: collega il cavo USB (modalità trasferimento file) e attiva il debug USB."
+   },
+   "phone_state_unplug_plug": {
+    "english": "Phone in the “{0}” state: unplug and plug the cable back in.",
+    "text": "Telefono nello stato «{0}»: scollega e ricollega il cavo."
+   },
+   "devices_plugged_choose": {
+    "english": "  ·  {0} devices plugged in, choose one",
+    "text": "  ·  {0} dispositivi collegati, scegline uno"
+   }
+  },
+  "rom": {
+   "file_not_found": {
+    "english": "File not found.",
+    "text": "File non trovato."
+   },
+   "zip_not_contain": {
+    "english": "This zip does not contain any .nds file.",
+    "text": "Questo zip non contiene alcun file .nds."
+   },
+   "file_too_small": {
+    "english": "File too small: this is not a DS ROM.",
+    "text": "File troppo piccolo: non è una ROM DS."
+   },
+   "unreadable_header_not": {
+    "english": "Unreadable header: this is not a DS ROM (.nds).",
+    "text": "Intestazione illeggibile: non è una ROM DS (.nds)."
+   },
+   "valid_european_rom": {
+    "english": "Valid European ROM ({0})",
+    "text": "ROM europea valida ({0})"
+   },
+   "rom_not": {
+    "english": "This ROM is {0} ({1}), not {2}.",
+    "text": "Questa ROM è di {0} ({1}), non di {2}."
+   },
+   "rom_but_not": {
+    "english": "ROM of {0} but not the European version (code {1}, {2} needed): only the European ROM contains the European languages.",
+    "text": "ROM di {0} ma non la versione europea (codice {1}, serve {2}): solo la ROM europea contiene le lingue europee."
+   },
+   "not_rom_code": {
+    "english": "This is not a ROM of {0} (code {1}, {2} needed).",
+    "text": "Non è una ROM di {0} (codice {1}, serve {2})."
+   },
+   "rom_another_region": {
+    "english": "{0} is the ROM of {1} from another region (code {2}): only the European ROM ({3}) contains the European languages.",
+    "text": "{0} è la ROM di {1} di un'altra regione (codice {2}): solo la ROM europea ({3}) contiene le lingue europee."
+   },
+   "folder_contains_european": {
+    "english": "Folder that contains your European DS ROMs (DQ IV, V and VI)",
+    "text": "Cartella che contiene le tue ROM DS europee (DQ IV, V e VI)"
+   },
+   "rom_folder": {
+    "english": "ROM folder: {0}",
+    "text": "Cartella delle ROM: {0}"
+   },
+   "rom_found": {
+    "english": "ROM found: {0} ({1})",
+    "text": "ROM trovata: {0} ({1})"
+   },
+   "rom_not_found": {
+    "english": "ROM not found in this folder: the European ROM {0} is needed.",
+    "text": "ROM non trovata in questa cartella: serve la ROM europea {0}."
+   },
+   "rom_folder_not": {
+    "english": "ROM folder not chosen yet: click “Choose the ROM folder…”.",
+    "text": "Cartella delle ROM non ancora scelta: clicca su «Scegli la cartella delle ROM…»."
+   },
+   "rom_folder_no": {
+    "english": "The ROM folder no longer exists: {0}",
+    "text": "La cartella delle ROM non esiste più: {0}"
+   },
+   "rom_not_found_chosen": {
+    "english": "ROM not found in the chosen folder: the European ROM of {0} ({1}) is needed.",
+    "text": "ROM non trovata nella cartella scelta: serve la ROM europea di {0} ({1})."
+   }
+  },
+  "deps": {
+   "about_mb": {
+    "english": "about {0} MB",
+    "text": "circa {0} MB"
+   },
+   "talks_phone_copies": {
+    "english": "talks to the phone (copies the APKs, exports and restores the saves, reinstalls the game).",
+    "text": "comunica con il telefono (recupera gli APK, esporta e ripristina i salvataggi, reinstalla il gioco)."
+   },
+   "runs_apk_signing": {
+    "english": "runs the APK signing tool (step 4).",
+    "text": "avvia lo strumento di firma degli APK (passaggio 4)."
+   },
+   "free_tool_signs": {
+    "english": "free tool that signs the modified APKs so the phone accepts to install them (step 4).",
+    "text": "strumento libero che firma gli APK modificati affinché il telefono accetti di installarli (passaggio 4)."
+   },
+   "logo_title_screen": {
+    "english": "logo and title screen modules (UnityPy, Pillow, numpy)",
+    "text": "moduli del logo e della schermata del titolo (UnityPy, Pillow, numpy)"
+   },
+   "only_used_translated": {
+    "english": "only used by the “translated logo and title screen” option of step 3.",
+    "text": "servono solo all'opzione «logo e schermata del titolo tradotti» del passaggio 3."
+   },
+   "unitypy_pillow_numpy": {
+    "english": "UnityPy, pillow and numpy built into the exe",
+    "text": "UnityPy, pillow e numpy integrati nell'exe"
+   },
+   "missing": {
+    "english": "missing: ",
+    "text": "manca: "
+   },
+   "unitypy_pillow_numpy_loaded": {
+    "english": "UnityPy, pillow and numpy loaded",
+    "text": "UnityPy, pillow e numpy caricati"
+   },
+   "not_load": {
+    "english": "do not load: ",
+    "text": "non si caricano: "
+   },
+   "disk_space_gb": {
+    "english": "Disk space (≥ {0} GB)",
+    "text": "Spazio su disco (≥ {0} GB)"
+   },
+   "free": {
+    "english": "free: ",
+    "text": "libero: "
+   },
+   "not_measured": {
+    "english": "not measured",
+    "text": "non misurato"
+   },
+   "tool": {
+    "english": "in the tool",
+    "text": "nello strumento"
+   },
+   "found_path": {
+    "english": "found in the PATH: {0}",
+    "text": "trovato nel PATH: {0}"
+   },
+   "adb_not_start": {
+    "english": "adb does not start: ",
+    "text": "adb non si avvia: "
+   },
+   "not_found": {
+    "english": "not found",
+    "text": "non trovato"
+   },
+   "tool_2": {
+    "english": " · in the tool",
+    "text": " · nello strumento"
+   },
+   "installed_pc": {
+    "english": " · installed on the PC",
+    "text": " · installato sul PC"
+   },
+   "java": {
+    "english": "Java {0}",
+    "text": "Java {0}"
+   },
+   "11_newer_required": {
+    "english": " (11 or newer required)",
+    "text": " (richiesto 11 o superiore)"
+   },
+   "not_answer_within": {
+    "english": "does not answer within {0} s (antivirus scanning it?): try again with “Check again”",
+    "text": "non risponde entro {0} s (l'antivirus lo sta analizzando?): riprova con «Verifica di nuovo»"
+   },
+   "not_start": {
+    "english": "does not start (",
+    "text": "non si avvia ("
+   },
+   "code": {
+    "english": "code {0}",
+    "text": "codice {0}"
+   },
+   "java_apk_signing": {
+    "english": "Java (APK signing)",
+    "text": "Java (firma degli APK)"
+   },
+   "uber_apk_signer": {
+    "english": "uber-apk-signer (free tool)",
+    "text": "uber-apk-signer (strumento libero)"
+   },
+   "logo_title_screen_option": {
+    "english": "Logo and title screen (option)",
+    "text": "Logo e schermata del titolo (opzione)"
+   },
+   "download_cancelled": {
+    "english": "Download cancelled.",
+    "text": "Download annullato."
+   },
+   "download_failed_check": {
+    "english": "Download failed ({0}: {1}).\nCheck your Internet connection (or place the file yourself at the root).",
+    "text": "Download impossibile ({0}: {1}).\nControlla la connessione a Internet (oppure metti tu il file nella cartella principale)."
+   },
+   "download_failed": {
+    "english": "Download failed",
+    "text": "Download impossibile"
+   },
+   "downloaded_archive_corrupted": {
+    "english": "Downloaded archive is corrupted ({0}). Try again.",
+    "text": "Archivio scaricato danneggiato ({0}). Riprova."
+   },
+   "corrupted_archive": {
+    "english": "Corrupted archive",
+    "text": "Archivio danneggiato"
+   },
+   "nothing_download_all": {
+    "english": "Nothing to download: all dependencies are already there.",
+    "text": "Niente da scaricare: tutte le dipendenze sono già presenti."
+   },
+   "destination_folder": {
+    "english": "Destination folder: ",
+    "text": "Cartella di destinazione: "
+   },
+   "download": {
+    "english": "Download {0}?",
+    "text": "Scaricare {0}?"
+   },
+   "download_place_portable": {
+    "english": "{0}: {1}\n\nDownload it ({2}) and place it in:\n{3}\n\nThis is a portable version: nothing is installed in Windows.",
+    "text": "{0}: {1}\n\nScaricarlo ({2}) e metterlo in:\n{3}?\n\nÈ una versione portatile: non viene installato niente in Windows."
+   },
+   "download_2": {
+    "english": "Download",
+    "text": "Scarica"
+   },
+   "skip": {
+    "english": "Skip",
+    "text": "Salta"
+   },
+   "download_declined_can": {
+    "english": "{0}: download declined (you can do it later: Dependencies menu).",
+    "text": "{0}: download rifiutato (potrai farlo più tardi: menu Dipendenze)."
+   },
+   "dependency_ies_downloaded": {
+    "english": "{0} dependency(ies) downloaded.",
+    "text": "{0} dipendenza/e scaricata/e."
+   },
+   "downloading": {
+    "english": "Downloading: {0} …",
+    "text": "Download: {0} …"
+   },
+   "received": {
+    "english": "  {0} received.",
+    "text": "  {0} ricevuti."
+   },
+   "unpacking_platform_tools": {
+    "english": "Unpacking platform-tools …",
+    "text": "Decompressione di platform-tools …"
+   },
+   "unable_set_up": {
+    "english": "Unable to set up platform-tools: {0}\nClose the programs that use adb, then try again.",
+    "text": "Impossibile installare platform-tools: {0}\nChiudi i programmi che usano adb, poi riprova."
+   },
+   "platform_tools_placed": {
+    "english": "platform-tools placed in: ",
+    "text": "platform-tools messo in: "
+   },
+   "unpacking_java": {
+    "english": "Unpacking Java …",
+    "text": "Decompressione di Java …"
+   },
+   "downloaded_archive_not": {
+    "english": "The downloaded archive does not contain Java (bin/java). Try again later.",
+    "text": "L'archivio scaricato non contiene Java (bin/java). Riprova più tardi."
+   },
+   "java_2": {
+    "english": "Java",
+    "text": "Java"
+   },
+   "unable_set_up_java": {
+    "english": "Unable to set up Java: {0}",
+    "text": "Impossibile installare Java: {0}"
+   },
+   "portable_java_placed": {
+    "english": "Portable Java placed in: ",
+    "text": "Java portatile messo in: "
+   },
+   "nothing_installed_windows": {
+    "english": " (nothing is installed in Windows).",
+    "text": " (non viene installato niente in Windows)."
+   },
+   "first_start_java": {
+    "english": "First start of Java (the antivirus may scan it, up to a minute) …",
+    "text": "Primo avvio di Java (l'antivirus può analizzarlo, fino a un minuto) …"
+   },
+   "java_answers_correctly": {
+    "english": "Java {0} answers correctly.",
+    "text": "Java {0} risponde correttamente."
+   },
+   "java_not_answer": {
+    "english": "Java does not answer yet",
+    "text": "Java non risponde ancora"
+   },
+   "timeout_antivirus_probably": {
+    "english": " (timeout: the antivirus is probably scanning it, click “Check again” in a moment)",
+    "text": " (tempo scaduto: probabilmente l'antivirus lo sta analizzando, clicca su «Verifica di nuovo» tra un momento)"
+   },
+   "uber_apk_signer_downloaded": {
+    "english": "uber-apk-signer downloaded: ",
+    "text": "uber-apk-signer scaricato: "
+   },
+   "adb_talks_phone": {
+    "english": "adb talks to the phone through the USB cable: it detects it, copies the original APKs, extracts and restores the saves, uninstalls and installs the game.",
+    "text": "adb comunica con il telefono tramite il cavo USB: lo rileva, copia gli APK originali, estrae e ripristina i salvataggi, disinstalla e installa il gioco."
+   },
+   "essential_phone_detection": {
+    "english": "essential: phone detection, steps 1 and 4, and saves.",
+    "text": "indispensabile: rilevamento del telefono, passaggi 1 e 4, e salvataggi."
+   },
+   "java_runs_uber": {
+    "english": "Java runs uber-apk-signer, the tool that signs the APKs. The tool uses the Java already installed on the PC if it is recent enough (11 or newer), otherwise a portable version downloaded into its “dependencies” folder.",
+    "text": "Java fa funzionare uber-apk-signer, lo strumento che firma gli APK. Lo strumento usa il Java già installato sul PC se è abbastanza recente (11 o superiore), altrimenti una versione portatile scaricata nella sua cartella «dependencies»."
+   },
+   "essential_step_4": {
+    "english": "essential: step 4 (sign and install).",
+    "text": "indispensabile: passaggio 4 (firmare e installare)."
+   },
+   "eclipse_adoptium_temurin": {
+    "english": "Eclipse Adoptium (Temurin, free Java)",
+    "text": "Eclipse Adoptium (Temurin, Java libero)"
+   },
+   "uber_apk_signer_apk": {
+    "english": "uber-apk-signer (APK signing)",
+    "text": "uber-apk-signer (firma degli APK)"
+   },
+   "phone_only_installs": {
+    "english": "A phone only installs signed APKs. The patched APKs lose the Square Enix signature: uber-apk-signer gives them a new one, specific to your PC.",
+    "text": "Un telefono installa solo APK firmati. Gli APK patchati perdono la firma di Square Enix: uber-apk-signer ne dà loro una nuova, propria del tuo PC."
+   },
+   "patrick_favre_free": {
+    "english": "Patrick Favre (free software, Apache 2.0 licence)",
+    "text": "Patrick Favre (software libero, licenza Apache 2.0)"
+   },
+   "logo_title_screen_modules": {
+    "english": "Logo and title screen modules (optional)",
+    "text": "Moduli del logo e della schermata del titolo (facoltativi)"
+   },
+   "unitypy_pillow_numpy_read": {
+    "english": "UnityPy, Pillow and numpy read and modify the game images to translate the logo subtitle and “Tap to Start”.",
+    "text": "UnityPy, Pillow e numpy leggono e modificano le immagini del gioco per tradurre il sottotitolo del logo e «Tap to Start»."
+   },
+   "optional_only_translated": {
+    "english": "optional: only the “Translated logo and title screen” option (step 3). Without them, the option is greyed out and the rest of the patch works.",
+    "text": "facoltativi: solo l'opzione «Logo e schermata del titolo tradotti» (passaggio 3). Senza di essi, l'opzione è grigia e il resto della patch funziona."
+   },
+   "free_projects_unitypy": {
+    "english": "free projects UnityPy, Pillow and numpy",
+    "text": "progetti liberi UnityPy, Pillow e numpy"
+   },
+   "portable_version_downloaded": {
+    "english": "portable version downloaded into the tool: nothing is installed in Windows. “Reinstall” downloads it again (useful if it is damaged).",
+    "text": "versione portatile scaricata nello strumento: non viene installato niente in Windows. «Reinstalla» la scarica di nuovo (utile se è danneggiata)."
+   },
+   "program_already_present": {
+    "english": "program already present on the PC: the tool uses it as it is. “Download into the tool” puts its own portable version into the “dependencies” folder (it will then be used).",
+    "text": "programma già presente sul PC: lo strumento lo usa così com'è. «Scarica nello strumento» mette una sua versione portatile nella cartella «dependencies» (che verrà allora usata)."
+   },
+   "built_tool_when": {
+    "english": "built into the tool when it was made: nothing to download.",
+    "text": "integrati nello strumento al momento della sua creazione: niente da scaricare."
+   },
+   "exe": {
+    "english": "in the exe",
+    "text": "nell'exe"
+   },
+   "missing_exe": {
+    "english": "missing from the exe",
+    "text": "assenti dall'exe"
+   },
+   "downloaded": {
+    "english": "{0}, downloaded from {1} ({2})",
+    "text": "{0}, scaricato da {1} ({2})"
+   },
+   "what": {
+    "english": "What it is for",
+    "text": "A cosa serve"
+   },
+   "needed": {
+    "english": "Needed for",
+    "text": "Necessario per"
+   },
+   "origin": {
+    "english": "Origin",
+    "text": "Origine"
+   },
+   "location": {
+    "english": "Location",
+    "text": "Posizione"
+   },
+   "installation": {
+    "english": "Installation",
+    "text": "Installazione"
+   },
+   "check_again": {
+    "english": "Check again",
+    "text": "Verifica di nuovo"
+   },
+   "built_tool_nothing": {
+    "english": "Built into the tool: nothing to download.",
+    "text": "Integrato nello strumento: niente da scaricare."
+   },
+   "downloads_again": {
+    "english": "Downloads again",
+    "text": "Scarica di nuovo"
+   },
+   "downloads": {
+    "english": "Downloads",
+    "text": "Scarica"
+   },
+   "places_progress_shown": {
+    "english": " {0} ({1}) and places it in {2}. Progress is shown at the bottom of the main window.",
+    "text": " {0} ({1}) e lo mette in {2}. L'avanzamento è mostrato in fondo alla finestra principale."
+   },
+   "runs_check_again": {
+    "english": "Runs the check again (useful if you have added or moved a program yourself).",
+    "text": "Ripete la verifica (utile se hai aggiunto o spostato a mano un programma)."
+   },
+   "checking": {
+    "english": "Checking …",
+    "text": "Verifica in corso …"
+   },
+   "present": {
+    "english": "Present: {0}",
+    "text": "Presente: {0}"
+   },
+   "missing_2": {
+    "english": "Missing.",
+    "text": "Mancante."
+   },
+   "missing_label": {
+    "english": "Missing: ",
+    "text": "Mancante: "
+   },
+   "missing_unusable": {
+    "english": "Missing or unusable: ",
+    "text": "Mancante o inutilizzabile: "
+   },
+   "check": {
+    "english": "To check: ",
+    "text": "Da verificare: "
+   },
+   "reinstall": {
+    "english": "Reinstall",
+    "text": "Reinstalla"
+   },
+   "download_tool": {
+    "english": "Download into the tool",
+    "text": "Scarica nello strumento"
+   },
+   "built_tool": {
+    "english": "Built into the tool",
+    "text": "Integrato nello strumento"
+   },
+   "reinstall_all": {
+    "english": "Reinstall all…",
+    "text": "Reinstalla tutto…"
+   },
+   "text": {
+    "english": "   • {0}: {1}",
+    "text": "   • {0}: {1}"
+   },
+   "download_what_s": {
+    "english": "Download what's missing",
+    "text": "Scarica ciò che manca"
+   },
+   "download_label": {
+    "english": "To download:\n",
+    "text": "Da scaricare:\n"
+   },
+   "they_stored_folder": {
+    "english": "\n\nThey are stored in the “{0}” folder of the tool (portable versions: nothing is installed in Windows).",
+    "text": "\n\nVengono messi nella cartella «{0}» dello strumento (versioni portatili: non viene installato niente in Windows)."
+   },
+   "reinstall_all_2": {
+    "english": "Reinstall all",
+    "text": "Reinstalla tutto"
+   },
+   "download_again_replace": {
+    "english": "Download again and replace:\n",
+    "text": "Scarica di nuovo e sostituisci:\n"
+   },
+   "useful_if_program": {
+    "english": "\n\nUseful if a program is damaged or no longer answers. The programs already installed on the PC (Java, adb) and the modules built into the tool are not affected.",
+    "text": "\n\nUtile se un programma è danneggiato o non risponde più. I programmi già installati sul PC (Java, adb) e i moduli integrati nello strumento non sono interessati."
+   },
+   "downloading_dependencies": {
+    "english": "Downloading the dependencies",
+    "text": "Download delle dipendenze"
+   },
+   "missing_programs": {
+    "english": "Missing programs: ",
+    "text": "Manca: "
+   },
+   "download_them": {
+    "english": ". Download them",
+    "text": ". Scaricali"
+   },
+   "download_3": {
+    "english": ". Download it",
+    "text": ". Scaricalo"
+   },
+   "dependencies_download_what": {
+    "english": " with the Dependencies › Download what's missing menu",
+    "text": " con il menu Dipendenze › Scarica ciò che manca"
+   },
+   "required_programs_not": {
+    "english": "Required programs not found",
+    "text": "Programmi necessari non trovati"
+   },
+   "check_2": {
+    "english": "Check",
+    "text": "Verifica"
+   },
+   "technical_info_pc": {
+    "english": "(Technical info: on this PC, the answers of adb and Java are read with the fallback method “{0}”, attempts: {1}.)",
+    "text": "(Info tecnica: su questo PC, le risposte di adb e di Java vengono lette con il metodo di riserva «{0}», tentativi: {1}.)"
+   },
+   "answers_programs_adb": {
+    "english": "The answers of the programs (adb, Java) cannot be read on this PC (",
+    "text": "Le risposte dei programmi (adb, Java) non possono essere lette su questo PC ("
+   },
+   "copy_log_ask": {
+    "english": "). Copy this log to ask for help.",
+    "text": "). Copia questo registro per chiedere aiuto."
+   },
+   "all_required_programs": {
+    "english": "All the required programs are now present.",
+    "text": "Tutti i programmi necessari ora sono presenti."
+   },
+   "steps_stay_greyed": {
+    "english": ".\n\nThe steps stay greyed out as long as they are missing.",
+    "text": ".\n\nI passaggi restano grigi finché mancano."
+   },
+   "missing_programs_2": {
+    "english": "Missing programs",
+    "text": "Programmi mancanti"
+   },
+   "optional": {
+    "english": " (optional)",
+    "text": " (facoltativo)"
+   },
+   "work_tool_needs": {
+    "english": "To work, the tool needs free programs that are not there yet:\n",
+    "text": "Per funzionare, lo strumento ha bisogno di programmi gratuiti che non sono ancora presenti:\n"
+   },
+   "allow_tool_download": {
+    "english": "\n\nDo you allow the tool to download them now? They are stored in its “{0}” folder (portable versions: nothing is installed in Windows).\n\nWithout them, the steps stay greyed out; you can also download them later with the Dependencies menu.",
+    "text": "\n\nAutorizzi lo strumento a scaricarli adesso? Vengono messi nella sua cartella «{0}» (versioni portatili: non viene installato niente in Windows).\n\nSenza di essi, i passaggi restano grigi; potrai anche scaricarli più tardi con il menu Dipendenze."
+   },
+   "programs_download": {
+    "english": "Programs to download",
+    "text": "Programmi da scaricare"
+   }
+  },
+  "log": {
+   "log": {
+    "english": " Log ",
+    "text": " Registro "
+   },
+   "log_shared_3": {
+    "english": "Log shared by the 3 games, saved in {0}. At startup, the history is reloaded (in grey), then a separator marks the start of the new session.",
+    "text": "Registro comune ai 3 giochi, salvato in {0}. All'avvio, la cronologia viene ricaricata (in grigio), poi una linea segna l'inizio della nuova sessione."
+   },
+   "cancel_step": {
+    "english": "Cancel step",
+    "text": "Annulla il passaggio"
+   },
+   "copy_log": {
+    "english": "Copy log",
+    "text": "Copia il registro"
+   },
+   "progress_current_operation": {
+    "english": "Progress of the current operation.",
+    "text": "Avanzamento dell'operazione in corso."
+   },
+   "interrupts_current_operation": {
+    "english": "Interrupts the current operation (the adb command or the download is cut off, the build script stops at its next message). Incomplete files are deleted.",
+    "text": "Interrompe l'operazione in corso (il comando adb o il download viene interrotto, lo script di creazione si ferma al suo prossimo messaggio). I file incompleti vengono eliminati."
+   },
+   "copies_whole_displayed": {
+    "english": "Copies the whole displayed log (history included) to the clipboard: handy to ask for help.",
+    "text": "Copia tutto il registro mostrato (cronologia compresa) negli appunti: pratico per chiedere aiuto."
+   },
+   "history": {
+    "english": "History ({0})\n",
+    "text": "Cronologia ({0})\n"
+   },
+   "general": {
+    "english": "General",
+    "text": "Generale"
+   },
+   "new_session": {
+    "english": "━━━━━━━━━━  New session: {0}  ━━━━━━━━━━",
+    "text": "━━━━━━━━━━  Nuova sessione: {0}  ━━━━━━━━━━"
+   },
+   "log_copied": {
+    "english": "Log copied ✔",
+    "text": "Registro copiato ✔"
+   }
+  },
+  "help": {
+   "what_tool_translates": {
+    "english": "# What this tool does\nIt translates into **French** the Android (Google Play) versions of Dragon Quest IV, V and VI, which do not exist in French.\nThe French texts come from **your European DS ROM** of the same game: the tool contains no ROM and no game text. The texts specific to the mobile version (party chat, touch menus…) are translated by the patch.\nUnofficial project, for personal use, not affiliated with Square Enix.\n\n# What you need\n• The game installed from the Google Play Store on an Android phone, **set to English**.\n• The European DS ROM of the same game (.nds file, or a .zip containing it): The Chapters of the Chosen (DQ IV), The Hand of the Heavenly Bride (DQ V) or Realms of Reverie (DQ VI).\n• A USB cable and **USB debugging** enabled in the phone's developer options.\n• A few free programs: the tool downloads them for you at startup (with your consent).\n\n# How to do it (one tab per game)\n1. Choose the **folder that contains your ROMs** (“Checks” area): the ROM of each game is found there automatically.\n2. Plug in the phone and **accept the authorisation** shown on its screen.\n3. Run the 4 steps in order (a greyed-out button is not possible yet, the icon on its right tells whether the step is done):\n   1 · **Extract original APKs**: copies the game from the phone to the PC.\n   2 · **Prepare texts**: a few minutes, without the phone; writes all the game texts into a file you can edit.\n   3 · **Patch APKs**: puts these texts into the game.\n   4 · **Sign and install**: replaces the game with the translated version.\nSeparately, under the steps, the **saves**:\n   **Extract saves**: before step 4, essential because it uninstalls the game.\n   **Restore saves**: after step 4, once the game has been started and then closed.\nEach step becomes available when what it needs is ready: the “Checks” area shows the state of everything, and its “Next” line tells you what to do. Steps 2 and 3 do not need the phone. Next to each step: ✔ done, ✖ not done yet or to run again, ⚠ to check (hover over the icon for details).\n\n# Good to know\n• The game's cloud save **does not work** with the translated version: keep your saves with the “Extract saves” and “Restore saves” buttons.\n• **Turn off automatic updates** of the game in the Play Store, otherwise it will replace the translated version.\n• Hover over a button or an area with the mouse: a tooltip explains what it is for, or why it is greyed out.\n• **Never share** your ROM or the patched APKs.\n",
+    "text": "# Cosa fa questo strumento\nTraduce in **francese** le versioni Android (Google Play) di Dragon Quest IV, V e VI, che non esistono in francese.\nI testi francesi provengono dalla **tua ROM DS europea** dello stesso gioco: lo strumento non contiene né ROM né testi del gioco. I testi propri della versione mobile (chiacchiere di gruppo, menu touch…) sono tradotti dalla patch.\nProgetto non ufficiale, per uso personale, senza legami con Square Enix.\n\n# Cosa ti serve\n• Il gioco installato dal Google Play Store su un telefono Android, **impostato in inglese**.\n• La ROM DS europea dello stesso gioco (file .nds, o .zip che lo contiene): Le cronache dei prescelti (DQ IV), La sposa del Destino (DQ V) o Nel regno dei sogni (DQ VI).\n• Un cavo USB e il **debug USB** attivo nelle opzioni sviluppatore del telefono.\n• Alcuni programmi gratuiti: lo strumento li scarica per te all'avvio (con il tuo consenso).\n\n# Come fare (una scheda per gioco)\n1. Scegli la **cartella che contiene le tue ROM** (riquadro «Verifiche»): la ROM di ogni gioco viene trovata da sola.\n2. Collega il telefono e **accetta l'autorizzazione** che compare sul suo schermo.\n3. Esegui i 4 passaggi in ordine (un pulsante grigio non è ancora possibile, l'icona alla sua destra indica se il passaggio è fatto):\n   1 · **Estrarre gli APK originali**: copia il gioco dal telefono al PC.\n   2 · **Preparare i testi**: qualche minuto, senza telefono; scrive tutti i testi del gioco in un file che puoi modificare.\n   3 · **Patchare gli APK**: mette quei testi nel gioco.\n   4 · **Firmare e installare**: sostituisce il gioco con la versione tradotta.\nA parte, sotto i passaggi, i **salvataggi**:\n   **Estrarre i salvataggi**: prima del passaggio 4, indispensabile perché disinstalla il gioco.\n   **Ripristinare i salvataggi**: dopo il passaggio 4, una volta avviato e poi chiuso il gioco.\nOgni passaggio si attiva quando ciò che gli serve è pronto: il riquadro «Verifiche» mostra lo stato di tutto, e la sua riga «Da fare dopo» dice cosa fare. I passaggi 2 e 3 non hanno bisogno del telefono. Accanto a ogni passaggio: ✔ fatto, ✖ non ancora fatto o da ripetere, ⚠ da verificare (passa il mouse sull'icona per i dettagli).\n\n# Buono a sapersi\n• Il salvataggio cloud del gioco **non funziona** con la versione tradotta: conserva i tuoi salvataggi con i pulsanti «Estrarre i salvataggi» e «Ripristinare i salvataggi».\n• **Disattiva gli aggiornamenti automatici** del gioco nel Play Store, altrimenti sostituirà la versione tradotta.\n• Passa il mouse su un pulsante o un riquadro: un fumetto spiega a cosa serve o perché è grigio.\n• **Non condividere mai** la tua ROM né gli APK patchati.\n"
+   },
+   "editing": {
+    "english": "# Before editing\n• Make a **copy** of the DQx_game_texts.json file (menu **File › Open the texts folder**): this is your way back.\n• Open it with **Notepad++** or **VS Code** (free), never with Word or WordPad, and save it as **UTF-8**.\n• Edit **only** the “text” lines. “english” and “origin” are there to help you (the tool does not read them). Do not delete any entry and do not change the numbers.\n\n# Finding the right text\n• Search (Ctrl+F) for 3 or 4 consecutive words, as you see them in the game, **without the punctuation**: in French texts there is a non-breaking space before ! ? : ; » and after «, which the search does not find with a normal space.\n• Names and numbers that change (the hero, an amount of gold…) are **%a** codes followed by 6 digits: do not type them in the search.\n• Several results? Check the “english” line and the neighbouring texts: they are in game order. If the same line exists several times (two moments of the story, two versions of a village), fix them all.\n\n# The file rules (JSON)\n• The text is between straight quotes: **never** press Enter inside it, and do not delete these quotes or the comma that follows.\n• Inside a text, a straight quote is written **\\\"** and a backslash **\\\\**. For dialogues, rather use the French quotes « », which the game already displays.\n• If step 3 reports an error “line X, column Y”, go to that line (Ctrl+G in Notepad++): it is almost always a quote or a comma.\n\n# The game codes: keep them\n• **@a…@b** at the start of a dialogue: the name shown above the bubble is between @a and @b (nothing for an anonymous character, whose line starts with “*: ”). **\\n@c0@** at the end: leave it as it is.\n• **@1…@** surrounds a menu label or a place name: only change the words between them.\n• An item or a spell has the form **@0M@2le @3un @4nom@5les @6des @7pluriel@8N@9N@**: you can change the articles (after @2, @3, @5, @6), the singular name (after @4) and the plural (after @7); M or F after @0 = gender. Do not touch the rest.\n• **%a** + 6 digits = variable name or number: keep it as it is. You can move it within the sentence.\n• **%H…%X** form 1 **%Y** form 2 **%Z** (same principle with %A, %B, %G…) = variants chosen by the game (masculine / feminine, singular / plural…): change the words between the codes, never the codes themselves.\n• The letters я, и, д of some characters (Russian accent, Nimzo) are intended: keep them.\n\n# Line breaks and bubbles\n• **\\n** (backslash + n) **forces a line break**. If the text already contains \\r\\n, use \\r\\n too.\n• Most dialogues have no \\n: the game breaks them by itself according to the bubble width. Only add some for an intended effect or to move a badly placed break.\n• A bubble shows about 3 lines. To **go to a new bubble**, copy the **㈡** character from another text and place it between two sentences; for an anonymous character, the new bubble starts again with “*: ” (“…sentence. ㈡ *: More…”).\n• **㈢** = short pause in the middle of a line (hesitation, sneeze…): the rest appears after a moment, in the same bubble.\n• In labels (menus, places, items), **;** marks where the game may break the line if the label is too long: do not delete it; to move it, imitate the neighbouring labels of the same file.\n\n# Punctuation, characters and length\n• Keep the (invisible) non-breaking space before ! ? : ; » and after «: it prevents an exclamation mark from going alone to the next line. To add one, copy it from another text (or Alt + 0160 on the numeric keypad).\n• Accents, œ, « », ’ and … are in the game font. Avoid other symbols (emojis, rare characters): step 3 reports those the font does not have.\n• Menus: keep a length close to the English; if a label overflows, abbreviate the **same word** (“Carac.”) rather than choosing another one.\n\n# After each change\n• Save, run **step 3** then **step 4** again, and check in game.\n• Read **texts\\step3_report.txt**: refused texts (the step 2 one is kept), lines wider than before, characters missing from the font.\n• Running step 2 again offers to keep your file; if it is recreated, the old one is first copied to “texts\\old”.\n• Do not share this file: it contains the text of your ROM. To suggest a fix for everyone, send the author of the patch the key (for example b0502000.mpt, 615) and the corrected text.\n",
+    "text": "# Prima di modificare\n• Fai una **copia** del file DQx_game_texts.json (menu **File › Apri la cartella dei testi**): è il tuo modo per tornare indietro.\n• Aprilo con **Notepad++** o **VS Code** (gratuiti), mai con Word o WordPad, e salvalo in **UTF-8**.\n• Modifica **solo** le righe «text». «english» e «origin» servono ad aiutarti (lo strumento non le legge). Non eliminare nessuna voce e non cambiare i numeri.\n\n# Trovare il testo giusto\n• Cerca (Ctrl+F) 3 o 4 parole consecutive, come le vedi nel gioco, **senza la punteggiatura**: nei testi francesi c'è uno spazio unificatore prima di ! ? : ; » e dopo «, che la ricerca non trova con uno spazio normale.\n• I nomi e i numeri che cambiano (l'eroe, una somma d'oro…) sono codici **%a** seguiti da 6 cifre: non scriverli nella ricerca.\n• Più risultati? Controlla la riga «english» e i testi vicini: sono nell'ordine del gioco. Se la stessa battuta esiste più volte (due momenti della storia, due versioni di un villaggio), correggile tutte.\n\n# Le regole del file (JSON)\n• Il testo è tra virgolette dritte: **non** premere **mai** Invio al suo interno, e non eliminare né queste virgolette né la virgola che segue.\n• In un testo, le virgolette dritte si scrivono **\\\"** e la barra rovesciata **\\\\**. Per i dialoghi, usa piuttosto le virgolette francesi « », che il gioco già mostra.\n• Se il passaggio 3 segnala un errore «riga X, colonna Y», vai a quella riga (Ctrl+G in Notepad++): quasi sempre è una virgoletta o una virgola.\n\n# I codici del gioco: da conservare\n• **@a…@b** all'inizio di un dialogo: il nome mostrato sopra il fumetto è tra @a e @b (niente per un personaggio anonimo, la cui battuta inizia con «*: »). **\\n@c0@** alla fine: lascialo com'è.\n• **@1…@** racchiude un'etichetta di menu o un nome di luogo: cambia solo le parole in mezzo.\n• Un oggetto o un incantesimo ha la forma **@0M@2le @3un @4nom@5les @6des @7pluriel@8N@9N@**: puoi cambiare gli articoli (dopo @2, @3, @5, @6), il nome al singolare (dopo @4) e al plurale (dopo @7); M o F dopo @0 = genere. Non toccare il resto.\n• **%a** + 6 cifre = nome o numero variabile: lascialo com'è. Puoi spostarlo nella frase.\n• **%H…%X** forma 1 **%Y** forma 2 **%Z** (stesso principio con %A, %B, %G…) = varianti scelte dal gioco (maschile / femminile, singolare / plurale…): cambia le parole tra i codici, mai i codici stessi.\n• Le lettere я, и, д di alcuni personaggi (accento russo, Nimzo) sono volute: conservale.\n\n# A capo e fumetti\n• **\\n** (barra rovesciata + n) **forza un a capo**. Se il testo contiene già \\r\\n, usa anche tu \\r\\n.\n• La maggior parte dei dialoghi non ha alcun \\n: il gioco li va a capo da solo secondo la larghezza del fumetto. Aggiungine solo per un effetto voluto o per spostare un a capo mal piazzato.\n• Un fumetto mostra circa 3 righe. Per **passare a un nuovo fumetto**, copia il carattere **㈡** da un altro testo e mettilo tra due frasi; per un personaggio anonimo, il nuovo fumetto ricomincia con «*: » («…frase. ㈡ *: Seguito…»).\n• **㈢** = breve pausa a metà battuta (esitazione, starnuto…): il resto compare dopo un istante, nello stesso fumetto.\n• Nelle etichette (menu, luoghi, oggetti), **;** segna il punto in cui il gioco può andare a capo se l'etichetta è troppo lunga: non eliminarlo; per spostarlo, imita le etichette vicine dello stesso file.\n\n# Punteggiatura, caratteri e lunghezza\n• Mantieni lo spazio unificatore (invisibile) prima di ! ? : ; » e dopo «: evita che un punto esclamativo finisca da solo sulla riga successiva. Per aggiungerne uno, copialo da un altro testo (oppure Alt + 0160 sul tastierino numerico).\n• Gli accenti, œ, « », ’ e … sono nel font del gioco. Evita altri simboli (emoji, caratteri rari): il passaggio 3 segnala quelli che il font non ha.\n• Menu: mantieni una lunghezza vicina all'inglese; se un'etichetta sborda, abbrevia **la stessa parola** («Carac.») anziché sceglierne un'altra.\n\n# Dopo ogni modifica\n• Salva, ripeti il **passaggio 3** e poi il **passaggio 4**, e verifica in gioco.\n• Leggi **texts\\step3_report.txt**: testi rifiutati (resta quello del passaggio 2), righe più larghe di prima, caratteri assenti dal font.\n• Ripetere il passaggio 2 propone di tenere il tuo file; se viene ricreato, il vecchio viene prima copiato in «texts\\old».\n• Non condividere questo file: contiene il testo della tua ROM. Per proporre una correzione per tutti, invia all'autore della patch la chiave (per esempio b0502000.mpt, 615) e il testo corretto.\n"
+   },
+   "todo": {
+    "english": "# Where is the patch at?\nThe tool works from start to finish and the 3 games are playable in French. But there is still work left for the patch to be really finished: here is what is missing. **Any help is welcome.**\n# 1. Translate the party chat of Dragon Quest IV\n• The mobile version of DQ4 adds about 7,800 lines of “party chat” that do not exist on DS: so they have no official translation.\n• The patch contains a first, unofficial translation of them: it needs to be reworked, line by line, to match the tone of each character.\n# 2. Review the item descriptions\n• The descriptions of items, weapons and equipment are those of the DS: often vague, and almost identical between all the items of the same type.\n• Wanted: a description specific to each item, saying clearly what it does.\n# 3. Check how place names are displayed\n• Places shown on screen with a detail (floor, basement, room…) need checking in game, and the form needs choosing:\n   “Pic des Tisseurs : Taverne”;\n   “à la taverne”, then “Pic des Tisseurs” on the next line;\n   “Pic des Tisseurs”, then “à la taverne” on the next line.\n# 4. Report all text problems\nWhile playing, note everything that is wrong:\n• a text that goes past or touches the edges of a window (bubble, menu, button);\n• a typo or spelling mistake, a wrong agreement (he / she, singular / plural);\n• a text left in English, or a translation that does not match the scene;\n• an item that does not have the right description;\n• a dialogue in the wrong place: a line that does not fit the scene or the character, lines out of order;\n• the same text different from one game to another: item description, menu, item, spell or monster name…;\n• the same name (character, place, item, spell, monster) written in two ways in the same game;\n• a character who changes their way of speaking (formal / informal, accent, verbal tics);\n• a wrong name displayed (one character instead of another);\n• a text that still talks about the DS (stylus, buttons, top screen…) instead of the phone;\n• a better translation you suggest.\nFor each problem, give if possible: the game, the place (town, scene, menu), the text as it is displayed, a **screenshot** and your suggestion. If you found the text in the text file (menu **File › Open the texts folder**), also give its file and number (e.g. b0012000.mpt, 34).\n# Contact\nSend your remarks, fixes and suggestions to: **[CONTACT]**\nFor a problem with the tool itself (a step that fails…), attach the log: **“Copy log”** button, then paste it into your message.\n",
+    "text": "# A che punto è la patch?\nLo strumento funziona dall'inizio alla fine e i 3 giochi sono giocabili in francese. Ma resta ancora lavoro perché la patch sia davvero finita: ecco cosa manca. **Ogni aiuto è benvenuto.**\n# 1. Tradurre le chiacchiere di gruppo di Dragon Quest IV\n• La versione mobile di DQ4 aggiunge circa 7.800 battute di «chiacchiere di gruppo» che non esistono su DS: non hanno quindi alcuna traduzione ufficiale.\n• La patch ne contiene una prima traduzione non ufficiale: va ripresa, battuta per battuta, per adattarla al tono di ogni personaggio.\n# 2. Rivedere le descrizioni degli oggetti\n• Le descrizioni di oggetti, armi ed equipaggiamenti sono quelle del DS: spesso vaghe e quasi identiche tra tutti gli oggetti dello stesso tipo.\n• Cercasi: una descrizione propria di ogni oggetto, che dica chiaramente cosa fa.\n# 3. Verificare la visualizzazione dei nomi dei luoghi\n• I luoghi mostrati sullo schermo con un dettaglio (piano, sotterraneo, sala…) vanno verificati in gioco, e la forma va scelta:\n   «Pic des Tisseurs : Taverne»;\n   «à la taverne», poi «Pic des Tisseurs» a capo;\n   «Pic des Tisseurs», poi «à la taverne» a capo.\n# 4. Segnalare tutti i problemi di testo\nGiocando, annota tutto ciò che non va:\n• un testo che sborda o tocca i bordi di una finestra (fumetto, menu, pulsante);\n• un errore di battitura o d'ortografia, una concordanza sbagliata (lui / lei, singolare / plurale);\n• un testo rimasto in inglese, o una traduzione che non corrisponde alla scena;\n• un oggetto che non ha la descrizione giusta;\n• un dialogo nel posto sbagliato: battuta che non va con la scena o il personaggio, battute in disordine;\n• uno stesso testo diverso da un gioco all'altro: descrizione di oggetto, menu, nome di oggetto, di incantesimo o di mostro…;\n• uno stesso nome (personaggio, luogo, oggetto, incantesimo, mostro) scritto in due modi nello stesso gioco;\n• un personaggio che cambia modo di parlare (tu / lei, accento, intercalari);\n• un nome sbagliato mostrato (un personaggio al posto di un altro);\n• un testo che parla ancora del DS (pennino, tasti, schermo superiore…) invece del telefono;\n• una traduzione migliore che proponi.\nPer ogni problema, indica se possibile: il gioco, il luogo (città, scena, menu), il testo così come appare, uno **screenshot** e la tua proposta. Se hai ritrovato il testo nel file dei testi (menu **File › Apri la cartella dei testi**), indica anche il suo file e il suo numero (es. b0012000.mpt, 34).\n# Contatti\nInvia le tue osservazioni, correzioni e proposte a: **[CONTACT]**\nPer un problema con lo strumento stesso (un passaggio che non riesce…), allega il registro: pulsante **«Copia il registro»**, poi incollalo nel tuo messaggio.\n"
+   },
+   "address_not_provided": {
+    "english": "(address not provided)",
+    "text": "(indirizzo non indicato)"
+   },
+   "folders_troubleshooting": {
+    "english": "# The folders\nNext to DQ_Patch_FR.exe, the tool puts everything in three folders:\n• **games**: one folder per game (**DQ4**, **DQ5**, **DQ6**), which contains:\n   apks: the original APKs copied from the phone.\n   texts: **DQx_game_texts.json**, all the game texts (step 2), the step 3 report and, in “old”, the replaced files.\n   build: the basic translated version (step 2), before your texts.\n   patched_apks: the translated APKs (step 3).\n   title_screen: the translated logo and “Tap to Start”, kept by step 3 (“FR title screen” option).\n   signed: the APKs ready to install.\n   saves: your backups of the saves, one folder per date.\n• **dependencies**: the tool itself (installed by DQ_Patch_FR.exe), its settings, **log.txt** (the log, shared by the 3 games) and the downloaded programs (platform-tools, java…).\n• **languages**: the texts of the tool, one file per language (tool_texts_xx-xx.json, menu **Language**).\n**File** menu: opens the folder of the displayed game or that of its texts.\n\n# The “Checks” area\nOn the left of each tab, the tool shows everything it checks (green dot: ready; red: to fix; grey: in progress):\n• **DS ROM**: the ROM folder chosen with the “Choose the ROM folder…” button (the same for the 3 games) and the European ROM of the game found in it (or in one of its subfolders).\n• **Programs**: the dependencies (details in the **Dependencies** menu); the “Download what's missing…” button appears if some are missing.\n• **Phone** and **Installed game**: the USB link, the game version and whether it is already patched.\n• **Texts**: the text file of step 2, and whether you have edited it since.\n• **Next**: the step (or the saves button) to run, or what prevents it.\nAt the end of each step, the log also tells you which one is next and when it is available.\n\n# The dependencies\nThe tool needs a few free programs. At startup, if some are missing, it asks for your consent once, then downloads them all into its “dependencies” folder. The **Dependencies** menu lists them with their state (✔ present, ✖ missing): click one to find out what it is for, where it comes from and where it is stored, and to download or reinstall it. “Download what's missing…” and “Reinstall all…” act on all of them at once. These are portable versions: **nothing is installed in Windows**.\n• adb: talks to the phone over USB.\n• Java and uber-apk-signer: sign the patched APKs so they can be installed.\n• Logo and title screen modules: only for the option of the same name.\n\n# The option\nOn the right of the step 3 button, the **FR title screen** box (ticked = on): also translates the logo subtitle and “Tap to Start”, with images redrawn in high definition, built into the tool. When off, they stay in English.\nChanging this option requires running steps 3 and 4 again. The first step 3 with the option takes several minutes; the result is kept in the game's “title_screen” folder.\n\n# Editing the game texts\nStep 2 writes **all** the game texts, as the patch puts them, into **texts\\DQx_game_texts.json** (menu **File › Open the texts folder**). It is sorted by file and by number: neighbouring texts are in game order, with the English next to them. To fix a text (a word, a “\\n” line break…), only edit its “text” line while keeping the codes, save, then run steps 3 and 4 again. Keep copies of the file to go back. All the details (codes, line breaks, bubbles…): menu **Help › How to edit the texts**. Running step 2 again offers to keep your file; if it is recreated, the old one is first copied to “texts\\old”. This file contains the text of your ROM: do not share it.\n\n# If something goes wrong\n• **Phone not detected**: cable in file transfer mode, USB debugging enabled, authorisation accepted on the phone. Unplug and plug it back in.\n• **Play Protect during the installation**: if it offers to send the app for scanning, tap “Don't send”; if it blocks it: “More details”, then “Install anyway”.\n• **The game crashes at startup** with the logo and title screen option: turn it off (“FR title screen” box of step 3), run steps 3 and 4 again.\n• **The game opens in Japanese**: choose English in the game.\n• **Choosing a Google account when the game opens**: the game may ask for it on first start, especially if there are several accounts on the phone. It is not required: skip the screen by tapping outside it, or with “Cancel” or “Continue”.\n• **Need help**: the “Copy log” button copies everything that happened, to attach to your message.\n",
+    "text": "# Le cartelle\nAccanto a DQ_Patch_FR.exe, lo strumento sistema tutto in tre cartelle:\n• **games**: una cartella per gioco (**DQ4**, **DQ5**, **DQ6**), che contiene:\n   apks: gli APK originali copiati dal telefono.\n   texts: **DQx_game_texts.json**, tutti i testi del gioco (passaggio 2), il resoconto del passaggio 3 e, in «old», i file sostituiti.\n   build: la versione tradotta di base (passaggio 2), prima dei tuoi testi.\n   patched_apks: gli APK tradotti (passaggio 3).\n   title_screen: il logo e «Tap to Start» tradotti, conservati dal passaggio 3 (opzione «Schermata titolo FR»).\n   signed: gli APK pronti da installare.\n   saves: i tuoi backup dei salvataggi, una cartella per data.\n• **dependencies**: lo strumento stesso (installato da DQ_Patch_FR.exe), le sue impostazioni, **log.txt** (il registro, comune ai 3 giochi) e i programmi scaricati (platform-tools, java…).\n• **languages**: i testi dello strumento, un file per lingua (tool_texts_xx-xx.json, menu **Lingua**).\nMenu **File**: apre la cartella del gioco mostrato o quella dei suoi testi.\n\n# Il riquadro «Verifiche»\nA sinistra di ogni scheda, lo strumento mostra tutto ciò che verifica (punto verde: pronto; rosso: da sistemare; grigio: in corso):\n• **ROM DS**: la cartella delle ROM scelta con il pulsante «Scegli la cartella delle ROM…» (la stessa per i 3 giochi) e la ROM europea del gioco trovata al suo interno (o in una sua sottocartella).\n• **Programmi**: le dipendenze (dettagli nel menu **Dipendenze**); il pulsante «Scarica ciò che manca…» compare se ne manca qualcuno.\n• **Telefono** e **Gioco installato**: il collegamento USB, la versione del gioco e se è già patchato.\n• **Testi**: il file dei testi del passaggio 2, e se l'hai modificato da allora.\n• **Da fare dopo**: il passaggio (o il pulsante dei salvataggi) da avviare, o ciò che lo impedisce.\nIl registro indica anche, alla fine di ogni passaggio, qual è il successivo e quando è disponibile.\n\n# Le dipendenze\nLo strumento ha bisogno di alcuni programmi gratuiti. All'avvio, se ne manca qualcuno, chiede il tuo consenso una sola volta, poi li scarica tutti nella sua cartella «dependencies». Il menu **Dipendenze** li elenca con il loro stato (✔ presente, ✖ mancante): cliccane uno per sapere a cosa serve, da dove viene e dove si trova, e per scaricarlo o reinstallarlo. «Scarica ciò che manca…» e «Reinstalla tutto…» agiscono su tutti in una volta. Sono versioni portatili: **non viene installato niente in Windows**.\n• adb: comunica con il telefono via USB.\n• Java e uber-apk-signer: firmano gli APK patchati per poterli installare.\n• Moduli del logo e della schermata del titolo: solo per l'opzione con lo stesso nome.\n\n# L'opzione\nA destra del pulsante del passaggio 3, la casella **Schermata titolo FR** (spuntata = attiva): traduce anche il sottotitolo del logo e «Tap to Start», con immagini ridisegnate in alta definizione, integrate nello strumento. Disattivata, restano in inglese.\nCambiare questa opzione richiede di ripetere i passaggi 3 e 4. Il primo passaggio 3 con l'opzione richiede diversi minuti; il risultato viene conservato nella cartella «title_screen» del gioco.\n\n# Modificare i testi del gioco\nIl passaggio 2 scrive **tutti** i testi del gioco, così come li mette la patch, in **texts\\DQx_game_texts.json** (menu **File › Apri la cartella dei testi**). È ordinato per file e per numero: i testi vicini sono nell'ordine del gioco, con l'inglese a fianco. Per correggere un testo (una parola, un a capo «\\n»…), modifica solo la sua riga «text» mantenendo i codici, salva, poi ripeti i passaggi 3 e 4. Conserva copie del file per tornare indietro. Tutti i dettagli (codici, a capo, fumetti…): menu **Aiuto › Come modificare i testi**. Ripetere il passaggio 2 propone di tenere il tuo file; se viene ricreato, il vecchio viene prima copiato in «texts\\old». Questo file contiene il testo della tua ROM: non condividerlo.\n\n# In caso di problemi\n• **Telefono non rilevato**: cavo in modalità trasferimento file, debug USB attivo, autorizzazione accettata sul telefono. Scollega e ricollega.\n• **Play Protect durante l'installazione**: se propone di inviare l'app per l'analisi, tocca «Non inviare»; se la blocca: «Altri dettagli», poi «Installa comunque».\n• **Il gioco si blocca all'avvio** con l'opzione logo e schermata del titolo: disattivala (casella «Schermata titolo FR» del passaggio 3), ripeti i passaggi 3 e 4.\n• **Il gioco si apre in giapponese**: scegli l'inglese nel gioco.\n• **Scelta di un account Google all'apertura del gioco**: il gioco può chiederlo al primo avvio, soprattutto se ci sono diversi account sul telefono. Non è obbligatorio: salta la schermata toccando fuori, oppure con «Annulla» o «Continua».\n• **Serve aiuto**: il pulsante «Copia il registro» copia tutto ciò che è successo, da allegare al tuo messaggio.\n"
+   },
+   "address_copied": {
+    "english": "Address copied: {0}",
+    "text": "Indirizzo copiato: {0}"
+   },
+   "copy_e_mail": {
+    "english": "Copy the e-mail address",
+    "text": "Copia l'indirizzo e-mail"
+   },
+   "dragon_quest_iv": {
+    "english": "Dragon Quest IV-V-VI - Patch FR (experimental)\nBeta version of the tool\n\nUnofficial French patches for the Android versions of Dragon Quest IV, V and VI, for personal use.\nNot affiliated with Square Enix. The tool contains no ROM and no game text.\n\nDependencies: SDK Platform-Tools (Google), Java Temurin (Eclipse Adoptium), uber-apk-signer (P. Favre, Apache 2.0 licence).",
+    "text": "Dragon Quest IV-V-VI - Patch FR (sperimentale)\nVersione beta dello strumento\n\nPatch francesi non ufficiali delle versioni Android di Dragon Quest IV, V e VI, per uso personale.\nSenza legami con Square Enix. Lo strumento non contiene né ROM né testi dei giochi.\n\nDipendenze: SDK Platform-Tools (Google), Java Temurin (Eclipse Adoptium), uber-apk-signer (P. Favre, licenza Apache 2.0)."
+   },
+   "included_exe_python": {
+    "english": "\n\nIncluded in the exe: Python, Tcl/Tk, PyInstaller, UnityPy, Pillow, NumPy, each under its own licence. Details: THIRD_PARTY_NOTICES.md file, github.com/Sylfried/dq456-translate-prd",
+    "text": "\n\nInclusi nell'exe: Python, Tcl/Tk, PyInstaller, UnityPy, Pillow, NumPy, ciascuno con la propria licenza. Dettagli: file THIRD_PARTY_NOTICES.md, github.com/Sylfried/dq456-translate-prd"
+   }
+  },
+  "game": {
+   "chapters_chosen": {
+    "english": "The Chapters of the Chosen",
+    "text": "Le cronache dei prescelti"
+   },
+   "hand_heavenly_bride": {
+    "english": "The Hand of the Heavenly Bride",
+    "text": "La sposa del Destino"
+   },
+   "realms_reverie": {
+    "english": "Realms of Reverie",
+    "text": "Nel regno dei sogni"
+   }
+  },
+  "app": {
+   "looking_phone": {
+    "english": "Looking for the phone …",
+    "text": "Ricerca del telefono …"
+   },
+   "folders_tidied_up": {
+    "english": "Folders tidied up (new layout): ",
+    "text": "Cartelle riordinate (nuova organizzazione): "
+   },
+   "folders_next_tool": {
+    "english": " → “{0}” and “{1}” folders next to the tool.",
+    "text": " → cartelle «{0}» e «{1}» accanto allo strumento."
+   },
+   "not_moved_file": {
+    "english": "Not moved (file open in another program?): ",
+    "text": "Non spostato/i (file aperto in un altro programma?): "
+   },
+   "new_attempt_next": {
+    "english": ". New attempt at the next start.",
+    "text": ". Nuovo tentativo al prossimo avvio."
+   },
+   "cancellation_requested": {
+    "english": "Cancellation requested …",
+    "text": "Annullamento richiesto …"
+   },
+   "operation_progress": {
+    "english": "Operation in progress",
+    "text": "Operazione in corso"
+   },
+   "progress_quitting_interrupts": {
+    "english": "“{0}” is in progress.\nQuitting interrupts it and may leave incomplete files (cleaned up at the next attempt).\n\nQuit anyway?",
+    "text": "«{0}» è in corso.\nUscire la interrompe e può lasciare file incompleti (ripuliti al prossimo tentativo).\n\nUscire comunque?"
+   },
+   "reading_answers_programs": {
+    "english": "reading the answers of the programs",
+    "text": "lettura delle risposte dei programmi"
+   },
+   "dragon_quest_iv": {
+    "english": "Dragon Quest IV-V-VI - Patch FR (experimental)",
+    "text": "Dragon Quest IV-V-VI - Patch FR (sperimentale)"
+   },
+   "tkinter_not_found": {
+    "english": "tkinter not found: reinstall Python, ticking “tcl/tk and IDLE”.",
+    "text": "tkinter non trovato: reinstalla Python spuntando «tcl/tk and IDLE»."
+   },
+   "folder_not_writable": {
+    "english": "Folder not writable",
+    "text": "Cartella non modificabile"
+   },
+   "tool_must_able": {
+    "english": "The tool must be able to write in its folder (it stores its “dependencies” and “games” folders there), but this folder is protected:\n{0}\n\nMove it to a normal folder (Desktop, Documents, a folder of your own), then start it again.",
+    "text": "Lo strumento deve poter scrivere nella sua cartella (vi sistema le sue cartelle «dependencies» e «games»), ma questa cartella è protetta:\n{0}\n\nSpostalo in una cartella normale (Desktop, Documenti, una tua cartella), poi riavvialo."
+   },
+   "interface_error": {
+    "english": "Interface error: ",
+    "text": "Errore di interfaccia: "
+   }
+  },
+  "common": {
+   "step_interrupted": {
+    "english": "Step interrupted",
+    "text": "Passaggio interrotto"
+   },
+   "tool_closing": {
+    "english": "The tool is closing.",
+    "text": "Lo strumento si sta chiudendo."
+   },
+   "program_not_found": {
+    "english": "Program not found: {0}",
+    "text": "Programma non trovato: {0}"
+   },
+   "unable_run_command": {
+    "english": "Unable to run the command: {0}",
+    "text": "Impossibile avviare il comando: {0}"
+   },
+   "step_cancelled": {
+    "english": "Step cancelled.",
+    "text": "Passaggio annullato."
+   },
+   "cancelled": {
+    "english": "Cancelled",
+    "text": "Annullato"
+   },
+   "text_received": {
+    "english": "text received",
+    "text": "testo ricevuto"
+   },
+   "nothing_received": {
+    "english": "nothing received",
+    "text": "niente ricevuto"
+   },
+   "label_value": {
+    "english": "{0}: {1}",
+    "text": "{0}: {1}"
+   },
+   "cancel": {
+    "english": "Cancel",
+    "text": "Annulla"
+   },
+   "disk_full": {
+    "english": "Disk full",
+    "text": "Disco pieno"
+   },
+   "not_enough_disk": {
+    "english": "Not enough disk space: about {0} needed, {1} free.",
+    "text": "Spazio su disco insufficiente: servono circa {0}, {1} liberi."
+   },
+   "close": {
+    "english": "Close",
+    "text": "Chiudi"
+   },
+   "open_folder": {
+    "english": "Open the folder",
+    "text": "Apri la cartella"
+   },
+   "restore_backup": {
+    "english": "Restore this backup",
+    "text": "Ripristina questo backup"
+   },
+   "unable_open_folder": {
+    "english": "Unable to open the folder: {0}",
+    "text": "Impossibile aprire la cartella: {0}"
+   },
+   "later": {
+    "english": "Later",
+    "text": "Più tardi"
+   }
+  }
+ }
+}

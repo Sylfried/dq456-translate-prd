@@ -4,7 +4,7 @@
 
 It reads the official French text from the European DS ROM of each game. Texts that only exist in the mobile versions are translated by the patch. The patched game is then installed on the phone over USB.
 
-The tool's interface is available in English, French, German, Spanish, Italian, Japanese, Chinese and Korean. In English, Japanese, Korean and Chinese, languages that the mobile games already contain, the tool only copies the original APKs and the saves from the phone (for example to use them with a PC port); the French patch is available with the French interface.
+The tool's interface is available in English, French, German, Spanish, Italian, Japanese, Chinese and Korean. In English, Japanese, Korean and Chinese, languages that the mobile games already contain, the tool only copies the original APKs and the saves from the phone (for example to use them with a PC port); the French patch is available with the French interface. Other interface languages can be added (see [Translating the tool](#translating-the-tool)).
 
 ## Contents
 
@@ -12,6 +12,7 @@ The tool's interface is available in English, French, German, Spanish, Italian, 
 |---|---|
 | `DQ_Patch_FR.exe` | The tool |
 | `THIRD_PARTY_NOTICES.md` | Third-party components and their licenses |
+| `languages/` | Interface texts of the tool, one file per language (`tool_texts_<code>.json`) |
 | `roms/` | Folder for your DS ROMs (`.nds`, or a `.zip` containing them) |
 | `dependencies/` | Filled by the tool: the installed tool, settings, log and downloaded programs |
 | `games/DQ4/`, `games/DQ5/`, `games/DQ6/` | Filled by the tool, one folder per game: `apks`, `texts`, `build`, `patched_apks`, `title_screen`, `signed`, `saves` |
@@ -45,7 +46,18 @@ Each step, the options and troubleshooting are described in the tool's Help menu
 
 ## Updating
 
-Close the tool, replace `DQ_Patch_FR.exe` with the new version in the same folder, then run it again. Settings, downloaded programs and the `games` folder are kept (folders of older versions are renamed automatically).
+Close the tool, replace `DQ_Patch_FR.exe` and the files of the `languages` folder with those of the new version (keep the language files you added yourself), then run the tool again. Settings, downloaded programs and the `games` folder are kept (folders of older versions are renamed automatically).
+
+The interface languages are read from the `languages` folder: without it, the tool opens in English.
+
+## Translating the tool
+
+1. In the tool, menu **Language › Add a language…**: enter the language code (`xx-xx` form, for example `pt-br`) and the name shown in the menu. The tool creates `languages/tool_texts_<code>.json` from the English texts.
+2. Open this file with a text editor (Notepad++, VS Code) and fill in the `"text"` lines; the `"english"` line above each one gives the original text. An empty `"text"` shows the English. Keep `{0}`, `{1}`… and the codes as they are, and save the file as UTF-8.
+3. Menu **Language › Reload the texts** shows your changes in the tool.
+4. To offer the language to everyone: fork this repository, add your file to `languages/` and open a pull request. Once accepted, the file is in the `languages` folder of this repository, for everyone.
+
+To fix an existing language, edit its file the same way.
 
 ## What the tool does not contain
 

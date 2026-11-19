@@ -1,0 +1,2397 @@
+{
+ "readme": [
+  "Texts of the DQ_Patch_FR tool for one language: file tool_texts_<code>.json of the languages folder, code in the xx-xx form (fr-fr, en-us, pt-br...).",
+  "language = name shown in the Language menu. texts = the texts, by part of the tool: only change the \"text\" lines; \"english\" = original English text (reference, the tool does not read it). An empty \"text\" shows the English.",
+  "Keep {0}, {1}... and the codes as they are: \\n = line break, **...** = bold, # at the start of a line = title. A double quote in a text is written \\\".",
+  "Save the file (UTF-8), then menu Language > Reload the texts. To create a new language: menu Language > Add a language."
+ ],
+ "language": "日本語",
+ "texts": {
+  "lang": {
+   "system_language": {
+    "english": "System language ({0})",
+    "text": "システムの言語（{0}）"
+   },
+   "other_english_interface": {
+    "english": "Other (English interface)",
+    "text": "その他（英語のインターフェース）"
+   },
+   "add_language": {
+    "english": "Add a language…",
+    "text": "言語を追加…"
+   },
+   "open_languages_folder": {
+    "english": "Open the languages folder",
+    "text": "言語フォルダーを開く"
+   },
+   "reload_texts": {
+    "english": "Reload the texts",
+    "text": "テキストを再読み込み"
+   },
+   "reload_texts_restart": {
+    "english": "The texts of the “languages” folder are read when the tool starts.\n\nRestart now to see your changes?",
+    "text": "「languages」フォルダーのテキストは、ツールの起動時に読み込まれます。\n\n今すぐ再起動して変更を確認しますか？"
+   },
+   "reload_busy": {
+    "english": "An operation is in progress: the texts will be reloaded the next time the tool starts.",
+    "text": "処理中です：テキストは次回ツールを起動したときに再読み込みされます。"
+   },
+   "language": {
+    "english": "Language",
+    "text": "言語"
+   },
+   "interface_language_next": {
+    "english": "Interface language: {0} (at the next start).",
+    "text": "インターフェースの言語：{0}（次回の起動時）。"
+   },
+   "change_language": {
+    "english": "Change language",
+    "text": "言語の変更"
+   },
+   "interface_language_changes": {
+    "english": "The interface language changes when the tool restarts.\n\nRestart now?",
+    "text": "インターフェースの言語は、ツールの再起動時に変わります。\n\n今すぐ再起動しますか？"
+   },
+   "operation_progress_new": {
+    "english": "An operation is in progress: the new language will be used the next time the tool starts.",
+    "text": "処理を実行中です：新しい言語は次回ツールを起動したときに使われます。"
+   },
+   "restart_now": {
+    "english": "Restart now",
+    "text": "今すぐ再起動"
+   },
+   "unable_restart_tool": {
+    "english": "Unable to restart the tool ({0}): close it and start it again.",
+    "text": "ツールを再起動できません（{0}）：閉じてから起動し直してください。"
+   },
+   "new_language": {
+    "english": "New language",
+    "text": "新しい言語"
+   },
+   "unable_create_file": {
+    "english": "Unable to create the file: {0}",
+    "text": "ファイルを作成できません：{0}"
+   },
+   "language_file_created": {
+    "english": "Language file created ({0}): {1}",
+    "text": "言語ファイルを作成しました（{0}）：{1}"
+   },
+   "file_created_translate": {
+    "english": "File created:\n{0}\n\nTo translate the tool into this language:\n• Open this file with **Notepad++** or **VS Code** (never Word) and save it as **UTF-8**.\n• Only fill in the **“text”** lines: the “english” line just above gives the original English text. An empty “text” shows the English.\n• Keep {{0}}, {{1}}… and the codes (\\n…) as they are.\n• To see your texts in the tool: menu **Language › Reload the texts**.\n\nThe English file ({1}) is in the same folder. To offer this language to everyone: propose the file on the project page, github.com/Sylfried/dq456-translate-prd.",
+    "text": "ファイルを作成しました：\n{0}\n\nツールをこの言語に翻訳するには：\n• このファイルを **Notepad++** または **VS Code** で開き（Word は使わないでください）、**UTF-8** で保存します。\n• **「text」**の行だけを入力します：すぐ上の「english」の行に英語の原文があります。空の「text」は英語で表示されます。\n• {{0}}、{{1}}… やコード（\\n…）はそのまま残してください。\n• ツールでテキストを確認するには：メニュー **言語 › テキストを再読み込み**。\n\n英語のファイル（{1}）は同じフォルダーにあります。この言語をみんなに提供するには：プロジェクトのページ github.com/Sylfried/dq456-translate-prd でファイルを提案してください。"
+   },
+   "use_language_now": {
+    "english": "Use this language now",
+    "text": "今すぐこの言語を使う"
+   },
+   "creates_new_language": {
+    "english": "Creates the file of a new language in the “languages” folder next to the tool, from the English texts. You then translate the texts directly in this file.",
+    "text": "ツールの横の「languages」フォルダーに、英語のテキストをもとに新しい言語のファイルを作成します。その後、このファイルで直接テキストを翻訳します。"
+   },
+   "language_code": {
+    "english": "Language code (xx-xx, for example pt-br):",
+    "text": "言語コード（xx-xx、例：pt-br）："
+   },
+   "name_language_menu": {
+    "english": "Name in the Language menu (for example Português):",
+    "text": "言語メニューでの名前（例：Português）："
+   },
+   "create": {
+    "english": "Create",
+    "text": "作成"
+   },
+   "code_must_have": {
+    "english": "The code must have the xx-xx form: 2 letters, a dash, 2 letters (for example pt-br).",
+    "text": "コードは xx-xx の形式にしてください：英字2文字、ハイフン、英字2文字（例：pt-br）。"
+   },
+   "language_already_exists": {
+    "english": "The language {0} already exists: choose another code, or edit its file in the “languages” folder.",
+    "text": "言語 {0} はすでにあります：別のコードを選ぶか、「languages」フォルダーにあるそのファイルを編集してください。"
+   },
+   "enter_name_shown": {
+    "english": "Enter the name shown in the Language menu.",
+    "text": "言語メニューに表示する名前を入力してください。"
+   }
+  },
+  "menu": {
+   "open_game_folder": {
+    "english": "Open the game folder",
+    "text": "ゲームのフォルダーを開く"
+   },
+   "open_texts_folder": {
+    "english": "Open the texts folder",
+    "text": "テキストのフォルダーを開く"
+   },
+   "quit": {
+    "english": "Quit",
+    "text": "終了"
+   },
+   "file": {
+    "english": "File",
+    "text": "ファイル"
+   },
+   "dependencies": {
+    "english": "Dependencies",
+    "text": "依存関係"
+   },
+   "about_project": {
+    "english": "About the project",
+    "text": "プロジェクトについて"
+   },
+   "folders_troubleshooting": {
+    "english": "Folders and troubleshooting",
+    "text": "フォルダーとトラブル対処"
+   },
+   "how_edit_texts": {
+    "english": "How to edit the texts",
+    "text": "テキストの編集方法"
+   },
+   "to_do": {
+    "english": "To do",
+    "text": "残りの作業"
+   },
+   "about": {
+    "english": "About",
+    "text": "バージョン情報"
+   },
+   "help": {
+    "english": "Help",
+    "text": "ヘルプ"
+   },
+   "open_dq_folder": {
+    "english": "Open the DQ{0} folder",
+    "text": "DQ{0}のフォルダーを開く"
+   },
+   "open_dq_texts": {
+    "english": "Open the DQ{0} texts folder",
+    "text": "DQ{0}のテキストのフォルダーを開く"
+   }
+  },
+  "tab": {
+   "android_copies_original": {
+    "english": "{0} for Android: copies the original APKs and the saves of the phone to this PC.",
+    "text": "Android版{0}：元のAPKとセーブデータをスマートフォンからこのPCにコピーします。"
+   },
+   "android_already_contains": {
+    "english": "{0} for Android already contains this language: the tool copies its APKs and its saves from the phone to this PC, for example to play it with the PC port. The French patch is available with the French interface (Language menu).",
+    "text": "Android版{0}にはすでにこの言語が入っています。このツールはAPKとセーブデータをスマートフォンからこのPCにコピーします（たとえばPC移植版で遊ぶため）。フランス語パッチは、インターフェースをフランス語にすると使えます（言語メニュー）。"
+   },
+   "french_patch_android": {
+    "english": "French patch of {0} for Android: most of the French texts come from the European DS ROM ({1}) that you own. The rest is modified or added by the tool.",
+    "text": "Android版{0}のフランス語パッチ：フランス語のテキストのほとんどは、あなたが所有する欧州版DSのROM（{1}）から取り込みます。残りはツールが変更または追加します。"
+   },
+   "checks": {
+    "english": " Checks ",
+    "text": " チェック "
+   },
+   "everything_tool_checks": {
+    "english": "Everything the tool checks before running a step: green dot = ready, red = to fix, grey = checking. Hover over a line for details.",
+    "text": "ステップを実行する前にツールが確認するものすべて：緑の点 = 準備完了、赤 = 要対応、灰色 = 確認中。行にマウスを重ねると詳細が出ます。"
+   },
+   "ds_rom": {
+    "english": "DS ROM",
+    "text": "DSのROM"
+   },
+   "programs": {
+    "english": "Programs",
+    "text": "プログラム"
+   },
+   "installed_game": {
+    "english": "Installed game",
+    "text": "インストール済みのゲーム"
+   },
+   "texts": {
+    "english": "Texts",
+    "text": "テキスト"
+   },
+   "next": {
+    "english": "Next",
+    "text": "次にやること"
+   },
+   "european_ds_rom": {
+    "english": "The European DS ROM of {0} ({1}, .nds file or a .zip containing it), looked for in the chosen ROM folder (and its direct subfolders). The folder is the same for the 3 games.\nCurrent folder: {2}",
+    "text": "{0}の欧州版DSのROM（{1}、.ndsファイルまたはそれを含む.zip）を、選んだROMフォルダー（とその直下のサブフォルダー）で探します。フォルダーは3作共通です。\n現在のフォルダー：{2}"
+   },
+   "not_chosen_yet": {
+    "english": "not chosen yet",
+    "text": "まだ選ばれていません"
+   },
+   "programs_needed_steps": {
+    "english": "Programs needed by the steps (adb):\n",
+    "text": "ステップに必要なプログラム（adb）：\n"
+   },
+   "programs_needed_steps_adb": {
+    "english": "Programs needed by the steps (adb, Java, uber-apk-signer) and by the logo / title screen option:\n",
+    "text": "各ステップ（adb、Java、uber-apk-signer）とロゴ / タイトル画面のオプションに必要なプログラム：\n"
+   },
+   "details_download_dependencies": {
+    "english": "\n\nDetails and download: Dependencies menu.",
+    "text": "\n\n詳細とダウンロード：依存関係メニュー。"
+   },
+   "state_usb_link": {
+    "english": "State of the USB link with the phone (checked every 3 seconds). Enable “USB debugging” in the developer options, plug in the cable, then accept the authorisation request on the phone screen. Steps 2 and 3 do not need it.",
+    "text": "スマートフォンとのUSB接続の状態（3秒ごとに確認）。開発者向けオプションで「USBデバッグ」を有効にし、ケーブルを接続してから、スマートフォンの画面で許可のリクエストを承認してください。ステップ2と3では不要です。"
+   },
+   "version_game_installed": {
+    "english": "Version of the game installed on the phone, and whether it is already patched (mark placed in the game by the patch).",
+    "text": "スマートフォンにインストールされたゲームのバージョンと、すでにパッチ済みかどうか（パッチがゲームに付ける印）。"
+   },
+   "file_all_game": {
+    "english": "The file of all the game texts, written by step 2 (menu File › Open the texts folder). If you edit it, run steps 3 and 4 again. Rules: menu Help › How to edit the texts.",
+    "text": "ステップ2が書き出した、ゲームのすべてのテキストのファイル（メニュー ファイル › テキストのフォルダーを開く）。編集したら、ステップ3と4をやり直してください。ルール：メニュー ヘルプ › テキストの編集方法。"
+   },
+   "what_run_now": {
+    "english": "What to run now (step or saves button), or what prevents it. The log also says it at the end of each step.",
+    "text": "今実行すべきもの（ステップまたはセーブデータのボタン）、またはそれを妨げているもの。ログでも各ステップの終わりに知らせます。"
+   },
+   "choose_rom_folder": {
+    "english": "Choose the ROM folder…",
+    "text": "ROMフォルダーを選ぶ…"
+   },
+   "chooses_folder_contains": {
+    "english": "Chooses the folder that contains your European DS ROMs (.nds, or .zip containing them). The tool finds the ROM of each game in it automatically; the choice is remembered for the 3 tabs.",
+    "text": "欧州版DSのROM（.nds、またはそれを含む.zip）が入っているフォルダーを選びます。ツールがその中から各ゲームのROMを自動で見つけます。選択は3つのタブ共通で記憶されます。"
+   },
+   "download_what_s": {
+    "english": "Download what's missing…",
+    "text": "足りないものをダウンロード…"
+   },
+   "downloads_all_missing": {
+    "english": "Downloads all the missing programs, after a single confirmation. These are portable versions: nothing is installed in Windows.",
+    "text": "一度確認するだけで、足りないプログラムをすべてダウンロードします。ポータブル版です：Windowsには何もインストールされません。"
+   },
+   "several_devices_plugged": {
+    "english": "Several devices are plugged in: choose the one to use.",
+    "text": "複数の端末が接続されています：使うものを選んでください。"
+   },
+   "steps": {
+    "english": " Steps ",
+    "text": " ステップ "
+   },
+   "patch_steps": {
+    "english": " Patch steps ",
+    "text": " パッチのステップ "
+   },
+   "button_stays_greyed": {
+    "english": "The button stays greyed out as long as the copy is not possible (phone not connected, game not installed); the icon on its right tells whether it is done.",
+    "text": "コピーできない間（スマートフォン未接続、ゲーム未インストール）はボタンがグレーのままです。右のアイコンで完了したかどうかがわかります。"
+   },
+   "4_steps_run": {
+    "english": "The 4 steps are run by hand, in order: a button stays greyed out as long as the step is not possible, the icon on its right tells whether it is done. Each one becomes available when what it needs is ready (“Checks” area). On the right of step 3: the box of the “FR title screen” option (ticked = on).",
+    "text": "4つのステップは手動で順に実行します：ステップが実行できない間はボタンがグレーのままで、右のアイコンで完了したかがわかります。必要なものがそろうと使えるようになります（「チェック」欄）。ステップ3の右：「タイトル画面FR」オプションのチェックボックス（チェックあり = オン）。"
+   },
+   "saves": {
+    "english": " Saves ",
+    "text": " セーブデータ "
+   },
+   "local_saves_game": {
+    "english": "Your local saves of the game, copied from the phone (for example to continue your game with the PC port).",
+    "text": "スマートフォンからコピーしたゲームのローカルセーブデータ（たとえばPC移植版で続きを遊ぶため）。"
+   },
+   "local_saves_game_extract": {
+    "english": "Your local saves of the game: to extract BEFORE step 4 (it uninstalls the original game, which erases them), then to restore AFTER, once the translated version has been started once and closed.",
+    "text": "ゲームの端末内のセーブデータ：ステップ4の「前」に取り出し（オリジナルのゲームをアンインストールするため消えます）、翻訳版を一度起動して終了した「後」に復元してください。"
+   },
+   "fr_title_screen": {
+    "english": "FR title screen",
+    "text": "タイトル画面FR"
+   },
+   "ticked_unticked_off": {
+    "english": "Ticked = on, unticked = off. Step 3 option (translated logo and title screen): also translates the logo (game subtitle) and “Tap to Start”, with redrawn images built into the tool. Uses UnityPy, Pillow and numpy (built into the tool or downloaded from the Dependencies menu). Longer and uses more memory (1 to 2 GB).\nOff: the logo and “Tap to Start” stay the original ones, in English (the rest of the game is translated). Turn it off if there is a problem: the game remains playable without it.\nAfter a change, run steps 3 and 4 again. The first step 3 with the option is long (several minutes); the result is then kept.",
+    "text": "チェックあり = オン、チェックなし = オフ。ステップ3のオプション（ロゴとタイトル画面の翻訳）：ロゴ（ゲームの副題）と「Tap to Start」も、ツールに内蔵した描き直しの画像で翻訳します。UnityPy、Pillow、numpyを使います（ツールに内蔵、または依存関係メニューからダウンロード）。時間がかかり、メモリも多く使います（1〜2 GB）。\nオフ：ロゴと「Tap to Start」はオリジナルの英語のままです（ゲームのほかの部分は翻訳されます）。問題があればオフにしてください：なくてもゲームは遊べます。\n変更したら、ステップ3と4をやり直してください。オプションを使った最初のステップ3は時間がかかります（数分）。結果はその後保存されます。"
+   },
+   "option_unavailable_logo": {
+    "english": "⛔ Option unavailable: the logo and title screen modules are missing from this exe (it was built without UnityPy, Pillow and numpy).\n\n",
+    "text": "⛔ オプションは使えません：このexeにはロゴとタイトル画面のモジュールが入っていません（UnityPy、Pillow、numpyなしで作られました）。\n\n"
+   },
+   "option_available_same": {
+    "english": "⛔ Option available at the same time as step 3: ",
+    "text": "⛔ オプションはステップ3と同時に使えるようになります："
+   },
+   "file_s": {
+    "english": "• {0} · {1} file(s)",
+    "text": "• {0} · {1}ファイル"
+   },
+   "original_apks": {
+    "english": "✔ {0} original APKs · {1}",
+    "text": "✔ 元のAPK {0}個 · {1}"
+   },
+   "apks_folder_contains": {
+    "english": "⚠ The “apks” folder contains already patched APKs: unusable",
+    "text": "⚠ 「apks」フォルダーにパッチ済みのAPKがあります：使えません"
+   },
+   "not_done_yet": {
+    "english": "not done yet",
+    "text": "未実行"
+   },
+   "run_again_run": {
+    "english": "to run again: {0} has been run again since",
+    "text": "やり直し：その後{0}がやり直されました"
+   },
+   "step_1": {
+    "english": "step 1",
+    "text": "ステップ1"
+   },
+   "done": {
+    "english": "✔ done on {0}",
+    "text": "✔ {0}に完了"
+   },
+   "text_file_missing": {
+    "english": "⚠ text file missing: run step 2 again",
+    "text": "⚠ テキストファイルがありません：ステップ2をやり直してください"
+   },
+   "run_again": {
+    "english": "to run again: {0}",
+    "text": "やり直し：{0}"
+   },
+   "step_2": {
+    "english": "step 2",
+    "text": "ステップ2"
+   },
+   "done_change_s": {
+    "english": "✔ done on {0} · {1} change(s) from your file",
+    "text": "✔ {0}に完了 · あなたのファイルの変更 {1}件"
+   },
+   "not_applied": {
+    "english": " · {0} not applied",
+    "text": " · {0}件は未適用"
+   },
+   "backup_s_last": {
+    "english": "✔ {0} backup(s) · last {1}",
+    "text": "✔ バックアップ {0}件 · 最新 {1}"
+   },
+   "no_save_found": {
+    "english": "no save found on the phone",
+    "text": "セーブデータなし：スマートフォンに見つかりません"
+   },
+   "step_3": {
+    "english": "step 3",
+    "text": "ステップ3"
+   },
+   "all_present": {
+    "english": "All present",
+    "text": "すべてあり"
+   },
+   "except_optional_logo": {
+    "english": " (except the optional logo and title screen modules)",
+    "text": " （任意のロゴとタイトル画面のモジュールを除く）"
+   },
+   "run_steps_3": {
+    "english": " · run steps 3 and 4 again",
+    "text": " · ステップ3と4をやり直してください"
+   },
+   "texts_label": {
+    "english": "Texts: ",
+    "text": "テキスト："
+   },
+   "no_save": {
+    "english": "no save",
+    "text": "セーブデータなし"
+   },
+   "all_done_original": {
+    "english": "All done: the original APKs are copied to the “apks” folder (File › Open the game folder).",
+    "text": "完了：元のAPKは「apks」フォルダーにコピーされました（ファイル › ゲームのフォルダーを開く）。"
+   },
+   "all_steps_done": {
+    "english": "All steps are done: the game is translated.",
+    "text": "すべてのステップが完了しました：ゲームは翻訳されています。"
+   },
+   "ready": {
+    "english": "{0}: ready.",
+    "text": "{0}：準備完了。"
+   },
+   "unexpected_error": {
+    "english": "Unexpected error: {0}: {1}",
+    "text": "予期しないエラー：{0}：{1}"
+   },
+   "details_log_copy": {
+    "english": "\n\nThe details are in the log (“Copy log” button).",
+    "text": "\n\n詳細はログにあります（「ログをコピー」ボタン）。"
+   },
+   "unexpected_error_2": {
+    "english": "Unexpected error",
+    "text": "予期しないエラー"
+   }
+  },
+  "steps": {
+   "extract_original_apks": {
+    "english": "Extract original APKs",
+    "text": "元のAPKを取り出す"
+   },
+   "copies_3_apk": {
+    "english": "Copies the 3 APK files of the installed game from the phone to this PC (“apks” folder of DQx).\n• The phone must be connected over USB (USB debugging enabled) and the original game installed from the Play Store.\n• Reuses the folder already created if the step has already been run.\n• The tool tells you if the installed version is already patched, so that it does not retrieve the wrong APKs or overwrite the existing base.",
+    "text": "インストールされたゲームの3つのAPKファイルを、スマートフォンからこのPCにコピーします（DQxの「apks」フォルダー）。\n• スマートフォンがUSBで接続され（USBデバッグ有効）、Playストアからオリジナルのゲームがインストールされている必要があります。\n• すでにステップを実行している場合は、作成済みのフォルダーを使います。\n• インストールされた版がパッチ済みかどうかを表示するので、間違ったAPKを取得したり既存のベースを上書きしたりしません。"
+   },
+   "prepare_texts": {
+    "english": "Prepare texts",
+    "text": "テキストを準備"
+   },
+   "reads_european_ds": {
+    "english": "Reads your European DS ROM and the original APKs, applies all the patch rules (texts taken from the ROM, retouched or created), then writes ALL the game texts into the “texts\\DQx_game_texts.json” file.\n• No phone connection needed.\n• Takes several minutes.\n• You can then edit this file (menu File › Open the texts folder) before step 3.",
+    "text": "欧州版DSのROMと元のAPKを読み、パッチのすべてのルール（ROMから取り込んだテキスト、手直しまたは新規作成したテキスト）を適用してから、ゲームのすべてのテキストを「texts\\DQx_game_texts.json」ファイルに書き出します。\n• スマートフォンとの接続は不要です。\n• 数分かかります。\n• その後、ステップ3の前にこのファイルを編集できます（メニュー ファイル › テキストのフォルダーを開く）。"
+   },
+   "patch_apks": {
+    "english": "Patch APKs",
+    "text": "APKにパッチを当てる"
+   },
+   "puts_texts_texts": {
+    "english": "Puts the texts of the “texts\\DQx_game_texts.json” file (required), as they are, into the translated APKs in the “patched_apks” folder.\n• No phone connection needed.\n• To run again after each change to the text file (then step 4).\n• With the “FR title screen” option (on the right): also translates the logo and “Tap to Start” from your ROM (several minutes, the first time only).\n• The report (your changes applied, texts to check in game) is in “texts\\step3_report.txt”.",
+    "text": "「texts\\DQx_game_texts.json」ファイル（必須）のテキストを、そのまま「patched_apks」フォルダーの翻訳版APKに入れます。\n• スマートフォンとの接続は不要です。\n• テキストファイルを変更するたびにやり直してください（その後ステップ4）。\n• 「タイトル画面FR」オプション（右側）を使うと、ROMからロゴと「Tap to Start」も翻訳します（数分、初回のみ）。\n• レポート（適用した変更、ゲーム内で確認すべきテキスト）は「texts\\step3_report.txt」にあります。"
+   },
+   "extract_saves": {
+    "english": "Extract saves",
+    "text": "セーブデータを取り出す"
+   },
+   "copies_local_saves": {
+    "english": "Copies the local saves of the phone (data*.dat) to “saves/YYYYMMDD_HHMMSS”, checking the size of the files.\n• To do before step 4: uninstalling erases the local saves.\n• The game's cloud save does not work with the patched version.",
+    "text": "スマートフォン内のセーブデータ（data*.dat）を「saves/YYYYMMDD_HHMMSS」にコピーし、ファイルサイズを確認します。\n• ステップ4の前に行ってください：アンインストールで端末内のセーブデータは消えます。\n• ゲームのクラウドセーブはパッチ版では使えません。"
+   },
+   "sign_install": {
+    "english": "Sign and install",
+    "text": "署名してインストール"
+   },
+   "signs_translated_apks": {
+    "english": "Signs the translated APKs, uninstalls the original game, then installs the translated version.\n• If you have never extracted your saves, offers to do it; otherwise, reminds you of the date of the last backup.\n• A confirmation is asked before uninstalling.\n• During the installation, if Google Play Protect offers to scan the app on the phone, tap “Don't send”.",
+    "text": "翻訳版のAPKに署名し、オリジナルのゲームをアンインストールしてから、翻訳版をインストールします。\n• セーブデータを一度も取り出していない場合は取り出しを提案し、そうでなければ最後のバックアップの日付をお知らせします。\n• アンインストールの前に確認を求めます。\n• インストール中、Google Play Protectがスマートフォンでアプリのスキャンを提案してきたら、「送信しない」をタップしてください。"
+   },
+   "restore_saves": {
+    "english": "Restore saves",
+    "text": "セーブデータを復元"
+   },
+   "puts_back_phone": {
+    "english": "Puts back on the phone the saves of a backup you choose from the list (sorted by date).\n• To do after step 4, once the game has been started and then closed completely.\n• The saves already on the phone are replaced by those of the chosen backup.",
+    "text": "一覧（日付順）から選んだバックアップのセーブデータをスマートフォンに戻します。\n• ステップ4の後、ゲームを一度起動して完全に終了してから行ってください。\n• スマートフォンにすでにあるセーブデータは、選んだバックアップのもので置き換えられます。"
+   },
+   "step": {
+    "english": "Step {0} · {1}",
+    "text": "ステップ{0} · {1}"
+   },
+   "before_step_4": {
+    "english": " (before step 4)",
+    "text": " （ステップ4の前）"
+   },
+   "after_step_4": {
+    "english": " (after step 4)",
+    "text": " （ステップ4の後）"
+   },
+   "operation_progress": {
+    "english": "⏳ An operation is in progress (",
+    "text": "⏳ 処理を実行中です（"
+   },
+   "wait_finish_click": {
+    "english": "): wait for it to finish or click “Cancel step”.",
+    "text": "）：終わるまで待つか、「ステップを中止」をクリックしてください。"
+   },
+   "checking_required_programs": {
+    "english": "⏳ Checking the required programs …",
+    "text": "⏳ 必要なプログラムを確認しています …"
+   },
+   "step_1_first": {
+    "english": "⛔ Do step 1 first (copy the original APKs from the phone).",
+    "text": "⛔ 先にステップ1を実行してください（スマートフォンから元のAPKをコピー）。"
+   },
+   "step_2_first": {
+    "english": "⛔ Do step 2 first (Prepare texts).",
+    "text": "⛔ 先にステップ2を実行してください（テキストを準備）。"
+   },
+   "phone_not_available": {
+    "english": "⛔ Phone not available: ",
+    "text": "⛔ スマートフォンが使えません："
+   },
+   "checking_game_phone": {
+    "english": "⏳ Checking the game on the phone …",
+    "text": "⏳ スマートフォンのゲームを確認しています …"
+   },
+   "step_3_first": {
+    "english": "⛔ Do step 3 first (Patch APKs).",
+    "text": "⛔ 先にステップ3を実行してください（APKにパッチを当てる）。"
+   },
+   "not_installed_phone": {
+    "english": "⛔ {0} is not installed on this phone: install it from the Play Store.",
+    "text": "⛔ {0}はこのスマートフォンにインストールされていません：Playストアからインストールしてください。"
+   },
+   "no_backup_saves": {
+    "english": "⛔ No backup of the saves: do “Extract saves” first.",
+    "text": "⛔ セーブデータのバックアップがありません：先に「セーブデータを取り出す」を実行してください。"
+   },
+   "game_no_longer": {
+    "english": "ℹ The game is no longer installed on the phone, but the translated version is ready: step 4 can install it.",
+    "text": "ℹ ゲームはもうスマートフォンにインストールされていませんが、翻訳版は準備できています：ステップ4でインストールできます。"
+   },
+   "copies_local_saves_phone": {
+    "english": "Copies the local saves of the phone (data*.dat) to “saves/YYYYMMDD_HHMMSS”, checking the size of the files.",
+    "text": "スマートフォンのローカルセーブデータ（data*.dat）を「saves/YYYYMMDD_HHMMSS」にコピーし、ファイルサイズを確認します。"
+   },
+   "all_steps_done": {
+    "english": "All steps are done: the translated version is installed.",
+    "text": "すべてのステップが完了しました：翻訳版がインストールされています。"
+   },
+   "next_available": {
+    "english": "▶ Next: {0} (available).",
+    "text": "▶ 次にやること：{0}（実行可能）。"
+   },
+   "next_few_more": {
+    "english": "Next: {0}, a few more seconds: {1}",
+    "text": "次にやること：{0}、あと数秒：{1}"
+   },
+   "next": {
+    "english": "Next: {0}, {1}",
+    "text": "次にやること：{0}、{1}"
+   }
+  },
+  "apks": {
+   "no_apk": {
+    "english": "no APK",
+    "text": "APKなし"
+   },
+   "base_apk_missing": {
+    "english": "base.apk missing",
+    "text": "base.apkがありません"
+   },
+   "split_unitydataassetpack_apk": {
+    "english": "split_UnityDataAssetPack.apk missing",
+    "text": "split_UnityDataAssetPack.apkがありません"
+   },
+   "split_unitydataassetpack_apk_unreadable": {
+    "english": "split_UnityDataAssetPack.apk unreadable (incomplete copy?)",
+    "text": "split_UnityDataAssetPack.apkを読めません（コピーが不完全？）"
+   },
+   "folder_already_exists": {
+    "english": "The folder {0} already exists: it is reused (nothing is recreated).",
+    "text": "フォルダー {0} はすでにあります：そのまま使います（何も作り直しません）。"
+   },
+   "folder_created": {
+    "english": "Folder {0} created: {1}",
+    "text": "フォルダー {0} を作成しました：{1}"
+   },
+   "game_installed_phone": {
+    "english": "The game installed on the phone is already patched (version {0}).",
+    "text": "スマートフォンにインストールされたゲームはすでにパッチ済みです（バージョン {0}）。"
+   },
+   "game_installed_phone_original": {
+    "english": "The game installed on the phone is the original version (version {0}).",
+    "text": "スマートフォンにインストールされたゲームはオリジナル版です（バージョン {0}）。"
+   },
+   "game_installed_phone_already": {
+    "english": "\n\nThe game installed on the phone is already patched: these original APKs are precious, keep them.",
+    "text": "\n\nスマートフォンにインストールされたゲームはすでにパッチ済みです：この元のAPKは貴重なので、保管してください。"
+   },
+   "original_apks_already": {
+    "english": "Original APKs already retrieved",
+    "text": "元のAPKは取得済み"
+   },
+   "apks_folder_already": {
+    "english": "The “apks” folder already contains the original APKs ({0} files, {1}, copied on {2}).{3}\n\nWhat do you want to do?",
+    "text": "「apks」フォルダーにはすでに元のAPKがあります（{0}ファイル、{1}、{2}にコピー）。{3}\n\nどうしますか？"
+   },
+   "keep_them": {
+    "english": "Keep them",
+    "text": "そのまま使う"
+   },
+   "retrieve_them_again": {
+    "english": "Retrieve them again",
+    "text": "もう一度取得する"
+   },
+   "original_apks_kept": {
+    "english": "Original APKs kept. Step 1 considered done.",
+    "text": "元のAPKをそのまま使います。ステップ1は完了とみなします。"
+   },
+   "game_phone_already": {
+    "english": "The game on the phone is already patched: retrieving it again would overwrite your original APKs with patched APKs. Step cancelled.",
+    "text": "スマートフォンのゲームはすでにパッチ済みです：もう一度取得すると、元のAPKがパッチ済みのAPKで上書きされます。ステップを中止しました。"
+   },
+   "retrieval_refused": {
+    "english": "Retrieval refused",
+    "text": "取得を拒否"
+   },
+   "apks_folder_contains": {
+    "english": "The “apks” folder contains already patched APKs (unusable for step 2): they will be replaced if the phone provides the original.",
+    "text": "「apks」フォルダーにはパッチ済みのAPKがあります（ステップ2には使えません）：スマートフォンからオリジナルが取得できれば置き換えられます。"
+   },
+   "not_enough_disk": {
+    "english": "Not enough disk space: {0} needed for the APKs, {1} free on this disk.",
+    "text": "ディスクの空き容量が足りません：APKに{0}必要で、このディスクの空きは{1}です。"
+   },
+   "copying_apks_phone": {
+    "english": "Copying {0} APKs from the phone ({1}) …",
+    "text": "スマートフォンから{0}個のAPKをコピーしています（{1}）…"
+   },
+   "incomplete_retrieval": {
+    "english": "Incomplete retrieval: {0}.",
+    "text": "取得が不完全です：{0}。"
+   },
+   "phone_provides_already": {
+    "english": "The phone provides an already patched version: your original APKs in the “apks” folder are kept.",
+    "text": "スマートフォンからはパッチ済みの版しか取得できません：「apks」フォルダーの元のAPKはそのまま残します。"
+   },
+   "game_installed_phone_already_patched": {
+    "english": "The game installed on the phone is already the patched version: the original APKs are needed.\n\n1) Step 3: extract your saves.\n2) Uninstall the game and reinstall the original from the Play Store.\n3) Run step 1 again.",
+    "text": "スマートフォンにインストールされたゲームはすでにパッチ済みの版です：元のAPKが必要です。\n\n1) ステップ3：セーブデータを取り出してください。\n2) ゲームをアンインストールし、Playストアからオリジナルを再インストールしてください。\n3) ステップ1をやり直してください。"
+   },
+   "game_already_patched": {
+    "english": "Game already patched",
+    "text": "ゲームはパッチ済み"
+   },
+   "warning_3_apks": {
+    "english": "Warning: 3 APKs were expected, {0} copied ({1}).",
+    "text": "注意：APKは3個のはずが、{0}個コピーされました（{1}）。"
+   },
+   "copy_done_original": {
+    "english": "Copy done: {0} original APKs in {1}",
+    "text": "コピー完了：元のAPK {0}個を{1}に保存"
+   },
+   "step_1_done": {
+    "english": "Step 1 done: {0} original APKs in {1}",
+    "text": "ステップ1完了：元のAPK {0}個を{1}に保存"
+   }
+  },
+  "texts": {
+   "all_texts_step": {
+    "english": "All the texts of {0} as step 2 prepared them from YOUR ROM and YOUR game: do not share this file.",
+    "text": "ステップ2があなたのROMとあなたのゲームから用意した{0}のすべてのテキストです。このファイルは共有しないでください。"
+   },
+   "sorted_file_number": {
+    "english": "Sorted by file then by number: neighbouring texts are in the game's order; \"english\" = original text of the mobile version.",
+    "text": "ファイル順、次に番号順に並んでいます。前後のテキストはゲームの順です。「english」＝モバイル版の元のテキスト。"
+   },
+   "fix_text_only": {
+    "english": "To fix a text: only change its \"text\" line and keep the codes (@a...@b at the start of a dialogue, @c0@ at the end,",
+    "text": "テキストを直すには、「text」の行だけを変更し、コードは残してください（会話の最初の@a...@b、最後の@c0@、"
+   },
+   "variable_name_number": {
+    "english": "%a... = variable name or number, %H...%X...%Y...%Z = variants, \\n = line break, ㈡ = new bubble, ; = possible break in a label).",
+    "text": "%a... = 変わる名前や数、%H...%X...%Y...%Z = バリエーション、\\n = 改行、㈡ = 新しい吹き出し、; = ラベル内で改行できる位置）。"
+   },
+   "double_quote_text": {
+    "english": "A double quote in a text is written \\\". Save the file (UTF-8), then run step 3 (patch the APKs) and step 4 (install) again.",
+    "text": "テキスト内の二重引用符は \\\" と書きます。ファイルを保存（UTF-8）し、ステップ3（APKのパッチ）とステップ4（インストール）をやり直してください。"
+   },
+   "running_step_2": {
+    "english": "Running step 2 again offers to keep this file; if it is created again, the old one is first copied to the \"old\" folder.",
+    "text": "ステップ2をやり直すと、このファイルを残すか尋ねられます。作り直す場合、古いファイルは先に「old」フォルダーにコピーされます。"
+   },
+   "all_rules_codes": {
+    "english": "All the rules (codes, line breaks, new bubbles, punctuation): Help menu > How to edit the texts.",
+    "text": "すべてのルール（コード、改行、新しい吹き出し、句読点）：メニュー「ヘルプ」>「テキストの編集方法」。"
+   },
+   "origin_rom_official": {
+    "english": "origin: rom = official text of the DS ROM, patch = text of the patch, english = stays in English, french = French text (origin not detailed).",
+    "text": "origin：rom = DS ROMの公式テキスト、patch = パッチのテキスト、english = 英語のまま、french = フランス語のテキスト（出どころの詳細なし）。"
+   },
+   "empty_text": {
+    "english": "empty text",
+    "text": "空のテキスト"
+   },
+   "b_dialogue_header": {
+    "english": "the @a...@b dialogue header is missing",
+    "text": "会話の見出し @a...@b がありません"
+   },
+   "end_message_missing": {
+    "english": "the end of the message {0} is missing",
+    "text": "メッセージ {0} の終わりがありません"
+   },
+   "name_must_keep": {
+    "english": "the name must keep its @1...@ / @4...@7...@ form",
+    "text": "名前は @1...@ / @4...@7...@ の形を保つ必要があります"
+   },
+   "step_2_redone": {
+    "english": "step 2 redone since",
+    "text": "その後ステップ2がやり直されました"
+   },
+   "texts_changed_since": {
+    "english": "texts changed since",
+    "text": "その後テキストが変更されました"
+   },
+   "fr_title_screen": {
+    "english": "“FR title screen” option changed since",
+    "text": "その後「タイトル画面FR」オプションが変更されました"
+   },
+   "original_apks_not": {
+    "english": "The original APKs are not there ({0}).\nRun step 1 first.",
+    "text": "元のAPKがありません（{0}）。\n先にステップ1を実行してください。"
+   },
+   "step_1_first": {
+    "english": "Step 1 first",
+    "text": "先にステップ1"
+   },
+   "apks_apks_folder": {
+    "english": "The APKs in the “apks” folder are already patched: they come from the phone after the patch was installed.\nThe original APKs are needed: uninstall the game, reinstall the original from the Play Store, then run step 1 again (delete the “apks” folder first).",
+    "text": "「apks」フォルダーのAPKはすでにパッチ済みです：パッチをインストールした後のスマートフォンから取得されたものです。\n元のAPKが必要です：ゲームをアンインストールし、Playストアからオリジナルを再インストールしてから、ステップ1をやり直してください（先に「apks」フォルダーを削除）。"
+   },
+   "apks_already_patched": {
+    "english": "APKs already patched",
+    "text": "APKはパッチ済み"
+   },
+   "no_rom_chosen": {
+    "english": "no ROM chosen",
+    "text": "ROMが選ばれていません"
+   },
+   "unusable_ds_rom": {
+    "english": "Unusable DS ROM: ",
+    "text": "DSのROMが使えません："
+   },
+   "choose_folder_contains": {
+    "english": "\nChoose the folder that contains the European ROM (“Checks” area, “Choose the ROM folder…” button).",
+    "text": "\n欧州版ROMが入っているフォルダーを選んでください（「チェック」欄の「ROMフォルダーを選ぶ…」ボタン）。"
+   },
+   "invalid_rom": {
+    "english": "Invalid ROM",
+    "text": "無効なROM"
+   },
+   "program_incomplete_dq": {
+    "english": "The program is incomplete (DQ{0} data missing): download it again.",
+    "text": "プログラムが不完全です（DQ{0}のデータがありません）：もう一度ダウンロードしてください。"
+   },
+   "incomplete_program": {
+    "english": "Incomplete program",
+    "text": "プログラムが不完全"
+   },
+   "texts_already_prepared": {
+    "english": "Texts already prepared",
+    "text": "テキストは準備済み"
+   },
+   "texts_already_prepared_rom": {
+    "english": "The texts were already prepared on {0}\n(ROM: {1}).\n\n",
+    "text": "テキストは{0}に準備済みです\n（ROM：{1}）。\n\n"
+   },
+   "preparing_them_again": {
+    "english": "Preparing them again takes several minutes. What do you want to do?",
+    "text": "準備し直すには数分かかります。どうしますか？"
+   },
+   "keep": {
+    "english": "Keep",
+    "text": "そのまま使う"
+   },
+   "prepare_again": {
+    "english": "Prepare again",
+    "text": "準備し直す"
+   },
+   "texts_already_prepared_kept": {
+    "english": "Texts already prepared, kept. Step 2 considered done.",
+    "text": "準備済みのテキストをそのまま使います。ステップ2は完了とみなします。"
+   },
+   "edited_texts": {
+    "english": "You have edited the texts",
+    "text": "テキストが変更されています"
+   },
+   "file_edited_since": {
+    "english": "The file {0} has been edited since it was created.\n\n• Keep my texts: only the basic translated version is redone, your file is not touched.\n• Recreate the file: it starts again from the patch texts; the old one is first copied to the “texts\\old” folder.",
+    "text": "ファイル {0} は作成後に変更されています。\n\n• 自分のテキストを残す：翻訳版のベースだけを作り直し、あなたのファイルには触れません。\n• ファイルを作り直す：パッチのテキストからやり直します。古いファイルは先に「texts\\old」フォルダーにコピーされます。"
+   },
+   "keep_my_texts": {
+    "english": "Keep my texts",
+    "text": "自分のテキストを残す"
+   },
+   "recreate_file": {
+    "english": "Recreate the file",
+    "text": "ファイルを作り直す"
+   },
+   "preparing_texts_several": {
+    "english": "Preparing the texts (several minutes) …",
+    "text": "テキストを準備しています（数分）…"
+   },
+   "script_ended_without": {
+    "english": "The script ended without producing {0}: see the log.",
+    "text": "スクリプトが{0}を作らずに終了しました：ログを確認してください。"
+   },
+   "incomplete_build": {
+    "english": "Incomplete build",
+    "text": "作成が不完全"
+   },
+   "text_file_kept": {
+    "english": "Your text file is kept as it is: {0}",
+    "text": "テキストファイルはそのまま残します：{0}"
+   },
+   "old_text_file": {
+    "english": "Old text file copied to {0}",
+    "text": "古いテキストファイルを{0}にコピーしました"
+   },
+   "texts_written": {
+    "english": "{0} texts written to {1}",
+    "text": "{0}個のテキストを{1}に書き込みました"
+   },
+   "step_2_done": {
+    "english": "Step 2 done: all the game texts are in {0}. You can edit them, then run step 3.",
+    "text": "ステップ2完了：ゲームのすべてのテキストは{0}にあります。編集してからステップ3を実行できます。"
+   },
+   "texts_not_prepared": {
+    "english": "Texts: not prepared yet (step 2).",
+    "text": "テキスト：まだ準備されていません（ステップ2）。"
+   },
+   "texts_prepared": {
+    "english": "Texts: {0}, prepared on {1}",
+    "text": "テキスト：{0}、{1}に準備"
+   },
+   "edited": {
+    "english": ", edited on {0}",
+    "text": "、{0}に編集"
+   }
+  },
+  "patch": {
+   "step_3_patch": {
+    "english": "Step 3 · Patch the APKs · {0} · {1}",
+    "text": "ステップ3 · APKにパッチを当てる · {0} · {1}"
+   },
+   "summary": {
+    "english": "SUMMARY",
+    "text": "概要"
+   },
+   "game_texts": {
+    "english": "  Game texts: {0}",
+    "text": "  ゲームのテキスト：{0}"
+   },
+   "changes_applied_texts": {
+    "english": "  Your changes applied (texts different from step 2): {0}",
+    "text": "  適用されたあなたの変更（ステップ2と異なるテキスト）：{0}"
+   },
+   "texts_identical_step": {
+    "english": "  Texts identical to step 2: {0}",
+    "text": "  ステップ2と同じテキスト：{0}"
+   },
+   "texts_missing_file": {
+    "english": "  Texts missing from the file (step 2 text used): {0}",
+    "text": "  ファイルにないテキスト（ステップ2のテキストを使用）：{0}"
+   },
+   "changes_not_applied": {
+    "english": "  Changes not applied: {0} (see below)",
+    "text": "  適用されなかった変更：{0}（下記参照）"
+   },
+   "everything_fine_translated": {
+    "english": "Everything is fine: the translated version is ready in the “patched_apks” folder.",
+    "text": "問題ありません：翻訳版は「patched_apks」フォルダーに用意できています。"
+   },
+   "next_extract_saves": {
+    "english": "Next: “Extract saves” (if not done yet), then step 4 (Sign and install).",
+    "text": "次にやること：「セーブデータを取り出す」（まだの場合）、そしてステップ4（署名してインストール）。"
+   },
+   "translated_version_ready": {
+    "english": "The translated version is ready in the “patched_apks” folder. The points below only need checking.",
+    "text": "翻訳版は「patched_apks」フォルダーに用意できています。以下の点は確認するだけで構いません。"
+   },
+   "no": {
+    "english": "{0} · no. {1}",
+    "text": "{0} · {1}番"
+   },
+   "changes_applied": {
+    "english": "YOUR CHANGES APPLIED",
+    "text": "適用されたあなたの変更"
+   },
+   "texts_file_differ": {
+    "english": "Texts in the file that differ from those prepared in step 2: they are in the game exactly as you wrote them.",
+    "text": "ステップ2で準備したものと異なるファイル内のテキスト：書いたとおりにゲームに入っています。"
+   },
+   "check_game_line": {
+    "english": "CHECK IN GAME: LINE LONGER THAN BEFORE",
+    "text": "ゲーム内で確認：以前より長い行"
+   },
+   "line_these_texts": {
+    "english": "A line of these texts is longer than before: it may go past the edge of the bubble or menu.",
+    "text": "これらのテキストの行が以前より長くなっています：吹き出しやメニューからはみ出す可能性があります。"
+   },
+   "if_so_add": {
+    "english": "If so, add a line break (\\n) or shorten the text, then run steps 3 and 4 again.",
+    "text": "はみ出す場合は、改行（\\n）を入れるかテキストを短くしてから、ステップ3と4をやり直してください。"
+   },
+   "fix_characters_missing": {
+    "english": "TO FIX: CHARACTERS MISSING FROM THE GAME FONT",
+    "text": "要修正：ゲームのフォントにない文字"
+   },
+   "these_characters_not": {
+    "english": "These characters do not exist in the game font and would not display properly.",
+    "text": "これらの文字はゲームのフォントにないため、正しく表示されません。"
+   },
+   "text_applied_anyway": {
+    "english": "The text is applied anyway; replace these characters in the file, then run steps 3 and 4 again.",
+    "text": "テキストはそのまま適用されます。ファイル内のこれらの文字を置き換えてから、ステップ3と4をやり直してください。"
+   },
+   "fix_changes_not": {
+    "english": "TO FIX: CHANGES NOT APPLIED",
+    "text": "要修正：適用されなかった変更"
+   },
+   "these_texts_missing": {
+    "english": "These texts are missing a code the game needs (start @a…@b or end \\n@c0@): the game would display them badly.",
+    "text": "これらのテキストにはゲームに必須のコード（先頭の @a…@b または末尾の \\n@c0@）がありません：ゲームで正しく表示されません。"
+   },
+   "text_prepared_step": {
+    "english": "The text prepared in step 2 is kept instead. Fix them in the file (menu Help › How to edit the texts), then run step 3 again.",
+    "text": "代わりにステップ2で準備したテキストが使われます。ファイル内で修正してから（メニュー ヘルプ › テキストの編集方法）、ステップ3をやり直してください。"
+   },
+   "program_incomplete_download": {
+    "english": "The program is incomplete: download it again.",
+    "text": "プログラムが不完全です：もう一度ダウンロードしてください。"
+   },
+   "missing_data": {
+    "english": "Missing data",
+    "text": "データがありません"
+   },
+   "unable_extract_patch": {
+    "english": "Unable to extract the patch data ({0}).",
+    "text": "パッチのデータを展開できません（{0}）。"
+   },
+   "texts_not_prepared": {
+    "english": "The texts are not prepared yet.\nRun step 2 first.",
+    "text": "テキストがまだ準備されていません。\n先にステップ2を実行してください。"
+   },
+   "step_2_first": {
+    "english": "Step 2 first",
+    "text": "先にステップ2"
+   },
+   "text_file_cannot": {
+    "english": "The text file cannot be found:\n{0}\n\nIt is required: run step 2 again to recreate it.",
+    "text": "テキストファイルが見つかりません：\n{0}\n\nこれは必須です：ステップ2をやり直して作り直してください。"
+   },
+   "texts_not_found": {
+    "english": "Texts not found",
+    "text": "テキストが見つかりません"
+   },
+   "text_file_contains": {
+    "english": "The text file contains an error at line {0}, column {1} ({2}).\n\nCheck the quotes and commas around the edited text: a quote inside a text is written \\\" and each “text” line ends with a comma.",
+    "text": "テキストファイルの{0}行目、{1}列目にエラーがあります（{2}）。\n\n変更したテキストの前後の引用符とカンマを確認してください：テキスト内の引用符は \\\" と書き、「text」の各行はカンマで終わります。"
+   },
+   "invalid_text_file": {
+    "english": "Invalid text file",
+    "text": "無効なテキストファイル"
+   },
+   "unable_read": {
+    "english": "Unable to read {0}:\n{1}",
+    "text": "{0}を読めません：\n{1}"
+   },
+   "unreadable_text_file": {
+    "english": "Unreadable text file",
+    "text": "テキストファイルを読めません"
+   },
+   "not_expected_form": {
+    "english": "{0} does not have the expected form (“texts” part missing): run step 2 again to recreate it.",
+    "text": "{0}が想定した形式ではありません（「texts」の部分がありません）：ステップ2をやり直して作り直してください。"
+   },
+   "contains_texts_not": {
+    "english": "{0} contains the texts of {1}, not {2}.",
+    "text": "{0}には{2}ではなく{1}のテキストが入っています。"
+   },
+   "wrong_game": {
+    "english": "Wrong game",
+    "text": "ゲームが違います"
+   },
+   "logo_title_screen": {
+    "english": "Logo and title screen: ",
+    "text": "ロゴとタイトル画面："
+   },
+   "translated": {
+    "english": "translated.",
+    "text": "翻訳済み。"
+   },
+   "original_english": {
+    "english": "original, in English (",
+    "text": "オリジナル（英語）（"
+   },
+   "build_failed_see": {
+    "english": "build failed, see above",
+    "text": "作成できません。上記を参照"
+   },
+   "logo_title_screen_modules": {
+    "english": "logo and title screen modules missing: Dependencies menu",
+    "text": "ロゴとタイトル画面のモジュールがありません：依存関係メニュー"
+   },
+   "fr_title_screen": {
+    "english": "“FR title screen” option turned off",
+    "text": "「タイトル画面FR」オプションはオフ"
+   },
+   "writing_texts_apks": {
+    "english": "Writing the texts into the APKs …",
+    "text": "APKにテキストを書き込んでいます …"
+   },
+   "texts_change_s": {
+    "english": "Texts: {0} change(s) from your file applied, {1} text(s) identical to step 2 ({2} in total).",
+    "text": "テキスト：あなたのファイルの変更 {0}件を適用、ステップ2と同じテキスト {1}件（合計 {2}）。"
+   },
+   "change_s_not": {
+    "english": "{0} change(s) not applied (game code missing): the step 2 text is kept. Details: {1}",
+    "text": "{0}件の変更を適用できませんでした（ゲームのコードがありません）：ステップ2のテキストを使います。詳細：{1}"
+   },
+   "text_s_line": {
+    "english": "{0} text(s) with a line longer than before",
+    "text": "以前より長い行があるテキスト {0}件"
+   },
+   "text_s_character": {
+    "english": "{0} text(s) with a character missing from the font",
+    "text": "フォントにない文字があるテキスト {0}件"
+   },
+   "look": {
+    "english": "To look at: ",
+    "text": "確認："
+   },
+   "details": {
+    "english": ". Details: {0}",
+    "text": "。詳細：{0}"
+   },
+   "step_3_done": {
+    "english": "Step 3 done: the translated version is in {0}",
+    "text": "ステップ3完了：翻訳版は{0}にあります"
+   },
+   "title_screen_original": {
+    "english": "Title screen: original APKs missing (“apks” folder): it stays original.",
+    "text": "タイトル画面：元のAPKがありません（「apks」フォルダー）：オリジナルのままです。"
+   },
+   "translated_title_screen": {
+    "english": "Translated title screen: already built, reused as it is.",
+    "text": "翻訳したタイトル画面：作成済みのものをそのまま使います。"
+   },
+   "title_screen_logo": {
+    "english": "Title screen: logo bundle not found in the asset pack: it stays original.",
+    "text": "タイトル画面：アセットパックにロゴのバンドルが見つかりません：オリジナルのままです。"
+   },
+   "title_screen_unable": {
+    "english": "Title screen: unable to read the original APKs ({0}): it stays original.",
+    "text": "タイトル画面：元のAPKを読めません（{0}）：オリジナルのままです。"
+   },
+   "translated_title_screen_building": {
+    "english": "Translated title screen: building (several minutes and 1 to 2 GB of memory, only the first time) …",
+    "text": "翻訳したタイトル画面：作成中（数分、メモリ1〜2 GB、初回のみ）…"
+   },
+   "translated_title_screen_several": {
+    "english": "Translated title screen (several minutes) …",
+    "text": "翻訳したタイトル画面（数分）…"
+   },
+   "title_screen_logo_modules": {
+    "english": "Title screen: logo modules unavailable ({0}): it stays original.",
+    "text": "タイトル画面：ロゴのモジュールが使えません（{0}）：オリジナルのままです。"
+   },
+   "title_screen": {
+    "english": "  title screen: ",
+    "text": "  タイトル画面："
+   },
+   "title_screen_not": {
+    "english": "Title screen: not enough memory, it stays original (close other programs and run step 3 again, or turn off the option).",
+    "text": "タイトル画面：メモリ不足のためオリジナルのままです（ほかのプログラムを閉じてステップ3をやり直すか、オプションをオフにしてください）。"
+   },
+   "title_screen_failed": {
+    "english": "Title screen failed ({0}): it stays original.",
+    "text": "タイトル画面を作成できません（{0}）：オリジナルのままです。"
+   },
+   "title_screen_failed_stays": {
+    "english": "Title screen failed ({0}: {1}): it stays original.",
+    "text": "タイトル画面を作成できません（{0}：{1}）：オリジナルのままです。"
+   },
+   "title_screen_stays": {
+    "english": "Title screen: it stays original (see the message above).",
+    "text": "タイトル画面：オリジナルのままです（上のメッセージを参照）。"
+   },
+   "translated_title_screen_built": {
+    "english": "Translated title screen built (kept for the next steps 3).",
+    "text": "翻訳したタイトル画面を作成しました（次回以降のステップ3のために保存）。"
+   },
+   "script_stopped_code": {
+    "english": "The script stopped (code {0}).",
+    "text": "スクリプトが停止しました（コード {0}）。"
+   },
+   "build_failed": {
+    "english": "Build failed",
+    "text": "作成できません"
+   },
+   "not_enough_memory": {
+    "english": "Not enough memory during the build. Close other programs, or turn off the “logo and title screen” option, then try again.",
+    "text": "作成中にメモリが不足しました。ほかのプログラムを閉じるか、「ロゴとタイトル画面」オプションをオフにしてから、もう一度試してください。"
+   },
+   "not_enough_memory_2": {
+    "english": "Not enough memory",
+    "text": "メモリ不足"
+   },
+   "translated_2": {
+    "english": "translated",
+    "text": "翻訳済み"
+   },
+   "original_english_2": {
+    "english": "original, in English",
+    "text": "オリジナル（英語）"
+   },
+   "next_step_3": {
+    "english": " at the next step 3 (then run step 4 again).",
+    "text": " 次のステップ3から（その後ステップ4をやり直してください）。"
+   }
+  },
+  "saves": {
+   "no_save_file": {
+    "english": "No save file (data*.dat) found on the phone in {0}.",
+    "text": "スマートフォンの{0}にセーブファイル（data*.dat）が見つかりません。"
+   },
+   "no_save_found": {
+    "english": "No save found",
+    "text": "セーブデータが見つかりません"
+   },
+   "no_save_file_data": {
+    "english": "No save file (data*.dat) was found on the phone.\n\nEither the game has never been started, or no save has been recorded on this device (the game's cloud save does not count). So there is nothing to back up.",
+    "text": "スマートフォンにセーブファイル（data*.dat）が見つかりませんでした。\n\nゲームを一度も起動していないか、この端末にセーブデータが記録されていません（ゲームのクラウドセーブは対象外）。そのため、バックアップするものはありません。"
+   },
+   "save_file_s": {
+    "english": "{0} save file(s) found: {1}",
+    "text": "セーブファイル {0}個が見つかりました：{1}"
+   },
+   "these_saves_same": {
+    "english": "These saves have the same size as the previous backup ({0}).",
+    "text": "これらのセーブデータは前回のバックアップと同じサイズです（{0}）。"
+   },
+   "saves_extracted_file": {
+    "english": "Saves extracted: {0} file(s) in {1}",
+    "text": "セーブデータを取り出しました：{0}ファイルを{1}に保存"
+   },
+   "no_backup_found": {
+    "english": "No backup found in {0}.\nClick “Extract saves” (before the installation), or copy a backup folder (containing data0.dat …) into this folder.",
+    "text": "{0}にバックアップが見つかりません。\n「セーブデータを取り出す」をクリックするか（インストール前）、バックアップのフォルダー（data0.dat …を含む）をこのフォルダーにコピーしてください。"
+   },
+   "no_save": {
+    "english": "No save",
+    "text": "セーブデータなし"
+   },
+   "installed_game_not": {
+    "english": "The installed game is not patched",
+    "text": "インストールされたゲームはパッチ版ではありません"
+   },
+   "game_installed_phone": {
+    "english": "The game installed on the phone seems to be the original (English) version and not the translated one. Restoring the saves is possible, but they may be lost when you install the patch.\n\nContinue anyway?",
+    "text": "スマートフォンにインストールされたゲームは、翻訳版ではなくオリジナル（英語）版のようです。セーブデータの復元はできますが、パッチをインストールするときに失われるかもしれません。\n\nそれでも続けますか？"
+   },
+   "continue": {
+    "english": "Continue",
+    "text": "続ける"
+   },
+   "file_s": {
+    "english": "{0}   ·   {1} file(s)   ·   {2}",
+    "text": "{0}   ·   {1}ファイル   ·   {2}"
+   },
+   "most_recent": {
+    "english": "   ·   The most recent",
+    "text": "   ·   最新"
+   },
+   "which_backup_saves": {
+    "english": "Which backup of the saves do you want to restore?",
+    "text": "どのセーブデータのバックアップを復元しますか？"
+   },
+   "backups_found_most": {
+    "english": "Backups found in {0}\n(the most recent is preselected):",
+    "text": "{0}で見つかったバックアップ\n（最新のものが選択されています）："
+   },
+   "game_not_created": {
+    "english": "The game has not created its data folder yet",
+    "text": "ゲームがまだデータフォルダーを作成していません"
+   },
+   "game_s_data": {
+    "english": "The game's data folder does not exist on the phone yet: the game has probably not been started since the installation.\n\nStart the game once, close it completely, then continue. (You can also let the tool create the folder, but the game may not recognise the saves.)",
+    "text": "スマートフォンにゲームのデータフォルダーがまだありません：インストール後にゲームを起動していないようです。\n\nゲームを一度起動し、完全に終了してから続けてください。（ツールにフォルダーを作らせることもできますが、ゲームがセーブデータを認識しないおそれがあります。）"
+   },
+   "i_started_game": {
+    "english": "I started the game: try again",
+    "text": "ゲームを起動した：もう一度試す"
+   },
+   "create_folder_anyway": {
+    "english": "Create the folder anyway",
+    "text": "それでもフォルダーを作る"
+   },
+   "data_folder_still": {
+    "english": "The data folder still does not exist: start the game, close it completely, then run “Restore saves” again.",
+    "text": "データフォルダーがまだありません：ゲームを起動し、完全に終了してから「セーブデータを復元」をやり直してください。"
+   },
+   "folder_missing": {
+    "english": "Folder missing",
+    "text": "フォルダーなし"
+   },
+   "phone_already_contains": {
+    "english": "The phone already contains {0} save file(s): they will be replaced by the chosen backup.",
+    "text": "スマートフォンにはすでにセーブファイルが{0}個あります：選んだバックアップで置き換えられます。"
+   },
+   "restoring_file_s": {
+    "english": "Restoring {0} file(s) from {1} …",
+    "text": "{1}から{0}ファイルを復元しています …"
+   },
+   "sending": {
+    "english": "Sending {0} …",
+    "text": "{0}を送信しています …"
+   },
+   "restored": {
+    "english": "  {0}: restored ({1})",
+    "text": "  {0}：復元済み（{1}）"
+   },
+   "failed": {
+    "english": "  {0}: failed... {1}",
+    "text": "  {0}：失敗... {1}"
+   },
+   "different_size_phone": {
+    "english": "(different size on the phone)",
+    "text": "（スマートフォン上のサイズが異なります）"
+   },
+   "file_s_restored": {
+    "english": "{0}/{1} file(s) restored.\nIf adb refuses to write: start the game once, close it completely, then run “Restore saves” again.",
+    "text": "{0}/{1}ファイルを復元しました。\nadbが書き込みを拒否する場合：ゲームを一度起動し、完全に終了してから「セーブデータを復元」をやり直してください。"
+   },
+   "incomplete_restore": {
+    "english": "Incomplete restore",
+    "text": "復元が不完全"
+   },
+   "saves_restored_file": {
+    "english": "Saves restored: {0} file(s) restored. Start the game: your saves should appear in “Poursuivre votre aventure” (continue your adventure).",
+    "text": "セーブデータを復元しました：{0}ファイルを復元。ゲームを起動してください：セーブデータは「Poursuivre votre aventure」（冒険を続ける）に表示されるはずです。"
+   },
+   "saves_restored": {
+    "english": "Saves restored",
+    "text": "セーブデータを復元しました"
+   },
+   "file_s_restored_backup": {
+    "english": "{0} file(s) restored from the backup of {1}.\n\nStart the game: your saves should appear in “Poursuivre votre aventure” (continue your adventure).",
+    "text": "{1}のバックアップから{0}ファイルを復元しました。\n\nゲームを起動してください：セーブデータは「Poursuivre votre aventure」（冒険を続ける）に表示されるはずです。"
+   }
+  },
+  "install": {
+   "not_enough_space": {
+    "english": "Not enough space on the phone: free up some storage, then run step 4 again.",
+    "text": "スマートフォンの空き容量が足りません：容量を空けてからステップ4をやり直してください。"
+   },
+   "phone_refuses_installation": {
+    "english": "The phone refuses installation over USB. On Xiaomi/Redmi/Poco: enable “Install via USB” in the developer options; on other brands: “Allow installing apps via USB”.",
+    "text": "スマートフォンがUSB経由のインストールを拒否しています。Xiaomi/Redmi/Poco：開発者向けオプションで「USB経由でインストール」を有効に。その他のメーカー：「USB経由のアプリのインストールを許可」。"
+   },
+   "another_version_game": {
+    "english": "Another version of the game (different signature) is still installed: uninstall the game yourself, then run step 4 again.",
+    "text": "別のバージョンのゲーム（署名が異なる）がまだインストールされています：ゲームを手動でアンインストールしてから、ステップ4をやり直してください。"
+   },
+   "game_still_installed": {
+    "english": "The game is still installed: uninstall it yourself, then run step 4 again.",
+    "text": "ゲームがまだインストールされています：手動でアンインストールしてから、ステップ4をやり直してください。"
+   },
+   "phone_refuses_version": {
+    "english": "The phone refuses a version older than the one installed: uninstall the game, then run step 4 again.",
+    "text": "スマートフォンがインストール済みより古いバージョンを拒否しています：ゲームをアンインストールしてから、ステップ4をやり直してください。"
+   },
+   "apks_not_signed": {
+    "english": "The APKs are not signed correctly: run step 4 again (signing is redone every time).",
+    "text": "APKが正しく署名されていません：ステップ4をやり直してください（署名は毎回やり直されます）。"
+   },
+   "part_apks_missing": {
+    "english": "Part of the APKs is missing: run steps 1, 2 and 3 again.",
+    "text": "APKの一部がありません：ステップ1、2、3をやり直してください。"
+   },
+   "phone_blocked_installation": {
+    "english": "The phone blocked the installation (Play Protect/verification). Temporarily turn off “Verify apps over USB” in Play Protect.",
+    "text": "スマートフォンがインストールをブロックしました（Play Protect/確認）。Play Protectで「USB経由のアプリを確認」を一時的にオフにしてください。"
+   },
+   "apk_invalid_incomplete": {
+    "english": "An APK is invalid or incomplete: run steps 2 and 3 again.",
+    "text": "APKが無効または不完全です：ステップ2と3をやり直してください。"
+   },
+   "translated_version_not": {
+    "english": "The translated version is not built (“patched_apks” folder missing or incomplete).\nRun step 3 first.",
+    "text": "翻訳版が作成されていません（「patched_apks」フォルダーがないか不完全）。\n先にステップ3を実行してください。"
+   },
+   "step_3_first": {
+    "english": "Step 3 first",
+    "text": "先にステップ3"
+   },
+   "translated_version_not_up": {
+    "english": "Translated version not up to date",
+    "text": "翻訳版が最新ではありません"
+   },
+   "translated_version_patched": {
+    "english": "The translated version in the “patched_apks” folder is older than your latest changes ({0}).\nTo include them, run step 3 again first.",
+    "text": "「patched_apks」フォルダーの翻訳版は、最新の変更（{0}）より前のものです。\n変更を反映するには、先にステップ3をやり直してください。"
+   },
+   "install_anyway": {
+    "english": "Install anyway",
+    "text": "このままインストール"
+   },
+   "step_cancelled_run": {
+    "english": "Step cancelled: run step 3 again to include your changes.",
+    "text": "ステップを中止しました：変更を反映するにはステップ3をやり直してください。"
+   },
+   "java_not_found": {
+    "english": "Java not found. Download it from the Dependencies menu.",
+    "text": "Javaが見つかりません。依存関係メニューからダウンロードしてください。"
+   },
+   "java_missing": {
+    "english": "Java missing",
+    "text": "Javaがありません"
+   },
+   "uber_apk_signer": {
+    "english": "uber-apk-signer.jar not found. Download it from the Dependencies menu.",
+    "text": "uber-apk-signer.jarが見つかりません。依存関係メニューからダウンロードしてください。"
+   },
+   "signing_tool_missing": {
+    "english": "Signing tool missing",
+    "text": "署名ツールがありません"
+   },
+   "saves_last_backup": {
+    "english": "Your saves: last backup on {0} ({1} file(s), “saves” folder). If you have played since, click “Cancel”, then “Extract saves”.",
+    "text": "あなたのセーブデータ：最後のバックアップは{0}（{1}ファイル、「saves」フォルダー）。その後に遊んだ場合は、「キャンセル」をクリックしてから「セーブデータを取り出す」を実行してください。"
+   },
+   "last_backup_saves": {
+    "english": "Last backup of the saves: {0} ({1} file(s)).",
+    "text": "セーブデータの最後のバックアップ：{0}（{1}ファイル）。"
+   },
+   "no_backup_saves": {
+    "english": "No backup of the saves: looking for saves on the phone …",
+    "text": "セーブデータのバックアップがありません：スマートフォンのセーブデータを探しています …"
+   },
+   "extract_saves": {
+    "english": "Extract your saves?",
+    "text": "セーブデータを取り出しますか？"
+   },
+   "not_extracted_saves": {
+    "english": "You have not extracted the saves of this game yet, and the phone contains {0} file(s).\n\nThe installation starts by uninstalling the game, which erases its local saves. Do you want to extract them now?",
+    "text": "このゲームのセーブデータはまだ取り出されておらず、スマートフォンには{0}ファイルあります。\n\nインストールはまずゲームをアンインストールするため、端末内のセーブデータが消えます。今すぐ取り出しますか？"
+   },
+   "extract_saves_now": {
+    "english": "Extract the saves now",
+    "text": "今すぐセーブデータを取り出す"
+   },
+   "continue_without_extracting": {
+    "english": "Continue without extracting them",
+    "text": "取り出さずに続ける"
+   },
+   "step_cancelled_nothing": {
+    "english": "Step cancelled: nothing has been changed.",
+    "text": "ステップを中止しました：何も変更していません。"
+   },
+   "before_installation": {
+    "english": "before installation",
+    "text": "インストール前"
+   },
+   "saves_could_not": {
+    "english": "The saves could not be extracted: step cancelled for safety.",
+    "text": "セーブデータを取り出せませんでした：安全のためステップを中止しました。"
+   },
+   "backup_failed": {
+    "english": "Backup failed",
+    "text": "バックアップできません"
+   },
+   "saves_just_extracted": {
+    "english": "Your saves: just extracted ({0} file(s), “saves” folder).",
+    "text": "あなたのセーブデータ：たった今取り出しました（{0}ファイル、「saves」フォルダー）。"
+   },
+   "continuing_without_backup": {
+    "english": "Continuing without a backup of the saves, as you asked.",
+    "text": "ご希望どおり、セーブデータのバックアップなしで続けます。"
+   },
+   "no_backup_local": {
+    "english": "⚠ No backup: the local saves on the phone will be **lost**.",
+    "text": "⚠ バックアップがありません：スマートフォン内のセーブデータは**失われます**。"
+   },
+   "phone_contains_no": {
+    "english": "The phone contains no local save for this game: nothing to extract.",
+    "text": "スマートフォンにはこのゲームのセーブデータがありません：取り出すものはありません。"
+   },
+   "phone_contains_no_local": {
+    "english": "The phone contains no local save for this game (cloud saves do not work with the patched version).",
+    "text": "スマートフォンにはこのゲームのセーブデータがありません（クラウドセーブはパッチ版では使えません）。"
+   },
+   "signing_apks_uber": {
+    "english": "Signing the APKs (uber-apk-signer) …",
+    "text": "APKに署名しています（uber-apk-signer）…"
+   },
+   "signing": {
+    "english": "Signing …",
+    "text": "署名中 …"
+   },
+   "signing_failed_see": {
+    "english": "Signing failed (see the log).\n",
+    "text": "署名に失敗しました（ログを参照）。\n"
+   },
+   "signing_failed": {
+    "english": "Signing failed",
+    "text": "署名できません"
+   },
+   "too_few_apks": {
+    "english": "Too few APKs signed ({0}). Check the “patched_apks” folder (step 3).",
+    "text": "署名されたAPKが少なすぎます（{0}）。「patched_apks」フォルダーを確認してください（ステップ3）。"
+   },
+   "incomplete_signing": {
+    "english": "Incomplete signing",
+    "text": "署名が不完全"
+   },
+   "apks_signed": {
+    "english": "{0} APKs signed in {1}",
+    "text": "{0}個のAPKに署名し{1}に保存しました"
+   },
+   "uninstall_install": {
+    "english": "Uninstall, then install?",
+    "text": "アンインストールしてからインストールしますか？"
+   },
+   "game_currently_installed": {
+    "english": "The game currently installed ({0}) is going to be uninstalled: its signature differs from the patch's.\nIts local saves will be erased from the phone.\n{1}\n\nThe {2} signed APKs will then be installed.\n\nDuring the installation, watch the phone: if Google Play Protect offers to **send the app for scanning**, tap **“Don't send”**.\n\nContinue?",
+    "text": "現在インストールされているゲーム（{0}）をアンインストールします：署名がパッチと異なるためです。\n端末内のセーブデータはスマートフォンから消去されます。\n{1}\n\nその後、署名済みのAPK {2}個をインストールします。\n\nインストール中はスマートフォンを見てください：Google Play Protectが**アプリをスキャンのために送信**するよう求めてきたら、**「送信しない」**をタップしてください。\n\n続けますか？"
+   },
+   "uninstall_install_2": {
+    "english": "Uninstall and install",
+    "text": "アンインストールしてインストール"
+   },
+   "step_cancelled_game": {
+    "english": "Step cancelled: the game was not touched. The signed APKs remain in {0}.",
+    "text": "ステップを中止しました：ゲームには触れていません。署名済みのAPKは{0}に残っています。"
+   },
+   "uninstalling": {
+    "english": "Uninstalling …",
+    "text": "アンインストール中 …"
+   },
+   "uninstalling_current_game": {
+    "english": "Uninstalling the current game …",
+    "text": "現在のゲームをアンインストールしています …"
+   },
+   "no_answer": {
+    "english": "(no answer)",
+    "text": "（応答なし）"
+   },
+   "installing_several_minutes": {
+    "english": "Installing (several minutes) …",
+    "text": "インストール中（数分）…"
+   },
+   "installing_translated_version": {
+    "english": "Installing the translated version (adb install-multiple) …",
+    "text": "翻訳版をインストールしています（adb install-multiple）…"
+   },
+   "phone_if_google": {
+    "english": "On the phone: if Google Play Protect offers to send the app for scanning, tap “Don't send” (if it blocks it: “More details”, then “Install anyway”).",
+    "text": "スマートフォン：Google Play Protectがアプリをスキャンのために送信するよう求めてきたら、「送信しない」をタップしてください（ブロックされた場合：「詳細」→「インストールする」）。"
+   },
+   "phone_don_t": {
+    "english": "On the phone: “Don't send”",
+    "text": "スマートフォン：「送信しない」"
+   },
+   "installation_starting_watch": {
+    "english": "The installation is starting. Watch the phone screen:\n\n• if Google Play Protect asks to **send the app for scanning**, tap **“Don't send”**;\n• if it shows “App blocked”, tap “More details”, then **“Install anyway”**.\n\nThis is normal: the translated version is not signed by Square Enix.",
+    "text": "インストールを始めます。スマートフォンの画面を見てください：\n\n• Google Play Protectが**アプリをスキャンのために送信**するよう求めてきたら、**「送信しない」**をタップ。\n• 「アプリがブロックされました」と表示されたら、「詳細」をタップしてから**「インストールする」**をタップ。\n\nこれは正常です：翻訳版はSquare Enixによって署名されていません。"
+   },
+   "installation_failed": {
+    "english": "The installation failed.\n\n",
+    "text": "インストールに失敗しました。\n\n"
+   },
+   "adb_answer": {
+    "english": "adb answer: ",
+    "text": "adbの応答："
+   },
+   "empty": {
+    "english": "(empty)",
+    "text": "（空）"
+   },
+   "original_game_uninstalled": {
+    "english": "\n\nThe original game is uninstalled: your saves are in the “saves” folder. Fix the problem, then run step 4 again.",
+    "text": "\n\nオリジナルのゲームはアンインストールされています：セーブデータは「saves」フォルダーにあります。問題を解決してから、ステップ4をやり直してください。"
+   },
+   "installation_failed_2": {
+    "english": "Installation failed",
+    "text": "インストールに失敗"
+   },
+   "step_4_done": {
+    "english": "Step 4 done: the translated version is installed.",
+    "text": "ステップ4完了：翻訳版がインストールされました。"
+   },
+   "translated_version_installed": {
+    "english": "Translated version installed",
+    "text": "翻訳版をインストールしました"
+   },
+   "installation_complete_now": {
+    "english": "Installation complete.\n\nNow start the game once, then close it completely (remove it from the recent apps). Then, if you had extracted saves, click “Restore saves” to put them back.\n\nOn first start, the game may ask you to choose a Google account (especially if there are several on the phone): it is not required, skip the screen by tapping outside it, or with “Cancel” or “Continue”.",
+    "text": "インストールが完了しました。\n\nゲームを一度起動してから、完全に終了してください（最近使ったアプリから消す）。その後、セーブデータを取り出していた場合は「セーブデータを復元」をクリックして戻してください。\n\n初回起動時、ゲームがGoogleアカウントの選択を求めることがあります（特にスマートフォンに複数ある場合）：必須ではありません。画面の外をタップするか、「キャンセル」または「続行」で飛ばしてください。"
+   }
+  },
+  "phone": {
+   "phone_unplugged_not": {
+    "english": "Phone unplugged or not detected: plug the USB cable back in, in file transfer mode, and check that USB debugging is enabled.",
+    "text": "スマートフォンが接続されていないか検出されません：USBケーブルをファイル転送モードで挿し直し、USBデバッグが有効か確認してください。"
+   },
+   "phone_not_authorised": {
+    "english": "The phone has not authorised this computer: accept the “Allow USB debugging?” request shown on the phone screen.",
+    "text": "スマートフォンがこのコンピューターを許可していません：スマートフォンの画面に表示される「USBデバッグを許可しますか？」を許可してください。"
+   },
+   "phone_offline_adb": {
+    "english": "The phone is “offline” for adb: unplug and plug the cable back in, and unlock the phone screen.",
+    "text": "スマートフォンがadbに対して「オフライン」です：ケーブルを抜き差しし、スマートフォンの画面ロックを解除してください。"
+   },
+   "several_devices_plugged": {
+    "english": "Several devices are plugged in: choose the right one in the “Phone” list.",
+    "text": "複数の端末が接続されています：「スマートフォン」の一覧から正しいものを選んでください。"
+   },
+   "connection_phone_lost": {
+    "english": "The connection with the phone was lost (cable unplugged?).",
+    "text": "スマートフォンとの接続が切れました（ケーブルが抜けた？）。"
+   },
+   "adb_not_found": {
+    "english": "adb not found. Download it: Dependencies menu.",
+    "text": "adbが見つかりません。ダウンロードしてください：依存関係メニュー。"
+   },
+   "adb_not_found_2": {
+    "english": "adb not found",
+    "text": "adbが見つかりません"
+   },
+   "phone_unplugged": {
+    "english": "Phone unplugged",
+    "text": "スマートフォン未接続"
+   },
+   "phone_state_unplug": {
+    "english": "The phone is in the “{0}” state: unplug and plug the cable back in.",
+    "text": "スマートフォンは「{0}」の状態です：ケーブルを抜き差ししてください。"
+   },
+   "phone_not_ready": {
+    "english": "Phone not ready",
+    "text": "スマートフォンの準備ができていません"
+   },
+   "several_phones": {
+    "english": "Several phones",
+    "text": "複数のスマートフォン"
+   },
+   "phone_title": {
+    "english": "Phone: {0} ({1})",
+    "text": "スマートフォン：{0}（{1}）"
+   },
+   "phone": {
+    "english": "Phone",
+    "text": "スマートフォン"
+   },
+   "not_installed_phone": {
+    "english": "{0} is not installed on this phone (package {1}).\nInstall the game from the Play Store, then try again.",
+    "text": "{0}はこのスマートフォンにインストールされていません（パッケージ {1}）。\nPlayストアからゲームをインストールしてから、もう一度試してください。"
+   },
+   "game_not_installed": {
+    "english": "Game not installed",
+    "text": "ゲームが未インストール"
+   },
+   "adb_could_not": {
+    "english": "adb could not copy {0}:\n{1}",
+    "text": "adbが{0}をコピーできませんでした：\n{1}"
+   },
+   "copy_failed": {
+    "english": "Copy failed",
+    "text": "コピーできません"
+   },
+   "incomplete_copy_instead": {
+    "english": "{0}: incomplete copy ({1} instead of {2}). Check the USB cable and try again.",
+    "text": "{0}：コピーが不完全です（{2}のはずが{1}）。USBケーブルを確認してもう一度試してください。"
+   },
+   "incomplete_copy": {
+    "english": "Incomplete copy",
+    "text": "コピーが不完全"
+   },
+   "phone_label": {
+    "english": "Phone: ",
+    "text": "スマートフォン："
+   },
+   "phone_not_available": {
+    "english": "(phone not available)",
+    "text": "（スマートフォンが使えません）"
+   },
+   "checking_phone": {
+    "english": "Checking the phone …",
+    "text": "確認中 …"
+   },
+   "not_installed_phone_2": {
+    "english": "{0} is not installed on this phone.",
+    "text": "{0}はこのスマートフォンにインストールされていません。"
+   },
+   "already_patched": {
+    "english": "already patched ✔",
+    "text": "パッチ済み ✔"
+   },
+   "original_version_not": {
+    "english": "original version (not patched)",
+    "text": "オリジナル版（パッチなし）"
+   },
+   "patch_state_cannot": {
+    "english": "patch state cannot be checked",
+    "text": "パッチの状態を確認できません"
+   },
+   "version": {
+    "english": "Version {0} · {1}",
+    "text": "バージョン {0} · {1}"
+   },
+   "phone_unplugged_during": {
+    "english": "The phone was unplugged during the operation: it will fail. Plug it back in, then run the step again.",
+    "text": "処理中にスマートフォンが外されました：処理は失敗します。接続し直してから、ステップをやり直してください。"
+   },
+   "phone_detected": {
+    "english": "Phone detected: ",
+    "text": "スマートフォンを検出しました："
+   },
+   "adb_not_installed": {
+    "english": "adb is not installed: the phone cannot be detected (Dependencies menu).",
+    "text": "adbがインストールされていません：スマートフォンを検出できません（依存関係メニュー）。"
+   },
+   "no_phone_detected": {
+    "english": "No phone detected: plug in the USB cable (file transfer mode) and enable USB debugging.",
+    "text": "スマートフォンが検出されません：USBケーブルを接続し（ファイル転送モード）、USBデバッグを有効にしてください。"
+   },
+   "phone_state_unplug_plug": {
+    "english": "Phone in the “{0}” state: unplug and plug the cable back in.",
+    "text": "スマートフォンは「{0}」の状態です：ケーブルを抜き差ししてください。"
+   },
+   "devices_plugged_choose": {
+    "english": "  ·  {0} devices plugged in, choose one",
+    "text": "  ·  {0}台の端末が接続されています。1台選んでください"
+   }
+  },
+  "rom": {
+   "file_not_found": {
+    "english": "File not found.",
+    "text": "ファイルが見つかりません。"
+   },
+   "zip_not_contain": {
+    "english": "This zip does not contain any .nds file.",
+    "text": "このzipには.ndsファイルが入っていません。"
+   },
+   "file_too_small": {
+    "english": "File too small: this is not a DS ROM.",
+    "text": "ファイルが小さすぎます：DSのROMではありません。"
+   },
+   "unreadable_header_not": {
+    "english": "Unreadable header: this is not a DS ROM (.nds).",
+    "text": "ヘッダーを読めません：DSのROM（.nds）ではありません。"
+   },
+   "valid_european_rom": {
+    "english": "Valid European ROM ({0})",
+    "text": "有効な欧州版ROM（{0}）"
+   },
+   "rom_not": {
+    "english": "This ROM is {0} ({1}), not {2}.",
+    "text": "このROMは{0}（{1}）のもので、{2}のものではありません。"
+   },
+   "rom_but_not": {
+    "english": "ROM of {0} but not the European version (code {1}, {2} needed): only the European ROM contains the European languages.",
+    "text": "{0}のROMですが欧州版ではありません（コード {1}、必要なのは {2}）：欧州の言語が入っているのは欧州版ROMだけです。"
+   },
+   "not_rom_code": {
+    "english": "This is not a ROM of {0} (code {1}, {2} needed).",
+    "text": "{0}のROMではありません（コード {1}、必要なのは {2}）。"
+   },
+   "rom_another_region": {
+    "english": "{0} is the ROM of {1} from another region (code {2}): only the European ROM ({3}) contains the European languages.",
+    "text": "{0}は別の地域の{1}のROMです（コード {2}）：欧州の言語が入っているのは欧州版ROM（{3}）だけです。"
+   },
+   "folder_contains_european": {
+    "english": "Folder that contains your European DS ROMs (DQ IV, V and VI)",
+    "text": "欧州版DSのROM（DQ IV、V、VI）が入っているフォルダー"
+   },
+   "rom_folder": {
+    "english": "ROM folder: {0}",
+    "text": "ROMフォルダー：{0}"
+   },
+   "rom_found": {
+    "english": "ROM found: {0} ({1})",
+    "text": "ROMが見つかりました：{0}（{1}）"
+   },
+   "rom_not_found": {
+    "english": "ROM not found in this folder: the European ROM {0} is needed.",
+    "text": "このフォルダーにROMが見つかりません：欧州版ROM {0} が必要です。"
+   },
+   "rom_folder_not": {
+    "english": "ROM folder not chosen yet: click “Choose the ROM folder…”.",
+    "text": "ROMフォルダーがまだ選ばれていません：「ROMフォルダーを選ぶ…」をクリックしてください。"
+   },
+   "rom_folder_no": {
+    "english": "The ROM folder no longer exists: {0}",
+    "text": "ROMフォルダーがもうありません：{0}"
+   },
+   "rom_not_found_chosen": {
+    "english": "ROM not found in the chosen folder: the European ROM of {0} ({1}) is needed.",
+    "text": "選んだフォルダーにROMが見つかりません：{0}の欧州版ROM（{1}）が必要です。"
+   }
+  },
+  "deps": {
+   "about_mb": {
+    "english": "about {0} MB",
+    "text": "約{0} MB"
+   },
+   "talks_phone_copies": {
+    "english": "talks to the phone (copies the APKs, exports and restores the saves, reinstalls the game).",
+    "text": "スマートフォンと通信します（APKの取得、セーブデータの書き出しと復元、ゲームの再インストール）。"
+   },
+   "runs_apk_signing": {
+    "english": "runs the APK signing tool (step 4).",
+    "text": "APK署名ツールを起動します（ステップ4）。"
+   },
+   "free_tool_signs": {
+    "english": "free tool that signs the modified APKs so the phone accepts to install them (step 4).",
+    "text": "変更したAPKに署名し、スマートフォンがインストールを受け付けるようにするフリーのツール（ステップ4）。"
+   },
+   "logo_title_screen": {
+    "english": "logo and title screen modules (UnityPy, Pillow, numpy)",
+    "text": "ロゴとタイトル画面のモジュール（UnityPy、Pillow、numpy）"
+   },
+   "only_used_translated": {
+    "english": "only used by the “translated logo and title screen” option of step 3.",
+    "text": "ステップ3の「ロゴとタイトル画面の翻訳」オプションでのみ使います。"
+   },
+   "unitypy_pillow_numpy": {
+    "english": "UnityPy, pillow and numpy built into the exe",
+    "text": "UnityPy、pillow、numpyはexeに内蔵"
+   },
+   "missing": {
+    "english": "missing: ",
+    "text": "なし："
+   },
+   "unitypy_pillow_numpy_loaded": {
+    "english": "UnityPy, pillow and numpy loaded",
+    "text": "UnityPy、pillow、numpyを読み込みました"
+   },
+   "not_load": {
+    "english": "do not load: ",
+    "text": "読み込めません："
+   },
+   "disk_space_gb": {
+    "english": "Disk space (≥ {0} GB)",
+    "text": "ディスクの空き容量（{0} GB以上）"
+   },
+   "free": {
+    "english": "free: ",
+    "text": "空き："
+   },
+   "not_measured": {
+    "english": "not measured",
+    "text": "未計測"
+   },
+   "tool": {
+    "english": "in the tool",
+    "text": "ツール内"
+   },
+   "found_path": {
+    "english": "found in the PATH: {0}",
+    "text": "PATHで見つかりました：{0}"
+   },
+   "adb_not_start": {
+    "english": "adb does not start: ",
+    "text": "adbが起動しません："
+   },
+   "not_found": {
+    "english": "not found",
+    "text": "見つかりません"
+   },
+   "tool_2": {
+    "english": " · in the tool",
+    "text": " · ツール内"
+   },
+   "installed_pc": {
+    "english": " · installed on the PC",
+    "text": " · PCにインストール済み"
+   },
+   "java": {
+    "english": "Java {0}",
+    "text": "Java {0}"
+   },
+   "11_newer_required": {
+    "english": " (11 or newer required)",
+    "text": " （11以上が必要）"
+   },
+   "not_answer_within": {
+    "english": "does not answer within {0} s (antivirus scanning it?): try again with “Check again”",
+    "text": "{0}秒以内に応答しません（ウイルス対策ソフトが検査中？）：「再チェック」でもう一度試してください"
+   },
+   "not_start": {
+    "english": "does not start (",
+    "text": "起動しません（"
+   },
+   "code": {
+    "english": "code {0}",
+    "text": "コード {0}"
+   },
+   "java_apk_signing": {
+    "english": "Java (APK signing)",
+    "text": "Java（APKの署名）"
+   },
+   "uber_apk_signer": {
+    "english": "uber-apk-signer (free tool)",
+    "text": "uber-apk-signer（フリーのツール）"
+   },
+   "logo_title_screen_option": {
+    "english": "Logo and title screen (option)",
+    "text": "ロゴとタイトル画面（オプション）"
+   },
+   "download_cancelled": {
+    "english": "Download cancelled.",
+    "text": "ダウンロードを中止しました。"
+   },
+   "download_failed_check": {
+    "english": "Download failed ({0}: {1}).\nCheck your Internet connection (or place the file yourself at the root).",
+    "text": "ダウンロードできません（{0}：{1}）。\nインターネット接続を確認してください（またはファイルを手動でルートに置いてください）。"
+   },
+   "download_failed": {
+    "english": "Download failed",
+    "text": "ダウンロードできません"
+   },
+   "downloaded_archive_corrupted": {
+    "english": "Downloaded archive is corrupted ({0}). Try again.",
+    "text": "ダウンロードしたアーカイブが壊れています（{0}）。もう一度試してください。"
+   },
+   "corrupted_archive": {
+    "english": "Corrupted archive",
+    "text": "アーカイブが壊れています"
+   },
+   "nothing_download_all": {
+    "english": "Nothing to download: all dependencies are already there.",
+    "text": "ダウンロードするものはありません：依存関係はすべてそろっています。"
+   },
+   "destination_folder": {
+    "english": "Destination folder: ",
+    "text": "保存先フォルダー："
+   },
+   "download": {
+    "english": "Download {0}?",
+    "text": "{0}をダウンロードしますか？"
+   },
+   "download_place_portable": {
+    "english": "{0}: {1}\n\nDownload it ({2}) and place it in:\n{3}\n\nThis is a portable version: nothing is installed in Windows.",
+    "text": "{0}：{1}\n\nダウンロード（{2}）して次の場所に置きます：\n{3}\n\nポータブル版です：Windowsには何もインストールされません。"
+   },
+   "download_2": {
+    "english": "Download",
+    "text": "ダウンロード"
+   },
+   "skip": {
+    "english": "Skip",
+    "text": "スキップ"
+   },
+   "download_declined_can": {
+    "english": "{0}: download declined (you can do it later: Dependencies menu).",
+    "text": "{0}：ダウンロードを見送りました（後で行えます：依存関係メニュー）。"
+   },
+   "dependency_ies_downloaded": {
+    "english": "{0} dependency(ies) downloaded.",
+    "text": "{0}個の依存関係をダウンロードしました。"
+   },
+   "downloading": {
+    "english": "Downloading: {0} …",
+    "text": "ダウンロード：{0} …"
+   },
+   "received": {
+    "english": "  {0} received.",
+    "text": "  {0} 受信。"
+   },
+   "unpacking_platform_tools": {
+    "english": "Unpacking platform-tools …",
+    "text": "platform-toolsを展開しています …"
+   },
+   "unable_set_up": {
+    "english": "Unable to set up platform-tools: {0}\nClose the programs that use adb, then try again.",
+    "text": "platform-toolsを設置できません：{0}\nadbを使っているプログラムを閉じてから、もう一度試してください。"
+   },
+   "platform_tools_placed": {
+    "english": "platform-tools placed in: ",
+    "text": "platform-toolsの設置場所："
+   },
+   "unpacking_java": {
+    "english": "Unpacking Java …",
+    "text": "Javaを展開しています …"
+   },
+   "downloaded_archive_not": {
+    "english": "The downloaded archive does not contain Java (bin/java). Try again later.",
+    "text": "ダウンロードしたアーカイブにJava（bin/java）が入っていません。後でもう一度試してください。"
+   },
+   "java_2": {
+    "english": "Java",
+    "text": "Java"
+   },
+   "unable_set_up_java": {
+    "english": "Unable to set up Java: {0}",
+    "text": "Javaを設置できません：{0}"
+   },
+   "portable_java_placed": {
+    "english": "Portable Java placed in: ",
+    "text": "ポータブル版Javaの設置場所："
+   },
+   "nothing_installed_windows": {
+    "english": " (nothing is installed in Windows).",
+    "text": " （Windowsには何もインストールされません）。"
+   },
+   "first_start_java": {
+    "english": "First start of Java (the antivirus may scan it, up to a minute) …",
+    "text": "Javaの初回起動（ウイルス対策ソフトが検査することがあり、最大1分）…"
+   },
+   "java_answers_correctly": {
+    "english": "Java {0} answers correctly.",
+    "text": "Java {0} は正常に応答しています。"
+   },
+   "java_not_answer": {
+    "english": "Java does not answer yet",
+    "text": "Javaがまだ応答しません"
+   },
+   "timeout_antivirus_probably": {
+    "english": " (timeout: the antivirus is probably scanning it, click “Check again” in a moment)",
+    "text": " （タイムアウト：おそらくウイルス対策ソフトが検査中です。少ししてから「再チェック」をクリックしてください）"
+   },
+   "uber_apk_signer_downloaded": {
+    "english": "uber-apk-signer downloaded: ",
+    "text": "uber-apk-signerをダウンロードしました："
+   },
+   "adb_talks_phone": {
+    "english": "adb talks to the phone through the USB cable: it detects it, copies the original APKs, extracts and restores the saves, uninstalls and installs the game.",
+    "text": "adbはUSBケーブルでスマートフォンと通信します：スマートフォンの検出、元のAPKのコピー、セーブデータの取り出しと復元、ゲームのアンインストールとインストールを行います。"
+   },
+   "essential_phone_detection": {
+    "english": "essential: phone detection, steps 1 and 4, and saves.",
+    "text": "必須：スマートフォンの検出、ステップ1と4、セーブデータ。"
+   },
+   "java_runs_uber": {
+    "english": "Java runs uber-apk-signer, the tool that signs the APKs. The tool uses the Java already installed on the PC if it is recent enough (11 or newer), otherwise a portable version downloaded into its “dependencies” folder.",
+    "text": "Javaは、APKに署名するツールuber-apk-signerを動かします。PCにインストール済みのJavaが十分新しければ（11以上）それを使い、なければ「dependencies」フォルダーにダウンロードしたポータブル版を使います。"
+   },
+   "essential_step_4": {
+    "english": "essential: step 4 (sign and install).",
+    "text": "必須：ステップ4（署名してインストール）。"
+   },
+   "eclipse_adoptium_temurin": {
+    "english": "Eclipse Adoptium (Temurin, free Java)",
+    "text": "Eclipse Adoptium（Temurin、フリーのJava）"
+   },
+   "uber_apk_signer_apk": {
+    "english": "uber-apk-signer (APK signing)",
+    "text": "uber-apk-signer（APKの署名）"
+   },
+   "phone_only_installs": {
+    "english": "A phone only installs signed APKs. The patched APKs lose the Square Enix signature: uber-apk-signer gives them a new one, specific to your PC.",
+    "text": "スマートフォンは署名されたAPKしかインストールしません。パッチ済みのAPKはSquare Enixの署名を失います：uber-apk-signerがあなたのPC固有の新しい署名を付けます。"
+   },
+   "patrick_favre_free": {
+    "english": "Patrick Favre (free software, Apache 2.0 licence)",
+    "text": "Patrick Favre（フリーソフトウェア、Apache 2.0ライセンス）"
+   },
+   "logo_title_screen_modules": {
+    "english": "Logo and title screen modules (optional)",
+    "text": "ロゴとタイトル画面のモジュール（任意）"
+   },
+   "unitypy_pillow_numpy_read": {
+    "english": "UnityPy, Pillow and numpy read and modify the game images to translate the logo subtitle and “Tap to Start”.",
+    "text": "UnityPy、Pillow、numpyはゲームの画像を読み込んで変更し、ロゴの副題と「Tap to Start」を翻訳します。"
+   },
+   "optional_only_translated": {
+    "english": "optional: only the “Translated logo and title screen” option (step 3). Without them, the option is greyed out and the rest of the patch works.",
+    "text": "任意：「ロゴとタイトル画面の翻訳」オプション（ステップ3）でのみ使用。ない場合、オプションはグレーになりますが、パッチのほかの部分は動作します。"
+   },
+   "free_projects_unitypy": {
+    "english": "free projects UnityPy, Pillow and numpy",
+    "text": "フリーのプロジェクト UnityPy、Pillow、numpy"
+   },
+   "portable_version_downloaded": {
+    "english": "portable version downloaded into the tool: nothing is installed in Windows. “Reinstall” downloads it again (useful if it is damaged).",
+    "text": "ツール内にダウンロードしたポータブル版：Windowsには何もインストールされません。「再インストール」でもう一度ダウンロードします（壊れたときに便利）。"
+   },
+   "program_already_present": {
+    "english": "program already present on the PC: the tool uses it as it is. “Download into the tool” puts its own portable version into the “dependencies” folder (it will then be used).",
+    "text": "PCにすでにあるプログラム：ツールはそれをそのまま使います。「ツール内にダウンロード」を選ぶと、専用のポータブル版を「dependencies」フォルダーに置きます（以後はそちらを使用）。"
+   },
+   "built_tool_when": {
+    "english": "built into the tool when it was made: nothing to download.",
+    "text": "ツールの作成時に内蔵：ダウンロード不要。"
+   },
+   "exe": {
+    "english": "in the exe",
+    "text": "exe内"
+   },
+   "missing_exe": {
+    "english": "missing from the exe",
+    "text": "exeにありません"
+   },
+   "downloaded": {
+    "english": "{0}, downloaded from {1} ({2})",
+    "text": "{0}、{1}からダウンロード（{2}）"
+   },
+   "what": {
+    "english": "What it is for",
+    "text": "用途"
+   },
+   "needed": {
+    "english": "Needed for",
+    "text": "必要な場面"
+   },
+   "origin": {
+    "english": "Origin",
+    "text": "入手元"
+   },
+   "location": {
+    "english": "Location",
+    "text": "場所"
+   },
+   "installation": {
+    "english": "Installation",
+    "text": "インストール"
+   },
+   "check_again": {
+    "english": "Check again",
+    "text": "再チェック"
+   },
+   "built_tool_nothing": {
+    "english": "Built into the tool: nothing to download.",
+    "text": "ツールに内蔵：ダウンロード不要。"
+   },
+   "downloads_again": {
+    "english": "Downloads again",
+    "text": "再ダウンロード："
+   },
+   "downloads": {
+    "english": "Downloads",
+    "text": "ダウンロード："
+   },
+   "places_progress_shown": {
+    "english": " {0} ({1}) and places it in {2}. Progress is shown at the bottom of the main window.",
+    "text": " {0}（{1}）を{2}に置きます。進み具合はメインウィンドウの下に表示されます。"
+   },
+   "runs_check_again": {
+    "english": "Runs the check again (useful if you have added or moved a program yourself).",
+    "text": "もう一度確認します（プログラムを手動で追加・移動したときに便利です）。"
+   },
+   "checking": {
+    "english": "Checking …",
+    "text": "確認中 …"
+   },
+   "present": {
+    "english": "Present: {0}",
+    "text": "あり：{0}"
+   },
+   "missing_2": {
+    "english": "Missing.",
+    "text": "ありません。"
+   },
+   "missing_label": {
+    "english": "Missing: ",
+    "text": "ありません："
+   },
+   "missing_unusable": {
+    "english": "Missing or unusable: ",
+    "text": "ないか使えません："
+   },
+   "check": {
+    "english": "To check: ",
+    "text": "要確認："
+   },
+   "reinstall": {
+    "english": "Reinstall",
+    "text": "再インストール"
+   },
+   "download_tool": {
+    "english": "Download into the tool",
+    "text": "ツール内にダウンロード"
+   },
+   "built_tool": {
+    "english": "Built into the tool",
+    "text": "ツールに内蔵"
+   },
+   "reinstall_all": {
+    "english": "Reinstall all…",
+    "text": "すべて再インストール…"
+   },
+   "text": {
+    "english": "   • {0}: {1}",
+    "text": "   • {0}：{1}"
+   },
+   "download_what_s": {
+    "english": "Download what's missing",
+    "text": "足りないものをダウンロード"
+   },
+   "download_label": {
+    "english": "To download:\n",
+    "text": "ダウンロードするもの：\n"
+   },
+   "they_stored_folder": {
+    "english": "\n\nThey are stored in the “{0}” folder of the tool (portable versions: nothing is installed in Windows).",
+    "text": "\n\nツールの「{0}」フォルダーに置かれます（ポータブル版：Windowsには何もインストールされません）。"
+   },
+   "reinstall_all_2": {
+    "english": "Reinstall all",
+    "text": "すべて再インストール"
+   },
+   "download_again_replace": {
+    "english": "Download again and replace:\n",
+    "text": "もう一度ダウンロードして置き換えるもの：\n"
+   },
+   "useful_if_program": {
+    "english": "\n\nUseful if a program is damaged or no longer answers. The programs already installed on the PC (Java, adb) and the modules built into the tool are not affected.",
+    "text": "\n\nプログラムが壊れたり応答しなくなったりしたときに便利です。PCにインストール済みのプログラム（Java、adb）とツールに内蔵のモジュールは対象外です。"
+   },
+   "downloading_dependencies": {
+    "english": "Downloading the dependencies",
+    "text": "依存関係のダウンロード"
+   },
+   "missing_programs": {
+    "english": "Missing programs: ",
+    "text": "足りないもの："
+   },
+   "download_them": {
+    "english": ". Download them",
+    "text": "。ダウンロードしてください"
+   },
+   "download_3": {
+    "english": ". Download it",
+    "text": "。ダウンロードしてください"
+   },
+   "dependencies_download_what": {
+    "english": " with the Dependencies › Download what's missing menu",
+    "text": " （依存関係 › 足りないものをダウンロード メニュー）"
+   },
+   "required_programs_not": {
+    "english": "Required programs not found",
+    "text": "必要なプログラムが見つかりません"
+   },
+   "check_2": {
+    "english": "Check",
+    "text": "確認"
+   },
+   "technical_info_pc": {
+    "english": "(Technical info: on this PC, the answers of adb and Java are read with the fallback method “{0}”, attempts: {1}.)",
+    "text": "（技術情報：このPCでは、adbとJavaの応答を予備の方法「{0}」で読み取っています。試行：{1}。）"
+   },
+   "answers_programs_adb": {
+    "english": "The answers of the programs (adb, Java) cannot be read on this PC (",
+    "text": "このPCではプログラム（adb、Java）の応答を読み取れません（"
+   },
+   "copy_log_ask": {
+    "english": "). Copy this log to ask for help.",
+    "text": "）。このログをコピーして助けを求めてください。"
+   },
+   "all_required_programs": {
+    "english": "All the required programs are now present.",
+    "text": "必要なプログラムがすべてそろいました。"
+   },
+   "steps_stay_greyed": {
+    "english": ".\n\nThe steps stay greyed out as long as they are missing.",
+    "text": "。\n\n足りない間はステップがグレーのままです。"
+   },
+   "missing_programs_2": {
+    "english": "Missing programs",
+    "text": "プログラムが足りません"
+   },
+   "optional": {
+    "english": " (optional)",
+    "text": "（任意）"
+   },
+   "work_tool_needs": {
+    "english": "To work, the tool needs free programs that are not there yet:\n",
+    "text": "動作するには、まだない無料のプログラムが必要です：\n"
+   },
+   "allow_tool_download": {
+    "english": "\n\nDo you allow the tool to download them now? They are stored in its “{0}” folder (portable versions: nothing is installed in Windows).\n\nWithout them, the steps stay greyed out; you can also download them later with the Dependencies menu.",
+    "text": "\n\n今すぐダウンロードしてもよろしいですか？ツールの「{0}」フォルダーに置かれます（ポータブル版：Windowsには何もインストールされません）。\n\nない場合、ステップはグレーのままです。後で依存関係メニューからダウンロードすることもできます。"
+   },
+   "programs_download": {
+    "english": "Programs to download",
+    "text": "ダウンロードするプログラム"
+   }
+  },
+  "log": {
+   "log": {
+    "english": " Log ",
+    "text": " ログ "
+   },
+   "log_shared_3": {
+    "english": "Log shared by the 3 games, saved in {0}. At startup, the history is reloaded (in grey), then a separator marks the start of the new session.",
+    "text": "3作共通のログで、{0}に保存されます。起動時に履歴を（灰色で）読み込み、その後に区切り線で新しいセッションの始まりを示します。"
+   },
+   "cancel_step": {
+    "english": "Cancel step",
+    "text": "ステップを中止"
+   },
+   "copy_log": {
+    "english": "Copy log",
+    "text": "ログをコピー"
+   },
+   "progress_current_operation": {
+    "english": "Progress of the current operation.",
+    "text": "実行中の処理の進み具合。"
+   },
+   "interrupts_current_operation": {
+    "english": "Interrupts the current operation (the adb command or the download is cut off, the build script stops at its next message). Incomplete files are deleted.",
+    "text": "実行中の処理を中断します（adbコマンドやダウンロードは打ち切られ、作成スクリプトは次のメッセージで止まります）。不完全なファイルは削除されます。"
+   },
+   "copies_whole_displayed": {
+    "english": "Copies the whole displayed log (history included) to the clipboard: handy to ask for help.",
+    "text": "表示されているログ全体（履歴を含む）をクリップボードにコピーします：助けを求めるときに便利です。"
+   },
+   "history": {
+    "english": "History ({0})\n",
+    "text": "履歴（{0}）\n"
+   },
+   "general": {
+    "english": "General",
+    "text": "全般"
+   },
+   "new_session": {
+    "english": "━━━━━━━━━━  New session: {0}  ━━━━━━━━━━",
+    "text": "━━━━━━━━━━  新しいセッション：{0}  ━━━━━━━━━━"
+   },
+   "log_copied": {
+    "english": "Log copied ✔",
+    "text": "ログをコピーしました ✔"
+   }
+  },
+  "help": {
+   "what_tool_translates": {
+    "english": "# What this tool does\nIt translates into **French** the Android (Google Play) versions of Dragon Quest IV, V and VI, which do not exist in French.\nThe French texts come from **your European DS ROM** of the same game: the tool contains no ROM and no game text. The texts specific to the mobile version (party chat, touch menus…) are translated by the patch.\nUnofficial project, for personal use, not affiliated with Square Enix.\n\n# What you need\n• The game installed from the Google Play Store on an Android phone, **set to English**.\n• The European DS ROM of the same game (.nds file, or a .zip containing it): The Chapters of the Chosen (DQ IV), The Hand of the Heavenly Bride (DQ V) or Realms of Reverie (DQ VI).\n• A USB cable and **USB debugging** enabled in the phone's developer options.\n• A few free programs: the tool downloads them for you at startup (with your consent).\n\n# How to do it (one tab per game)\n1. Choose the **folder that contains your ROMs** (“Checks” area): the ROM of each game is found there automatically.\n2. Plug in the phone and **accept the authorisation** shown on its screen.\n3. Run the 4 steps in order (a greyed-out button is not possible yet, the icon on its right tells whether the step is done):\n   1 · **Extract original APKs**: copies the game from the phone to the PC.\n   2 · **Prepare texts**: a few minutes, without the phone; writes all the game texts into a file you can edit.\n   3 · **Patch APKs**: puts these texts into the game.\n   4 · **Sign and install**: replaces the game with the translated version.\nSeparately, under the steps, the **saves**:\n   **Extract saves**: before step 4, essential because it uninstalls the game.\n   **Restore saves**: after step 4, once the game has been started and then closed.\nEach step becomes available when what it needs is ready: the “Checks” area shows the state of everything, and its “Next” line tells you what to do. Steps 2 and 3 do not need the phone. Next to each step: ✔ done, ✖ not done yet or to run again, ⚠ to check (hover over the icon for details).\n\n# Good to know\n• The game's cloud save **does not work** with the translated version: keep your saves with the “Extract saves” and “Restore saves” buttons.\n• **Turn off automatic updates** of the game in the Play Store, otherwise it will replace the translated version.\n• Hover over a button or an area with the mouse: a tooltip explains what it is for, or why it is greyed out.\n• **Never share** your ROM or the patched APKs.\n",
+    "text": "# このツールでできること\nフランス語版が存在しないDragon Quest IV、V、VIのAndroid版（Google Play）を**フランス語**にします。\nフランス語のテキストは、同じゲームの**あなたの欧州版DSのROM**から取り込みます：ツールにはROMもゲームのテキストも含まれていません。モバイル版だけのテキスト（仲間会話、タッチ操作のメニューなど）はパッチが翻訳します。\n非公式のプロジェクトで、個人での使用を目的としており、Square Enixとは関係ありません。\n\n# 必要なもの\n• Google Playストアからインストールしたゲームが入った、**英語に設定した**Androidスマートフォン。\n• 同じゲームの欧州版DSのROM（.ndsファイル、またはそれを含む.zip）：The Chapters of the Chosen（DQ IV）、The Hand of the Heavenly Bride（DQ V）、Realms of Reverie（DQ VI）。\n• USBケーブルと、スマートフォンの開発者向けオプションで有効にした**USBデバッグ**。\n• いくつかの無料のプログラム：起動時にツールがダウンロードします（あなたの同意を得てから）。\n\n# 手順（ゲームごとに1つのタブ）\n1. **ROMが入っているフォルダー**を選びます（「チェック」欄）：各ゲームのROMが自動で見つかります。\n2. スマートフォンを接続し、画面に表示される**許可を承認**します。\n3. 4つのステップを順に実行します（グレーのボタンはまだ実行できません。右のアイコンでステップが完了したかがわかります）：\n   1 · **元のAPKを取り出す**：ゲームをスマートフォンからPCにコピーします。\n   2 · **テキストを準備**：数分、スマートフォン不要。ゲームのすべてのテキストを編集可能なファイルに書き出します。\n   3 · **APKにパッチを当てる**：そのテキストをゲームに入れます。\n   4 · **署名してインストール**：ゲームを翻訳版に置き換えます。\n別枠として、ステップの下に**セーブデータ**のボタンがあります：\n   **セーブデータを取り出す**：ステップ4の前に必須です（ゲームをアンインストールするため）。\n   **セーブデータを復元**：ステップ4の後、ゲームを一度起動して終了してから。\n各ステップは必要なものがそろうと使えるようになります：「チェック」欄にすべての状態が表示され、「次にやること」の行で何をすればよいかがわかります。ステップ2と3にはスマートフォンは不要です。各ステップの横：✔ 完了、✖ 未実行またはやり直し、⚠ 要確認（アイコンにマウスを重ねると詳細が出ます）。\n\n# 知っておくと便利なこと\n• ゲームのクラウドセーブは翻訳版では**使えません**：「セーブデータを取り出す」と「セーブデータを復元」ボタンでセーブデータを保管してください。\n• Playストアでゲームの**自動更新をオフ**にしてください。そうしないと翻訳版が置き換えられてしまいます。\n• ボタンや欄にマウスを重ねると、何に使うか、なぜグレーなのかを説明するヒントが出ます。\n• ROMやパッチ済みのAPKは**絶対に共有しないでください**。\n"
+   },
+   "editing": {
+    "english": "# Before editing\n• Make a **copy** of the DQx_game_texts.json file (menu **File › Open the texts folder**): this is your way back.\n• Open it with **Notepad++** or **VS Code** (free), never with Word or WordPad, and save it as **UTF-8**.\n• Edit **only** the “text” lines. “english” and “origin” are there to help you (the tool does not read them). Do not delete any entry and do not change the numbers.\n\n# Finding the right text\n• Search (Ctrl+F) for 3 or 4 consecutive words, as you see them in the game, **without the punctuation**: in French texts there is a non-breaking space before ! ? : ; » and after «, which the search does not find with a normal space.\n• Names and numbers that change (the hero, an amount of gold…) are **%a** codes followed by 6 digits: do not type them in the search.\n• Several results? Check the “english” line and the neighbouring texts: they are in game order. If the same line exists several times (two moments of the story, two versions of a village), fix them all.\n\n# The file rules (JSON)\n• The text is between straight quotes: **never** press Enter inside it, and do not delete these quotes or the comma that follows.\n• Inside a text, a straight quote is written **\\\"** and a backslash **\\\\**. For dialogues, rather use the French quotes « », which the game already displays.\n• If step 3 reports an error “line X, column Y”, go to that line (Ctrl+G in Notepad++): it is almost always a quote or a comma.\n\n# The game codes: keep them\n• **@a…@b** at the start of a dialogue: the name shown above the bubble is between @a and @b (nothing for an anonymous character, whose line starts with “*: ”). **\\n@c0@** at the end: leave it as it is.\n• **@1…@** surrounds a menu label or a place name: only change the words between them.\n• An item or a spell has the form **@0M@2le @3un @4nom@5les @6des @7pluriel@8N@9N@**: you can change the articles (after @2, @3, @5, @6), the singular name (after @4) and the plural (after @7); M or F after @0 = gender. Do not touch the rest.\n• **%a** + 6 digits = variable name or number: keep it as it is. You can move it within the sentence.\n• **%H…%X** form 1 **%Y** form 2 **%Z** (same principle with %A, %B, %G…) = variants chosen by the game (masculine / feminine, singular / plural…): change the words between the codes, never the codes themselves.\n• The letters я, и, д of some characters (Russian accent, Nimzo) are intended: keep them.\n\n# Line breaks and bubbles\n• **\\n** (backslash + n) **forces a line break**. If the text already contains \\r\\n, use \\r\\n too.\n• Most dialogues have no \\n: the game breaks them by itself according to the bubble width. Only add some for an intended effect or to move a badly placed break.\n• A bubble shows about 3 lines. To **go to a new bubble**, copy the **㈡** character from another text and place it between two sentences; for an anonymous character, the new bubble starts again with “*: ” (“…sentence. ㈡ *: More…”).\n• **㈢** = short pause in the middle of a line (hesitation, sneeze…): the rest appears after a moment, in the same bubble.\n• In labels (menus, places, items), **;** marks where the game may break the line if the label is too long: do not delete it; to move it, imitate the neighbouring labels of the same file.\n\n# Punctuation, characters and length\n• Keep the (invisible) non-breaking space before ! ? : ; » and after «: it prevents an exclamation mark from going alone to the next line. To add one, copy it from another text (or Alt + 0160 on the numeric keypad).\n• Accents, œ, « », ’ and … are in the game font. Avoid other symbols (emojis, rare characters): step 3 reports those the font does not have.\n• Menus: keep a length close to the English; if a label overflows, abbreviate the **same word** (“Carac.”) rather than choosing another one.\n\n# After each change\n• Save, run **step 3** then **step 4** again, and check in game.\n• Read **texts\\step3_report.txt**: refused texts (the step 2 one is kept), lines wider than before, characters missing from the font.\n• Running step 2 again offers to keep your file; if it is recreated, the old one is first copied to “texts\\old”.\n• Do not share this file: it contains the text of your ROM. To suggest a fix for everyone, send the author of the patch the key (for example b0502000.mpt, 615) and the corrected text.\n",
+    "text": "# 編集する前に\n• DQx_game_texts.json ファイルの**コピー**を作ってください（メニュー **ファイル › テキストのフォルダーを開く**）：元に戻すための手段です。\n• **Notepad++** または **VS Code**（無料）で開き、WordやWordPadは使わず、**UTF-8** で保存してください。\n• 編集するのは「text」の行**だけ**です。「english」と「origin」は参考用です（ツールは読みません）。項目を削除したり、番号を変えたりしないでください。\n\n# 目的のテキストを探す\n• ゲーム内で見たとおりの連続する3〜4語を、**句読点を除いて**検索（Ctrl+F）してください：フランス語のテキストでは ! ? : ; » の前と « の後にノーブレークスペースがあり、普通のスペースでは検索にかかりません。\n• 変化する名前や数（主人公、ゴールドの額など）は **%a** に6桁の数字が続くコードです：検索には入れないでください。\n• 複数見つかった？「english」の行と前後のテキストを確認してください：ゲームの順に並んでいます。同じセリフが何度も出てくる場合（物語の別の場面、村の別バージョンなど）は、すべて直してください。\n\n# ファイル（JSON）のルール\n• テキストはまっすぐな引用符で囲まれています：中で**決して**Enterキーを押さず、この引用符も後ろのカンマも消さないでください。\n• テキスト内のまっすぐな引用符は **\\\"**、バックスラッシュは **\\\\** と書きます。会話には、ゲームですでに表示されているフランス式の引用符 « » を使ってください。\n• ステップ3が「X行目、Y列目」のエラーを報告したら、その行に移動してください（Notepad++ではCtrl+G）：ほとんどの場合、引用符かカンマです。\n\n# ゲームのコード：必ず残す\n• 会話の先頭の **@a…@b**：吹き出しの上に表示される名前が@aと@bの間にあります（名前のない人物は何もなく、セリフは「*: 」で始まります）。末尾の **\\n@c0@**：そのままにしてください。\n• **@1…@** はメニューの項目名や地名を囲みます：間の語だけを変えてください。\n• アイテムや呪文は **@0M@2le @3un @4nom@5les @6des @7pluriel@8N@9N@** の形です：冠詞（@2、@3、@5、@6の後）、単数形の名前（@4の後）、複数形（@7の後）を変えられます。@0の後のMまたはF = 性。それ以外には触れないでください。\n• **%a** + 6桁 = 変化する名前や数：そのまま残してください。文中で位置を動かすのは構いません。\n• **%H…%X** 形1 **%Y** 形2 **%Z**（%A、%B、%Gなども同じ仕組み）= ゲームが選ぶ変化形（男性 / 女性、単数 / 複数など）：コードの間の語を変え、コード自体は決して変えないでください。\n• 一部の人物（ロシア語なまり、ニムゾ）の я、и、д の文字は意図的なものです：残してください。\n\n# 改行と吹き出し\n• **\\n**（バックスラッシュ + n）は**改行を強制**します。テキストにすでに \\r\\n がある場合は、\\r\\n を使ってください。\n• ほとんどの会話には \\n がありません：ゲームが吹き出しの幅に合わせて自動で改行します。意図した効果のためや、位置の悪い改行を動かすときだけ追加してください。\n• 吹き出しには約3行が表示されます。**新しい吹き出しにする**には、ほかのテキストから **㈡** の文字をコピーして2つの文の間に置きます。名前のない人物の場合、新しい吹き出しは「*: 」で始め直します（「…文。 ㈡ *: 続き…」）。\n• **㈢** = セリフの途中の短い間（ためらい、くしゃみなど）：続きは少し間を置いて同じ吹き出しに表示されます。\n• 項目名（メニュー、地名、アイテム）の **;** は、項目名が長すぎるときにゲームが改行できる位置を示します：消さないでください。動かすときは、同じファイルの近くの項目名をまねてください。\n\n# 句読点、文字、長さ\n• ! ? : ; » の前と « の後の（見えない）ノーブレークスペースは残してください：感嘆符だけが次の行に送られるのを防ぎます。追加するときは、ほかのテキストからコピーしてください（またはテンキーで Alt + 0160）。\n• アクセント記号、œ、« »、’、… はゲームのフォントにあります。それ以外の記号（絵文字、まれな文字）は避けてください：フォントにないものはステップ3が報告します。\n• メニュー：英語に近い長さを保ってください。項目名がはみ出す場合は、別の語を選ぶのではなく**同じ語**を略してください（「Carac.」）。\n\n# 変更のたびに\n• 保存して、**ステップ3**、続いて**ステップ4**をやり直し、ゲーム内で確認してください。\n• **texts\\step3_report.txt** を読んでください：拒否されたテキスト（ステップ2のものを使用）、以前より幅の広い行、フォントにない文字。\n• ステップ2をやり直すと、ファイルを残すか尋ねられます。作り直す場合、古いファイルは先に「texts\\old」にコピーされます。\n• このファイルは共有しないでください：あなたのROMのテキストが入っています。みんなのための修正を提案するには、パッチの作者にキー（例：b0502000.mpt、615）と修正したテキストを送ってください。\n"
+   },
+   "todo": {
+    "english": "# Where is the patch at?\nThe tool works from start to finish and the 3 games are playable in French. But there is still work left for the patch to be really finished: here is what is missing. **Any help is welcome.**\n# 1. Translate the party chat of Dragon Quest IV\n• The mobile version of DQ4 adds about 7,800 lines of “party chat” that do not exist on DS: so they have no official translation.\n• The patch contains a first, unofficial translation of them: it needs to be reworked, line by line, to match the tone of each character.\n# 2. Review the item descriptions\n• The descriptions of items, weapons and equipment are those of the DS: often vague, and almost identical between all the items of the same type.\n• Wanted: a description specific to each item, saying clearly what it does.\n# 3. Check how place names are displayed\n• Places shown on screen with a detail (floor, basement, room…) need checking in game, and the form needs choosing:\n   “Pic des Tisseurs : Taverne”;\n   “à la taverne”, then “Pic des Tisseurs” on the next line;\n   “Pic des Tisseurs”, then “à la taverne” on the next line.\n# 4. Report all text problems\nWhile playing, note everything that is wrong:\n• a text that goes past or touches the edges of a window (bubble, menu, button);\n• a typo or spelling mistake, a wrong agreement (he / she, singular / plural);\n• a text left in English, or a translation that does not match the scene;\n• an item that does not have the right description;\n• a dialogue in the wrong place: a line that does not fit the scene or the character, lines out of order;\n• the same text different from one game to another: item description, menu, item, spell or monster name…;\n• the same name (character, place, item, spell, monster) written in two ways in the same game;\n• a character who changes their way of speaking (formal / informal, accent, verbal tics);\n• a wrong name displayed (one character instead of another);\n• a text that still talks about the DS (stylus, buttons, top screen…) instead of the phone;\n• a better translation you suggest.\nFor each problem, give if possible: the game, the place (town, scene, menu), the text as it is displayed, a **screenshot** and your suggestion. If you found the text in the text file (menu **File › Open the texts folder**), also give its file and number (e.g. b0012000.mpt, 34).\n# Contact\nSend your remarks, fixes and suggestions to: **[CONTACT]**\nFor a problem with the tool itself (a step that fails…), attach the log: **“Copy log”** button, then paste it into your message.\n",
+    "text": "# パッチの進み具合\nツールは最初から最後まで動作し、3作ともフランス語で遊べます。ただし、パッチを本当に完成させるにはまだ作業が残っています：足りないものは以下のとおりです。**どんな協力も歓迎します。**\n# 1. Dragon Quest IVの仲間会話を翻訳する\n• DQ4のモバイル版には、DSにはない「仲間会話」のセリフが約7,800追加されています：そのため公式の翻訳がありません。\n• パッチには最初の非公式な翻訳が入っています：各キャラクターの口調に合うよう、1つずつ見直す必要があります。\n# 2. アイテムの説明を見直す\n• アイテム、武器、防具の説明はDS版のものです：あいまいなことが多く、同じ種類のアイテムではほとんど同じです。\n• 求む：アイテムごとに、何をするのかがはっきりわかる固有の説明。\n# 3. 地名の表示を確認する\n• 補足（階、地下、部屋など）付きで画面に表示される地名は、ゲーム内で確認し、形式を選ぶ必要があります：\n   「Pic des Tisseurs : Taverne」\n   「à la taverne」、次の行に「Pic des Tisseurs」\n   「Pic des Tisseurs」、次の行に「à la taverne」\n# 4. テキストの問題をすべて報告する\n遊びながら、おかしな点をすべてメモしてください：\n• ウィンドウ（吹き出し、メニュー、ボタン）の端からはみ出す、または端に接しているテキスト\n• 誤字や綴りの間違い、一致の誤り（彼 / 彼女、単数 / 複数）\n• 英語のまま残っているテキスト、または場面に合わない翻訳\n• 正しい説明になっていないアイテム\n• 場所の違う会話：場面や人物に合わないセリフ、順番の乱れたセリフ\n• 作品ごとに異なる同じテキスト：アイテムの説明、メニュー、アイテム・呪文・モンスターの名前など\n• 同じ作品の中で2通りに書かれた同じ名前（人物、場所、アイテム、呪文、モンスター）\n• 話し方が変わる人物（親しい口調 / 丁寧な口調、なまり、口ぐせ）\n• 間違った名前の表示（ある人物の代わりに別の人物）\n• スマートフォンではなく、まだDSのこと（タッチペン、ボタン、上画面など）を話しているテキスト\n• あなたが提案するよりよい翻訳\n問題ごとに、できれば次の情報を添えてください：作品、場所（町、場面、メニュー）、表示されたとおりのテキスト、**スクリーンショット**、あなたの提案。テキストファイルで該当テキストを見つけた場合（メニュー **ファイル › テキストのフォルダーを開く**）は、そのファイルと番号も書いてください（例：b0012000.mpt、34）。\n# 連絡先\nご意見、修正、提案の送り先：**[CONTACT]**\nツール自体の問題（ステップが失敗するなど）の場合は、ログを添付してください：**「ログをコピー」**ボタンを押し、メッセージに貼り付けてください。\n"
+   },
+   "address_not_provided": {
+    "english": "(address not provided)",
+    "text": "（アドレス未設定）"
+   },
+   "folders_troubleshooting": {
+    "english": "# The folders\nNext to DQ_Patch_FR.exe, the tool puts everything in three folders:\n• **games**: one folder per game (**DQ4**, **DQ5**, **DQ6**), which contains:\n   apks: the original APKs copied from the phone.\n   texts: **DQx_game_texts.json**, all the game texts (step 2), the step 3 report and, in “old”, the replaced files.\n   build: the basic translated version (step 2), before your texts.\n   patched_apks: the translated APKs (step 3).\n   title_screen: the translated logo and “Tap to Start”, kept by step 3 (“FR title screen” option).\n   signed: the APKs ready to install.\n   saves: your backups of the saves, one folder per date.\n• **dependencies**: the tool itself (installed by DQ_Patch_FR.exe), its settings, **log.txt** (the log, shared by the 3 games) and the downloaded programs (platform-tools, java…).\n• **languages**: the texts of the tool, one file per language (tool_texts_xx-xx.json, menu **Language**).\n**File** menu: opens the folder of the displayed game or that of its texts.\n\n# The “Checks” area\nOn the left of each tab, the tool shows everything it checks (green dot: ready; red: to fix; grey: in progress):\n• **DS ROM**: the ROM folder chosen with the “Choose the ROM folder…” button (the same for the 3 games) and the European ROM of the game found in it (or in one of its subfolders).\n• **Programs**: the dependencies (details in the **Dependencies** menu); the “Download what's missing…” button appears if some are missing.\n• **Phone** and **Installed game**: the USB link, the game version and whether it is already patched.\n• **Texts**: the text file of step 2, and whether you have edited it since.\n• **Next**: the step (or the saves button) to run, or what prevents it.\nAt the end of each step, the log also tells you which one is next and when it is available.\n\n# The dependencies\nThe tool needs a few free programs. At startup, if some are missing, it asks for your consent once, then downloads them all into its “dependencies” folder. The **Dependencies** menu lists them with their state (✔ present, ✖ missing): click one to find out what it is for, where it comes from and where it is stored, and to download or reinstall it. “Download what's missing…” and “Reinstall all…” act on all of them at once. These are portable versions: **nothing is installed in Windows**.\n• adb: talks to the phone over USB.\n• Java and uber-apk-signer: sign the patched APKs so they can be installed.\n• Logo and title screen modules: only for the option of the same name.\n\n# The option\nOn the right of the step 3 button, the **FR title screen** box (ticked = on): also translates the logo subtitle and “Tap to Start”, with images redrawn in high definition, built into the tool. When off, they stay in English.\nChanging this option requires running steps 3 and 4 again. The first step 3 with the option takes several minutes; the result is kept in the game's “title_screen” folder.\n\n# Editing the game texts\nStep 2 writes **all** the game texts, as the patch puts them, into **texts\\DQx_game_texts.json** (menu **File › Open the texts folder**). It is sorted by file and by number: neighbouring texts are in game order, with the English next to them. To fix a text (a word, a “\\n” line break…), only edit its “text” line while keeping the codes, save, then run steps 3 and 4 again. Keep copies of the file to go back. All the details (codes, line breaks, bubbles…): menu **Help › How to edit the texts**. Running step 2 again offers to keep your file; if it is recreated, the old one is first copied to “texts\\old”. This file contains the text of your ROM: do not share it.\n\n# If something goes wrong\n• **Phone not detected**: cable in file transfer mode, USB debugging enabled, authorisation accepted on the phone. Unplug and plug it back in.\n• **Play Protect during the installation**: if it offers to send the app for scanning, tap “Don't send”; if it blocks it: “More details”, then “Install anyway”.\n• **The game crashes at startup** with the logo and title screen option: turn it off (“FR title screen” box of step 3), run steps 3 and 4 again.\n• **The game opens in Japanese**: choose English in the game.\n• **Choosing a Google account when the game opens**: the game may ask for it on first start, especially if there are several accounts on the phone. It is not required: skip the screen by tapping outside it, or with “Cancel” or “Continue”.\n• **Need help**: the “Copy log” button copies everything that happened, to attach to your message.\n",
+    "text": "# フォルダー\nツールは DQ_Patch_FR.exe の横の3つのフォルダーにすべてを置きます：\n• **games**：ゲームごとのフォルダー（**DQ4**、**DQ5**、**DQ6**）で、中身は次のとおり：\n   apks：スマートフォンからコピーした元のAPK。\n   texts：**DQx_game_texts.json**（ゲームのすべてのテキスト、ステップ2）、ステップ3のレポート、「old」には置き換えられたファイル。\n   build：あなたのテキストを入れる前の、翻訳版のベース（ステップ2）。\n   patched_apks：翻訳版のAPK（ステップ3）。\n   title_screen：ステップ3で保存した翻訳済みのロゴと「Tap to Start」（「タイトル画面FR」オプション）。\n   signed：インストールできる状態のAPK。\n   saves：セーブデータのバックアップ。日付ごとに1フォルダー。\n• **dependencies**：ツール本体（DQ_Patch_FR.exe がインストール）、設定、**log.txt**（3作共通のログ）、ダウンロードしたプログラム（platform-tools、javaなど）。\n• **languages**：ツールのテキスト。言語ごとに1つのファイルです（tool_texts_xx-xx.json、**言語**メニュー）。\n**ファイル**メニュー：表示中のゲームのフォルダー、またはそのテキストのフォルダーを開きます。\n\n# 「チェック」欄\n各タブの左側に、ツールが確認しているものがすべて表示されます（緑の点：準備完了、赤：要対応、灰色：確認中）：\n• **DSのROM**：「ROMフォルダーを選ぶ…」ボタンで選んだROMフォルダー（3作共通）と、その中（またはサブフォルダー）で見つかったゲームの欧州版ROM。\n• **プログラム**：依存関係（詳細は**依存関係**メニュー）。足りないものがあると「足りないものをダウンロード…」ボタンが出ます。\n• **スマートフォン**と**インストール済みのゲーム**：USB接続、ゲームのバージョン、すでにパッチ済みかどうか。\n• **テキスト**：ステップ2のテキストファイルと、その後に編集したかどうか。\n• **次にやること**：実行するステップ（またはセーブデータのボタン）、またはそれを妨げているもの。\nログでも、各ステップの終わりに次のステップとそれがいつ使えるかを知らせます。\n\n# 依存関係\nツールにはいくつかの無料のプログラムが必要です。起動時に足りないものがあれば、一度だけ同意を求めてから、すべてを「dependencies」フォルダーにダウンロードします。**依存関係**メニューには状態（✔ あり、✖ なし）とともに一覧が表示されます：1つをクリックすると、用途、入手元、保存場所がわかり、ダウンロードや再インストールができます。「足りないものをダウンロード…」と「すべて再インストール…」はすべてに一度に作用します。ポータブル版です：**Windowsには何もインストールされません**。\n• adb：USBでスマートフォンと通信します。\n• Javaとuber-apk-signer：パッチ済みのAPKに署名し、インストールできるようにします。\n• ロゴとタイトル画面のモジュール：同名のオプションでのみ使います。\n\n# オプション\nステップ3のボタンの右にある **タイトル画面FR** のチェックボックス（チェックあり = オン）：ロゴの副題と「Tap to Start」も、ツールに内蔵した高解像度で描き直した画像で翻訳します。オフにすると英語のままです。\nこのオプションを変えたら、ステップ3と4をやり直す必要があります。オプションを使った最初のステップ3には数分かかります。結果はゲームの「title_screen」フォルダーに保存されます。\n\n# ゲームのテキストを編集する\nステップ2は、パッチが入れるとおりにゲームの**すべての**テキストを **texts\\DQx_game_texts.json** に書き出します（メニュー **ファイル › テキストのフォルダーを開く**）。ファイル順・番号順に並んでおり、前後のテキストはゲームの順で、英語が横にあります。テキストを直すには（単語、改行「\\n」など）、コードを残したまま「text」の行だけを編集して保存し、ステップ3と4をやり直してください。元に戻せるようにファイルのコピーを残してください。詳細（コード、改行、吹き出しなど）：メニュー **ヘルプ › テキストの編集方法**。ステップ2をやり直すとファイルを残すか尋ねられます。作り直す場合、古いファイルは先に「texts\\old」にコピーされます。このファイルにはあなたのROMのテキストが入っています：共有しないでください。\n\n# 困ったときは\n• **スマートフォンが検出されない**：ケーブルはファイル転送モード、USBデバッグを有効に、スマートフォンで許可を承認。抜き差ししてください。\n• **インストール中のPlay Protect**：アプリをスキャンのために送信するよう求められたら「送信しない」をタップ。ブロックされたら「詳細」→「インストールする」。\n• ロゴとタイトル画面のオプションで**ゲームが起動時に落ちる**：オプションをオフにし（ステップ3の「タイトル画面FR」）、ステップ3と4をやり直してください。\n• **ゲームが日本語で起動する**：ゲーム内で英語を選んでください。\n• **ゲームを開いたときのGoogleアカウントの選択**：初回起動時、特にスマートフォンに複数のアカウントがあると求められることがあります。必須ではありません：画面の外をタップするか、「キャンセル」または「続行」で飛ばしてください。\n• **助けが必要なとき**：「ログをコピー」ボタンで起きたことをすべてコピーし、メッセージに添付してください。\n"
+   },
+   "address_copied": {
+    "english": "Address copied: {0}",
+    "text": "アドレスをコピーしました：{0}"
+   },
+   "copy_e_mail": {
+    "english": "Copy the e-mail address",
+    "text": "メールアドレスをコピー"
+   },
+   "dragon_quest_iv": {
+    "english": "Dragon Quest IV-V-VI - Patch FR (experimental)\nBeta version of the tool\n\nUnofficial French patches for the Android versions of Dragon Quest IV, V and VI, for personal use.\nNot affiliated with Square Enix. The tool contains no ROM and no game text.\n\nDependencies: SDK Platform-Tools (Google), Java Temurin (Eclipse Adoptium), uber-apk-signer (P. Favre, Apache 2.0 licence).",
+    "text": "Dragon Quest IV-V-VI - Patch FR（実験版）\nツールのベータ版\n\nDragon Quest IV、V、VIのAndroid版向けの非公式フランス語パッチで、個人での使用を目的としています。\nSquare Enixとは関係ありません。ツールにはROMもゲームのテキストも含まれていません。\n\n依存関係：SDK Platform-Tools（Google）、Java Temurin（Eclipse Adoptium）、uber-apk-signer（P. Favre、Apache 2.0ライセンス）。"
+   },
+   "included_exe_python": {
+    "english": "\n\nIncluded in the exe: Python, Tcl/Tk, PyInstaller, UnityPy, Pillow, NumPy, each under its own licence. Details: THIRD_PARTY_NOTICES.md file, github.com/Sylfried/dq456-translate-prd",
+    "text": "\n\nexeに含まれるもの：Python、Tcl/Tk、PyInstaller、UnityPy、Pillow、NumPy（それぞれ独自のライセンス）。詳細：THIRD_PARTY_NOTICES.mdファイル、github.com/Sylfried/dq456-translate-prd"
+   }
+  },
+  "game": {
+   "chapters_chosen": {
+    "english": "The Chapters of the Chosen",
+    "text": "導かれし者たち"
+   },
+   "hand_heavenly_bride": {
+    "english": "The Hand of the Heavenly Bride",
+    "text": "天空の花嫁"
+   },
+   "realms_reverie": {
+    "english": "Realms of Reverie",
+    "text": "幻の大地"
+   }
+  },
+  "app": {
+   "looking_phone": {
+    "english": "Looking for the phone …",
+    "text": "スマートフォンを探しています …"
+   },
+   "folders_tidied_up": {
+    "english": "Folders tidied up (new layout): ",
+    "text": "フォルダーを整理しました（新しい配置）："
+   },
+   "folders_next_tool": {
+    "english": " → “{0}” and “{1}” folders next to the tool.",
+    "text": " → ツールの横に「{0}」と「{1}」フォルダー。"
+   },
+   "not_moved_file": {
+    "english": "Not moved (file open in another program?): ",
+    "text": "移動できませんでした（ほかのプログラムでファイルが開いている？）："
+   },
+   "new_attempt_next": {
+    "english": ". New attempt at the next start.",
+    "text": "。次回の起動時に再試行します。"
+   },
+   "cancellation_requested": {
+    "english": "Cancellation requested …",
+    "text": "中止を要求しました …"
+   },
+   "operation_progress": {
+    "english": "Operation in progress",
+    "text": "処理を実行中"
+   },
+   "progress_quitting_interrupts": {
+    "english": "“{0}” is in progress.\nQuitting interrupts it and may leave incomplete files (cleaned up at the next attempt).\n\nQuit anyway?",
+    "text": "「{0}」を実行中です。\n終了すると処理が中断され、不完全なファイルが残ることがあります（次回の実行時に片付けます）。\n\nそれでも終了しますか？"
+   },
+   "reading_answers_programs": {
+    "english": "reading the answers of the programs",
+    "text": "プログラムの応答の読み取り"
+   },
+   "dragon_quest_iv": {
+    "english": "Dragon Quest IV-V-VI - Patch FR (experimental)",
+    "text": "Dragon Quest IV-V-VI - Patch FR（実験版）"
+   },
+   "tkinter_not_found": {
+    "english": "tkinter not found: reinstall Python, ticking “tcl/tk and IDLE”.",
+    "text": "tkinterが見つかりません：「tcl/tk and IDLE」にチェックを入れてPythonを再インストールしてください。"
+   },
+   "folder_not_writable": {
+    "english": "Folder not writable",
+    "text": "フォルダーに書き込めません"
+   },
+   "tool_must_able": {
+    "english": "The tool must be able to write in its folder (it stores its “dependencies” and “games” folders there), but this folder is protected:\n{0}\n\nMove it to a normal folder (Desktop, Documents, a folder of your own), then start it again.",
+    "text": "ツールは自分のフォルダーに書き込める必要があります（「dependencies」と「games」フォルダーをそこに置きます）が、このフォルダーは保護されています：\n{0}\n\n普通のフォルダー（デスクトップ、ドキュメント、自分のフォルダー）に移動してから、もう一度起動してください。"
+   },
+   "interface_error": {
+    "english": "Interface error: ",
+    "text": "インターフェースのエラー："
+   }
+  },
+  "common": {
+   "step_interrupted": {
+    "english": "Step interrupted",
+    "text": "ステップが中断されました"
+   },
+   "tool_closing": {
+    "english": "The tool is closing.",
+    "text": "ツールを終了しています。"
+   },
+   "program_not_found": {
+    "english": "Program not found: {0}",
+    "text": "プログラムが見つかりません：{0}"
+   },
+   "unable_run_command": {
+    "english": "Unable to run the command: {0}",
+    "text": "コマンドを実行できません：{0}"
+   },
+   "step_cancelled": {
+    "english": "Step cancelled.",
+    "text": "ステップを中止しました。"
+   },
+   "cancelled": {
+    "english": "Cancelled",
+    "text": "中止"
+   },
+   "text_received": {
+    "english": "text received",
+    "text": "テキストを受信"
+   },
+   "nothing_received": {
+    "english": "nothing received",
+    "text": "何も受信していません"
+   },
+   "label_value": {
+    "english": "{0}: {1}",
+    "text": "{0}：{1}"
+   },
+   "cancel": {
+    "english": "Cancel",
+    "text": "キャンセル"
+   },
+   "disk_full": {
+    "english": "Disk full",
+    "text": "ディスクがいっぱい"
+   },
+   "not_enough_disk": {
+    "english": "Not enough disk space: about {0} needed, {1} free.",
+    "text": "ディスクの空き容量が足りません：約{0}必要で、空きは{1}です。"
+   },
+   "close": {
+    "english": "Close",
+    "text": "閉じる"
+   },
+   "open_folder": {
+    "english": "Open the folder",
+    "text": "フォルダーを開く"
+   },
+   "restore_backup": {
+    "english": "Restore this backup",
+    "text": "このバックアップを復元"
+   },
+   "unable_open_folder": {
+    "english": "Unable to open the folder: {0}",
+    "text": "フォルダーを開けません：{0}"
+   },
+   "later": {
+    "english": "Later",
+    "text": "後で"
+   }
+  }
+ }
+}

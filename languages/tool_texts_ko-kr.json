@@ -1,0 +1,2397 @@
+{
+ "readme": [
+  "Texts of the DQ_Patch_FR tool for one language: file tool_texts_<code>.json of the languages folder, code in the xx-xx form (fr-fr, en-us, pt-br...).",
+  "language = name shown in the Language menu. texts = the texts, by part of the tool: only change the \"text\" lines; \"english\" = original English text (reference, the tool does not read it). An empty \"text\" shows the English.",
+  "Keep {0}, {1}... and the codes as they are: \\n = line break, **...** = bold, # at the start of a line = title. A double quote in a text is written \\\".",
+  "Save the file (UTF-8), then menu Language > Reload the texts. To create a new language: menu Language > Add a language."
+ ],
+ "language": "한국어",
+ "texts": {
+  "lang": {
+   "system_language": {
+    "english": "System language ({0})",
+    "text": "시스템 언어({0})"
+   },
+   "other_english_interface": {
+    "english": "Other (English interface)",
+    "text": "기타(영어 인터페이스)"
+   },
+   "add_language": {
+    "english": "Add a language…",
+    "text": "언어 추가…"
+   },
+   "open_languages_folder": {
+    "english": "Open the languages folder",
+    "text": "언어 폴더 열기"
+   },
+   "reload_texts": {
+    "english": "Reload the texts",
+    "text": "텍스트 다시 불러오기"
+   },
+   "reload_texts_restart": {
+    "english": "The texts of the “languages” folder are read when the tool starts.\n\nRestart now to see your changes?",
+    "text": "“languages” 폴더의 텍스트는 도구를 시작할 때 읽힙니다.\n\n지금 다시 시작해서 변경 내용을 확인할까요?"
+   },
+   "reload_busy": {
+    "english": "An operation is in progress: the texts will be reloaded the next time the tool starts.",
+    "text": "작업이 진행 중입니다: 텍스트는 다음에 도구를 시작할 때 다시 불러옵니다."
+   },
+   "language": {
+    "english": "Language",
+    "text": "언어"
+   },
+   "interface_language_next": {
+    "english": "Interface language: {0} (at the next start).",
+    "text": "인터페이스 언어: {0}(다음 실행 때)."
+   },
+   "change_language": {
+    "english": "Change language",
+    "text": "언어 변경"
+   },
+   "interface_language_changes": {
+    "english": "The interface language changes when the tool restarts.\n\nRestart now?",
+    "text": "인터페이스 언어는 도구를 다시 시작하면 바뀝니다.\n\n지금 다시 시작할까요?"
+   },
+   "operation_progress_new": {
+    "english": "An operation is in progress: the new language will be used the next time the tool starts.",
+    "text": "작업이 진행 중입니다: 새 언어는 다음에 도구를 실행할 때 적용됩니다."
+   },
+   "restart_now": {
+    "english": "Restart now",
+    "text": "지금 다시 시작"
+   },
+   "unable_restart_tool": {
+    "english": "Unable to restart the tool ({0}): close it and start it again.",
+    "text": "도구를 다시 시작할 수 없음({0}): 닫은 뒤 다시 실행하세요."
+   },
+   "new_language": {
+    "english": "New language",
+    "text": "새 언어"
+   },
+   "unable_create_file": {
+    "english": "Unable to create the file: {0}",
+    "text": "파일을 만들 수 없음: {0}"
+   },
+   "language_file_created": {
+    "english": "Language file created ({0}): {1}",
+    "text": "언어 파일을 만들었습니다({0}): {1}"
+   },
+   "file_created_translate": {
+    "english": "File created:\n{0}\n\nTo translate the tool into this language:\n• Open this file with **Notepad++** or **VS Code** (never Word) and save it as **UTF-8**.\n• Only fill in the **“text”** lines: the “english” line just above gives the original English text. An empty “text” shows the English.\n• Keep {{0}}, {{1}}… and the codes (\\n…) as they are.\n• To see your texts in the tool: menu **Language › Reload the texts**.\n\nThe English file ({1}) is in the same folder. To offer this language to everyone: propose the file on the project page, github.com/Sylfried/dq456-translate-prd.",
+    "text": "파일을 만들었습니다:\n{0}\n\n도구를 이 언어로 번역하려면:\n• 이 파일을 **Notepad++** 또는 **VS Code**로 열고(Word는 사용하지 마세요) **UTF-8**로 저장하세요.\n• **“text”** 줄만 채우세요: 바로 위의 “english” 줄에 영어 원문이 있습니다. 비어 있는 “text”는 영어로 표시됩니다.\n• {{0}}, {{1}}… 와 코드(\\n…)는 그대로 두세요.\n• 도구에서 텍스트를 확인하려면: 메뉴 **언어 › 텍스트 다시 불러오기**.\n\n영어 파일({1})은 같은 폴더에 있습니다. 이 언어를 모두에게 제공하려면: 프로젝트 페이지 github.com/Sylfried/dq456-translate-prd 에서 파일을 제안하세요."
+   },
+   "use_language_now": {
+    "english": "Use this language now",
+    "text": "지금 이 언어 사용"
+   },
+   "creates_new_language": {
+    "english": "Creates the file of a new language in the “languages” folder next to the tool, from the English texts. You then translate the texts directly in this file.",
+    "text": "도구 옆의 “languages” 폴더에 영어 텍스트를 바탕으로 새 언어 파일을 만듭니다. 그다음 이 파일에서 텍스트를 직접 번역합니다."
+   },
+   "language_code": {
+    "english": "Language code (xx-xx, for example pt-br):",
+    "text": "언어 코드(xx-xx, 예: pt-br):"
+   },
+   "name_language_menu": {
+    "english": "Name in the Language menu (for example Português):",
+    "text": "언어 메뉴에 표시할 이름(예: Português):"
+   },
+   "create": {
+    "english": "Create",
+    "text": "만들기"
+   },
+   "code_must_have": {
+    "english": "The code must have the xx-xx form: 2 letters, a dash, 2 letters (for example pt-br).",
+    "text": "코드는 xx-xx 형식이어야 합니다: 영문자 2개, 하이픈, 영문자 2개(예: pt-br)."
+   },
+   "language_already_exists": {
+    "english": "The language {0} already exists: choose another code, or edit its file in the “languages” folder.",
+    "text": "언어 {0}은(는) 이미 있습니다: 다른 코드를 고르거나 “languages” 폴더에서 그 파일을 수정하세요."
+   },
+   "enter_name_shown": {
+    "english": "Enter the name shown in the Language menu.",
+    "text": "언어 메뉴에 표시할 이름을 입력하세요."
+   }
+  },
+  "menu": {
+   "open_game_folder": {
+    "english": "Open the game folder",
+    "text": "게임 폴더 열기"
+   },
+   "open_texts_folder": {
+    "english": "Open the texts folder",
+    "text": "텍스트 폴더 열기"
+   },
+   "quit": {
+    "english": "Quit",
+    "text": "종료"
+   },
+   "file": {
+    "english": "File",
+    "text": "파일"
+   },
+   "dependencies": {
+    "english": "Dependencies",
+    "text": "종속 항목"
+   },
+   "about_project": {
+    "english": "About the project",
+    "text": "프로젝트 소개"
+   },
+   "folders_troubleshooting": {
+    "english": "Folders and troubleshooting",
+    "text": "폴더와 문제 해결"
+   },
+   "how_edit_texts": {
+    "english": "How to edit the texts",
+    "text": "텍스트 수정 방법"
+   },
+   "to_do": {
+    "english": "To do",
+    "text": "남은 작업"
+   },
+   "about": {
+    "english": "About",
+    "text": "정보"
+   },
+   "help": {
+    "english": "Help",
+    "text": "도움말"
+   },
+   "open_dq_folder": {
+    "english": "Open the DQ{0} folder",
+    "text": "DQ{0} 폴더 열기"
+   },
+   "open_dq_texts": {
+    "english": "Open the DQ{0} texts folder",
+    "text": "DQ{0} 텍스트 폴더 열기"
+   }
+  },
+  "tab": {
+   "android_copies_original": {
+    "english": "{0} for Android: copies the original APKs and the saves of the phone to this PC.",
+    "text": "Android용 {0}: 원본 APK와 세이브 데이터를 휴대폰에서 이 PC로 복사합니다."
+   },
+   "android_already_contains": {
+    "english": "{0} for Android already contains this language: the tool copies its APKs and its saves from the phone to this PC, for example to play it with the PC port. The French patch is available with the French interface (Language menu).",
+    "text": "Android용 {0}에는 이미 이 언어가 들어 있습니다. 이 도구는 APK와 세이브 데이터를 휴대폰에서 이 PC로 복사합니다(예: PC 이식판으로 플레이하기 위해). 프랑스어 패치는 인터페이스를 프랑스어로 바꾸면 쓸 수 있습니다(언어 메뉴)."
+   },
+   "french_patch_android": {
+    "english": "French patch of {0} for Android: most of the French texts come from the European DS ROM ({1}) that you own. The rest is modified or added by the tool.",
+    "text": "Android용 {0} 프랑스어 패치: 프랑스어 텍스트 대부분은 가지고 있는 유럽판 DS ROM({1})에서 가져옵니다. 나머지는 도구가 수정하거나 추가합니다."
+   },
+   "checks": {
+    "english": " Checks ",
+    "text": " 점검 "
+   },
+   "everything_tool_checks": {
+    "english": "Everything the tool checks before running a step: green dot = ready, red = to fix, grey = checking. Hover over a line for details.",
+    "text": "단계를 실행하기 전에 도구가 확인하는 모든 것: 초록 점 = 준비됨, 빨강 = 해결 필요, 회색 = 확인 중. 줄 위에 마우스를 올리면 상세 내용이 나옵니다."
+   },
+   "ds_rom": {
+    "english": "DS ROM",
+    "text": "DS ROM"
+   },
+   "programs": {
+    "english": "Programs",
+    "text": "프로그램"
+   },
+   "installed_game": {
+    "english": "Installed game",
+    "text": "설치된 게임"
+   },
+   "texts": {
+    "english": "Texts",
+    "text": "텍스트"
+   },
+   "next": {
+    "english": "Next",
+    "text": "다음 할 일"
+   },
+   "european_ds_rom": {
+    "english": "The European DS ROM of {0} ({1}, .nds file or a .zip containing it), looked for in the chosen ROM folder (and its direct subfolders). The folder is the same for the 3 games.\nCurrent folder: {2}",
+    "text": "{0}의 유럽판 DS ROM({1}, .nds 파일 또는 이를 담은 .zip)을 선택한 ROM 폴더(와 바로 아래 하위 폴더)에서 찾습니다. 폴더는 세 게임 공통입니다.\n현재 폴더: {2}"
+   },
+   "not_chosen_yet": {
+    "english": "not chosen yet",
+    "text": "아직 선택 안 함"
+   },
+   "programs_needed_steps": {
+    "english": "Programs needed by the steps (adb):\n",
+    "text": "단계에 필요한 프로그램(adb):\n"
+   },
+   "programs_needed_steps_adb": {
+    "english": "Programs needed by the steps (adb, Java, uber-apk-signer) and by the logo / title screen option:\n",
+    "text": "단계(adb, Java, uber-apk-signer)와 로고 / 타이틀 화면 옵션에 필요한 프로그램:\n"
+   },
+   "details_download_dependencies": {
+    "english": "\n\nDetails and download: Dependencies menu.",
+    "text": "\n\n상세와 다운로드: 종속 항목 메뉴."
+   },
+   "state_usb_link": {
+    "english": "State of the USB link with the phone (checked every 3 seconds). Enable “USB debugging” in the developer options, plug in the cable, then accept the authorisation request on the phone screen. Steps 2 and 3 do not need it.",
+    "text": "휴대폰과의 USB 연결 상태(3초마다 확인). 개발자 옵션에서 “USB 디버깅”을 켜고, 케이블을 연결한 뒤 휴대폰 화면의 권한 요청을 허용하세요. 2단계와 3단계에는 필요 없습니다."
+   },
+   "version_game_installed": {
+    "english": "Version of the game installed on the phone, and whether it is already patched (mark placed in the game by the patch).",
+    "text": "휴대폰에 설치된 게임의 버전과 이미 패치되었는지 여부(패치가 게임에 남기는 표시)."
+   },
+   "file_all_game": {
+    "english": "The file of all the game texts, written by step 2 (menu File › Open the texts folder). If you edit it, run steps 3 and 4 again. Rules: menu Help › How to edit the texts.",
+    "text": "2단계가 쓴 게임 전체 텍스트 파일(메뉴 파일 › 텍스트 폴더 열기). 수정했다면 3단계와 4단계를 다시 실행하세요. 규칙: 메뉴 도움말 › 텍스트 수정 방법."
+   },
+   "what_run_now": {
+    "english": "What to run now (step or saves button), or what prevents it. The log also says it at the end of each step.",
+    "text": "지금 실행할 것(단계 또는 세이브 데이터 버튼) 또는 그것을 막는 원인. 로그도 각 단계가 끝날 때 알려 줍니다."
+   },
+   "choose_rom_folder": {
+    "english": "Choose the ROM folder…",
+    "text": "ROM 폴더 선택…"
+   },
+   "chooses_folder_contains": {
+    "english": "Chooses the folder that contains your European DS ROMs (.nds, or .zip containing them). The tool finds the ROM of each game in it automatically; the choice is remembered for the 3 tabs.",
+    "text": "유럽판 DS ROM(.nds 또는 이를 담은 .zip)이 들어 있는 폴더를 고릅니다. 도구가 그 안에서 각 게임의 ROM을 자동으로 찾고, 선택은 세 탭 모두에 기억됩니다."
+   },
+   "download_what_s": {
+    "english": "Download what's missing…",
+    "text": "빠진 것 다운로드…"
+   },
+   "downloads_all_missing": {
+    "english": "Downloads all the missing programs, after a single confirmation. These are portable versions: nothing is installed in Windows.",
+    "text": "한 번만 확인하면 빠진 프로그램을 모두 다운로드합니다. 포터블 버전입니다: Windows에는 아무것도 설치되지 않습니다."
+   },
+   "several_devices_plugged": {
+    "english": "Several devices are plugged in: choose the one to use.",
+    "text": "여러 기기가 연결되어 있습니다: 사용할 기기를 고르세요."
+   },
+   "steps": {
+    "english": " Steps ",
+    "text": " 단계 "
+   },
+   "patch_steps": {
+    "english": " Patch steps ",
+    "text": " 패치 단계 "
+   },
+   "button_stays_greyed": {
+    "english": "The button stays greyed out as long as the copy is not possible (phone not connected, game not installed); the icon on its right tells whether it is done.",
+    "text": "복사할 수 없는 동안(휴대폰 미연결, 게임 미설치) 버튼은 회색으로 남습니다. 오른쪽 아이콘으로 완료 여부를 알 수 있습니다."
+   },
+   "4_steps_run": {
+    "english": "The 4 steps are run by hand, in order: a button stays greyed out as long as the step is not possible, the icon on its right tells whether it is done. Each one becomes available when what it needs is ready (“Checks” area). On the right of step 3: the box of the “FR title screen” option (ticked = on).",
+    "text": "4단계는 순서대로 직접 실행합니다: 실행할 수 없는 동안 버튼은 회색이고, 오른쪽 아이콘으로 완료 여부를 알 수 있습니다. 필요한 것이 준비되면 활성화됩니다(“점검” 영역). 3단계 오른쪽: “타이틀 화면 FR” 옵션 상자(체크 = 켜짐)."
+   },
+   "saves": {
+    "english": " Saves ",
+    "text": " 세이브 데이터 "
+   },
+   "local_saves_game": {
+    "english": "Your local saves of the game, copied from the phone (for example to continue your game with the PC port).",
+    "text": "휴대폰에서 복사한 게임의 로컬 세이브 데이터(예: PC 이식판으로 이어서 플레이하기 위해)."
+   },
+   "local_saves_game_extract": {
+    "english": "Your local saves of the game: to extract BEFORE step 4 (it uninstalls the original game, which erases them), then to restore AFTER, once the translated version has been started once and closed.",
+    "text": "기기에 저장된 게임의 세이브 데이터: 4단계 전에 추출하고(원본 게임을 삭제해서 지워지기 때문), 번역판을 한 번 실행하고 종료한 뒤에 복원하세요."
+   },
+   "fr_title_screen": {
+    "english": "FR title screen",
+    "text": "타이틀 화면 FR"
+   },
+   "ticked_unticked_off": {
+    "english": "Ticked = on, unticked = off. Step 3 option (translated logo and title screen): also translates the logo (game subtitle) and “Tap to Start”, with redrawn images built into the tool. Uses UnityPy, Pillow and numpy (built into the tool or downloaded from the Dependencies menu). Longer and uses more memory (1 to 2 GB).\nOff: the logo and “Tap to Start” stay the original ones, in English (the rest of the game is translated). Turn it off if there is a problem: the game remains playable without it.\nAfter a change, run steps 3 and 4 again. The first step 3 with the option is long (several minutes); the result is then kept.",
+    "text": "체크 = 켜짐, 체크 해제 = 꺼짐. 3단계 옵션(로고와 타이틀 화면 번역): 도구에 내장된 다시 그린 이미지로 로고(게임 부제)와 “Tap to Start”도 번역합니다. UnityPy, Pillow, numpy를 사용합니다(도구에 내장되었거나 종속 항목 메뉴에서 다운로드). 시간이 더 걸리고 메모리를 더 씁니다(1~2 GB).\n꺼짐: 로고와 “Tap to Start”는 원본 영어 그대로입니다(게임의 나머지는 번역됨). 문제가 있으면 끄세요: 없어도 게임은 플레이할 수 있습니다.\n바꾼 뒤에는 3단계와 4단계를 다시 실행하세요. 옵션을 켠 첫 3단계는 오래 걸립니다(몇 분). 이후 결과가 보관됩니다."
+   },
+   "option_unavailable_logo": {
+    "english": "⛔ Option unavailable: the logo and title screen modules are missing from this exe (it was built without UnityPy, Pillow and numpy).\n\n",
+    "text": "⛔ 옵션을 쓸 수 없음: 이 exe에 로고와 타이틀 화면 모듈이 없습니다(UnityPy, Pillow, numpy 없이 만들어졌습니다).\n\n"
+   },
+   "option_available_same": {
+    "english": "⛔ Option available at the same time as step 3: ",
+    "text": "⛔ 옵션은 3단계와 함께 쓸 수 있게 됩니다: "
+   },
+   "file_s": {
+    "english": "• {0} · {1} file(s)",
+    "text": "• {0} · 파일 {1}개"
+   },
+   "original_apks": {
+    "english": "✔ {0} original APKs · {1}",
+    "text": "✔ 원본 APK {0}개 · {1}"
+   },
+   "apks_folder_contains": {
+    "english": "⚠ The “apks” folder contains already patched APKs: unusable",
+    "text": "⚠ “apks” 폴더에 이미 패치된 APK가 있습니다: 쓸 수 없음"
+   },
+   "not_done_yet": {
+    "english": "not done yet",
+    "text": "아직 안 함"
+   },
+   "run_again_run": {
+    "english": "to run again: {0} has been run again since",
+    "text": "다시 실행 필요: 그 뒤 {0}을(를) 다시 실행함"
+   },
+   "step_1": {
+    "english": "step 1",
+    "text": "1단계"
+   },
+   "done": {
+    "english": "✔ done on {0}",
+    "text": "✔ {0} 완료"
+   },
+   "text_file_missing": {
+    "english": "⚠ text file missing: run step 2 again",
+    "text": "⚠ 텍스트 파일 없음: 2단계를 다시 실행하세요"
+   },
+   "run_again": {
+    "english": "to run again: {0}",
+    "text": "다시 실행 필요: {0}"
+   },
+   "step_2": {
+    "english": "step 2",
+    "text": "2단계"
+   },
+   "done_change_s": {
+    "english": "✔ done on {0} · {1} change(s) from your file",
+    "text": "✔ {0} 완료 · 내 파일의 수정 {1}개"
+   },
+   "not_applied": {
+    "english": " · {0} not applied",
+    "text": " · {0}개 적용 안 됨"
+   },
+   "backup_s_last": {
+    "english": "✔ {0} backup(s) · last {1}",
+    "text": "✔ 백업 {0}개 · 최근 {1}"
+   },
+   "no_save_found": {
+    "english": "no save found on the phone",
+    "text": "세이브 데이터 없음: 휴대폰에서 찾지 못함"
+   },
+   "step_3": {
+    "english": "step 3",
+    "text": "3단계"
+   },
+   "all_present": {
+    "english": "All present",
+    "text": "모두 있음"
+   },
+   "except_optional_logo": {
+    "english": " (except the optional logo and title screen modules)",
+    "text": " (선택 사항인 로고와 타이틀 화면 모듈 제외)"
+   },
+   "run_steps_3": {
+    "english": " · run steps 3 and 4 again",
+    "text": " · 3단계와 4단계를 다시 실행하세요"
+   },
+   "texts_label": {
+    "english": "Texts: ",
+    "text": "텍스트: "
+   },
+   "no_save": {
+    "english": "no save",
+    "text": "세이브 데이터 없음"
+   },
+   "all_done_original": {
+    "english": "All done: the original APKs are copied to the “apks” folder (File › Open the game folder).",
+    "text": "모두 완료: 원본 APK가 “apks” 폴더에 복사되었습니다(파일 › 게임 폴더 열기)."
+   },
+   "all_steps_done": {
+    "english": "All steps are done: the game is translated.",
+    "text": "모든 단계 완료: 게임이 번역되었습니다."
+   },
+   "ready": {
+    "english": "{0}: ready.",
+    "text": "{0}: 준비됨."
+   },
+   "unexpected_error": {
+    "english": "Unexpected error: {0}: {1}",
+    "text": "예기치 않은 오류: {0}: {1}"
+   },
+   "details_log_copy": {
+    "english": "\n\nThe details are in the log (“Copy log” button).",
+    "text": "\n\n상세 내용은 로그에 있습니다(“로그 복사” 버튼)."
+   },
+   "unexpected_error_2": {
+    "english": "Unexpected error",
+    "text": "예기치 않은 오류"
+   }
+  },
+  "steps": {
+   "extract_original_apks": {
+    "english": "Extract original APKs",
+    "text": "원본 APK 추출"
+   },
+   "copies_3_apk": {
+    "english": "Copies the 3 APK files of the installed game from the phone to this PC (“apks” folder of DQx).\n• The phone must be connected over USB (USB debugging enabled) and the original game installed from the Play Store.\n• Reuses the folder already created if the step has already been run.\n• The tool tells you if the installed version is already patched, so that it does not retrieve the wrong APKs or overwrite the existing base.",
+    "text": "설치된 게임의 APK 파일 3개를 휴대폰에서 이 PC로 복사합니다(DQx의 “apks” 폴더).\n• 휴대폰이 USB로 연결되어 있고(USB 디버깅 켜짐) Play 스토어에서 원본 게임이 설치되어 있어야 합니다.\n• 이미 실행한 단계라면 만들어진 폴더를 그대로 사용합니다.\n• 설치된 버전이 이미 패치되었는지 알려 주므로 잘못된 APK를 가져오거나 기존 기본 파일을 덮어쓰지 않습니다."
+   },
+   "prepare_texts": {
+    "english": "Prepare texts",
+    "text": "텍스트 준비"
+   },
+   "reads_european_ds": {
+    "english": "Reads your European DS ROM and the original APKs, applies all the patch rules (texts taken from the ROM, retouched or created), then writes ALL the game texts into the “texts\\DQx_game_texts.json” file.\n• No phone connection needed.\n• Takes several minutes.\n• You can then edit this file (menu File › Open the texts folder) before step 3.",
+    "text": "유럽판 DS ROM과 원본 APK를 읽고 패치의 모든 규칙(ROM에서 가져온 텍스트, 다듬거나 새로 만든 텍스트)을 적용한 뒤, 게임의 모든 텍스트를 “texts\\DQx_game_texts.json” 파일에 씁니다.\n• 휴대폰 연결이 필요 없습니다.\n• 몇 분 걸립니다.\n• 그 후 3단계 전에 이 파일을 수정할 수 있습니다(메뉴 파일 › 텍스트 폴더 열기)."
+   },
+   "patch_apks": {
+    "english": "Patch APKs",
+    "text": "APK 패치"
+   },
+   "puts_texts_texts": {
+    "english": "Puts the texts of the “texts\\DQx_game_texts.json” file (required), as they are, into the translated APKs in the “patched_apks” folder.\n• No phone connection needed.\n• To run again after each change to the text file (then step 4).\n• With the “FR title screen” option (on the right): also translates the logo and “Tap to Start” from your ROM (several minutes, the first time only).\n• The report (your changes applied, texts to check in game) is in “texts\\step3_report.txt”.",
+    "text": "“texts\\DQx_game_texts.json” 파일(필수)의 텍스트를 그대로 “patched_apks” 폴더의 번역된 APK에 넣습니다.\n• 휴대폰 연결이 필요 없습니다.\n• 텍스트 파일을 수정할 때마다 다시 실행하세요(그다음 4단계).\n• “타이틀 화면 FR” 옵션(오른쪽)을 켜면 ROM을 이용해 로고와 “Tap to Start”도 번역합니다(몇 분, 처음 한 번만).\n• 보고서(적용된 수정 사항, 게임에서 확인할 텍스트)는 “texts\\step3_report.txt”에 있습니다."
+   },
+   "extract_saves": {
+    "english": "Extract saves",
+    "text": "세이브 데이터 추출"
+   },
+   "copies_local_saves": {
+    "english": "Copies the local saves of the phone (data*.dat) to “saves/YYYYMMDD_HHMMSS”, checking the size of the files.\n• To do before step 4: uninstalling erases the local saves.\n• The game's cloud save does not work with the patched version.",
+    "text": "휴대폰에 저장된 세이브 데이터(data*.dat)를 “saves/YYYYMMDD_HHMMSS”로 복사하고 파일 크기를 확인합니다.\n• 4단계 전에 하세요: 삭제하면 기기에 저장된 세이브 데이터가 지워집니다.\n• 게임의 클라우드 저장은 패치판에서 작동하지 않습니다."
+   },
+   "sign_install": {
+    "english": "Sign and install",
+    "text": "서명 및 설치"
+   },
+   "signs_translated_apks": {
+    "english": "Signs the translated APKs, uninstalls the original game, then installs the translated version.\n• If you have never extracted your saves, offers to do it; otherwise, reminds you of the date of the last backup.\n• A confirmation is asked before uninstalling.\n• During the installation, if Google Play Protect offers to scan the app on the phone, tap “Don't send”.",
+    "text": "번역된 APK에 서명하고 원본 게임을 삭제한 뒤 번역판을 설치합니다.\n• 세이브 데이터를 한 번도 추출하지 않았다면 추출을 제안하고, 아니면 마지막 백업 날짜를 알려 줍니다.\n• 삭제 전에 확인을 요청합니다.\n• 설치 중 Google Play 프로텍트가 휴대폰에서 앱 검사를 제안하면 “보내지 않음”을 누르세요."
+   },
+   "restore_saves": {
+    "english": "Restore saves",
+    "text": "세이브 데이터 복원"
+   },
+   "puts_back_phone": {
+    "english": "Puts back on the phone the saves of a backup you choose from the list (sorted by date).\n• To do after step 4, once the game has been started and then closed completely.\n• The saves already on the phone are replaced by those of the chosen backup.",
+    "text": "목록(날짜순)에서 고른 백업의 세이브 데이터를 휴대폰에 되돌립니다.\n• 4단계 후, 게임을 한 번 실행하고 완전히 종료한 다음에 하세요.\n• 휴대폰에 이미 있는 세이브 데이터는 고른 백업의 것으로 바뀝니다."
+   },
+   "step": {
+    "english": "Step {0} · {1}",
+    "text": "{0}단계 · {1}"
+   },
+   "before_step_4": {
+    "english": " (before step 4)",
+    "text": " (4단계 전)"
+   },
+   "after_step_4": {
+    "english": " (after step 4)",
+    "text": " (4단계 후)"
+   },
+   "operation_progress": {
+    "english": "⏳ An operation is in progress (",
+    "text": "⏳ 작업이 진행 중입니다("
+   },
+   "wait_finish_click": {
+    "english": "): wait for it to finish or click “Cancel step”.",
+    "text": "): 끝날 때까지 기다리거나 “단계 취소”를 누르세요."
+   },
+   "checking_required_programs": {
+    "english": "⏳ Checking the required programs …",
+    "text": "⏳ 필요한 프로그램 확인 중 …"
+   },
+   "step_1_first": {
+    "english": "⛔ Do step 1 first (copy the original APKs from the phone).",
+    "text": "⛔ 먼저 1단계를 하세요(휴대폰에서 원본 APK 복사)."
+   },
+   "step_2_first": {
+    "english": "⛔ Do step 2 first (Prepare texts).",
+    "text": "⛔ 먼저 2단계를 하세요(텍스트 준비)."
+   },
+   "phone_not_available": {
+    "english": "⛔ Phone not available: ",
+    "text": "⛔ 휴대폰을 쓸 수 없음: "
+   },
+   "checking_game_phone": {
+    "english": "⏳ Checking the game on the phone …",
+    "text": "⏳ 휴대폰의 게임 확인 중 …"
+   },
+   "step_3_first": {
+    "english": "⛔ Do step 3 first (Patch APKs).",
+    "text": "⛔ 먼저 3단계를 하세요(APK 패치)."
+   },
+   "not_installed_phone": {
+    "english": "⛔ {0} is not installed on this phone: install it from the Play Store.",
+    "text": "⛔ {0}이(가) 이 휴대폰에 설치되어 있지 않습니다: Play 스토어에서 설치하세요."
+   },
+   "no_backup_saves": {
+    "english": "⛔ No backup of the saves: do “Extract saves” first.",
+    "text": "⛔ 세이브 데이터 백업 없음: 먼저 “세이브 데이터 추출”을 하세요."
+   },
+   "game_no_longer": {
+    "english": "ℹ The game is no longer installed on the phone, but the translated version is ready: step 4 can install it.",
+    "text": "ℹ 휴대폰에 게임이 더 이상 설치되어 있지 않지만 번역판은 준비되었습니다: 4단계에서 설치할 수 있습니다."
+   },
+   "copies_local_saves_phone": {
+    "english": "Copies the local saves of the phone (data*.dat) to “saves/YYYYMMDD_HHMMSS”, checking the size of the files.",
+    "text": "휴대폰의 로컬 세이브 데이터(data*.dat)를 “saves/YYYYMMDD_HHMMSS”로 복사하고 파일 크기를 확인합니다."
+   },
+   "all_steps_done": {
+    "english": "All steps are done: the translated version is installed.",
+    "text": "모든 단계 완료: 번역판이 설치되었습니다."
+   },
+   "next_available": {
+    "english": "▶ Next: {0} (available).",
+    "text": "▶ 다음 할 일: {0}(실행 가능)."
+   },
+   "next_few_more": {
+    "english": "Next: {0}, a few more seconds: {1}",
+    "text": "다음 할 일: {0}, 몇 초 더: {1}"
+   },
+   "next": {
+    "english": "Next: {0}, {1}",
+    "text": "다음 할 일: {0}, {1}"
+   }
+  },
+  "apks": {
+   "no_apk": {
+    "english": "no APK",
+    "text": "APK 없음"
+   },
+   "base_apk_missing": {
+    "english": "base.apk missing",
+    "text": "base.apk 없음"
+   },
+   "split_unitydataassetpack_apk": {
+    "english": "split_UnityDataAssetPack.apk missing",
+    "text": "split_UnityDataAssetPack.apk 없음"
+   },
+   "split_unitydataassetpack_apk_unreadable": {
+    "english": "split_UnityDataAssetPack.apk unreadable (incomplete copy?)",
+    "text": "split_UnityDataAssetPack.apk를 읽을 수 없음(복사가 불완전?)"
+   },
+   "folder_already_exists": {
+    "english": "The folder {0} already exists: it is reused (nothing is recreated).",
+    "text": "{0} 폴더가 이미 있습니다: 그대로 다시 사용합니다(아무것도 새로 만들지 않음)."
+   },
+   "folder_created": {
+    "english": "Folder {0} created: {1}",
+    "text": "{0} 폴더를 만들었습니다: {1}"
+   },
+   "game_installed_phone": {
+    "english": "The game installed on the phone is already patched (version {0}).",
+    "text": "휴대폰에 설치된 게임은 이미 패치되어 있습니다(버전 {0})."
+   },
+   "game_installed_phone_original": {
+    "english": "The game installed on the phone is the original version (version {0}).",
+    "text": "휴대폰에 설치된 게임은 원본 버전입니다(버전 {0})."
+   },
+   "game_installed_phone_already": {
+    "english": "\n\nThe game installed on the phone is already patched: these original APKs are precious, keep them.",
+    "text": "\n\n휴대폰에 설치된 게임은 이미 패치되어 있습니다: 이 원본 APK는 소중하니 잘 보관하세요."
+   },
+   "original_apks_already": {
+    "english": "Original APKs already retrieved",
+    "text": "원본 APK를 이미 가져옴"
+   },
+   "apks_folder_already": {
+    "english": "The “apks” folder already contains the original APKs ({0} files, {1}, copied on {2}).{3}\n\nWhat do you want to do?",
+    "text": "“apks” 폴더에 이미 원본 APK가 있습니다(파일 {0}개, {1}, {2}에 복사).{3}\n\n어떻게 할까요?"
+   },
+   "keep_them": {
+    "english": "Keep them",
+    "text": "그대로 두기"
+   },
+   "retrieve_them_again": {
+    "english": "Retrieve them again",
+    "text": "다시 가져오기"
+   },
+   "original_apks_kept": {
+    "english": "Original APKs kept. Step 1 considered done.",
+    "text": "원본 APK를 유지합니다. 1단계는 완료된 것으로 봅니다."
+   },
+   "game_phone_already": {
+    "english": "The game on the phone is already patched: retrieving it again would overwrite your original APKs with patched APKs. Step cancelled.",
+    "text": "휴대폰의 게임은 이미 패치되어 있습니다: 다시 가져오면 원본 APK가 패치된 APK로 덮어써집니다. 단계를 취소했습니다."
+   },
+   "retrieval_refused": {
+    "english": "Retrieval refused",
+    "text": "가져오기 거부"
+   },
+   "apks_folder_contains": {
+    "english": "The “apks” folder contains already patched APKs (unusable for step 2): they will be replaced if the phone provides the original.",
+    "text": "“apks” 폴더에 이미 패치된 APK가 있습니다(2단계에 쓸 수 없음): 휴대폰이 원본을 제공하면 교체됩니다."
+   },
+   "not_enough_disk": {
+    "english": "Not enough disk space: {0} needed for the APKs, {1} free on this disk.",
+    "text": "디스크 공간 부족: APK에 {0} 필요, 이 디스크의 여유 공간은 {1}."
+   },
+   "copying_apks_phone": {
+    "english": "Copying {0} APKs from the phone ({1}) …",
+    "text": "휴대폰에서 APK {0}개를 복사하는 중({1}) …"
+   },
+   "incomplete_retrieval": {
+    "english": "Incomplete retrieval: {0}.",
+    "text": "가져오기 불완전: {0}."
+   },
+   "phone_provides_already": {
+    "english": "The phone provides an already patched version: your original APKs in the “apks” folder are kept.",
+    "text": "휴대폰이 이미 패치된 버전을 제공합니다: “apks” 폴더의 원본 APK는 유지됩니다."
+   },
+   "game_installed_phone_already_patched": {
+    "english": "The game installed on the phone is already the patched version: the original APKs are needed.\n\n1) Step 3: extract your saves.\n2) Uninstall the game and reinstall the original from the Play Store.\n3) Run step 1 again.",
+    "text": "휴대폰에 설치된 게임이 이미 패치된 버전입니다: 원본 APK가 필요합니다.\n\n1) 3단계: 세이브 데이터를 추출하세요.\n2) 게임을 삭제하고 Play 스토어에서 원본을 다시 설치하세요.\n3) 1단계를 다시 실행하세요."
+   },
+   "game_already_patched": {
+    "english": "Game already patched",
+    "text": "이미 패치된 게임"
+   },
+   "warning_3_apks": {
+    "english": "Warning: 3 APKs were expected, {0} copied ({1}).",
+    "text": "주의: APK 3개가 필요하지만 {0}개를 복사했습니다({1})."
+   },
+   "copy_done_original": {
+    "english": "Copy done: {0} original APKs in {1}",
+    "text": "복사 완료: 원본 APK {0}개, 위치 {1}"
+   },
+   "step_1_done": {
+    "english": "Step 1 done: {0} original APKs in {1}",
+    "text": "1단계 완료: 원본 APK {0}개, 위치 {1}"
+   }
+  },
+  "texts": {
+   "all_texts_step": {
+    "english": "All the texts of {0} as step 2 prepared them from YOUR ROM and YOUR game: do not share this file.",
+    "text": "2단계에서 당신의 ROM과 당신의 게임으로 준비한 {0}의 모든 텍스트입니다. 이 파일은 공유하지 마세요."
+   },
+   "sorted_file_number": {
+    "english": "Sorted by file then by number: neighbouring texts are in the game's order; \"english\" = original text of the mobile version.",
+    "text": "파일 순, 그다음 번호 순으로 정렬되어 있습니다. 이웃한 텍스트는 게임 순서입니다. “english” = 모바일판 원문."
+   },
+   "fix_text_only": {
+    "english": "To fix a text: only change its \"text\" line and keep the codes (@a...@b at the start of a dialogue, @c0@ at the end,",
+    "text": "텍스트를 고치려면 “text” 줄만 바꾸고 코드는 그대로 두세요(대화 시작의 @a...@b, 끝의 @c0@,"
+   },
+   "variable_name_number": {
+    "english": "%a... = variable name or number, %H...%X...%Y...%Z = variants, \\n = line break, ㈡ = new bubble, ; = possible break in a label).",
+    "text": "%a... = 바뀌는 이름이나 숫자, %H...%X...%Y...%Z = 변형, \\n = 줄바꿈, ㈡ = 새 말풍선, ; = 라벨에서 끊을 수 있는 위치)."
+   },
+   "double_quote_text": {
+    "english": "A double quote in a text is written \\\". Save the file (UTF-8), then run step 3 (patch the APKs) and step 4 (install) again.",
+    "text": "텍스트 안의 큰따옴표는 \\\" 로 씁니다. 파일을 저장(UTF-8)한 뒤 3단계(APK 패치)와 4단계(설치)를 다시 실행하세요."
+   },
+   "running_step_2": {
+    "english": "Running step 2 again offers to keep this file; if it is created again, the old one is first copied to the \"old\" folder.",
+    "text": "2단계를 다시 실행하면 이 파일을 유지할지 묻습니다. 다시 만들면 이전 파일은 먼저 “old” 폴더에 복사됩니다."
+   },
+   "all_rules_codes": {
+    "english": "All the rules (codes, line breaks, new bubbles, punctuation): Help menu > How to edit the texts.",
+    "text": "모든 규칙(코드, 줄바꿈, 새 말풍선, 문장 부호): 도움말 메뉴 > 텍스트 편집 방법."
+   },
+   "origin_rom_official": {
+    "english": "origin: rom = official text of the DS ROM, patch = text of the patch, english = stays in English, french = French text (origin not detailed).",
+    "text": "origin: rom = DS ROM의 공식 텍스트, patch = 패치 텍스트, english = 영어 그대로, french = 프랑스어 텍스트(출처 미상)."
+   },
+   "empty_text": {
+    "english": "empty text",
+    "text": "빈 텍스트"
+   },
+   "b_dialogue_header": {
+    "english": "the @a...@b dialogue header is missing",
+    "text": "대화 머리말 @a...@b가 없습니다"
+   },
+   "end_message_missing": {
+    "english": "the end of the message {0} is missing",
+    "text": "메시지 {0}의 끝이 없습니다"
+   },
+   "name_must_keep": {
+    "english": "the name must keep its @1...@ / @4...@7...@ form",
+    "text": "이름은 @1...@ / @4...@7...@ 형식을 유지해야 합니다"
+   },
+   "step_2_redone": {
+    "english": "step 2 redone since",
+    "text": "그 후 2단계를 다시 실행함"
+   },
+   "texts_changed_since": {
+    "english": "texts changed since",
+    "text": "그 후 텍스트가 수정됨"
+   },
+   "fr_title_screen": {
+    "english": "“FR title screen” option changed since",
+    "text": "그 후 “타이틀 화면 FR” 옵션이 바뀜"
+   },
+   "original_apks_not": {
+    "english": "The original APKs are not there ({0}).\nRun step 1 first.",
+    "text": "원본 APK가 없습니다({0}).\n먼저 1단계를 실행하세요."
+   },
+   "step_1_first": {
+    "english": "Step 1 first",
+    "text": "1단계 먼저"
+   },
+   "apks_apks_folder": {
+    "english": "The APKs in the “apks” folder are already patched: they come from the phone after the patch was installed.\nThe original APKs are needed: uninstall the game, reinstall the original from the Play Store, then run step 1 again (delete the “apks” folder first).",
+    "text": "“apks” 폴더의 APK는 이미 패치되어 있습니다: 패치 설치 후 휴대폰에서 가져온 것입니다.\n원본 APK가 필요합니다: 게임을 삭제하고 Play 스토어에서 원본을 다시 설치한 뒤 1단계를 다시 실행하세요(먼저 “apks” 폴더를 지우세요)."
+   },
+   "apks_already_patched": {
+    "english": "APKs already patched",
+    "text": "이미 패치된 APK"
+   },
+   "no_rom_chosen": {
+    "english": "no ROM chosen",
+    "text": "선택한 ROM 없음"
+   },
+   "unusable_ds_rom": {
+    "english": "Unusable DS ROM: ",
+    "text": "쓸 수 없는 DS ROM: "
+   },
+   "choose_folder_contains": {
+    "english": "\nChoose the folder that contains the European ROM (“Checks” area, “Choose the ROM folder…” button).",
+    "text": "\n유럽판 ROM이 들어 있는 폴더를 고르세요(“점검” 영역, “ROM 폴더 선택…” 버튼)."
+   },
+   "invalid_rom": {
+    "english": "Invalid ROM",
+    "text": "잘못된 ROM"
+   },
+   "program_incomplete_dq": {
+    "english": "The program is incomplete (DQ{0} data missing): download it again.",
+    "text": "프로그램이 불완전합니다(DQ{0} 데이터 없음): 다시 다운로드하세요."
+   },
+   "incomplete_program": {
+    "english": "Incomplete program",
+    "text": "프로그램 불완전"
+   },
+   "texts_already_prepared": {
+    "english": "Texts already prepared",
+    "text": "텍스트 준비됨"
+   },
+   "texts_already_prepared_rom": {
+    "english": "The texts were already prepared on {0}\n(ROM: {1}).\n\n",
+    "text": "텍스트는 {0}에 이미 준비되었습니다\n(ROM: {1}).\n\n"
+   },
+   "preparing_them_again": {
+    "english": "Preparing them again takes several minutes. What do you want to do?",
+    "text": "다시 준비하려면 몇 분이 걸립니다. 어떻게 할까요?"
+   },
+   "keep": {
+    "english": "Keep",
+    "text": "그대로 두기"
+   },
+   "prepare_again": {
+    "english": "Prepare again",
+    "text": "다시 준비"
+   },
+   "texts_already_prepared_kept": {
+    "english": "Texts already prepared, kept. Step 2 considered done.",
+    "text": "준비된 텍스트를 유지합니다. 2단계는 완료된 것으로 봅니다."
+   },
+   "edited_texts": {
+    "english": "You have edited the texts",
+    "text": "텍스트를 수정했습니다"
+   },
+   "file_edited_since": {
+    "english": "The file {0} has been edited since it was created.\n\n• Keep my texts: only the basic translated version is redone, your file is not touched.\n• Recreate the file: it starts again from the patch texts; the old one is first copied to the “texts\\old” folder.",
+    "text": "{0} 파일이 만들어진 뒤 수정되었습니다.\n\n• 내 텍스트 유지: 번역판의 기본만 다시 만들고, 내 파일은 건드리지 않습니다.\n• 파일 다시 만들기: 패치 텍스트부터 다시 시작합니다. 기존 파일은 먼저 “texts\\old” 폴더에 복사됩니다."
+   },
+   "keep_my_texts": {
+    "english": "Keep my texts",
+    "text": "내 텍스트 유지"
+   },
+   "recreate_file": {
+    "english": "Recreate the file",
+    "text": "파일 다시 만들기"
+   },
+   "preparing_texts_several": {
+    "english": "Preparing the texts (several minutes) …",
+    "text": "텍스트 준비 중(몇 분) …"
+   },
+   "script_ended_without": {
+    "english": "The script ended without producing {0}: see the log.",
+    "text": "스크립트가 {0}을(를) 만들지 않고 끝났습니다: 로그를 보세요."
+   },
+   "incomplete_build": {
+    "english": "Incomplete build",
+    "text": "제작 불완전"
+   },
+   "text_file_kept": {
+    "english": "Your text file is kept as it is: {0}",
+    "text": "텍스트 파일을 그대로 유지합니다: {0}"
+   },
+   "old_text_file": {
+    "english": "Old text file copied to {0}",
+    "text": "기존 텍스트 파일을 {0}에 복사했습니다"
+   },
+   "texts_written": {
+    "english": "{0} texts written to {1}",
+    "text": "텍스트 {0}개를 {1}에 썼습니다"
+   },
+   "step_2_done": {
+    "english": "Step 2 done: all the game texts are in {0}. You can edit them, then run step 3.",
+    "text": "2단계 완료: 게임의 모든 텍스트가 {0}에 있습니다. 수정한 뒤 3단계를 실행할 수 있습니다."
+   },
+   "texts_not_prepared": {
+    "english": "Texts: not prepared yet (step 2).",
+    "text": "텍스트: 아직 준비 안 됨(2단계)."
+   },
+   "texts_prepared": {
+    "english": "Texts: {0}, prepared on {1}",
+    "text": "텍스트: {0}, {1}에 준비됨"
+   },
+   "edited": {
+    "english": ", edited on {0}",
+    "text": ", {0}에 수정됨"
+   }
+  },
+  "patch": {
+   "step_3_patch": {
+    "english": "Step 3 · Patch the APKs · {0} · {1}",
+    "text": "3단계 · APK 패치 · {0} · {1}"
+   },
+   "summary": {
+    "english": "SUMMARY",
+    "text": "요약"
+   },
+   "game_texts": {
+    "english": "  Game texts: {0}",
+    "text": "  게임 텍스트: {0}"
+   },
+   "changes_applied_texts": {
+    "english": "  Your changes applied (texts different from step 2): {0}",
+    "text": "  적용된 수정 사항(2단계와 다른 텍스트): {0}"
+   },
+   "texts_identical_step": {
+    "english": "  Texts identical to step 2: {0}",
+    "text": "  2단계와 같은 텍스트: {0}"
+   },
+   "texts_missing_file": {
+    "english": "  Texts missing from the file (step 2 text used): {0}",
+    "text": "  파일에 없는 텍스트(2단계 텍스트 사용): {0}"
+   },
+   "changes_not_applied": {
+    "english": "  Changes not applied: {0} (see below)",
+    "text": "  적용되지 않은 수정 사항: {0}(아래 참조)"
+   },
+   "everything_fine_translated": {
+    "english": "Everything is fine: the translated version is ready in the “patched_apks” folder.",
+    "text": "문제없음: 번역판이 “patched_apks” 폴더에 준비되었습니다."
+   },
+   "next_extract_saves": {
+    "english": "Next: “Extract saves” (if not done yet), then step 4 (Sign and install).",
+    "text": "다음 할 일: “세이브 데이터 추출”(아직 안 했다면), 그다음 4단계(서명 및 설치)."
+   },
+   "translated_version_ready": {
+    "english": "The translated version is ready in the “patched_apks” folder. The points below only need checking.",
+    "text": "번역판이 “patched_apks” 폴더에 준비되었습니다. 아래 항목은 확인만 하면 됩니다."
+   },
+   "no": {
+    "english": "{0} · no. {1}",
+    "text": "{0} · {1}번"
+   },
+   "changes_applied": {
+    "english": "YOUR CHANGES APPLIED",
+    "text": "적용된 수정 사항"
+   },
+   "texts_file_differ": {
+    "english": "Texts in the file that differ from those prepared in step 2: they are in the game exactly as you wrote them.",
+    "text": "2단계에서 준비한 것과 다른 파일 속 텍스트: 작성한 그대로 게임에 들어가 있습니다."
+   },
+   "check_game_line": {
+    "english": "CHECK IN GAME: LINE LONGER THAN BEFORE",
+    "text": "게임에서 확인: 이전보다 긴 줄"
+   },
+   "line_these_texts": {
+    "english": "A line of these texts is longer than before: it may go past the edge of the bubble or menu.",
+    "text": "이 텍스트들의 한 줄이 이전보다 깁니다: 말풍선이나 메뉴 밖으로 넘칠 수 있습니다."
+   },
+   "if_so_add": {
+    "english": "If so, add a line break (\\n) or shorten the text, then run steps 3 and 4 again.",
+    "text": "그렇다면 줄바꿈(\\n)을 넣거나 텍스트를 줄인 뒤 3단계와 4단계를 다시 실행하세요."
+   },
+   "fix_characters_missing": {
+    "english": "TO FIX: CHARACTERS MISSING FROM THE GAME FONT",
+    "text": "수정 필요: 게임 글꼴에 없는 문자"
+   },
+   "these_characters_not": {
+    "english": "These characters do not exist in the game font and would not display properly.",
+    "text": "이 문자들은 게임 글꼴에 없어서 제대로 표시되지 않습니다."
+   },
+   "text_applied_anyway": {
+    "english": "The text is applied anyway; replace these characters in the file, then run steps 3 and 4 again.",
+    "text": "텍스트는 그대로 적용됩니다. 파일에서 이 문자들을 바꾼 뒤 3단계와 4단계를 다시 실행하세요."
+   },
+   "fix_changes_not": {
+    "english": "TO FIX: CHANGES NOT APPLIED",
+    "text": "수정 필요: 적용되지 않은 수정 사항"
+   },
+   "these_texts_missing": {
+    "english": "These texts are missing a code the game needs (start @a…@b or end \\n@c0@): the game would display them badly.",
+    "text": "이 텍스트들에는 게임에 꼭 필요한 코드(시작의 @a…@b 또는 끝의 \\n@c0@)가 없습니다: 게임에서 제대로 표시되지 않습니다."
+   },
+   "text_prepared_step": {
+    "english": "The text prepared in step 2 is kept instead. Fix them in the file (menu Help › How to edit the texts), then run step 3 again.",
+    "text": "대신 2단계에서 준비한 텍스트가 유지됩니다. 파일에서 수정한 뒤(메뉴 도움말 › 텍스트 수정 방법) 3단계를 다시 실행하세요."
+   },
+   "program_incomplete_download": {
+    "english": "The program is incomplete: download it again.",
+    "text": "프로그램이 불완전합니다: 다시 다운로드하세요."
+   },
+   "missing_data": {
+    "english": "Missing data",
+    "text": "데이터 없음"
+   },
+   "unable_extract_patch": {
+    "english": "Unable to extract the patch data ({0}).",
+    "text": "패치 데이터를 추출할 수 없습니다({0})."
+   },
+   "texts_not_prepared": {
+    "english": "The texts are not prepared yet.\nRun step 2 first.",
+    "text": "텍스트가 아직 준비되지 않았습니다.\n먼저 2단계를 실행하세요."
+   },
+   "step_2_first": {
+    "english": "Step 2 first",
+    "text": "2단계 먼저"
+   },
+   "text_file_cannot": {
+    "english": "The text file cannot be found:\n{0}\n\nIt is required: run step 2 again to recreate it.",
+    "text": "텍스트 파일을 찾을 수 없습니다:\n{0}\n\n필수 파일입니다: 2단계를 다시 실행해 다시 만드세요."
+   },
+   "texts_not_found": {
+    "english": "Texts not found",
+    "text": "텍스트 없음"
+   },
+   "text_file_contains": {
+    "english": "The text file contains an error at line {0}, column {1} ({2}).\n\nCheck the quotes and commas around the edited text: a quote inside a text is written \\\" and each “text” line ends with a comma.",
+    "text": "텍스트 파일 {0}번째 줄, {1}번째 열에 오류가 있습니다({2}).\n\n수정한 텍스트 주변의 따옴표와 쉼표를 확인하세요: 텍스트 안의 따옴표는 \\\"로 쓰고, “text” 줄은 모두 쉼표로 끝납니다."
+   },
+   "invalid_text_file": {
+    "english": "Invalid text file",
+    "text": "잘못된 텍스트 파일"
+   },
+   "unable_read": {
+    "english": "Unable to read {0}:\n{1}",
+    "text": "{0}을(를) 읽을 수 없음:\n{1}"
+   },
+   "unreadable_text_file": {
+    "english": "Unreadable text file",
+    "text": "텍스트 파일을 읽을 수 없음"
+   },
+   "not_expected_form": {
+    "english": "{0} does not have the expected form (“texts” part missing): run step 2 again to recreate it.",
+    "text": "{0}이(가) 예상한 형식이 아닙니다(“texts” 부분 없음): 2단계를 다시 실행해 다시 만드세요."
+   },
+   "contains_texts_not": {
+    "english": "{0} contains the texts of {1}, not {2}.",
+    "text": "{0}에는 {2}가 아니라 {1}의 텍스트가 들어 있습니다."
+   },
+   "wrong_game": {
+    "english": "Wrong game",
+    "text": "다른 게임"
+   },
+   "logo_title_screen": {
+    "english": "Logo and title screen: ",
+    "text": "로고와 타이틀 화면: "
+   },
+   "translated": {
+    "english": "translated.",
+    "text": "번역됨."
+   },
+   "original_english": {
+    "english": "original, in English (",
+    "text": "원본, 영어("
+   },
+   "build_failed_see": {
+    "english": "build failed, see above",
+    "text": "만들 수 없음, 위 내용 참조"
+   },
+   "logo_title_screen_modules": {
+    "english": "logo and title screen modules missing: Dependencies menu",
+    "text": "로고와 타이틀 화면 모듈 없음: 종속 항목 메뉴"
+   },
+   "fr_title_screen": {
+    "english": "“FR title screen” option turned off",
+    "text": "“타이틀 화면 FR” 옵션 꺼짐"
+   },
+   "writing_texts_apks": {
+    "english": "Writing the texts into the APKs …",
+    "text": "APK에 텍스트를 쓰는 중 …"
+   },
+   "texts_change_s": {
+    "english": "Texts: {0} change(s) from your file applied, {1} text(s) identical to step 2 ({2} in total).",
+    "text": "텍스트: 내 파일의 수정 {0}개 적용, 2단계와 같은 텍스트 {1}개(총 {2}개)."
+   },
+   "change_s_not": {
+    "english": "{0} change(s) not applied (game code missing): the step 2 text is kept. Details: {1}",
+    "text": "수정 {0}개 적용 안 됨(게임 코드 없음): 2단계 텍스트를 유지합니다. 상세: {1}"
+   },
+   "text_s_line": {
+    "english": "{0} text(s) with a line longer than before",
+    "text": "이전보다 긴 줄이 있는 텍스트 {0}개"
+   },
+   "text_s_character": {
+    "english": "{0} text(s) with a character missing from the font",
+    "text": "글꼴에 없는 문자가 있는 텍스트 {0}개"
+   },
+   "look": {
+    "english": "To look at: ",
+    "text": "확인할 것: "
+   },
+   "details": {
+    "english": ". Details: {0}",
+    "text": ". 상세: {0}"
+   },
+   "step_3_done": {
+    "english": "Step 3 done: the translated version is in {0}",
+    "text": "3단계 완료: 번역판 위치 {0}"
+   },
+   "title_screen_original": {
+    "english": "Title screen: original APKs missing (“apks” folder): it stays original.",
+    "text": "타이틀 화면: 원본 APK 없음(“apks” 폴더): 원본 그대로 둡니다."
+   },
+   "translated_title_screen": {
+    "english": "Translated title screen: already built, reused as it is.",
+    "text": "번역된 타이틀 화면: 이미 만들어져 있어 그대로 사용합니다."
+   },
+   "title_screen_logo": {
+    "english": "Title screen: logo bundle not found in the asset pack: it stays original.",
+    "text": "타이틀 화면: 에셋 팩에서 로고 번들을 찾을 수 없음: 원본 그대로 둡니다."
+   },
+   "title_screen_unable": {
+    "english": "Title screen: unable to read the original APKs ({0}): it stays original.",
+    "text": "타이틀 화면: 원본 APK를 읽을 수 없음({0}): 원본 그대로 둡니다."
+   },
+   "translated_title_screen_building": {
+    "english": "Translated title screen: building (several minutes and 1 to 2 GB of memory, only the first time) …",
+    "text": "번역된 타이틀 화면: 만드는 중(몇 분, 메모리 1~2 GB, 처음 한 번만) …"
+   },
+   "translated_title_screen_several": {
+    "english": "Translated title screen (several minutes) …",
+    "text": "번역된 타이틀 화면(몇 분) …"
+   },
+   "title_screen_logo_modules": {
+    "english": "Title screen: logo modules unavailable ({0}): it stays original.",
+    "text": "타이틀 화면: 로고 모듈을 쓸 수 없음({0}): 원본 그대로 둡니다."
+   },
+   "title_screen": {
+    "english": "  title screen: ",
+    "text": "  타이틀 화면: "
+   },
+   "title_screen_not": {
+    "english": "Title screen: not enough memory, it stays original (close other programs and run step 3 again, or turn off the option).",
+    "text": "타이틀 화면: 메모리가 부족해 원본 그대로 둡니다(다른 프로그램을 닫고 3단계를 다시 실행하거나 옵션을 끄세요)."
+   },
+   "title_screen_failed": {
+    "english": "Title screen failed ({0}): it stays original.",
+    "text": "타이틀 화면을 만들 수 없음({0}): 원본 그대로 둡니다."
+   },
+   "title_screen_failed_stays": {
+    "english": "Title screen failed ({0}: {1}): it stays original.",
+    "text": "타이틀 화면을 만들 수 없음({0}: {1}): 원본 그대로 둡니다."
+   },
+   "title_screen_stays": {
+    "english": "Title screen: it stays original (see the message above).",
+    "text": "타이틀 화면: 원본 그대로 둡니다(위 메시지 참조)."
+   },
+   "translated_title_screen_built": {
+    "english": "Translated title screen built (kept for the next steps 3).",
+    "text": "번역된 타이틀 화면을 만들었습니다(다음 3단계를 위해 보관)."
+   },
+   "script_stopped_code": {
+    "english": "The script stopped (code {0}).",
+    "text": "스크립트가 멈췄습니다(코드 {0})."
+   },
+   "build_failed": {
+    "english": "Build failed",
+    "text": "만들 수 없음"
+   },
+   "not_enough_memory": {
+    "english": "Not enough memory during the build. Close other programs, or turn off the “logo and title screen” option, then try again.",
+    "text": "제작 중 메모리가 부족합니다. 다른 프로그램을 닫거나 “로고와 타이틀 화면” 옵션을 끈 뒤 다시 시도하세요."
+   },
+   "not_enough_memory_2": {
+    "english": "Not enough memory",
+    "text": "메모리 부족"
+   },
+   "translated_2": {
+    "english": "translated",
+    "text": "번역됨"
+   },
+   "original_english_2": {
+    "english": "original, in English",
+    "text": "원본, 영어"
+   },
+   "next_step_3": {
+    "english": " at the next step 3 (then run step 4 again).",
+    "text": " 다음 3단계부터(그다음 4단계를 다시 실행하세요)."
+   }
+  },
+  "saves": {
+   "no_save_file": {
+    "english": "No save file (data*.dat) found on the phone in {0}.",
+    "text": "휴대폰의 {0}에서 세이브 파일(data*.dat)을 찾지 못했습니다."
+   },
+   "no_save_found": {
+    "english": "No save found",
+    "text": "세이브 데이터 없음"
+   },
+   "no_save_file_data": {
+    "english": "No save file (data*.dat) was found on the phone.\n\nEither the game has never been started, or no save has been recorded on this device (the game's cloud save does not count). So there is nothing to back up.",
+    "text": "휴대폰에서 세이브 파일(data*.dat)을 찾지 못했습니다.\n\n게임을 한 번도 실행하지 않았거나, 이 기기에 저장된 세이브 데이터가 없습니다(게임의 클라우드 저장은 해당되지 않음). 그러므로 백업할 것이 없습니다."
+   },
+   "save_file_s": {
+    "english": "{0} save file(s) found: {1}",
+    "text": "세이브 파일 {0}개 찾음: {1}"
+   },
+   "these_saves_same": {
+    "english": "These saves have the same size as the previous backup ({0}).",
+    "text": "이 세이브 데이터는 이전 백업과 크기가 같습니다({0})."
+   },
+   "saves_extracted_file": {
+    "english": "Saves extracted: {0} file(s) in {1}",
+    "text": "세이브 데이터 추출: 파일 {0}개, 위치 {1}"
+   },
+   "no_backup_found": {
+    "english": "No backup found in {0}.\nClick “Extract saves” (before the installation), or copy a backup folder (containing data0.dat …) into this folder.",
+    "text": "{0}에서 백업을 찾지 못했습니다.\n“세이브 데이터 추출”을 누르거나(설치 전), 백업 폴더(data0.dat … 포함)를 이 폴더에 복사하세요."
+   },
+   "no_save": {
+    "english": "No save",
+    "text": "세이브 데이터 없음"
+   },
+   "installed_game_not": {
+    "english": "The installed game is not patched",
+    "text": "설치된 게임이 패치되지 않음"
+   },
+   "game_installed_phone": {
+    "english": "The game installed on the phone seems to be the original (English) version and not the translated one. Restoring the saves is possible, but they may be lost when you install the patch.\n\nContinue anyway?",
+    "text": "휴대폰에 설치된 게임은 번역판이 아니라 원본(영어) 버전으로 보입니다. 세이브 데이터를 복원할 수는 있지만, 패치를 설치할 때 사라질 수 있습니다.\n\n그래도 계속할까요?"
+   },
+   "continue": {
+    "english": "Continue",
+    "text": "계속"
+   },
+   "file_s": {
+    "english": "{0}   ·   {1} file(s)   ·   {2}",
+    "text": "{0}   ·   파일 {1}개   ·   {2}"
+   },
+   "most_recent": {
+    "english": "   ·   The most recent",
+    "text": "   ·   가장 최근"
+   },
+   "which_backup_saves": {
+    "english": "Which backup of the saves do you want to restore?",
+    "text": "어떤 세이브 데이터 백업을 복원할까요?"
+   },
+   "backups_found_most": {
+    "english": "Backups found in {0}\n(the most recent is preselected):",
+    "text": "{0}에서 찾은 백업\n(가장 최근 것이 선택되어 있음):"
+   },
+   "game_not_created": {
+    "english": "The game has not created its data folder yet",
+    "text": "게임이 아직 데이터 폴더를 만들지 않음"
+   },
+   "game_s_data": {
+    "english": "The game's data folder does not exist on the phone yet: the game has probably not been started since the installation.\n\nStart the game once, close it completely, then continue. (You can also let the tool create the folder, but the game may not recognise the saves.)",
+    "text": "휴대폰에 게임의 데이터 폴더가 아직 없습니다: 설치 후 게임을 실행하지 않은 것 같습니다.\n\n게임을 한 번 실행하고 완전히 종료한 뒤 계속하세요. (도구가 폴더를 만들게 할 수도 있지만, 게임이 세이브 데이터를 인식하지 못할 수 있습니다.)"
+   },
+   "i_started_game": {
+    "english": "I started the game: try again",
+    "text": "게임을 실행했음: 다시 시도"
+   },
+   "create_folder_anyway": {
+    "english": "Create the folder anyway",
+    "text": "그래도 폴더 만들기"
+   },
+   "data_folder_still": {
+    "english": "The data folder still does not exist: start the game, close it completely, then run “Restore saves” again.",
+    "text": "데이터 폴더가 아직 없습니다: 게임을 실행하고 완전히 종료한 뒤 “세이브 데이터 복원”을 다시 실행하세요."
+   },
+   "folder_missing": {
+    "english": "Folder missing",
+    "text": "폴더 없음"
+   },
+   "phone_already_contains": {
+    "english": "The phone already contains {0} save file(s): they will be replaced by the chosen backup.",
+    "text": "휴대폰에 이미 세이브 파일이 {0}개 있습니다: 선택한 백업으로 바뀝니다."
+   },
+   "restoring_file_s": {
+    "english": "Restoring {0} file(s) from {1} …",
+    "text": "{1}에서 파일 {0}개를 복원하는 중 …"
+   },
+   "sending": {
+    "english": "Sending {0} …",
+    "text": "{0} 보내는 중 …"
+   },
+   "restored": {
+    "english": "  {0}: restored ({1})",
+    "text": "  {0}: 복원됨({1})"
+   },
+   "failed": {
+    "english": "  {0}: failed... {1}",
+    "text": "  {0}: 실패... {1}"
+   },
+   "different_size_phone": {
+    "english": "(different size on the phone)",
+    "text": "(휴대폰의 크기가 다름)"
+   },
+   "file_s_restored": {
+    "english": "{0}/{1} file(s) restored.\nIf adb refuses to write: start the game once, close it completely, then run “Restore saves” again.",
+    "text": "파일 {0}/{1}개 복원됨.\nadb가 쓰기를 거부하면: 게임을 한 번 실행하고 완전히 종료한 뒤 “세이브 데이터 복원”을 다시 실행하세요."
+   },
+   "incomplete_restore": {
+    "english": "Incomplete restore",
+    "text": "복원 불완전"
+   },
+   "saves_restored_file": {
+    "english": "Saves restored: {0} file(s) restored. Start the game: your saves should appear in “Poursuivre votre aventure” (continue your adventure).",
+    "text": "세이브 데이터 복원: 파일 {0}개 복원됨. 게임을 실행하세요: 세이브 데이터가 “Poursuivre votre aventure”(모험 계속하기)에 나타나야 합니다."
+   },
+   "saves_restored": {
+    "english": "Saves restored",
+    "text": "세이브 데이터 복원됨"
+   },
+   "file_s_restored_backup": {
+    "english": "{0} file(s) restored from the backup of {1}.\n\nStart the game: your saves should appear in “Poursuivre votre aventure” (continue your adventure).",
+    "text": "{1} 백업에서 파일 {0}개를 복원했습니다.\n\n게임을 실행하세요: 세이브 데이터가 “Poursuivre votre aventure”(모험 계속하기)에 나타나야 합니다."
+   }
+  },
+  "install": {
+   "not_enough_space": {
+    "english": "Not enough space on the phone: free up some storage, then run step 4 again.",
+    "text": "휴대폰 공간이 부족합니다: 저장 공간을 확보한 뒤 4단계를 다시 실행하세요."
+   },
+   "phone_refuses_installation": {
+    "english": "The phone refuses installation over USB. On Xiaomi/Redmi/Poco: enable “Install via USB” in the developer options; on other brands: “Allow installing apps via USB”.",
+    "text": "휴대폰이 USB를 통한 설치를 거부합니다. Xiaomi/Redmi/Poco: 개발자 옵션에서 “USB를 통해 설치”를 켜세요. 다른 제조사: “USB를 통한 앱 설치 허용”."
+   },
+   "another_version_game": {
+    "english": "Another version of the game (different signature) is still installed: uninstall the game yourself, then run step 4 again.",
+    "text": "다른 버전의 게임(서명이 다름)이 아직 설치되어 있습니다: 게임을 직접 삭제한 뒤 4단계를 다시 실행하세요."
+   },
+   "game_still_installed": {
+    "english": "The game is still installed: uninstall it yourself, then run step 4 again.",
+    "text": "게임이 아직 설치되어 있습니다: 직접 삭제한 뒤 4단계를 다시 실행하세요."
+   },
+   "phone_refuses_version": {
+    "english": "The phone refuses a version older than the one installed: uninstall the game, then run step 4 again.",
+    "text": "휴대폰이 설치된 것보다 오래된 버전을 거부합니다: 게임을 삭제한 뒤 4단계를 다시 실행하세요."
+   },
+   "apks_not_signed": {
+    "english": "The APKs are not signed correctly: run step 4 again (signing is redone every time).",
+    "text": "APK 서명이 올바르지 않습니다: 4단계를 다시 실행하세요(서명은 매번 새로 합니다)."
+   },
+   "part_apks_missing": {
+    "english": "Part of the APKs is missing: run steps 1, 2 and 3 again.",
+    "text": "APK의 일부가 없습니다: 1, 2, 3단계를 다시 실행하세요."
+   },
+   "phone_blocked_installation": {
+    "english": "The phone blocked the installation (Play Protect/verification). Temporarily turn off “Verify apps over USB” in Play Protect.",
+    "text": "휴대폰이 설치를 차단했습니다(Play 프로텍트/확인). Play 프로텍트에서 “USB를 통해 앱 확인”을 잠시 끄세요."
+   },
+   "apk_invalid_incomplete": {
+    "english": "An APK is invalid or incomplete: run steps 2 and 3 again.",
+    "text": "APK가 잘못되었거나 불완전합니다: 2단계와 3단계를 다시 실행하세요."
+   },
+   "translated_version_not": {
+    "english": "The translated version is not built (“patched_apks” folder missing or incomplete).\nRun step 3 first.",
+    "text": "번역판이 만들어지지 않았습니다(“patched_apks” 폴더가 없거나 불완전).\n먼저 3단계를 실행하세요."
+   },
+   "step_3_first": {
+    "english": "Step 3 first",
+    "text": "3단계 먼저"
+   },
+   "translated_version_not_up": {
+    "english": "Translated version not up to date",
+    "text": "번역판이 최신이 아님"
+   },
+   "translated_version_patched": {
+    "english": "The translated version in the “patched_apks” folder is older than your latest changes ({0}).\nTo include them, run step 3 again first.",
+    "text": "“patched_apks” 폴더의 번역판은 마지막 변경({0})보다 이전 것입니다.\n변경을 반영하려면 먼저 3단계를 다시 실행하세요."
+   },
+   "install_anyway": {
+    "english": "Install anyway",
+    "text": "그래도 설치"
+   },
+   "step_cancelled_run": {
+    "english": "Step cancelled: run step 3 again to include your changes.",
+    "text": "단계 취소: 변경을 반영하려면 3단계를 다시 실행하세요."
+   },
+   "java_not_found": {
+    "english": "Java not found. Download it from the Dependencies menu.",
+    "text": "Java를 찾을 수 없습니다. 종속 항목 메뉴에서 다운로드하세요."
+   },
+   "java_missing": {
+    "english": "Java missing",
+    "text": "Java 없음"
+   },
+   "uber_apk_signer": {
+    "english": "uber-apk-signer.jar not found. Download it from the Dependencies menu.",
+    "text": "uber-apk-signer.jar를 찾을 수 없습니다. 종속 항목 메뉴에서 다운로드하세요."
+   },
+   "signing_tool_missing": {
+    "english": "Signing tool missing",
+    "text": "서명 도구 없음"
+   },
+   "saves_last_backup": {
+    "english": "Your saves: last backup on {0} ({1} file(s), “saves” folder). If you have played since, click “Cancel”, then “Extract saves”.",
+    "text": "내 세이브 데이터: 마지막 백업 {0}(파일 {1}개, “saves” 폴더). 그 뒤에 플레이했다면 “취소”를 누르고 “세이브 데이터 추출”을 실행하세요."
+   },
+   "last_backup_saves": {
+    "english": "Last backup of the saves: {0} ({1} file(s)).",
+    "text": "세이브 데이터 마지막 백업: {0}(파일 {1}개)."
+   },
+   "no_backup_saves": {
+    "english": "No backup of the saves: looking for saves on the phone …",
+    "text": "세이브 데이터 백업 없음: 휴대폰에서 세이브 데이터를 찾는 중 …"
+   },
+   "extract_saves": {
+    "english": "Extract your saves?",
+    "text": "세이브 데이터를 추출할까요?"
+   },
+   "not_extracted_saves": {
+    "english": "You have not extracted the saves of this game yet, and the phone contains {0} file(s).\n\nThe installation starts by uninstalling the game, which erases its local saves. Do you want to extract them now?",
+    "text": "이 게임의 세이브 데이터를 아직 추출하지 않았고, 휴대폰에는 파일이 {0}개 있습니다.\n\n설치는 먼저 게임을 삭제하므로 기기에 저장된 세이브 데이터가 지워집니다. 지금 추출할까요?"
+   },
+   "extract_saves_now": {
+    "english": "Extract the saves now",
+    "text": "지금 세이브 데이터 추출"
+   },
+   "continue_without_extracting": {
+    "english": "Continue without extracting them",
+    "text": "추출하지 않고 계속"
+   },
+   "step_cancelled_nothing": {
+    "english": "Step cancelled: nothing has been changed.",
+    "text": "단계 취소: 아무것도 바꾸지 않았습니다."
+   },
+   "before_installation": {
+    "english": "before installation",
+    "text": "설치 전"
+   },
+   "saves_could_not": {
+    "english": "The saves could not be extracted: step cancelled for safety.",
+    "text": "세이브 데이터를 추출하지 못했습니다: 안전을 위해 단계를 취소했습니다."
+   },
+   "backup_failed": {
+    "english": "Backup failed",
+    "text": "백업할 수 없음"
+   },
+   "saves_just_extracted": {
+    "english": "Your saves: just extracted ({0} file(s), “saves” folder).",
+    "text": "내 세이브 데이터: 방금 추출함(파일 {0}개, “saves” 폴더)."
+   },
+   "continuing_without_backup": {
+    "english": "Continuing without a backup of the saves, as you asked.",
+    "text": "요청대로 세이브 데이터 백업 없이 계속합니다."
+   },
+   "no_backup_local": {
+    "english": "⚠ No backup: the local saves on the phone will be **lost**.",
+    "text": "⚠ 백업 없음: 휴대폰에 저장된 세이브 데이터가 **사라집니다**."
+   },
+   "phone_contains_no": {
+    "english": "The phone contains no local save for this game: nothing to extract.",
+    "text": "휴대폰에 이 게임의 세이브 데이터가 없습니다: 추출할 것이 없습니다."
+   },
+   "phone_contains_no_local": {
+    "english": "The phone contains no local save for this game (cloud saves do not work with the patched version).",
+    "text": "휴대폰에 이 게임의 세이브 데이터가 없습니다(클라우드 세이브는 패치판에서 작동하지 않음)."
+   },
+   "signing_apks_uber": {
+    "english": "Signing the APKs (uber-apk-signer) …",
+    "text": "APK 서명 중(uber-apk-signer) …"
+   },
+   "signing": {
+    "english": "Signing …",
+    "text": "서명 중 …"
+   },
+   "signing_failed_see": {
+    "english": "Signing failed (see the log).\n",
+    "text": "서명에 실패했습니다(로그 참조).\n"
+   },
+   "signing_failed": {
+    "english": "Signing failed",
+    "text": "서명할 수 없음"
+   },
+   "too_few_apks": {
+    "english": "Too few APKs signed ({0}). Check the “patched_apks” folder (step 3).",
+    "text": "서명된 APK가 너무 적습니다({0}). “patched_apks” 폴더를 확인하세요(3단계)."
+   },
+   "incomplete_signing": {
+    "english": "Incomplete signing",
+    "text": "서명 불완전"
+   },
+   "apks_signed": {
+    "english": "{0} APKs signed in {1}",
+    "text": "APK {0}개 서명, 위치 {1}"
+   },
+   "uninstall_install": {
+    "english": "Uninstall, then install?",
+    "text": "삭제한 뒤 설치할까요?"
+   },
+   "game_currently_installed": {
+    "english": "The game currently installed ({0}) is going to be uninstalled: its signature differs from the patch's.\nIts local saves will be erased from the phone.\n{1}\n\nThe {2} signed APKs will then be installed.\n\nDuring the installation, watch the phone: if Google Play Protect offers to **send the app for scanning**, tap **“Don't send”**.\n\nContinue?",
+    "text": "현재 설치된 게임({0})을 삭제합니다: 서명이 패치와 다르기 때문입니다.\n기기에 저장된 세이브 데이터는 휴대폰에서 지워집니다.\n{1}\n\n그다음 서명된 APK {2}개를 설치합니다.\n\n설치하는 동안 휴대폰을 보세요: Google Play 프로텍트가 **앱을 검사용으로 보내도록** 제안하면 **“보내지 않음”**을 누르세요.\n\n계속할까요?"
+   },
+   "uninstall_install_2": {
+    "english": "Uninstall and install",
+    "text": "삭제 후 설치"
+   },
+   "step_cancelled_game": {
+    "english": "Step cancelled: the game was not touched. The signed APKs remain in {0}.",
+    "text": "단계 취소: 게임은 건드리지 않았습니다. 서명된 APK는 {0}에 남아 있습니다."
+   },
+   "uninstalling": {
+    "english": "Uninstalling …",
+    "text": "삭제 중 …"
+   },
+   "uninstalling_current_game": {
+    "english": "Uninstalling the current game …",
+    "text": "현재 게임을 삭제하는 중 …"
+   },
+   "no_answer": {
+    "english": "(no answer)",
+    "text": "(응답 없음)"
+   },
+   "installing_several_minutes": {
+    "english": "Installing (several minutes) …",
+    "text": "설치 중(몇 분) …"
+   },
+   "installing_translated_version": {
+    "english": "Installing the translated version (adb install-multiple) …",
+    "text": "번역판 설치 중(adb install-multiple) …"
+   },
+   "phone_if_google": {
+    "english": "On the phone: if Google Play Protect offers to send the app for scanning, tap “Don't send” (if it blocks it: “More details”, then “Install anyway”).",
+    "text": "휴대폰에서: Google Play 프로텍트가 앱을 검사용으로 보내도록 제안하면 “보내지 않음”을 누르세요(차단되면 “세부정보 더보기” 다음 “무시하고 설치”)."
+   },
+   "phone_don_t": {
+    "english": "On the phone: “Don't send”",
+    "text": "휴대폰에서: “보내지 않음”"
+   },
+   "installation_starting_watch": {
+    "english": "The installation is starting. Watch the phone screen:\n\n• if Google Play Protect asks to **send the app for scanning**, tap **“Don't send”**;\n• if it shows “App blocked”, tap “More details”, then **“Install anyway”**.\n\nThis is normal: the translated version is not signed by Square Enix.",
+    "text": "설치를 시작합니다. 휴대폰 화면을 보세요:\n\n• Google Play 프로텍트가 **앱을 검사용으로 보내도록** 요청하면 **“보내지 않음”**을 누르세요.\n• “차단된 앱”이 표시되면 “세부정보 더보기”를 누른 뒤 **“무시하고 설치”**를 누르세요.\n\n정상입니다: 번역판은 Square Enix가 서명한 것이 아니기 때문입니다."
+   },
+   "installation_failed": {
+    "english": "The installation failed.\n\n",
+    "text": "설치에 실패했습니다.\n\n"
+   },
+   "adb_answer": {
+    "english": "adb answer: ",
+    "text": "adb 응답: "
+   },
+   "empty": {
+    "english": "(empty)",
+    "text": "(비어 있음)"
+   },
+   "original_game_uninstalled": {
+    "english": "\n\nThe original game is uninstalled: your saves are in the “saves” folder. Fix the problem, then run step 4 again.",
+    "text": "\n\n원본 게임은 삭제되었습니다: 세이브 데이터는 “saves” 폴더에 있습니다. 문제를 해결한 뒤 4단계를 다시 실행하세요."
+   },
+   "installation_failed_2": {
+    "english": "Installation failed",
+    "text": "설치 실패"
+   },
+   "step_4_done": {
+    "english": "Step 4 done: the translated version is installed.",
+    "text": "4단계 완료: 번역판이 설치되었습니다."
+   },
+   "translated_version_installed": {
+    "english": "Translated version installed",
+    "text": "번역판 설치됨"
+   },
+   "installation_complete_now": {
+    "english": "Installation complete.\n\nNow start the game once, then close it completely (remove it from the recent apps). Then, if you had extracted saves, click “Restore saves” to put them back.\n\nOn first start, the game may ask you to choose a Google account (especially if there are several on the phone): it is not required, skip the screen by tapping outside it, or with “Cancel” or “Continue”.",
+    "text": "설치가 끝났습니다.\n\n이제 게임을 한 번 실행한 뒤 완전히 종료하세요(최근 앱에서 지우기). 그다음, 추출한 세이브 데이터가 있다면 “세이브 데이터 복원”을 눌러 되돌리세요.\n\n처음 실행할 때 게임이 Google 계정 선택을 요청할 수 있습니다(특히 휴대폰에 계정이 여러 개일 때): 필수가 아닙니다. 화면 바깥을 누르거나 “취소” 또는 “계속”으로 넘어가세요."
+   }
+  },
+  "phone": {
+   "phone_unplugged_not": {
+    "english": "Phone unplugged or not detected: plug the USB cable back in, in file transfer mode, and check that USB debugging is enabled.",
+    "text": "휴대폰이 연결되지 않았거나 감지되지 않음: USB 케이블을 파일 전송 모드로 다시 연결하고 USB 디버깅이 켜져 있는지 확인하세요."
+   },
+   "phone_not_authorised": {
+    "english": "The phone has not authorised this computer: accept the “Allow USB debugging?” request shown on the phone screen.",
+    "text": "휴대폰이 이 컴퓨터를 허용하지 않았습니다: 휴대폰 화면에 표시된 “USB 디버깅을 허용하시겠습니까?” 요청을 허용하세요."
+   },
+   "phone_offline_adb": {
+    "english": "The phone is “offline” for adb: unplug and plug the cable back in, and unlock the phone screen.",
+    "text": "휴대폰이 adb에 대해 “오프라인”입니다: 케이블을 뺐다가 다시 꽂고 휴대폰 화면 잠금을 해제하세요."
+   },
+   "several_devices_plugged": {
+    "english": "Several devices are plugged in: choose the right one in the “Phone” list.",
+    "text": "여러 기기가 연결되어 있습니다: “휴대폰” 목록에서 올바른 기기를 고르세요."
+   },
+   "connection_phone_lost": {
+    "english": "The connection with the phone was lost (cable unplugged?).",
+    "text": "휴대폰과의 연결이 끊어졌습니다(케이블이 빠졌나요?)."
+   },
+   "adb_not_found": {
+    "english": "adb not found. Download it: Dependencies menu.",
+    "text": "adb를 찾을 수 없습니다. 다운로드하세요: 종속 항목 메뉴."
+   },
+   "adb_not_found_2": {
+    "english": "adb not found",
+    "text": "adb 없음"
+   },
+   "phone_unplugged": {
+    "english": "Phone unplugged",
+    "text": "휴대폰 연결 안 됨"
+   },
+   "phone_state_unplug": {
+    "english": "The phone is in the “{0}” state: unplug and plug the cable back in.",
+    "text": "휴대폰이 “{0}” 상태입니다: 케이블을 뺐다가 다시 꽂으세요."
+   },
+   "phone_not_ready": {
+    "english": "Phone not ready",
+    "text": "휴대폰 준비 안 됨"
+   },
+   "several_phones": {
+    "english": "Several phones",
+    "text": "휴대폰 여러 대"
+   },
+   "phone_title": {
+    "english": "Phone: {0} ({1})",
+    "text": "휴대폰: {0}({1})"
+   },
+   "phone": {
+    "english": "Phone",
+    "text": "휴대폰"
+   },
+   "not_installed_phone": {
+    "english": "{0} is not installed on this phone (package {1}).\nInstall the game from the Play Store, then try again.",
+    "text": "{0}이(가) 이 휴대폰에 설치되어 있지 않습니다(패키지 {1}).\nPlay 스토어에서 게임을 설치한 뒤 다시 시도하세요."
+   },
+   "game_not_installed": {
+    "english": "Game not installed",
+    "text": "게임 미설치"
+   },
+   "adb_could_not": {
+    "english": "adb could not copy {0}:\n{1}",
+    "text": "adb가 {0}을(를) 복사하지 못했습니다:\n{1}"
+   },
+   "copy_failed": {
+    "english": "Copy failed",
+    "text": "복사할 수 없음"
+   },
+   "incomplete_copy_instead": {
+    "english": "{0}: incomplete copy ({1} instead of {2}). Check the USB cable and try again.",
+    "text": "{0}: 복사가 불완전함({2} 대신 {1}). USB 케이블을 확인하고 다시 시도하세요."
+   },
+   "incomplete_copy": {
+    "english": "Incomplete copy",
+    "text": "복사 불완전"
+   },
+   "phone_label": {
+    "english": "Phone: ",
+    "text": "휴대폰: "
+   },
+   "phone_not_available": {
+    "english": "(phone not available)",
+    "text": "(휴대폰을 쓸 수 없음)"
+   },
+   "checking_phone": {
+    "english": "Checking the phone …",
+    "text": "확인 중 …"
+   },
+   "not_installed_phone_2": {
+    "english": "{0} is not installed on this phone.",
+    "text": "{0}이(가) 이 휴대폰에 설치되어 있지 않습니다."
+   },
+   "already_patched": {
+    "english": "already patched ✔",
+    "text": "이미 패치됨 ✔"
+   },
+   "original_version_not": {
+    "english": "original version (not patched)",
+    "text": "원본 버전(패치 안 됨)"
+   },
+   "patch_state_cannot": {
+    "english": "patch state cannot be checked",
+    "text": "패치 상태를 확인할 수 없음"
+   },
+   "version": {
+    "english": "Version {0} · {1}",
+    "text": "버전 {0} · {1}"
+   },
+   "phone_unplugged_during": {
+    "english": "The phone was unplugged during the operation: it will fail. Plug it back in, then run the step again.",
+    "text": "작업 중에 휴대폰 연결이 끊겼습니다: 작업이 실패합니다. 다시 연결한 뒤 단계를 다시 실행하세요."
+   },
+   "phone_detected": {
+    "english": "Phone detected: ",
+    "text": "휴대폰 감지됨: "
+   },
+   "adb_not_installed": {
+    "english": "adb is not installed: the phone cannot be detected (Dependencies menu).",
+    "text": "adb가 설치되어 있지 않음: 휴대폰을 감지할 수 없습니다(종속 항목 메뉴)."
+   },
+   "no_phone_detected": {
+    "english": "No phone detected: plug in the USB cable (file transfer mode) and enable USB debugging.",
+    "text": "휴대폰이 감지되지 않음: USB 케이블을 연결하고(파일 전송 모드) USB 디버깅을 켜세요."
+   },
+   "phone_state_unplug_plug": {
+    "english": "Phone in the “{0}” state: unplug and plug the cable back in.",
+    "text": "휴대폰 상태 “{0}”: 케이블을 뺐다가 다시 꽂으세요."
+   },
+   "devices_plugged_choose": {
+    "english": "  ·  {0} devices plugged in, choose one",
+    "text": "  ·  기기 {0}대 연결됨, 하나를 고르세요"
+   }
+  },
+  "rom": {
+   "file_not_found": {
+    "english": "File not found.",
+    "text": "파일을 찾을 수 없습니다."
+   },
+   "zip_not_contain": {
+    "english": "This zip does not contain any .nds file.",
+    "text": "이 zip에는 .nds 파일이 없습니다."
+   },
+   "file_too_small": {
+    "english": "File too small: this is not a DS ROM.",
+    "text": "파일이 너무 작습니다: DS ROM이 아닙니다."
+   },
+   "unreadable_header_not": {
+    "english": "Unreadable header: this is not a DS ROM (.nds).",
+    "text": "헤더를 읽을 수 없습니다: DS ROM(.nds)이 아닙니다."
+   },
+   "valid_european_rom": {
+    "english": "Valid European ROM ({0})",
+    "text": "유효한 유럽판 ROM({0})"
+   },
+   "rom_not": {
+    "english": "This ROM is {0} ({1}), not {2}.",
+    "text": "이 ROM은 {2}가 아니라 {0}({1})의 것입니다."
+   },
+   "rom_but_not": {
+    "english": "ROM of {0} but not the European version (code {1}, {2} needed): only the European ROM contains the European languages.",
+    "text": "{0}의 ROM이지만 유럽판이 아닙니다(코드 {1}, 필요한 것은 {2}): 유럽 언어가 들어 있는 것은 유럽판 ROM뿐입니다."
+   },
+   "not_rom_code": {
+    "english": "This is not a ROM of {0} (code {1}, {2} needed).",
+    "text": "{0}의 ROM이 아닙니다(코드 {1}, 필요한 것은 {2})."
+   },
+   "rom_another_region": {
+    "english": "{0} is the ROM of {1} from another region (code {2}): only the European ROM ({3}) contains the European languages.",
+    "text": "{0}은(는) 다른 지역의 {1} ROM입니다(코드 {2}): 유럽 언어가 들어 있는 것은 유럽판 ROM({3})뿐입니다."
+   },
+   "folder_contains_european": {
+    "english": "Folder that contains your European DS ROMs (DQ IV, V and VI)",
+    "text": "유럽판 DS ROM(DQ IV, V, VI)이 들어 있는 폴더"
+   },
+   "rom_folder": {
+    "english": "ROM folder: {0}",
+    "text": "ROM 폴더: {0}"
+   },
+   "rom_found": {
+    "english": "ROM found: {0} ({1})",
+    "text": "ROM 찾음: {0}({1})"
+   },
+   "rom_not_found": {
+    "english": "ROM not found in this folder: the European ROM {0} is needed.",
+    "text": "이 폴더에서 ROM을 찾지 못함: 유럽판 ROM {0}이(가) 필요합니다."
+   },
+   "rom_folder_not": {
+    "english": "ROM folder not chosen yet: click “Choose the ROM folder…”.",
+    "text": "ROM 폴더를 아직 고르지 않음: “ROM 폴더 선택…”을 누르세요."
+   },
+   "rom_folder_no": {
+    "english": "The ROM folder no longer exists: {0}",
+    "text": "ROM 폴더가 더 이상 없습니다: {0}"
+   },
+   "rom_not_found_chosen": {
+    "english": "ROM not found in the chosen folder: the European ROM of {0} ({1}) is needed.",
+    "text": "선택한 폴더에서 ROM을 찾지 못함: {0}의 유럽판 ROM({1})이 필요합니다."
+   }
+  },
+  "deps": {
+   "about_mb": {
+    "english": "about {0} MB",
+    "text": "약 {0}MB"
+   },
+   "talks_phone_copies": {
+    "english": "talks to the phone (copies the APKs, exports and restores the saves, reinstalls the game).",
+    "text": "휴대폰과 통신합니다(APK 가져오기, 세이브 데이터 내보내기와 복원, 게임 재설치)."
+   },
+   "runs_apk_signing": {
+    "english": "runs the APK signing tool (step 4).",
+    "text": "APK 서명 도구를 실행합니다(4단계)."
+   },
+   "free_tool_signs": {
+    "english": "free tool that signs the modified APKs so the phone accepts to install them (step 4).",
+    "text": "수정한 APK에 서명해 휴대폰이 설치를 허용하도록 하는 무료 도구(4단계)."
+   },
+   "logo_title_screen": {
+    "english": "logo and title screen modules (UnityPy, Pillow, numpy)",
+    "text": "로고와 타이틀 화면 모듈(UnityPy, Pillow, numpy)"
+   },
+   "only_used_translated": {
+    "english": "only used by the “translated logo and title screen” option of step 3.",
+    "text": "3단계의 “로고와 타이틀 화면 번역” 옵션에서만 사용합니다."
+   },
+   "unitypy_pillow_numpy": {
+    "english": "UnityPy, pillow and numpy built into the exe",
+    "text": "UnityPy, pillow, numpy가 exe에 내장됨"
+   },
+   "missing": {
+    "english": "missing: ",
+    "text": "없음: "
+   },
+   "unitypy_pillow_numpy_loaded": {
+    "english": "UnityPy, pillow and numpy loaded",
+    "text": "UnityPy, pillow, numpy 불러옴"
+   },
+   "not_load": {
+    "english": "do not load: ",
+    "text": "불러올 수 없음: "
+   },
+   "disk_space_gb": {
+    "english": "Disk space (≥ {0} GB)",
+    "text": "디스크 공간({0} GB 이상)"
+   },
+   "free": {
+    "english": "free: ",
+    "text": "여유: "
+   },
+   "not_measured": {
+    "english": "not measured",
+    "text": "측정 안 함"
+   },
+   "tool": {
+    "english": "in the tool",
+    "text": "도구 안"
+   },
+   "found_path": {
+    "english": "found in the PATH: {0}",
+    "text": "PATH에서 찾음: {0}"
+   },
+   "adb_not_start": {
+    "english": "adb does not start: ",
+    "text": "adb가 시작되지 않음: "
+   },
+   "not_found": {
+    "english": "not found",
+    "text": "찾을 수 없음"
+   },
+   "tool_2": {
+    "english": " · in the tool",
+    "text": " · 도구 안"
+   },
+   "installed_pc": {
+    "english": " · installed on the PC",
+    "text": " · PC에 설치됨"
+   },
+   "java": {
+    "english": "Java {0}",
+    "text": "Java {0}"
+   },
+   "11_newer_required": {
+    "english": " (11 or newer required)",
+    "text": " (11 이상 필요)"
+   },
+   "not_answer_within": {
+    "english": "does not answer within {0} s (antivirus scanning it?): try again with “Check again”",
+    "text": "{0}초 안에 응답하지 않음(백신이 검사 중?): “다시 확인”으로 다시 시도하세요"
+   },
+   "not_start": {
+    "english": "does not start (",
+    "text": "시작되지 않음("
+   },
+   "code": {
+    "english": "code {0}",
+    "text": "코드 {0}"
+   },
+   "java_apk_signing": {
+    "english": "Java (APK signing)",
+    "text": "Java(APK 서명)"
+   },
+   "uber_apk_signer": {
+    "english": "uber-apk-signer (free tool)",
+    "text": "uber-apk-signer(무료 도구)"
+   },
+   "logo_title_screen_option": {
+    "english": "Logo and title screen (option)",
+    "text": "로고와 타이틀 화면(옵션)"
+   },
+   "download_cancelled": {
+    "english": "Download cancelled.",
+    "text": "다운로드를 취소했습니다."
+   },
+   "download_failed_check": {
+    "english": "Download failed ({0}: {1}).\nCheck your Internet connection (or place the file yourself at the root).",
+    "text": "다운로드할 수 없음({0}: {1}).\n인터넷 연결을 확인하세요(또는 파일을 직접 루트에 두세요)."
+   },
+   "download_failed": {
+    "english": "Download failed",
+    "text": "다운로드할 수 없음"
+   },
+   "downloaded_archive_corrupted": {
+    "english": "Downloaded archive is corrupted ({0}). Try again.",
+    "text": "다운로드한 압축 파일이 손상됨({0}). 다시 시도하세요."
+   },
+   "corrupted_archive": {
+    "english": "Corrupted archive",
+    "text": "압축 파일 손상"
+   },
+   "nothing_download_all": {
+    "english": "Nothing to download: all dependencies are already there.",
+    "text": "다운로드할 것 없음: 종속 항목이 모두 있습니다."
+   },
+   "destination_folder": {
+    "english": "Destination folder: ",
+    "text": "대상 폴더: "
+   },
+   "download": {
+    "english": "Download {0}?",
+    "text": "{0}을(를) 다운로드할까요?"
+   },
+   "download_place_portable": {
+    "english": "{0}: {1}\n\nDownload it ({2}) and place it in:\n{3}\n\nThis is a portable version: nothing is installed in Windows.",
+    "text": "{0}: {1}\n\n다운로드({2})해서 다음 위치에 둡니다:\n{3}\n\n포터블 버전입니다: Windows에는 아무것도 설치되지 않습니다."
+   },
+   "download_2": {
+    "english": "Download",
+    "text": "다운로드"
+   },
+   "skip": {
+    "english": "Skip",
+    "text": "건너뛰기"
+   },
+   "download_declined_can": {
+    "english": "{0}: download declined (you can do it later: Dependencies menu).",
+    "text": "{0}: 다운로드를 거절함(나중에 할 수 있습니다: 종속 항목 메뉴)."
+   },
+   "dependency_ies_downloaded": {
+    "english": "{0} dependency(ies) downloaded.",
+    "text": "종속 항목 {0}개를 다운로드했습니다."
+   },
+   "downloading": {
+    "english": "Downloading: {0} …",
+    "text": "다운로드: {0} …"
+   },
+   "received": {
+    "english": "  {0} received.",
+    "text": "  {0} 받음."
+   },
+   "unpacking_platform_tools": {
+    "english": "Unpacking platform-tools …",
+    "text": "platform-tools 압축 해제 중 …"
+   },
+   "unable_set_up": {
+    "english": "Unable to set up platform-tools: {0}\nClose the programs that use adb, then try again.",
+    "text": "platform-tools를 설치할 수 없음: {0}\nadb를 사용하는 프로그램을 닫고 다시 시도하세요."
+   },
+   "platform_tools_placed": {
+    "english": "platform-tools placed in: ",
+    "text": "platform-tools 위치: "
+   },
+   "unpacking_java": {
+    "english": "Unpacking Java …",
+    "text": "Java 압축 해제 중 …"
+   },
+   "downloaded_archive_not": {
+    "english": "The downloaded archive does not contain Java (bin/java). Try again later.",
+    "text": "다운로드한 압축 파일에 Java(bin/java)가 없습니다. 나중에 다시 시도하세요."
+   },
+   "java_2": {
+    "english": "Java",
+    "text": "Java"
+   },
+   "unable_set_up_java": {
+    "english": "Unable to set up Java: {0}",
+    "text": "Java를 설치할 수 없음: {0}"
+   },
+   "portable_java_placed": {
+    "english": "Portable Java placed in: ",
+    "text": "포터블 Java 위치: "
+   },
+   "nothing_installed_windows": {
+    "english": " (nothing is installed in Windows).",
+    "text": " (Windows에는 아무것도 설치되지 않습니다)."
+   },
+   "first_start_java": {
+    "english": "First start of Java (the antivirus may scan it, up to a minute) …",
+    "text": "Java 첫 실행(백신이 검사할 수 있으며 최대 1분) …"
+   },
+   "java_answers_correctly": {
+    "english": "Java {0} answers correctly.",
+    "text": "Java {0}이(가) 정상적으로 응답합니다."
+   },
+   "java_not_answer": {
+    "english": "Java does not answer yet",
+    "text": "Java가 아직 응답하지 않음"
+   },
+   "timeout_antivirus_probably": {
+    "english": " (timeout: the antivirus is probably scanning it, click “Check again” in a moment)",
+    "text": " (시간 초과: 백신이 검사 중인 것 같습니다. 잠시 후 “다시 확인”을 누르세요)"
+   },
+   "uber_apk_signer_downloaded": {
+    "english": "uber-apk-signer downloaded: ",
+    "text": "uber-apk-signer 다운로드됨: "
+   },
+   "adb_talks_phone": {
+    "english": "adb talks to the phone through the USB cable: it detects it, copies the original APKs, extracts and restores the saves, uninstalls and installs the game.",
+    "text": "adb는 USB 케이블로 휴대폰과 통신합니다: 휴대폰을 감지하고, 원본 APK를 복사하고, 세이브 데이터를 추출·복원하고, 게임을 삭제·설치합니다."
+   },
+   "essential_phone_detection": {
+    "english": "essential: phone detection, steps 1 and 4, and saves.",
+    "text": "필수: 휴대폰 감지, 1단계와 4단계, 세이브 데이터."
+   },
+   "java_runs_uber": {
+    "english": "Java runs uber-apk-signer, the tool that signs the APKs. The tool uses the Java already installed on the PC if it is recent enough (11 or newer), otherwise a portable version downloaded into its “dependencies” folder.",
+    "text": "Java는 APK에 서명하는 도구인 uber-apk-signer를 실행합니다. PC에 설치된 Java가 충분히 최신이면(11 이상) 그것을 쓰고, 아니면 “dependencies” 폴더에 다운로드한 포터블 버전을 씁니다."
+   },
+   "essential_step_4": {
+    "english": "essential: step 4 (sign and install).",
+    "text": "필수: 4단계(서명 및 설치)."
+   },
+   "eclipse_adoptium_temurin": {
+    "english": "Eclipse Adoptium (Temurin, free Java)",
+    "text": "Eclipse Adoptium(Temurin, 무료 Java)"
+   },
+   "uber_apk_signer_apk": {
+    "english": "uber-apk-signer (APK signing)",
+    "text": "uber-apk-signer(APK 서명)"
+   },
+   "phone_only_installs": {
+    "english": "A phone only installs signed APKs. The patched APKs lose the Square Enix signature: uber-apk-signer gives them a new one, specific to your PC.",
+    "text": "휴대폰은 서명된 APK만 설치합니다. 패치된 APK는 Square Enix의 서명을 잃으므로 uber-apk-signer가 내 PC 고유의 새 서명을 붙입니다."
+   },
+   "patrick_favre_free": {
+    "english": "Patrick Favre (free software, Apache 2.0 licence)",
+    "text": "Patrick Favre(무료 소프트웨어, Apache 2.0 라이선스)"
+   },
+   "logo_title_screen_modules": {
+    "english": "Logo and title screen modules (optional)",
+    "text": "로고와 타이틀 화면 모듈(선택)"
+   },
+   "unitypy_pillow_numpy_read": {
+    "english": "UnityPy, Pillow and numpy read and modify the game images to translate the logo subtitle and “Tap to Start”.",
+    "text": "UnityPy, Pillow, numpy는 게임 이미지를 읽고 수정해 로고 부제와 “Tap to Start”를 번역합니다."
+   },
+   "optional_only_translated": {
+    "english": "optional: only the “Translated logo and title screen” option (step 3). Without them, the option is greyed out and the rest of the patch works.",
+    "text": "선택: “로고와 타이틀 화면 번역” 옵션(3단계)에만 사용. 없으면 옵션이 회색이 되지만 패치의 나머지는 작동합니다."
+   },
+   "free_projects_unitypy": {
+    "english": "free projects UnityPy, Pillow and numpy",
+    "text": "무료 프로젝트 UnityPy, Pillow, numpy"
+   },
+   "portable_version_downloaded": {
+    "english": "portable version downloaded into the tool: nothing is installed in Windows. “Reinstall” downloads it again (useful if it is damaged).",
+    "text": "도구 안에 다운로드한 포터블 버전: Windows에는 아무것도 설치되지 않습니다. “다시 설치”는 다시 다운로드합니다(손상되었을 때 유용)."
+   },
+   "program_already_present": {
+    "english": "program already present on the PC: the tool uses it as it is. “Download into the tool” puts its own portable version into the “dependencies” folder (it will then be used).",
+    "text": "PC에 이미 있는 프로그램: 도구가 그대로 사용합니다. “도구 안에 다운로드”를 고르면 전용 포터블 버전을 “dependencies” 폴더에 둡니다(그 뒤로는 그것을 사용)."
+   },
+   "built_tool_when": {
+    "english": "built into the tool when it was made: nothing to download.",
+    "text": "도구를 만들 때 내장됨: 다운로드할 것 없음."
+   },
+   "exe": {
+    "english": "in the exe",
+    "text": "exe 안"
+   },
+   "missing_exe": {
+    "english": "missing from the exe",
+    "text": "exe에 없음"
+   },
+   "downloaded": {
+    "english": "{0}, downloaded from {1} ({2})",
+    "text": "{0}, {1}에서 다운로드({2})"
+   },
+   "what": {
+    "english": "What it is for",
+    "text": "용도"
+   },
+   "needed": {
+    "english": "Needed for",
+    "text": "필요한 곳"
+   },
+   "origin": {
+    "english": "Origin",
+    "text": "출처"
+   },
+   "location": {
+    "english": "Location",
+    "text": "위치"
+   },
+   "installation": {
+    "english": "Installation",
+    "text": "설치"
+   },
+   "check_again": {
+    "english": "Check again",
+    "text": "다시 확인"
+   },
+   "built_tool_nothing": {
+    "english": "Built into the tool: nothing to download.",
+    "text": "도구에 내장됨: 다운로드할 것 없음."
+   },
+   "downloads_again": {
+    "english": "Downloads again",
+    "text": "다시 다운로드:"
+   },
+   "downloads": {
+    "english": "Downloads",
+    "text": "다운로드:"
+   },
+   "places_progress_shown": {
+    "english": " {0} ({1}) and places it in {2}. Progress is shown at the bottom of the main window.",
+    "text": " {0}({1})을(를) {2}에 둡니다. 진행 상황은 기본 창 아래에 표시됩니다."
+   },
+   "runs_check_again": {
+    "english": "Runs the check again (useful if you have added or moved a program yourself).",
+    "text": "다시 확인합니다(프로그램을 직접 추가하거나 옮겼을 때 유용)."
+   },
+   "checking": {
+    "english": "Checking …",
+    "text": "확인 중 …"
+   },
+   "present": {
+    "english": "Present: {0}",
+    "text": "있음: {0}"
+   },
+   "missing_2": {
+    "english": "Missing.",
+    "text": "없음."
+   },
+   "missing_label": {
+    "english": "Missing: ",
+    "text": "없음: "
+   },
+   "missing_unusable": {
+    "english": "Missing or unusable: ",
+    "text": "없거나 쓸 수 없음: "
+   },
+   "check": {
+    "english": "To check: ",
+    "text": "확인 필요: "
+   },
+   "reinstall": {
+    "english": "Reinstall",
+    "text": "다시 설치"
+   },
+   "download_tool": {
+    "english": "Download into the tool",
+    "text": "도구 안에 다운로드"
+   },
+   "built_tool": {
+    "english": "Built into the tool",
+    "text": "도구에 내장됨"
+   },
+   "reinstall_all": {
+    "english": "Reinstall all…",
+    "text": "모두 다시 설치…"
+   },
+   "text": {
+    "english": "   • {0}: {1}",
+    "text": "   • {0}: {1}"
+   },
+   "download_what_s": {
+    "english": "Download what's missing",
+    "text": "빠진 것 다운로드"
+   },
+   "download_label": {
+    "english": "To download:\n",
+    "text": "다운로드할 것:\n"
+   },
+   "they_stored_folder": {
+    "english": "\n\nThey are stored in the “{0}” folder of the tool (portable versions: nothing is installed in Windows).",
+    "text": "\n\n도구의 “{0}” 폴더에 정리됩니다(포터블 버전: Windows에는 아무것도 설치되지 않음)."
+   },
+   "reinstall_all_2": {
+    "english": "Reinstall all",
+    "text": "모두 다시 설치"
+   },
+   "download_again_replace": {
+    "english": "Download again and replace:\n",
+    "text": "다시 다운로드해서 교체할 것:\n"
+   },
+   "useful_if_program": {
+    "english": "\n\nUseful if a program is damaged or no longer answers. The programs already installed on the PC (Java, adb) and the modules built into the tool are not affected.",
+    "text": "\n\n프로그램이 손상되었거나 응답하지 않을 때 유용합니다. PC에 이미 설치된 프로그램(Java, adb)과 도구에 내장된 모듈은 해당되지 않습니다."
+   },
+   "downloading_dependencies": {
+    "english": "Downloading the dependencies",
+    "text": "종속 항목 다운로드"
+   },
+   "missing_programs": {
+    "english": "Missing programs: ",
+    "text": "빠진 것: "
+   },
+   "download_them": {
+    "english": ". Download them",
+    "text": ". 다운로드하세요"
+   },
+   "download_3": {
+    "english": ". Download it",
+    "text": ". 다운로드하세요"
+   },
+   "dependencies_download_what": {
+    "english": " with the Dependencies › Download what's missing menu",
+    "text": " (종속 항목 › 빠진 것 다운로드 메뉴)"
+   },
+   "required_programs_not": {
+    "english": "Required programs not found",
+    "text": "필요한 프로그램을 찾을 수 없음"
+   },
+   "check_2": {
+    "english": "Check",
+    "text": "확인"
+   },
+   "technical_info_pc": {
+    "english": "(Technical info: on this PC, the answers of adb and Java are read with the fallback method “{0}”, attempts: {1}.)",
+    "text": "(기술 정보: 이 PC에서는 adb와 Java의 응답을 예비 방식 “{0}”(으)로 읽습니다. 시도: {1}.)"
+   },
+   "answers_programs_adb": {
+    "english": "The answers of the programs (adb, Java) cannot be read on this PC (",
+    "text": "이 PC에서는 프로그램(adb, Java)의 응답을 읽을 수 없습니다("
+   },
+   "copy_log_ask": {
+    "english": "). Copy this log to ask for help.",
+    "text": "). 이 로그를 복사해 도움을 요청하세요."
+   },
+   "all_required_programs": {
+    "english": "All the required programs are now present.",
+    "text": "필요한 프로그램이 이제 모두 있습니다."
+   },
+   "steps_stay_greyed": {
+    "english": ".\n\nThe steps stay greyed out as long as they are missing.",
+    "text": ".\n\n빠진 것이 있는 동안 단계는 회색으로 남습니다."
+   },
+   "missing_programs_2": {
+    "english": "Missing programs",
+    "text": "프로그램 없음"
+   },
+   "optional": {
+    "english": " (optional)",
+    "text": " (선택)"
+   },
+   "work_tool_needs": {
+    "english": "To work, the tool needs free programs that are not there yet:\n",
+    "text": "작동하려면 아직 없는 무료 프로그램이 필요합니다:\n"
+   },
+   "allow_tool_download": {
+    "english": "\n\nDo you allow the tool to download them now? They are stored in its “{0}” folder (portable versions: nothing is installed in Windows).\n\nWithout them, the steps stay greyed out; you can also download them later with the Dependencies menu.",
+    "text": "\n\n지금 다운로드해도 될까요? 도구의 “{0}” 폴더에 정리됩니다(포터블 버전: Windows에는 아무것도 설치되지 않음).\n\n없으면 단계가 회색으로 남습니다. 나중에 종속 항목 메뉴에서 다운로드할 수도 있습니다."
+   },
+   "programs_download": {
+    "english": "Programs to download",
+    "text": "다운로드할 프로그램"
+   }
+  },
+  "log": {
+   "log": {
+    "english": " Log ",
+    "text": " 로그 "
+   },
+   "log_shared_3": {
+    "english": "Log shared by the 3 games, saved in {0}. At startup, the history is reloaded (in grey), then a separator marks the start of the new session.",
+    "text": "세 게임 공통 로그로, {0}에 저장됩니다. 시작할 때 기록을 (회색으로) 다시 불러온 뒤 구분선으로 새 세션의 시작을 표시합니다."
+   },
+   "cancel_step": {
+    "english": "Cancel step",
+    "text": "단계 취소"
+   },
+   "copy_log": {
+    "english": "Copy log",
+    "text": "로그 복사"
+   },
+   "progress_current_operation": {
+    "english": "Progress of the current operation.",
+    "text": "진행 중인 작업의 진행 상황."
+   },
+   "interrupts_current_operation": {
+    "english": "Interrupts the current operation (the adb command or the download is cut off, the build script stops at its next message). Incomplete files are deleted.",
+    "text": "진행 중인 작업을 중단합니다(adb 명령이나 다운로드는 끊기고, 제작 스크립트는 다음 메시지에서 멈춥니다). 불완전한 파일은 지워집니다."
+   },
+   "copies_whole_displayed": {
+    "english": "Copies the whole displayed log (history included) to the clipboard: handy to ask for help.",
+    "text": "표시된 로그 전체(기록 포함)를 클립보드에 복사합니다: 도움을 요청할 때 편리합니다."
+   },
+   "history": {
+    "english": "History ({0})\n",
+    "text": "기록({0})\n"
+   },
+   "general": {
+    "english": "General",
+    "text": "일반"
+   },
+   "new_session": {
+    "english": "━━━━━━━━━━  New session: {0}  ━━━━━━━━━━",
+    "text": "━━━━━━━━━━  새 세션: {0}  ━━━━━━━━━━"
+   },
+   "log_copied": {
+    "english": "Log copied ✔",
+    "text": "로그 복사됨 ✔"
+   }
+  },
+  "help": {
+   "what_tool_translates": {
+    "english": "# What this tool does\nIt translates into **French** the Android (Google Play) versions of Dragon Quest IV, V and VI, which do not exist in French.\nThe French texts come from **your European DS ROM** of the same game: the tool contains no ROM and no game text. The texts specific to the mobile version (party chat, touch menus…) are translated by the patch.\nUnofficial project, for personal use, not affiliated with Square Enix.\n\n# What you need\n• The game installed from the Google Play Store on an Android phone, **set to English**.\n• The European DS ROM of the same game (.nds file, or a .zip containing it): The Chapters of the Chosen (DQ IV), The Hand of the Heavenly Bride (DQ V) or Realms of Reverie (DQ VI).\n• A USB cable and **USB debugging** enabled in the phone's developer options.\n• A few free programs: the tool downloads them for you at startup (with your consent).\n\n# How to do it (one tab per game)\n1. Choose the **folder that contains your ROMs** (“Checks” area): the ROM of each game is found there automatically.\n2. Plug in the phone and **accept the authorisation** shown on its screen.\n3. Run the 4 steps in order (a greyed-out button is not possible yet, the icon on its right tells whether the step is done):\n   1 · **Extract original APKs**: copies the game from the phone to the PC.\n   2 · **Prepare texts**: a few minutes, without the phone; writes all the game texts into a file you can edit.\n   3 · **Patch APKs**: puts these texts into the game.\n   4 · **Sign and install**: replaces the game with the translated version.\nSeparately, under the steps, the **saves**:\n   **Extract saves**: before step 4, essential because it uninstalls the game.\n   **Restore saves**: after step 4, once the game has been started and then closed.\nEach step becomes available when what it needs is ready: the “Checks” area shows the state of everything, and its “Next” line tells you what to do. Steps 2 and 3 do not need the phone. Next to each step: ✔ done, ✖ not done yet or to run again, ⚠ to check (hover over the icon for details).\n\n# Good to know\n• The game's cloud save **does not work** with the translated version: keep your saves with the “Extract saves” and “Restore saves” buttons.\n• **Turn off automatic updates** of the game in the Play Store, otherwise it will replace the translated version.\n• Hover over a button or an area with the mouse: a tooltip explains what it is for, or why it is greyed out.\n• **Never share** your ROM or the patched APKs.\n",
+    "text": "# 이 도구가 하는 일\n프랑스어판이 없는 Dragon Quest IV, V, VI의 Android(Google Play)판을 **프랑스어**로 바꿉니다.\n프랑스어 텍스트는 같은 게임의 **유럽판 DS ROM**에서 가져옵니다: 도구에는 ROM도 게임 텍스트도 들어 있지 않습니다. 모바일판에만 있는 텍스트(동료 대화, 터치 메뉴 등)는 패치가 번역합니다.\n비공식 프로젝트이며 개인 용도로만 쓰고, Square Enix와 관계가 없습니다.\n\n# 필요한 것\n• Google Play 스토어에서 설치한 게임이 들어 있고 **영어로 설정된** Android 휴대폰.\n• 같은 게임의 유럽판 DS ROM(.nds 파일 또는 이를 담은 .zip): The Chapters of the Chosen(DQ IV), The Hand of the Heavenly Bride(DQ V), Realms of Reverie(DQ VI).\n• USB 케이블과 휴대폰 개발자 옵션에서 켠 **USB 디버깅**.\n• 몇 가지 무료 프로그램: 시작할 때 도구가 대신 다운로드합니다(동의를 받은 뒤).\n\n# 사용 방법(게임마다 탭 하나)\n1. **ROM이 들어 있는 폴더**를 고르세요(“점검” 영역): 각 게임의 ROM을 자동으로 찾습니다.\n2. 휴대폰을 연결하고 화면에 나타나는 **권한 요청을 허용**하세요.\n3. 4단계를 순서대로 실행하세요(회색 버튼은 아직 실행할 수 없고, 오른쪽 아이콘으로 단계 완료 여부를 알 수 있습니다):\n   1 · **원본 APK 추출**: 게임을 휴대폰에서 PC로 복사합니다.\n   2 · **텍스트 준비**: 몇 분, 휴대폰 필요 없음. 게임의 모든 텍스트를 수정할 수 있는 파일에 씁니다.\n   3 · **APK 패치**: 그 텍스트를 게임에 넣습니다.\n   4 · **서명 및 설치**: 게임을 번역판으로 바꿉니다.\n별도로, 단계 아래에 **세이브 데이터** 버튼이 있습니다:\n   **세이브 데이터 추출**: 4단계 전에 꼭 하세요. 4단계가 게임을 삭제하기 때문입니다.\n   **세이브 데이터 복원**: 4단계 후, 게임을 한 번 실행하고 종료한 다음에.\n각 단계는 필요한 것이 준비되면 활성화됩니다: “점검” 영역에 모든 상태가 표시되고, “다음 할 일” 줄에서 무엇을 해야 하는지 알려 줍니다. 2단계와 3단계에는 휴대폰이 필요 없습니다. 각 단계 옆: ✔ 완료, ✖ 아직 안 함 또는 다시 실행, ⚠ 확인 필요(아이콘 위에 마우스를 올리면 상세 내용).\n\n# 알아 두면 좋은 점\n• 게임의 클라우드 저장은 번역판에서 **작동하지 않습니다**: “세이브 데이터 추출”과 “세이브 데이터 복원” 버튼으로 세이브 데이터를 보관하세요.\n• Play 스토어에서 게임의 **자동 업데이트를 끄세요**. 그렇지 않으면 번역판이 바뀌어 버립니다.\n• 버튼이나 영역 위에 마우스를 올리면 용도나 회색인 이유를 알려 주는 말풍선이 나옵니다.\n• ROM이나 패치된 APK는 **절대 공유하지 마세요**.\n"
+   },
+   "editing": {
+    "english": "# Before editing\n• Make a **copy** of the DQx_game_texts.json file (menu **File › Open the texts folder**): this is your way back.\n• Open it with **Notepad++** or **VS Code** (free), never with Word or WordPad, and save it as **UTF-8**.\n• Edit **only** the “text” lines. “english” and “origin” are there to help you (the tool does not read them). Do not delete any entry and do not change the numbers.\n\n# Finding the right text\n• Search (Ctrl+F) for 3 or 4 consecutive words, as you see them in the game, **without the punctuation**: in French texts there is a non-breaking space before ! ? : ; » and after «, which the search does not find with a normal space.\n• Names and numbers that change (the hero, an amount of gold…) are **%a** codes followed by 6 digits: do not type them in the search.\n• Several results? Check the “english” line and the neighbouring texts: they are in game order. If the same line exists several times (two moments of the story, two versions of a village), fix them all.\n\n# The file rules (JSON)\n• The text is between straight quotes: **never** press Enter inside it, and do not delete these quotes or the comma that follows.\n• Inside a text, a straight quote is written **\\\"** and a backslash **\\\\**. For dialogues, rather use the French quotes « », which the game already displays.\n• If step 3 reports an error “line X, column Y”, go to that line (Ctrl+G in Notepad++): it is almost always a quote or a comma.\n\n# The game codes: keep them\n• **@a…@b** at the start of a dialogue: the name shown above the bubble is between @a and @b (nothing for an anonymous character, whose line starts with “*: ”). **\\n@c0@** at the end: leave it as it is.\n• **@1…@** surrounds a menu label or a place name: only change the words between them.\n• An item or a spell has the form **@0M@2le @3un @4nom@5les @6des @7pluriel@8N@9N@**: you can change the articles (after @2, @3, @5, @6), the singular name (after @4) and the plural (after @7); M or F after @0 = gender. Do not touch the rest.\n• **%a** + 6 digits = variable name or number: keep it as it is. You can move it within the sentence.\n• **%H…%X** form 1 **%Y** form 2 **%Z** (same principle with %A, %B, %G…) = variants chosen by the game (masculine / feminine, singular / plural…): change the words between the codes, never the codes themselves.\n• The letters я, и, д of some characters (Russian accent, Nimzo) are intended: keep them.\n\n# Line breaks and bubbles\n• **\\n** (backslash + n) **forces a line break**. If the text already contains \\r\\n, use \\r\\n too.\n• Most dialogues have no \\n: the game breaks them by itself according to the bubble width. Only add some for an intended effect or to move a badly placed break.\n• A bubble shows about 3 lines. To **go to a new bubble**, copy the **㈡** character from another text and place it between two sentences; for an anonymous character, the new bubble starts again with “*: ” (“…sentence. ㈡ *: More…”).\n• **㈢** = short pause in the middle of a line (hesitation, sneeze…): the rest appears after a moment, in the same bubble.\n• In labels (menus, places, items), **;** marks where the game may break the line if the label is too long: do not delete it; to move it, imitate the neighbouring labels of the same file.\n\n# Punctuation, characters and length\n• Keep the (invisible) non-breaking space before ! ? : ; » and after «: it prevents an exclamation mark from going alone to the next line. To add one, copy it from another text (or Alt + 0160 on the numeric keypad).\n• Accents, œ, « », ’ and … are in the game font. Avoid other symbols (emojis, rare characters): step 3 reports those the font does not have.\n• Menus: keep a length close to the English; if a label overflows, abbreviate the **same word** (“Carac.”) rather than choosing another one.\n\n# After each change\n• Save, run **step 3** then **step 4** again, and check in game.\n• Read **texts\\step3_report.txt**: refused texts (the step 2 one is kept), lines wider than before, characters missing from the font.\n• Running step 2 again offers to keep your file; if it is recreated, the old one is first copied to “texts\\old”.\n• Do not share this file: it contains the text of your ROM. To suggest a fix for everyone, send the author of the patch the key (for example b0502000.mpt, 615) and the corrected text.\n",
+    "text": "# 수정하기 전에\n• DQx_game_texts.json 파일의 **사본**을 만드세요(메뉴 **파일 › 텍스트 폴더 열기**): 되돌리기 위한 수단입니다.\n• **Notepad++** 또는 **VS Code**(무료)로 열고, Word나 WordPad는 쓰지 말며, **UTF-8**로 저장하세요.\n• “text” 줄**만** 수정하세요. “english”와 “origin”는 참고용입니다(도구는 읽지 않음). 항목을 지우거나 번호를 바꾸지 마세요.\n\n# 원하는 텍스트 찾기\n• 게임에서 본 그대로 이어지는 단어 3~4개를 **문장 부호 없이** 검색(Ctrl+F)하세요: 프랑스어 텍스트에는 ! ? : ; » 앞과 « 뒤에 줄바꿈 없는 공백이 있어서, 일반 공백으로는 검색되지 않습니다.\n• 바뀌는 이름과 숫자(주인공, 골드 액수 등)는 **%a** 뒤에 숫자 6자리가 붙은 코드입니다: 검색어에 넣지 마세요.\n• 결과가 여러 개인가요? “english” 줄과 주변 텍스트를 확인하세요: 게임 순서대로 있습니다. 같은 대사가 여러 번 있다면(이야기의 다른 장면, 마을의 다른 버전) 모두 고치세요.\n\n# 파일(JSON) 규칙\n• 텍스트는 곧은 따옴표 사이에 있습니다: 그 안에서 **절대** Enter를 누르지 말고, 따옴표와 뒤따르는 쉼표를 지우지 마세요.\n• 텍스트 안의 곧은 따옴표는 **\\\"**, 역슬래시는 **\\\\**로 씁니다. 대화에는 게임이 이미 표시하는 프랑스식 따옴표 « »를 쓰는 편이 좋습니다.\n• 3단계가 “X번째 줄, Y번째 열” 오류를 알리면 그 줄로 가세요(Notepad++에서 Ctrl+G): 거의 항상 따옴표나 쉼표 문제입니다.\n\n# 게임 코드: 반드시 유지\n• 대화 시작의 **@a…@b**: 말풍선 위에 표시되는 이름이 @a와 @b 사이에 있습니다(이름 없는 인물은 아무것도 없고, 대사가 “*: ”로 시작). 끝의 **\\n@c0@**: 그대로 두세요.\n• **@1…@**은 메뉴 항목이나 지명을 감쌉니다: 사이의 단어만 바꾸세요.\n• 아이템이나 주문은 **@0M@2le @3un @4nom@5les @6des @7pluriel@8N@9N@** 형식입니다: 관사(@2, @3, @5, @6 뒤), 단수형 이름(@4 뒤), 복수형(@7 뒤)을 바꿀 수 있습니다. @0 뒤의 M 또는 F = 성. 나머지는 건드리지 마세요.\n• **%a** + 숫자 6자리 = 바뀌는 이름이나 숫자: 그대로 두세요. 문장 안에서 위치를 옮기는 것은 괜찮습니다.\n• **%H…%X** 형태 1 **%Y** 형태 2 **%Z**(%A, %B, %G 등도 같은 원리) = 게임이 고르는 변형(남성 / 여성, 단수 / 복수 등): 코드 사이의 단어를 바꾸고 코드 자체는 절대 바꾸지 마세요.\n• 일부 인물(러시아식 억양, 님조)의 я, и, д 글자는 의도된 것입니다: 유지하세요.\n\n# 줄바꿈과 말풍선\n• **\\n**(역슬래시 + n)은 **줄바꿈을 강제**합니다. 텍스트에 이미 \\r\\n이 있다면 \\r\\n을 쓰세요.\n• 대부분의 대화에는 \\n이 없습니다: 게임이 말풍선 너비에 맞춰 알아서 줄을 바꿉니다. 의도한 효과나 잘못된 위치의 줄바꿈을 옮길 때만 추가하세요.\n• 말풍선에는 약 3줄이 표시됩니다. **새 말풍선으로 넘어가려면** 다른 텍스트에서 **㈡** 문자를 복사해 두 문장 사이에 넣으세요. 이름 없는 인물이라면 새 말풍선을 다시 “*: ”로 시작합니다(“…문장. ㈡ *: 이어서…”).\n• **㈢** = 대사 중간의 짧은 멈춤(망설임, 재채기 등): 나머지는 잠시 뒤 같은 말풍선에 나타납니다.\n• 항목 이름(메뉴, 장소, 아이템)의 **;**는 이름이 너무 길 때 게임이 줄을 바꿀 수 있는 위치를 표시합니다: 지우지 마세요. 옮기려면 같은 파일의 주변 항목을 따라 하세요.\n\n# 문장 부호, 문자, 길이\n• ! ? : ; » 앞과 « 뒤의 (보이지 않는) 줄바꿈 없는 공백을 유지하세요: 느낌표만 다음 줄로 넘어가는 것을 막아 줍니다. 추가하려면 다른 텍스트에서 복사하세요(또는 숫자 키패드에서 Alt + 0160).\n• 악센트, œ, « », ’, …는 게임 글꼴에 있습니다. 그 밖의 기호(이모지, 드문 문자)는 피하세요: 글꼴에 없는 것은 3단계가 알려 줍니다.\n• 메뉴: 영어와 비슷한 길이를 유지하세요. 항목이 넘치면 다른 단어를 고르지 말고 **같은 단어**를 줄이세요(“Carac.”).\n\n# 수정할 때마다\n• 저장하고 **3단계**, 이어서 **4단계**를 다시 실행한 뒤 게임에서 확인하세요.\n• **texts\\step3_report.txt**를 읽으세요: 거부된 텍스트(2단계 것을 유지), 이전보다 넓은 줄, 글꼴에 없는 문자.\n• 2단계를 다시 실행하면 파일을 유지할지 묻습니다. 다시 만들면 기존 파일은 먼저 “texts\\old”에 복사됩니다.\n• 이 파일은 공유하지 마세요: ROM의 텍스트가 들어 있습니다. 모두를 위한 수정을 제안하려면 패치 제작자에게 키(예: b0502000.mpt, 615)와 수정한 텍스트를 보내세요.\n"
+   },
+   "todo": {
+    "english": "# Where is the patch at?\nThe tool works from start to finish and the 3 games are playable in French. But there is still work left for the patch to be really finished: here is what is missing. **Any help is welcome.**\n# 1. Translate the party chat of Dragon Quest IV\n• The mobile version of DQ4 adds about 7,800 lines of “party chat” that do not exist on DS: so they have no official translation.\n• The patch contains a first, unofficial translation of them: it needs to be reworked, line by line, to match the tone of each character.\n# 2. Review the item descriptions\n• The descriptions of items, weapons and equipment are those of the DS: often vague, and almost identical between all the items of the same type.\n• Wanted: a description specific to each item, saying clearly what it does.\n# 3. Check how place names are displayed\n• Places shown on screen with a detail (floor, basement, room…) need checking in game, and the form needs choosing:\n   “Pic des Tisseurs : Taverne”;\n   “à la taverne”, then “Pic des Tisseurs” on the next line;\n   “Pic des Tisseurs”, then “à la taverne” on the next line.\n# 4. Report all text problems\nWhile playing, note everything that is wrong:\n• a text that goes past or touches the edges of a window (bubble, menu, button);\n• a typo or spelling mistake, a wrong agreement (he / she, singular / plural);\n• a text left in English, or a translation that does not match the scene;\n• an item that does not have the right description;\n• a dialogue in the wrong place: a line that does not fit the scene or the character, lines out of order;\n• the same text different from one game to another: item description, menu, item, spell or monster name…;\n• the same name (character, place, item, spell, monster) written in two ways in the same game;\n• a character who changes their way of speaking (formal / informal, accent, verbal tics);\n• a wrong name displayed (one character instead of another);\n• a text that still talks about the DS (stylus, buttons, top screen…) instead of the phone;\n• a better translation you suggest.\nFor each problem, give if possible: the game, the place (town, scene, menu), the text as it is displayed, a **screenshot** and your suggestion. If you found the text in the text file (menu **File › Open the texts folder**), also give its file and number (e.g. b0012000.mpt, 34).\n# Contact\nSend your remarks, fixes and suggestions to: **[CONTACT]**\nFor a problem with the tool itself (a step that fails…), attach the log: **“Copy log”** button, then paste it into your message.\n",
+    "text": "# 패치 진행 상황\n도구는 처음부터 끝까지 작동하고 세 게임 모두 프랑스어로 플레이할 수 있습니다. 하지만 패치를 정말로 완성하려면 아직 할 일이 남아 있습니다: 부족한 부분은 다음과 같습니다. **어떤 도움이든 환영합니다.**\n# 1. Dragon Quest IV의 동료 대화 번역\n• DQ4 모바일판에는 DS에 없는 “동료 대화” 대사가 약 7,800개 추가되어 있습니다: 그래서 공식 번역이 없습니다.\n• 패치에는 첫 비공식 번역이 들어 있습니다: 각 인물의 말투에 맞도록 한 줄씩 다시 다듬어야 합니다.\n# 2. 아이템 설명 검토\n• 아이템, 무기, 장비의 설명은 DS판 그대로입니다: 모호한 경우가 많고, 같은 종류의 아이템끼리 거의 같습니다.\n• 모집: 아이템마다 무엇을 하는지 분명히 알려 주는 고유한 설명.\n# 3. 지명 표시 확인\n• 세부 정보(층, 지하, 방 등)와 함께 화면에 표시되는 장소는 게임에서 확인하고 형식을 정해야 합니다:\n   “Pic des Tisseurs : Taverne”\n   “à la taverne”, 다음 줄에 “Pic des Tisseurs”\n   “Pic des Tisseurs”, 다음 줄에 “à la taverne”\n# 4. 텍스트 문제 모두 알리기\n플레이하면서 이상한 점을 모두 적어 두세요:\n• 창(말풍선, 메뉴, 버튼) 가장자리를 넘거나 닿는 텍스트\n• 오타나 맞춤법 오류, 잘못된 일치(그 / 그녀, 단수 / 복수)\n• 영어로 남은 텍스트, 또는 장면과 맞지 않는 번역\n• 올바른 설명이 아닌 아이템\n• 잘못된 위치의 대화: 장면이나 인물과 맞지 않는 대사, 순서가 뒤섞인 대사\n• 게임마다 다른 같은 텍스트: 아이템 설명, 메뉴, 아이템·주문·몬스터 이름 등\n• 같은 게임 안에서 두 가지로 쓰인 같은 이름(인물, 장소, 아이템, 주문, 몬스터)\n• 말투가 바뀌는 인물(반말 / 존댓말, 억양, 말버릇)\n• 잘못 표시된 이름(다른 인물의 이름)\n• 휴대폰이 아니라 아직 DS(터치펜, 버튼, 위쪽 화면 등)를 말하는 텍스트\n• 제안하고 싶은 더 나은 번역\n문제마다 가능하면 다음을 알려 주세요: 게임, 장소(마을, 장면, 메뉴), 표시된 그대로의 텍스트, **스크린샷**, 제안. 텍스트 파일에서 해당 텍스트를 찾았다면(메뉴 **파일 › 텍스트 폴더 열기**) 파일과 번호도 알려 주세요(예: b0012000.mpt, 34).\n# 연락처\n의견, 수정, 제안은 다음 주소로 보내 주세요: **[CONTACT]**\n도구 자체의 문제(단계가 실패하는 등)라면 로그를 첨부하세요: **“로그 복사”** 버튼을 누른 뒤 메시지에 붙여 넣으세요.\n"
+   },
+   "address_not_provided": {
+    "english": "(address not provided)",
+    "text": "(주소 미입력)"
+   },
+   "folders_troubleshooting": {
+    "english": "# The folders\nNext to DQ_Patch_FR.exe, the tool puts everything in three folders:\n• **games**: one folder per game (**DQ4**, **DQ5**, **DQ6**), which contains:\n   apks: the original APKs copied from the phone.\n   texts: **DQx_game_texts.json**, all the game texts (step 2), the step 3 report and, in “old”, the replaced files.\n   build: the basic translated version (step 2), before your texts.\n   patched_apks: the translated APKs (step 3).\n   title_screen: the translated logo and “Tap to Start”, kept by step 3 (“FR title screen” option).\n   signed: the APKs ready to install.\n   saves: your backups of the saves, one folder per date.\n• **dependencies**: the tool itself (installed by DQ_Patch_FR.exe), its settings, **log.txt** (the log, shared by the 3 games) and the downloaded programs (platform-tools, java…).\n• **languages**: the texts of the tool, one file per language (tool_texts_xx-xx.json, menu **Language**).\n**File** menu: opens the folder of the displayed game or that of its texts.\n\n# The “Checks” area\nOn the left of each tab, the tool shows everything it checks (green dot: ready; red: to fix; grey: in progress):\n• **DS ROM**: the ROM folder chosen with the “Choose the ROM folder…” button (the same for the 3 games) and the European ROM of the game found in it (or in one of its subfolders).\n• **Programs**: the dependencies (details in the **Dependencies** menu); the “Download what's missing…” button appears if some are missing.\n• **Phone** and **Installed game**: the USB link, the game version and whether it is already patched.\n• **Texts**: the text file of step 2, and whether you have edited it since.\n• **Next**: the step (or the saves button) to run, or what prevents it.\nAt the end of each step, the log also tells you which one is next and when it is available.\n\n# The dependencies\nThe tool needs a few free programs. At startup, if some are missing, it asks for your consent once, then downloads them all into its “dependencies” folder. The **Dependencies** menu lists them with their state (✔ present, ✖ missing): click one to find out what it is for, where it comes from and where it is stored, and to download or reinstall it. “Download what's missing…” and “Reinstall all…” act on all of them at once. These are portable versions: **nothing is installed in Windows**.\n• adb: talks to the phone over USB.\n• Java and uber-apk-signer: sign the patched APKs so they can be installed.\n• Logo and title screen modules: only for the option of the same name.\n\n# The option\nOn the right of the step 3 button, the **FR title screen** box (ticked = on): also translates the logo subtitle and “Tap to Start”, with images redrawn in high definition, built into the tool. When off, they stay in English.\nChanging this option requires running steps 3 and 4 again. The first step 3 with the option takes several minutes; the result is kept in the game's “title_screen” folder.\n\n# Editing the game texts\nStep 2 writes **all** the game texts, as the patch puts them, into **texts\\DQx_game_texts.json** (menu **File › Open the texts folder**). It is sorted by file and by number: neighbouring texts are in game order, with the English next to them. To fix a text (a word, a “\\n” line break…), only edit its “text” line while keeping the codes, save, then run steps 3 and 4 again. Keep copies of the file to go back. All the details (codes, line breaks, bubbles…): menu **Help › How to edit the texts**. Running step 2 again offers to keep your file; if it is recreated, the old one is first copied to “texts\\old”. This file contains the text of your ROM: do not share it.\n\n# If something goes wrong\n• **Phone not detected**: cable in file transfer mode, USB debugging enabled, authorisation accepted on the phone. Unplug and plug it back in.\n• **Play Protect during the installation**: if it offers to send the app for scanning, tap “Don't send”; if it blocks it: “More details”, then “Install anyway”.\n• **The game crashes at startup** with the logo and title screen option: turn it off (“FR title screen” box of step 3), run steps 3 and 4 again.\n• **The game opens in Japanese**: choose English in the game.\n• **Choosing a Google account when the game opens**: the game may ask for it on first start, especially if there are several accounts on the phone. It is not required: skip the screen by tapping outside it, or with “Cancel” or “Continue”.\n• **Need help**: the “Copy log” button copies everything that happened, to attach to your message.\n",
+    "text": "# 폴더\n도구는 DQ_Patch_FR.exe 옆의 세 폴더에 모든 것을 정리합니다:\n• **games**: 게임별 폴더(**DQ4**, **DQ5**, **DQ6**)로, 다음이 들어 있습니다:\n   apks: 휴대폰에서 복사한 원본 APK.\n   texts: **DQx_game_texts.json**(게임의 모든 텍스트, 2단계), 3단계 보고서, 그리고 “old”에는 교체된 파일.\n   build: 내 텍스트를 넣기 전의 번역판 기본(2단계).\n   patched_apks: 번역된 APK(3단계).\n   title_screen: 3단계가 보관한 번역된 로고와 “Tap to Start”(“타이틀 화면 FR” 옵션).\n   signed: 설치할 준비가 된 APK.\n   saves: 세이브 데이터 백업, 날짜별 폴더 하나.\n• **dependencies**: 도구 자체(DQ_Patch_FR.exe가 설치), 설정, **log.txt**(세 게임 공통 로그), 다운로드한 프로그램(platform-tools, java 등).\n• **languages**: 도구의 텍스트, 언어마다 파일 하나(tool_texts_xx-xx.json, **언어** 메뉴).\n**파일** 메뉴: 표시 중인 게임의 폴더나 그 텍스트 폴더를 엽니다.\n\n# “점검” 영역\n각 탭 왼쪽에 도구가 확인하는 모든 것이 표시됩니다(초록 점: 준비됨, 빨강: 해결 필요, 회색: 진행 중):\n• **DS ROM**: “ROM 폴더 선택…” 버튼으로 고른 ROM 폴더(세 게임 공통)와 그 안(또는 하위 폴더)에서 찾은 게임의 유럽판 ROM.\n• **프로그램**: 종속 항목(상세는 **종속 항목** 메뉴). 빠진 것이 있으면 “빠진 것 다운로드…” 버튼이 나타납니다.\n• **휴대폰**과 **설치된 게임**: USB 연결, 게임 버전, 이미 패치되었는지 여부.\n• **텍스트**: 2단계의 텍스트 파일과, 그 뒤에 수정했는지 여부.\n• **다음 할 일**: 실행할 단계(또는 세이브 데이터 버튼), 또는 그것을 막는 원인.\n로그도 각 단계가 끝날 때 다음 단계와 그것을 언제 실행할 수 있는지 알려 줍니다.\n\n# 종속 항목\n도구에는 몇 가지 무료 프로그램이 필요합니다. 시작할 때 빠진 것이 있으면 한 번만 동의를 구한 뒤 모두 “dependencies” 폴더에 다운로드합니다. **종속 항목** 메뉴에서 상태(✔ 있음, ✖ 없음)와 함께 목록을 볼 수 있습니다: 하나를 누르면 용도, 출처, 저장 위치를 알 수 있고, 다운로드나 재설치를 할 수 있습니다. “빠진 것 다운로드…”와 “모두 다시 설치…”는 모두에 한 번에 적용됩니다. 포터블 버전입니다: **Windows에는 아무것도 설치되지 않습니다**.\n• adb: USB로 휴대폰과 통신합니다.\n• Java와 uber-apk-signer: 패치된 APK에 서명해 설치할 수 있게 합니다.\n• 로고와 타이틀 화면 모듈: 같은 이름의 옵션에만 쓰입니다.\n\n# 옵션\n3단계 버튼 오른쪽의 **타이틀 화면 FR** 상자(체크 = 켜짐): 도구에 내장된 고해상도로 다시 그린 이미지로 로고 부제와 “Tap to Start”도 번역합니다. 끄면 영어 그대로입니다.\n이 옵션을 바꾸면 3단계와 4단계를 다시 실행해야 합니다. 옵션을 켠 첫 3단계는 몇 분 걸리며, 결과는 게임의 “title_screen” 폴더에 보관됩니다.\n\n# 게임 텍스트 수정\n2단계는 패치가 넣는 그대로 게임의 **모든** 텍스트를 **texts\\DQx_game_texts.json**에 씁니다(메뉴 **파일 › 텍스트 폴더 열기**). 파일과 번호 순으로 정렬되어 있어 주변 텍스트가 게임 순서대로 있고, 옆에 영어가 있습니다. 텍스트(단어, “\\n” 줄바꿈 등)를 고치려면 코드를 유지한 채 그 “text” 줄만 수정해 저장한 뒤 3단계와 4단계를 다시 실행하세요. 되돌릴 수 있도록 파일의 사본을 보관하세요. 상세(코드, 줄바꿈, 말풍선 등): 메뉴 **도움말 › 텍스트 수정 방법**. 2단계를 다시 실행하면 파일을 유지할지 묻습니다. 다시 만들면 기존 파일은 먼저 “texts\\old”에 복사됩니다. 이 파일에는 ROM의 텍스트가 들어 있습니다: 공유하지 마세요.\n\n# 문제가 생기면\n• **휴대폰이 감지되지 않음**: 케이블은 파일 전송 모드, USB 디버깅 켜기, 휴대폰에서 권한 허용. 뺐다가 다시 꽂으세요.\n• **설치 중 Play 프로텍트**: 앱을 검사용으로 보내도록 제안하면 “보내지 않음”을 누르세요. 차단되면 “세부정보 더보기” 다음 “무시하고 설치”.\n• 로고와 타이틀 화면 옵션을 켰을 때 **게임이 시작하자마자 꺼짐**: 옵션을 끄고(3단계의 “타이틀 화면 FR” 상자) 3단계와 4단계를 다시 실행하세요.\n• **게임이 일본어로 열림**: 게임에서 영어를 고르세요.\n• **게임을 열 때 Google 계정 선택**: 처음 실행할 때, 특히 휴대폰에 계정이 여러 개면 요청할 수 있습니다. 필수가 아닙니다: 화면 바깥을 누르거나 “취소” 또는 “계속”으로 넘어가세요.\n• **도움이 필요할 때**: “로그 복사” 버튼이 일어난 모든 일을 복사하니 메시지에 첨부하세요.\n"
+   },
+   "address_copied": {
+    "english": "Address copied: {0}",
+    "text": "주소 복사됨: {0}"
+   },
+   "copy_e_mail": {
+    "english": "Copy the e-mail address",
+    "text": "이메일 주소 복사"
+   },
+   "dragon_quest_iv": {
+    "english": "Dragon Quest IV-V-VI - Patch FR (experimental)\nBeta version of the tool\n\nUnofficial French patches for the Android versions of Dragon Quest IV, V and VI, for personal use.\nNot affiliated with Square Enix. The tool contains no ROM and no game text.\n\nDependencies: SDK Platform-Tools (Google), Java Temurin (Eclipse Adoptium), uber-apk-signer (P. Favre, Apache 2.0 licence).",
+    "text": "Dragon Quest IV-V-VI - Patch FR(실험판)\n도구 베타 버전\n\nDragon Quest IV, V, VI Android판용 비공식 프랑스어 패치이며, 개인 용도로만 사용합니다.\nSquare Enix와 관계가 없습니다. 도구에는 ROM도 게임 텍스트도 들어 있지 않습니다.\n\n종속 항목: SDK Platform-Tools(Google), Java Temurin(Eclipse Adoptium), uber-apk-signer(P. Favre, Apache 2.0 라이선스)."
+   },
+   "included_exe_python": {
+    "english": "\n\nIncluded in the exe: Python, Tcl/Tk, PyInstaller, UnityPy, Pillow, NumPy, each under its own licence. Details: THIRD_PARTY_NOTICES.md file, github.com/Sylfried/dq456-translate-prd",
+    "text": "\n\nexe에 포함된 것: Python, Tcl/Tk, PyInstaller, UnityPy, Pillow, NumPy(각각 고유 라이선스). 자세한 내용: THIRD_PARTY_NOTICES.md 파일, github.com/Sylfried/dq456-translate-prd"
+   }
+  },
+  "game": {
+   "chapters_chosen": {
+    "english": "The Chapters of the Chosen",
+    "text": "인도받은 자들"
+   },
+   "hand_heavenly_bride": {
+    "english": "The Hand of the Heavenly Bride",
+    "text": "천공의 신부"
+   },
+   "realms_reverie": {
+    "english": "Realms of Reverie",
+    "text": "환상의 대지"
+   }
+  },
+  "app": {
+   "looking_phone": {
+    "english": "Looking for the phone …",
+    "text": "휴대폰을 찾는 중 …"
+   },
+   "folders_tidied_up": {
+    "english": "Folders tidied up (new layout): ",
+    "text": "폴더 정리(새 구성): "
+   },
+   "folders_next_tool": {
+    "english": " → “{0}” and “{1}” folders next to the tool.",
+    "text": " → 도구 옆에 “{0}”, “{1}” 폴더."
+   },
+   "not_moved_file": {
+    "english": "Not moved (file open in another program?): ",
+    "text": "옮기지 못함(다른 프로그램에서 파일이 열려 있나요?): "
+   },
+   "new_attempt_next": {
+    "english": ". New attempt at the next start.",
+    "text": ". 다음 실행 때 다시 시도합니다."
+   },
+   "cancellation_requested": {
+    "english": "Cancellation requested …",
+    "text": "취소 요청함 …"
+   },
+   "operation_progress": {
+    "english": "Operation in progress",
+    "text": "작업 진행 중"
+   },
+   "progress_quitting_interrupts": {
+    "english": "“{0}” is in progress.\nQuitting interrupts it and may leave incomplete files (cleaned up at the next attempt).\n\nQuit anyway?",
+    "text": "“{0}” 진행 중입니다.\n종료하면 작업이 중단되고 불완전한 파일이 남을 수 있습니다(다음 시도 때 정리됨).\n\n그래도 종료할까요?"
+   },
+   "reading_answers_programs": {
+    "english": "reading the answers of the programs",
+    "text": "프로그램 응답 읽기"
+   },
+   "dragon_quest_iv": {
+    "english": "Dragon Quest IV-V-VI - Patch FR (experimental)",
+    "text": "Dragon Quest IV-V-VI - Patch FR(실험판)"
+   },
+   "tkinter_not_found": {
+    "english": "tkinter not found: reinstall Python, ticking “tcl/tk and IDLE”.",
+    "text": "tkinter를 찾을 수 없음: “tcl/tk and IDLE”을 체크해 Python을 다시 설치하세요."
+   },
+   "folder_not_writable": {
+    "english": "Folder not writable",
+    "text": "폴더에 쓸 수 없음"
+   },
+   "tool_must_able": {
+    "english": "The tool must be able to write in its folder (it stores its “dependencies” and “games” folders there), but this folder is protected:\n{0}\n\nMove it to a normal folder (Desktop, Documents, a folder of your own), then start it again.",
+    "text": "도구는 자기 폴더에 쓸 수 있어야 하지만(그곳에 “dependencies”와 “games” 폴더를 둠), 이 폴더는 보호되어 있습니다:\n{0}\n\n일반 폴더(바탕 화면, 문서, 내 폴더)로 옮긴 뒤 다시 실행하세요."
+   },
+   "interface_error": {
+    "english": "Interface error: ",
+    "text": "인터페이스 오류: "
+   }
+  },
+  "common": {
+   "step_interrupted": {
+    "english": "Step interrupted",
+    "text": "단계가 중단됨"
+   },
+   "tool_closing": {
+    "english": "The tool is closing.",
+    "text": "도구를 닫는 중입니다."
+   },
+   "program_not_found": {
+    "english": "Program not found: {0}",
+    "text": "프로그램을 찾을 수 없음: {0}"
+   },
+   "unable_run_command": {
+    "english": "Unable to run the command: {0}",
+    "text": "명령을 실행할 수 없음: {0}"
+   },
+   "step_cancelled": {
+    "english": "Step cancelled.",
+    "text": "단계를 취소했습니다."
+   },
+   "cancelled": {
+    "english": "Cancelled",
+    "text": "취소됨"
+   },
+   "text_received": {
+    "english": "text received",
+    "text": "텍스트 수신"
+   },
+   "nothing_received": {
+    "english": "nothing received",
+    "text": "수신된 것 없음"
+   },
+   "label_value": {
+    "english": "{0}: {1}",
+    "text": "{0}: {1}"
+   },
+   "cancel": {
+    "english": "Cancel",
+    "text": "취소"
+   },
+   "disk_full": {
+    "english": "Disk full",
+    "text": "디스크 가득 참"
+   },
+   "not_enough_disk": {
+    "english": "Not enough disk space: about {0} needed, {1} free.",
+    "text": "디스크 공간 부족: 약 {0} 필요, 여유 공간 {1}."
+   },
+   "close": {
+    "english": "Close",
+    "text": "닫기"
+   },
+   "open_folder": {
+    "english": "Open the folder",
+    "text": "폴더 열기"
+   },
+   "restore_backup": {
+    "english": "Restore this backup",
+    "text": "이 백업 복원"
+   },
+   "unable_open_folder": {
+    "english": "Unable to open the folder: {0}",
+    "text": "폴더를 열 수 없음: {0}"
+   },
+   "later": {
+    "english": "Later",
+    "text": "나중에"
+   }
+  }
+ }
+}
