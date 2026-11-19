@@ -6,7 +6,7 @@ The tool contains **no content from the games**: no ROM, no APK, no game text, p
 
 *Dragon Quest* and all related names, characters and content are the property of their respective owners (Square Enix and its licensors). This project is unofficial and not affiliated with or endorsed by Square Enix, Nintendo or Google.
 
-## Components included in `DQ_Patch_FR.exe`
+## Components included in `DQ456_Tool.exe`
 
 The exe is built with PyInstaller from the tool's Python code. It contains:
 

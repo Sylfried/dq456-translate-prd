@@ -1,0 +1,2330 @@
+{
+ "readme": [
+  "Texts of DQ456_Tool for one language: file <code>.json of the languages folder, code in the xx-xx form (fr-fr, en-us, pt-br...).",
+  "language = name shown in the Language menu. texts = the texts, by part of the tool: only change the \"text\" lines; \"english\" = original English text (reference, the tool does not read it). An empty \"text\" shows the English.",
+  "The texts used to translate the tool (Language menu: Add a language, Reload the texts...) stay in English: they are only in en-us.json (\"translating\" part).",
+  "Keep {0}, {1}... and the codes as they are: \\n = line break, **...** = bold, # at the start of a line = title. A double quote in a text is written \\\".",
+  "Save the file (UTF-8), then menu Language > Reload the texts. To create a new language: menu Language > Add a language."
+ ],
+ "language": "简体中文",
+ "texts": {
+  "lang": {
+   "system_language": {
+    "english": "System language ({0})",
+    "text": "系统语言（{0}）"
+   },
+   "other_english_interface": {
+    "english": "Other (English interface)",
+    "text": "其他（英文界面）"
+   },
+   "language": {
+    "english": "Language",
+    "text": "语言"
+   },
+   "interface_language_next": {
+    "english": "Interface language: {0} (at the next start).",
+    "text": "界面语言：{0}（下次启动时生效）。"
+   },
+   "change_language": {
+    "english": "Change language",
+    "text": "更改语言"
+   },
+   "interface_language_changes": {
+    "english": "The interface language changes when the tool restarts.\n\nRestart now?",
+    "text": "界面语言会在工具重启时更改。\n\n现在重启？"
+   },
+   "operation_progress_new": {
+    "english": "An operation is in progress: the new language will be used the next time the tool starts.",
+    "text": "有操作正在进行：新语言将在下次启动工具时使用。"
+   },
+   "restart_now": {
+    "english": "Restart now",
+    "text": "现在重启"
+   },
+   "unable_restart_tool": {
+    "english": "Unable to restart the tool ({0}): close it and start it again.",
+    "text": "无法重启工具（{0}）：请关闭后重新启动。"
+   }
+  },
+  "menu": {
+   "open_game_folder": {
+    "english": "Open the game folder",
+    "text": "打开游戏文件夹"
+   },
+   "open_texts_folder": {
+    "english": "Open the texts folder",
+    "text": "打开文本文件夹"
+   },
+   "quit": {
+    "english": "Quit",
+    "text": "退出"
+   },
+   "file": {
+    "english": "File",
+    "text": "文件"
+   },
+   "dependencies": {
+    "english": "Dependencies",
+    "text": "依赖项"
+   },
+   "about_project": {
+    "english": "About the project",
+    "text": "项目介绍"
+   },
+   "folders_troubleshooting": {
+    "english": "Folders and troubleshooting",
+    "text": "文件夹与故障排除"
+   },
+   "how_edit_texts": {
+    "english": "How to edit the texts",
+    "text": "如何修改文本"
+   },
+   "to_do": {
+    "english": "To do",
+    "text": "待办事项"
+   },
+   "about": {
+    "english": "About",
+    "text": "关于"
+   },
+   "help": {
+    "english": "Help",
+    "text": "帮助"
+   },
+   "open_dq_folder": {
+    "english": "Open the DQ{0} folder",
+    "text": "打开DQ{0}文件夹"
+   },
+   "open_dq_texts": {
+    "english": "Open the DQ{0} texts folder",
+    "text": "打开DQ{0}文本文件夹"
+   }
+  },
+  "tab": {
+   "android_copies_original": {
+    "english": "{0} for Android: copies the original APKs and the saves of the phone to this PC.",
+    "text": "Android版{0}：将原始APK和存档从手机复制到这台电脑。"
+   },
+   "android_already_contains": {
+    "english": "{0} for Android already contains this language: the tool copies its APKs and its saves from the phone to this PC, for example to play it with the PC port. The French patch is available with the French interface (Language menu).",
+    "text": "Android版{0}已包含此语言：本工具会将它的APK和存档从手机复制到这台电脑，例如用PC移植版来玩。将界面切换为法语即可使用法语补丁（语言菜单）。"
+   },
+   "french_patch_android": {
+    "english": "French patch of {0} for Android: most of the French texts come from the European DS ROM ({1}) that you own. The rest is modified or added by the tool.",
+    "text": "Android版{0}的法语补丁：大部分法语文本来自您拥有的欧版DS ROM（{1}）。其余部分由工具修改或添加。"
+   },
+   "checks": {
+    "english": " Checks ",
+    "text": " 检查 "
+   },
+   "everything_tool_checks": {
+    "english": "Everything the tool checks before running a step: green dot = ready, red = to fix, grey = checking. Hover over a line for details.",
+    "text": "执行步骤前工具检查的所有内容：绿点 = 就绪，红色 = 需处理，灰色 = 正在检查。将鼠标悬停在某一行上查看详情。"
+   },
+   "ds_rom": {
+    "english": "DS ROM",
+    "text": "DS ROM"
+   },
+   "programs": {
+    "english": "Programs",
+    "text": "程序"
+   },
+   "installed_game": {
+    "english": "Installed game",
+    "text": "已安装的游戏"
+   },
+   "texts": {
+    "english": "Texts",
+    "text": "文本"
+   },
+   "next": {
+    "english": "Next",
+    "text": "下一步"
+   },
+   "european_ds_rom": {
+    "english": "The European DS ROM of {0} ({1}, .nds file or a .zip containing it), looked for in the chosen ROM folder (and its direct subfolders). The folder is the same for the 3 games.\nCurrent folder: {2}",
+    "text": "{0}的欧版DS ROM（{1}，.nds文件或包含它的.zip），在所选ROM文件夹（及其直接子文件夹）中查找。3款游戏使用同一个文件夹。\n当前文件夹：{2}"
+   },
+   "not_chosen_yet": {
+    "english": "not chosen yet",
+    "text": "尚未选择"
+   },
+   "programs_needed_steps": {
+    "english": "Programs needed by the steps (adb):\n",
+    "text": "各步骤所需的程序（adb）：\n"
+   },
+   "programs_needed_steps_adb": {
+    "english": "Programs needed by the steps (adb, Java, uber-apk-signer) and by the logo / title screen option:\n",
+    "text": "各步骤（adb、Java、uber-apk-signer）以及标志 / 标题画面选项所需的程序：\n"
+   },
+   "details_download_dependencies": {
+    "english": "\n\nDetails and download: Dependencies menu.",
+    "text": "\n\n详情与下载：依赖项菜单。"
+   },
+   "state_usb_link": {
+    "english": "State of the USB link with the phone (checked every 3 seconds). Enable “USB debugging” in the developer options, plug in the cable, then accept the authorisation request on the phone screen. Steps 2 and 3 do not need it.",
+    "text": "与手机的USB连接状态（每3秒检查一次）。请在开发者选项中开启“USB调试”，连接数据线，然后在手机屏幕上接受授权请求。第2步和第3步不需要。"
+   },
+   "version_game_installed": {
+    "english": "Version of the game installed on the phone, and whether it is already patched (mark placed in the game by the patch).",
+    "text": "手机上安装的游戏版本，以及是否已打补丁（补丁在游戏中留下的标记）。"
+   },
+   "file_all_game": {
+    "english": "The file of all the game texts, written by step 2 (menu File › Open the texts folder). If you edit it, run steps 3 and 4 again. Rules: menu Help › How to edit the texts.",
+    "text": "第2步写出的包含游戏全部文本的文件（菜单 文件 › 打开文本文件夹）。修改后，请重新执行第3步和第4步。规则：菜单 帮助 › 如何修改文本。"
+   },
+   "what_run_now": {
+    "english": "What to run now (step or saves button), or what prevents it. The log also says it at the end of each step.",
+    "text": "现在需要执行的内容（步骤或存档按钮），或阻止它的原因。日志也会在每一步结束时说明。"
+   },
+   "choose_rom_folder": {
+    "english": "Choose the ROM folder…",
+    "text": "选择ROM文件夹…"
+   },
+   "chooses_folder_contains": {
+    "english": "Chooses the folder that contains your European DS ROMs (.nds, or .zip containing them). The tool finds the ROM of each game in it automatically; the choice is remembered for the 3 tabs.",
+    "text": "选择存放您的欧版DS ROM（.nds，或包含它们的.zip）的文件夹。工具会在其中自动找到每个游戏的ROM；该选择对3个标签页都有效。"
+   },
+   "download_what_s": {
+    "english": "Download what's missing…",
+    "text": "下载缺少的项目…"
+   },
+   "downloads_all_missing": {
+    "english": "Downloads all the missing programs, after a single confirmation. These are portable versions: nothing is installed in Windows.",
+    "text": "只需确认一次，即可下载所有缺少的程序。它们都是便携版：不会在Windows中安装任何东西。"
+   },
+   "several_devices_plugged": {
+    "english": "Several devices are plugged in: choose the one to use.",
+    "text": "连接了多台设备：请选择要使用的设备。"
+   },
+   "steps": {
+    "english": " Steps ",
+    "text": " 步骤 "
+   },
+   "patch_steps": {
+    "english": " Patch steps ",
+    "text": " 补丁步骤 "
+   },
+   "button_stays_greyed": {
+    "english": "The button stays greyed out as long as the copy is not possible (phone not connected, game not installed); the icon on its right tells whether it is done.",
+    "text": "在无法复制时（手机未连接、游戏未安装），按钮保持灰色；右侧图标表示是否已完成。"
+   },
+   "4_steps_run": {
+    "english": "The 4 steps are run by hand, in order: a button stays greyed out as long as the step is not possible, the icon on its right tells whether it is done. Each one becomes available when what it needs is ready (“Checks” area). On the right of step 3: the box of the “FR title screen” option (ticked = on).",
+    "text": "4个步骤需按顺序手动执行：步骤无法执行时按钮保持灰色，右侧图标显示是否已完成。每一步在所需条件就绪时变为可用（“检查”区域）。第3步右侧：“标题画面FR”选项的复选框（勾选 = 开启）。"
+   },
+   "saves": {
+    "english": " Saves ",
+    "text": " 存档 "
+   },
+   "local_saves_game": {
+    "english": "Your local saves of the game, copied from the phone (for example to continue your game with the PC port).",
+    "text": "从手机复制的游戏本地存档（例如用PC移植版继续游戏）。"
+   },
+   "local_saves_game_extract": {
+    "english": "Your local saves of the game: to extract BEFORE step 4 (it uninstalls the original game, which erases them), then to restore AFTER, once the translated version has been started once and closed.",
+    "text": "游戏的本地存档：请在第4步之前提取（第4步会卸载原版游戏，从而删除存档），在翻译版启动一次并关闭之后再恢复。"
+   },
+   "fr_title_screen": {
+    "english": "FR title screen",
+    "text": "标题画面FR"
+   },
+   "ticked_unticked_off": {
+    "english": "Ticked = on, unticked = off. Step 3 option (translated logo and title screen): also translates the logo (game subtitle) and “Tap to Start”, with redrawn images built into the tool. Uses UnityPy, Pillow and numpy (built into the tool or downloaded from the Dependencies menu). Longer and uses more memory (1 to 2 GB).\nOff: the logo and “Tap to Start” stay the original ones, in English (the rest of the game is translated). Turn it off if there is a problem: the game remains playable without it.\nAfter a change, run steps 3 and 4 again. The first step 3 with the option is long (several minutes); the result is then kept.",
+    "text": "勾选 = 开启，不勾选 = 关闭。第3步的选项（翻译标志和标题画面）：用工具内置的重绘图片，同时翻译标志（游戏副标题）和“Tap to Start”。使用UnityPy、Pillow和numpy（内置于工具，或从依赖项菜单下载）。耗时更长，占用内存更多（1到2 GB）。\n关闭时：标志和“Tap to Start”保持原版英文（游戏其余部分已翻译）。出现问题时请关闭：没有它游戏也能正常游玩。\n更改后，请重新执行第3步和第4步。开启该选项的第一次第3步耗时较长（几分钟）；之后结果会被保存。"
+   },
+   "option_unavailable_logo": {
+    "english": "⛔ Option unavailable: the logo and title screen modules are missing from this exe (it was built without UnityPy, Pillow and numpy).\n\n",
+    "text": "⛔ 选项不可用：此exe中缺少标志和标题画面模块（构建时未包含UnityPy、Pillow和numpy）。\n\n"
+   },
+   "option_available_same": {
+    "english": "⛔ Option available at the same time as step 3: ",
+    "text": "⛔ 选项与第3步同时可用："
+   },
+   "file_s": {
+    "english": "• {0} · {1} file(s)",
+    "text": "• {0} · {1}个文件"
+   },
+   "original_apks": {
+    "english": "✔ {0} original APKs · {1}",
+    "text": "✔ {0}个原始APK · {1}"
+   },
+   "apks_folder_contains": {
+    "english": "⚠ The “apks” folder contains already patched APKs: unusable",
+    "text": "⚠ “apks”文件夹中有已打补丁的APK：无法使用"
+   },
+   "not_done_yet": {
+    "english": "not done yet",
+    "text": "尚未完成"
+   },
+   "run_again_run": {
+    "english": "to run again: {0} has been run again since",
+    "text": "需重做：此后重新执行了{0}"
+   },
+   "step_1": {
+    "english": "step 1",
+    "text": "第1步"
+   },
+   "done": {
+    "english": "✔ done on {0}",
+    "text": "✔ 完成于{0}"
+   },
+   "text_file_missing": {
+    "english": "⚠ text file missing: run step 2 again",
+    "text": "⚠ 缺少文本文件：请重新执行第2步"
+   },
+   "run_again": {
+    "english": "to run again: {0}",
+    "text": "需重做：{0}"
+   },
+   "step_2": {
+    "english": "step 2",
+    "text": "第2步"
+   },
+   "done_change_s": {
+    "english": "✔ done on {0} · {1} change(s) from your file",
+    "text": "✔ 完成于{0} · 您文件中的{1}处修改"
+   },
+   "not_applied": {
+    "english": " · {0} not applied",
+    "text": " · {0}处未应用"
+   },
+   "backup_s_last": {
+    "english": "✔ {0} backup(s) · last {1}",
+    "text": "✔ {0}个备份 · 最新 {1}"
+   },
+   "no_save_found": {
+    "english": "no save found on the phone",
+    "text": "没有存档：手机上未找到"
+   },
+   "step_3": {
+    "english": "step 3",
+    "text": "第3步"
+   },
+   "all_present": {
+    "english": "All present",
+    "text": "全部就绪"
+   },
+   "except_optional_logo": {
+    "english": " (except the optional logo and title screen modules)",
+    "text": " （可选的标志和标题画面模块除外）"
+   },
+   "run_steps_3": {
+    "english": " · run steps 3 and 4 again",
+    "text": " · 请重新执行第3步和第4步"
+   },
+   "texts_label": {
+    "english": "Texts: ",
+    "text": "文本："
+   },
+   "no_save": {
+    "english": "no save",
+    "text": "没有存档"
+   },
+   "all_done_original": {
+    "english": "All done: the original APKs are copied to the “apks” folder (File › Open the game folder).",
+    "text": "全部完成：原始APK已复制到“apks”文件夹（文件 › 打开游戏文件夹）。"
+   },
+   "all_steps_done": {
+    "english": "All steps are done: the game is translated.",
+    "text": "所有步骤已完成：游戏已翻译。"
+   },
+   "ready": {
+    "english": "{0}: ready.",
+    "text": "{0}：就绪。"
+   },
+   "unexpected_error": {
+    "english": "Unexpected error: {0}: {1}",
+    "text": "意外错误：{0}：{1}"
+   },
+   "details_log_copy": {
+    "english": "\n\nThe details are in the log (“Copy log” button).",
+    "text": "\n\n详情见日志（“复制日志”按钮）。"
+   },
+   "unexpected_error_2": {
+    "english": "Unexpected error",
+    "text": "意外错误"
+   }
+  },
+  "steps": {
+   "extract_original_apks": {
+    "english": "Extract original APKs",
+    "text": "提取原始APK"
+   },
+   "copies_3_apk": {
+    "english": "Copies the 3 APK files of the installed game from the phone to this PC (“apks” folder of DQx).\n• The phone must be connected over USB (USB debugging enabled) and the original game installed from the Play Store.\n• Reuses the folder already created if the step has already been run.\n• The tool tells you if the installed version is already patched, so that it does not retrieve the wrong APKs or overwrite the existing base.",
+    "text": "将已安装游戏的3个APK文件从手机复制到此电脑（DQx的“apks”文件夹）。\n• 手机必须通过USB连接（已开启USB调试），且已从Play商店安装原版游戏。\n• 如果此步骤已执行过，将使用已创建的文件夹。\n• 工具会提示已安装的版本是否已打补丁，以免获取错误的APK或覆盖现有的基础文件。"
+   },
+   "prepare_texts": {
+    "english": "Prepare texts",
+    "text": "准备文本"
+   },
+   "reads_european_ds": {
+    "english": "Reads your European DS ROM and the original APKs, applies all the patch rules (texts taken from the ROM, retouched or created), then writes ALL the game texts into the “texts\\DQx_game_texts.json” file.\n• No phone connection needed.\n• Takes several minutes.\n• You can then edit this file (menu File › Open the texts folder) before step 3.",
+    "text": "读取您的欧版DS ROM和原始APK，应用补丁的所有规则（取自ROM、经过修改或新写的文本），然后将游戏的全部文本写入“texts\\DQx_game_texts.json”文件。\n• 无需连接手机。\n• 需要几分钟。\n• 之后可以在第3步之前修改此文件（菜单 文件 › 打开文本文件夹）。"
+   },
+   "patch_apks": {
+    "english": "Patch APKs",
+    "text": "修补APK"
+   },
+   "puts_texts_texts": {
+    "english": "Puts the texts of the “texts\\DQx_game_texts.json” file (required), as they are, into the translated APKs in the “patched_apks” folder.\n• No phone connection needed.\n• To run again after each change to the text file (then step 4).\n• With the “FR title screen” option (on the right): also translates the logo and “Tap to Start” from your ROM (several minutes, the first time only).\n• The report (your changes applied, texts to check in game) is in “texts\\step3_report.txt”.",
+    "text": "将“texts\\DQx_game_texts.json”文件（必需）中的文本原样放入“patched_apks”文件夹中的翻译版APK。\n• 无需连接手机。\n• 每次修改文本文件后都要重新执行（然后第4步）。\n• 开启“标题画面FR”选项（右侧）后，还会根据您的ROM翻译标志和“Tap to Start”（几分钟，仅首次）。\n• 报告（已应用的修改、需在游戏中查看的文本）位于“texts\\step3_report.txt”。"
+   },
+   "extract_saves": {
+    "english": "Extract saves",
+    "text": "提取存档"
+   },
+   "copies_local_saves": {
+    "english": "Copies the local saves of the phone (data*.dat) to “saves/YYYYMMDD_HHMMSS”, checking the size of the files.\n• To do before step 4: uninstalling erases the local saves.\n• The game's cloud save does not work with the patched version.",
+    "text": "将手机上的本地存档（data*.dat）复制到“saves/YYYYMMDD_HHMMSS”，并检查文件大小。\n• 请在第4步之前执行：卸载会删除本地存档。\n• 游戏的云存档在补丁版中无法使用。"
+   },
+   "sign_install": {
+    "english": "Sign and install",
+    "text": "签名并安装"
+   },
+   "signs_translated_apks": {
+    "english": "Signs the translated APKs, uninstalls the original game, then installs the translated version.\n• If you have never extracted your saves, offers to do it; otherwise, reminds you of the date of the last backup.\n• A confirmation is asked before uninstalling.\n• During the installation, if Google Play Protect offers to scan the app on the phone, tap “Don't send”.",
+    "text": "为翻译版APK签名，卸载原版游戏，然后安装翻译版。\n• 如果您从未提取过存档，会建议提取；否则会提醒最近一次备份的日期。\n• 卸载前会请求确认。\n• 安装期间，如果Google Play 保护机制建议在手机上扫描应用，请点按“不发送”。"
+   },
+   "restore_saves": {
+    "english": "Restore saves",
+    "text": "恢复存档"
+   },
+   "puts_back_phone": {
+    "english": "Puts back on the phone the saves of a backup you choose from the list (sorted by date).\n• To do after step 4, once the game has been started and then closed completely.\n• The saves already on the phone are replaced by those of the chosen backup.",
+    "text": "将您从列表中选择的备份（按日期排序）中的存档放回手机。\n• 请在第4步之后执行，即启动一次游戏并完全关闭之后。\n• 手机上已有的存档会被所选备份中的存档替换。"
+   },
+   "step": {
+    "english": "Step {0} · {1}",
+    "text": "第{0}步 · {1}"
+   },
+   "before_step_4": {
+    "english": " (before step 4)",
+    "text": " （第4步之前）"
+   },
+   "after_step_4": {
+    "english": " (after step 4)",
+    "text": " （第4步之后）"
+   },
+   "operation_progress": {
+    "english": "⏳ An operation is in progress (",
+    "text": "⏳ 有操作正在进行（"
+   },
+   "wait_finish_click": {
+    "english": "): wait for it to finish or click “Cancel step”.",
+    "text": "）：请等待完成或点击“取消步骤”。"
+   },
+   "checking_required_programs": {
+    "english": "⏳ Checking the required programs …",
+    "text": "⏳ 正在检查所需程序 …"
+   },
+   "step_1_first": {
+    "english": "⛔ Do step 1 first (copy the original APKs from the phone).",
+    "text": "⛔ 请先执行第1步（从手机复制原始APK）。"
+   },
+   "step_2_first": {
+    "english": "⛔ Do step 2 first (Prepare texts).",
+    "text": "⛔ 请先执行第2步（准备文本）。"
+   },
+   "phone_not_available": {
+    "english": "⛔ Phone not available: ",
+    "text": "⛔ 手机不可用："
+   },
+   "checking_game_phone": {
+    "english": "⏳ Checking the game on the phone …",
+    "text": "⏳ 正在检查手机上的游戏 …"
+   },
+   "step_3_first": {
+    "english": "⛔ Do step 3 first (Patch APKs).",
+    "text": "⛔ 请先执行第3步（修补APK）。"
+   },
+   "not_installed_phone": {
+    "english": "⛔ {0} is not installed on this phone: install it from the Play Store.",
+    "text": "⛔ 此手机上未安装{0}：请从Play商店安装。"
+   },
+   "no_backup_saves": {
+    "english": "⛔ No backup of the saves: do “Extract saves” first.",
+    "text": "⛔ 没有存档备份：请先执行“提取存档”。"
+   },
+   "game_no_longer": {
+    "english": "ℹ The game is no longer installed on the phone, but the translated version is ready: step 4 can install it.",
+    "text": "ℹ 手机上已不再安装该游戏，但翻译版已准备好：第4步可以安装它。"
+   },
+   "copies_local_saves_phone": {
+    "english": "Copies the local saves of the phone (data*.dat) to “saves/YYYYMMDD_HHMMSS”, checking the size of the files.",
+    "text": "将手机的本地存档（data*.dat）复制到“saves/YYYYMMDD_HHMMSS”，并检查文件大小。"
+   },
+   "all_steps_done": {
+    "english": "All steps are done: the translated version is installed.",
+    "text": "所有步骤已完成：翻译版已安装。"
+   },
+   "next_available": {
+    "english": "▶ Next: {0} (available).",
+    "text": "▶ 下一步：{0}（可执行）。"
+   },
+   "next_few_more": {
+    "english": "Next: {0}, a few more seconds: {1}",
+    "text": "下一步：{0}，再等几秒：{1}"
+   },
+   "next": {
+    "english": "Next: {0}, {1}",
+    "text": "下一步：{0}，{1}"
+   }
+  },
+  "apks": {
+   "no_apk": {
+    "english": "no APK",
+    "text": "没有APK"
+   },
+   "base_apk_missing": {
+    "english": "base.apk missing",
+    "text": "缺少base.apk"
+   },
+   "split_unitydataassetpack_apk": {
+    "english": "split_UnityDataAssetPack.apk missing",
+    "text": "缺少split_UnityDataAssetPack.apk"
+   },
+   "split_unitydataassetpack_apk_unreadable": {
+    "english": "split_UnityDataAssetPack.apk unreadable (incomplete copy?)",
+    "text": "无法读取split_UnityDataAssetPack.apk（复制不完整？）"
+   },
+   "folder_already_exists": {
+    "english": "The folder {0} already exists: it is reused (nothing is recreated).",
+    "text": "文件夹 {0} 已存在：将继续使用（不重新创建任何内容）。"
+   },
+   "folder_created": {
+    "english": "Folder {0} created: {1}",
+    "text": "已创建文件夹 {0}：{1}"
+   },
+   "game_installed_phone": {
+    "english": "The game installed on the phone is already patched (version {0}).",
+    "text": "手机上安装的游戏已打过补丁（版本 {0}）。"
+   },
+   "game_installed_phone_original": {
+    "english": "The game installed on the phone is the original version (version {0}).",
+    "text": "手机上安装的游戏是原版（版本 {0}）。"
+   },
+   "game_installed_phone_already": {
+    "english": "\n\nThe game installed on the phone is already patched: these original APKs are precious, keep them.",
+    "text": "\n\n手机上安装的游戏已打过补丁：这些原始APK很珍贵，请妥善保管。"
+   },
+   "original_apks_already": {
+    "english": "Original APKs already retrieved",
+    "text": "已获取过原始APK"
+   },
+   "apks_folder_already": {
+    "english": "The “apks” folder already contains the original APKs ({0} files, {1}, copied on {2}).{3}\n\nWhat do you want to do?",
+    "text": "“apks”文件夹中已有原始APK（{0}个文件，{1}，复制于{2}）。{3}\n\n要怎么做？"
+   },
+   "keep_them": {
+    "english": "Keep them",
+    "text": "保留"
+   },
+   "retrieve_them_again": {
+    "english": "Retrieve them again",
+    "text": "重新获取"
+   },
+   "original_apks_kept": {
+    "english": "Original APKs kept. Step 1 considered done.",
+    "text": "保留原始APK。第1步视为已完成。"
+   },
+   "game_phone_already": {
+    "english": "The game on the phone is already patched: retrieving it again would overwrite your original APKs with patched APKs. Step cancelled.",
+    "text": "手机上的游戏已打过补丁：重新获取会用已打补丁的APK覆盖您的原始APK。步骤已取消。"
+   },
+   "retrieval_refused": {
+    "english": "Retrieval refused",
+    "text": "拒绝获取"
+   },
+   "apks_folder_contains": {
+    "english": "The “apks” folder contains already patched APKs (unusable for step 2): they will be replaced if the phone provides the original.",
+    "text": "“apks”文件夹中有已打补丁的APK（无法用于第2步）：如果手机提供原版，将被替换。"
+   },
+   "not_enough_disk": {
+    "english": "Not enough disk space: {0} needed for the APKs, {1} free on this disk.",
+    "text": "磁盘空间不足：APK需要{0}，此磁盘剩余{1}。"
+   },
+   "copying_apks_phone": {
+    "english": "Copying {0} APKs from the phone ({1}) …",
+    "text": "正在从手机复制{0}个APK（{1}）…"
+   },
+   "incomplete_retrieval": {
+    "english": "Incomplete retrieval: {0}.",
+    "text": "获取不完整：{0}。"
+   },
+   "phone_provides_already": {
+    "english": "The phone provides an already patched version: your original APKs in the “apks” folder are kept.",
+    "text": "手机提供的是已打补丁的版本：保留“apks”文件夹中的原始APK。"
+   },
+   "game_installed_phone_already_patched": {
+    "english": "The game installed on the phone is already the patched version: the original APKs are needed.\n\n1) Step 3: extract your saves.\n2) Uninstall the game and reinstall the original from the Play Store.\n3) Run step 1 again.",
+    "text": "手机上安装的游戏已经是打过补丁的版本：需要原始APK。\n\n1) 第3步：提取您的存档。\n2) 卸载游戏，并从Play商店重新安装原版。\n3) 重新执行第1步。"
+   },
+   "game_already_patched": {
+    "english": "Game already patched",
+    "text": "游戏已打过补丁"
+   },
+   "warning_3_apks": {
+    "english": "Warning: 3 APKs were expected, {0} copied ({1}).",
+    "text": "注意：应有3个APK，复制了{0}个（{1}）。"
+   },
+   "copy_done_original": {
+    "english": "Copy done: {0} original APKs in {1}",
+    "text": "复制完成：{0}个原始APK位于{1}"
+   },
+   "step_1_done": {
+    "english": "Step 1 done: {0} original APKs in {1}",
+    "text": "第1步完成：{0}个原始APK位于{1}"
+   }
+  },
+  "texts": {
+   "all_texts_step": {
+    "english": "All the texts of {0} as step 2 prepared them from YOUR ROM and YOUR game: do not share this file.",
+    "text": "第2步根据你的ROM和你的游戏准备的{0}全部文本：请勿分享此文件。"
+   },
+   "sorted_file_number": {
+    "english": "Sorted by file then by number: neighbouring texts are in the game's order; \"english\" = original text of the mobile version.",
+    "text": "按文件再按编号排序：相邻文本按游戏顺序排列；“english”= 手机版原文。"
+   },
+   "fix_text_only": {
+    "english": "To fix a text: only change its \"text\" line and keep the codes (@a...@b at the start of a dialogue, @c0@ at the end,",
+    "text": "修改文本：只改它的“text”行，并保留代码（对话开头的@a...@b、结尾的@c0@、"
+   },
+   "variable_name_number": {
+    "english": "%a... = variable name or number, %H...%X...%Y...%Z = variants, \\n = line break, ㈡ = new bubble, ; = possible break in a label).",
+    "text": "%a... = 可变的名字或数字，%H...%X...%Y...%Z = 变体，\\n = 换行，㈡ = 新的对话框，; = 标签中可换行的位置）。"
+   },
+   "double_quote_text": {
+    "english": "A double quote in a text is written \\\". Save the file (UTF-8), then run step 3 (patch the APKs) and step 4 (install) again.",
+    "text": "文本中的双引号写作 \\\"。保存文件（UTF-8），然后重新执行第3步（修补APK）和第4步（安装）。"
+   },
+   "running_step_2": {
+    "english": "Running step 2 again offers to keep this file; if it is created again, the old one is first copied to the \"old\" folder.",
+    "text": "重新执行第2步时会询问是否保留此文件；若重新生成，旧文件会先复制到“old”文件夹。"
+   },
+   "all_rules_codes": {
+    "english": "All the rules (codes, line breaks, new bubbles, punctuation): Help menu > How to edit the texts.",
+    "text": "全部规则（代码、换行、新对话框、标点）：帮助菜单 > 如何编辑文本。"
+   },
+   "origin_rom_official": {
+    "english": "origin: rom = official text of the DS ROM, patch = text of the patch, english = stays in English, french = French text (origin not detailed).",
+    "text": "origin：rom = DS ROM的官方文本，patch = 补丁文本，english = 保留英文，french = 法语文本（来源未细分）。"
+   },
+   "empty_text": {
+    "english": "empty text",
+    "text": "空文本"
+   },
+   "b_dialogue_header": {
+    "english": "the @a...@b dialogue header is missing",
+    "text": "缺少对话开头 @a...@b"
+   },
+   "end_message_missing": {
+    "english": "the end of the message {0} is missing",
+    "text": "缺少消息 {0} 的结尾"
+   },
+   "name_must_keep": {
+    "english": "the name must keep its @1...@ / @4...@7...@ form",
+    "text": "名称必须保持 @1...@ / @4...@7...@ 的形式"
+   },
+   "step_2_redone": {
+    "english": "step 2 redone since",
+    "text": "此后重新执行了第2步"
+   },
+   "texts_changed_since": {
+    "english": "texts changed since",
+    "text": "此后文本已修改"
+   },
+   "fr_title_screen": {
+    "english": "“FR title screen” option changed since",
+    "text": "此后“标题画面FR”选项已更改"
+   },
+   "original_apks_not": {
+    "english": "The original APKs are not there ({0}).\nRun step 1 first.",
+    "text": "原始APK不存在（{0}）。\n请先执行第1步。"
+   },
+   "step_1_first": {
+    "english": "Step 1 first",
+    "text": "请先执行第1步"
+   },
+   "apks_apks_folder": {
+    "english": "The APKs in the “apks” folder are already patched: they come from the phone after the patch was installed.\nThe original APKs are needed: uninstall the game, reinstall the original from the Play Store, then run step 1 again (delete the “apks” folder first).",
+    "text": "“apks”文件夹中的APK已打过补丁：它们是在安装补丁后从手机获取的。\n需要原始APK：请卸载游戏，从Play商店重新安装原版，然后重新执行第1步（先删除“apks”文件夹）。"
+   },
+   "apks_already_patched": {
+    "english": "APKs already patched",
+    "text": "APK已打过补丁"
+   },
+   "no_rom_chosen": {
+    "english": "no ROM chosen",
+    "text": "未选择ROM"
+   },
+   "unusable_ds_rom": {
+    "english": "Unusable DS ROM: ",
+    "text": "无法使用的DS ROM："
+   },
+   "choose_folder_contains": {
+    "english": "\nChoose the folder that contains the European ROM (“Checks” area, “Choose the ROM folder…” button).",
+    "text": "\n请选择包含欧版ROM的文件夹（“检查”区域，“选择ROM文件夹…”按钮）。"
+   },
+   "invalid_rom": {
+    "english": "Invalid ROM",
+    "text": "无效的ROM"
+   },
+   "program_incomplete_dq": {
+    "english": "The program is incomplete (DQ{0} data missing): download it again.",
+    "text": "程序不完整（缺少DQ{0}的数据）：请重新下载。"
+   },
+   "incomplete_program": {
+    "english": "Incomplete program",
+    "text": "程序不完整"
+   },
+   "texts_already_prepared": {
+    "english": "Texts already prepared",
+    "text": "文本已准备"
+   },
+   "texts_already_prepared_rom": {
+    "english": "The texts were already prepared on {0}\n(ROM: {1}).\n\n",
+    "text": "文本已于{0}准备好\n（ROM：{1}）。\n\n"
+   },
+   "preparing_them_again": {
+    "english": "Preparing them again takes several minutes. What do you want to do?",
+    "text": "重新准备需要几分钟。要怎么做？"
+   },
+   "keep": {
+    "english": "Keep",
+    "text": "保留"
+   },
+   "prepare_again": {
+    "english": "Prepare again",
+    "text": "重新准备"
+   },
+   "texts_already_prepared_kept": {
+    "english": "Texts already prepared, kept. Step 2 considered done.",
+    "text": "保留已准备的文本。第2步视为已完成。"
+   },
+   "edited_texts": {
+    "english": "You have edited the texts",
+    "text": "您修改过文本"
+   },
+   "file_edited_since": {
+    "english": "The file {0} has been edited since it was created.\n\n• Keep my texts: only the basic translated version is redone, your file is not touched.\n• Recreate the file: it starts again from the patch texts; the old one is first copied to the “texts\\old” folder.",
+    "text": "文件 {0} 创建后已被修改。\n\n• 保留我的文本：只重新生成翻译版的基础部分，不改动您的文件。\n• 重新创建文件：从补丁文本重新开始；旧文件会先复制到“texts\\old”文件夹。"
+   },
+   "keep_my_texts": {
+    "english": "Keep my texts",
+    "text": "保留我的文本"
+   },
+   "recreate_file": {
+    "english": "Recreate the file",
+    "text": "重新创建文件"
+   },
+   "preparing_texts_several": {
+    "english": "Preparing the texts (several minutes) …",
+    "text": "正在准备文本（几分钟）…"
+   },
+   "script_ended_without": {
+    "english": "The script ended without producing {0}: see the log.",
+    "text": "脚本结束时没有生成{0}：请查看日志。"
+   },
+   "incomplete_build": {
+    "english": "Incomplete build",
+    "text": "生成不完整"
+   },
+   "text_file_kept": {
+    "english": "Your text file is kept as it is: {0}",
+    "text": "您的文本文件保持原样：{0}"
+   },
+   "old_text_file": {
+    "english": "Old text file copied to {0}",
+    "text": "旧文本文件已复制到{0}"
+   },
+   "texts_written": {
+    "english": "{0} texts written to {1}",
+    "text": "已将{0}条文本写入{1}"
+   },
+   "step_2_done": {
+    "english": "Step 2 done: all the game texts are in {0}. You can edit them, then run step 3.",
+    "text": "第2步完成：游戏的所有文本都在{0}中。您可以修改它们，然后执行第3步。"
+   },
+   "texts_not_prepared": {
+    "english": "Texts: not prepared yet (step 2).",
+    "text": "文本：尚未准备（第2步）。"
+   },
+   "texts_prepared": {
+    "english": "Texts: {0}, prepared on {1}",
+    "text": "文本：{0}，准备于{1}"
+   },
+   "edited": {
+    "english": ", edited on {0}",
+    "text": "，修改于{0}"
+   }
+  },
+  "patch": {
+   "step_3_patch": {
+    "english": "Step 3 · Patch the APKs · {0} · {1}",
+    "text": "第3步 · 修补APK · {0} · {1}"
+   },
+   "summary": {
+    "english": "SUMMARY",
+    "text": "摘要"
+   },
+   "game_texts": {
+    "english": "  Game texts: {0}",
+    "text": "  游戏文本：{0}"
+   },
+   "changes_applied_texts": {
+    "english": "  Your changes applied (texts different from step 2): {0}",
+    "text": "  已应用的修改（与第2步不同的文本）：{0}"
+   },
+   "texts_identical_step": {
+    "english": "  Texts identical to step 2: {0}",
+    "text": "  与第2步相同的文本：{0}"
+   },
+   "texts_missing_file": {
+    "english": "  Texts missing from the file (step 2 text used): {0}",
+    "text": "  文件中缺少的文本（使用第2步的文本）：{0}"
+   },
+   "changes_not_applied": {
+    "english": "  Changes not applied: {0} (see below)",
+    "text": "  未应用的修改：{0}（见下文）"
+   },
+   "everything_fine_translated": {
+    "english": "Everything is fine: the translated version is ready in the “patched_apks” folder.",
+    "text": "一切正常：翻译版已在“patched_apks”文件夹中准备好。"
+   },
+   "next_extract_saves": {
+    "english": "Next: “Extract saves” (if not done yet), then step 4 (Sign and install).",
+    "text": "下一步：“提取存档”（如果还没做），然后第4步（签名并安装）。"
+   },
+   "translated_version_ready": {
+    "english": "The translated version is ready in the “patched_apks” folder. The points below only need checking.",
+    "text": "翻译版已在“patched_apks”文件夹中准备好。以下各项只需检查。"
+   },
+   "no": {
+    "english": "{0} · no. {1}",
+    "text": "{0} · 第{1}条"
+   },
+   "changes_applied": {
+    "english": "YOUR CHANGES APPLIED",
+    "text": "已应用的修改"
+   },
+   "texts_file_differ": {
+    "english": "Texts in the file that differ from those prepared in step 2: they are in the game exactly as you wrote them.",
+    "text": "文件中与第2步准备的文本不同的文本：已按您写的原样放入游戏。"
+   },
+   "check_game_line": {
+    "english": "CHECK IN GAME: LINE LONGER THAN BEFORE",
+    "text": "游戏中检查：行比以前长"
+   },
+   "line_these_texts": {
+    "english": "A line of these texts is longer than before: it may go past the edge of the bubble or menu.",
+    "text": "这些文本中有一行比以前长：可能会超出对话框或菜单。"
+   },
+   "if_so_add": {
+    "english": "If so, add a line break (\\n) or shorten the text, then run steps 3 and 4 again.",
+    "text": "如果超出，请添加换行（\\n）或缩短文本，然后重新执行第3步和第4步。"
+   },
+   "fix_characters_missing": {
+    "english": "TO FIX: CHARACTERS MISSING FROM THE GAME FONT",
+    "text": "需修正：游戏字体中没有的字符"
+   },
+   "these_characters_not": {
+    "english": "These characters do not exist in the game font and would not display properly.",
+    "text": "这些字符在游戏字体中不存在，会显示错误。"
+   },
+   "text_applied_anyway": {
+    "english": "The text is applied anyway; replace these characters in the file, then run steps 3 and 4 again.",
+    "text": "文本仍会被应用；请在文件中替换这些字符，然后重新执行第3步和第4步。"
+   },
+   "fix_changes_not": {
+    "english": "TO FIX: CHANGES NOT APPLIED",
+    "text": "需修正：未应用的修改"
+   },
+   "these_texts_missing": {
+    "english": "These texts are missing a code the game needs (start @a…@b or end \\n@c0@): the game would display them badly.",
+    "text": "这些文本缺少游戏必需的代码（开头的 @a…@b 或结尾的 \\n@c0@）：游戏会显示错误。"
+   },
+   "text_prepared_step": {
+    "english": "The text prepared in step 2 is kept instead. Fix them in the file (menu Help › How to edit the texts), then run step 3 again.",
+    "text": "它们将保留第2步准备的文本。请在文件中修正（菜单 帮助 › 如何修改文本），然后重新执行第3步。"
+   },
+   "program_incomplete_download": {
+    "english": "The program is incomplete: download it again.",
+    "text": "程序不完整：请重新下载。"
+   },
+   "missing_data": {
+    "english": "Missing data",
+    "text": "缺少数据"
+   },
+   "unable_extract_patch": {
+    "english": "Unable to extract the patch data ({0}).",
+    "text": "无法解压补丁数据（{0}）。"
+   },
+   "texts_not_prepared": {
+    "english": "The texts are not prepared yet.\nRun step 2 first.",
+    "text": "文本尚未准备。\n请先执行第2步。"
+   },
+   "step_2_first": {
+    "english": "Step 2 first",
+    "text": "请先执行第2步"
+   },
+   "text_file_cannot": {
+    "english": "The text file cannot be found:\n{0}\n\nIt is required: run step 2 again to recreate it.",
+    "text": "找不到文本文件：\n{0}\n\n这是必需的：请重新执行第2步来重新创建。"
+   },
+   "texts_not_found": {
+    "english": "Texts not found",
+    "text": "找不到文本"
+   },
+   "text_file_contains": {
+    "english": "The text file contains an error at line {0}, column {1} ({2}).\n\nCheck the quotes and commas around the edited text: a quote inside a text is written \\\" and each “text” line ends with a comma.",
+    "text": "文本文件第{0}行第{1}列有错误（{2}）。\n\n请检查修改过的文本周围的引号和逗号：文本中的引号写作 \\\"，每个“text”行都以逗号结尾。"
+   },
+   "invalid_text_file": {
+    "english": "Invalid text file",
+    "text": "无效的文本文件"
+   },
+   "unable_read": {
+    "english": "Unable to read {0}:\n{1}",
+    "text": "无法读取{0}：\n{1}"
+   },
+   "unreadable_text_file": {
+    "english": "Unreadable text file",
+    "text": "无法读取文本文件"
+   },
+   "not_expected_form": {
+    "english": "{0} does not have the expected form (“texts” part missing): run step 2 again to recreate it.",
+    "text": "{0}的格式不符合预期（缺少“texts”部分）：请重新执行第2步来重新创建。"
+   },
+   "contains_texts_not": {
+    "english": "{0} contains the texts of {1}, not {2}.",
+    "text": "{0}包含的是{1}的文本，不是{2}的。"
+   },
+   "wrong_game": {
+    "english": "Wrong game",
+    "text": "游戏不对"
+   },
+   "logo_title_screen": {
+    "english": "Logo and title screen: ",
+    "text": "标志和标题画面："
+   },
+   "translated": {
+    "english": "translated.",
+    "text": "已翻译。"
+   },
+   "original_english": {
+    "english": "original, in English (",
+    "text": "原版，英文（"
+   },
+   "build_failed_see": {
+    "english": "build failed, see above",
+    "text": "无法生成，见上文"
+   },
+   "logo_title_screen_modules": {
+    "english": "logo and title screen modules missing: Dependencies menu",
+    "text": "缺少标志和标题画面模块：依赖项菜单"
+   },
+   "fr_title_screen": {
+    "english": "“FR title screen” option turned off",
+    "text": "“标题画面FR”选项已关闭"
+   },
+   "writing_texts_apks": {
+    "english": "Writing the texts into the APKs …",
+    "text": "正在将文本写入APK …"
+   },
+   "texts_change_s": {
+    "english": "Texts: {0} change(s) from your file applied, {1} text(s) identical to step 2 ({2} in total).",
+    "text": "文本：已应用您文件中的{0}处修改，{1}条文本与第2步相同（共{2}条）。"
+   },
+   "change_s_not": {
+    "english": "{0} change(s) not applied (game code missing): the step 2 text is kept. Details: {1}",
+    "text": "{0}处修改未应用（缺少游戏代码）：保留第2步的文本。详情：{1}"
+   },
+   "text_s_line": {
+    "english": "{0} text(s) with a line longer than before",
+    "text": "{0}条文本有一行比以前长"
+   },
+   "text_s_character": {
+    "english": "{0} text(s) with a character missing from the font",
+    "text": "{0}条文本含有字体中没有的字符"
+   },
+   "look": {
+    "english": "To look at: ",
+    "text": "需查看："
+   },
+   "details": {
+    "english": ". Details: {0}",
+    "text": "。详情：{0}"
+   },
+   "step_3_done": {
+    "english": "Step 3 done: the translated version is in {0}",
+    "text": "第3步完成：翻译版位于{0}"
+   },
+   "title_screen_original": {
+    "english": "Title screen: original APKs missing (“apks” folder): it stays original.",
+    "text": "标题画面：缺少原始APK（“apks”文件夹）：保持原样。"
+   },
+   "translated_title_screen": {
+    "english": "Translated title screen: already built, reused as it is.",
+    "text": "翻译后的标题画面：已生成，直接沿用。"
+   },
+   "title_screen_logo": {
+    "english": "Title screen: logo bundle not found in the asset pack: it stays original.",
+    "text": "标题画面：在资源包中找不到标志的bundle：保持原样。"
+   },
+   "title_screen_unable": {
+    "english": "Title screen: unable to read the original APKs ({0}): it stays original.",
+    "text": "标题画面：无法读取原始APK（{0}）：保持原样。"
+   },
+   "translated_title_screen_building": {
+    "english": "Translated title screen: building (several minutes and 1 to 2 GB of memory, only the first time) …",
+    "text": "翻译后的标题画面：正在生成（几分钟，需要1到2 GB内存，仅首次）…"
+   },
+   "translated_title_screen_several": {
+    "english": "Translated title screen (several minutes) …",
+    "text": "翻译后的标题画面（几分钟）…"
+   },
+   "title_screen_logo_modules": {
+    "english": "Title screen: logo modules unavailable ({0}): it stays original.",
+    "text": "标题画面：标志模块不可用（{0}）：保持原样。"
+   },
+   "title_screen": {
+    "english": "  title screen: ",
+    "text": "  标题画面："
+   },
+   "title_screen_not": {
+    "english": "Title screen: not enough memory, it stays original (close other programs and run step 3 again, or turn off the option).",
+    "text": "标题画面：内存不足，保持原样（请关闭其他程序后重新执行第3步，或关闭该选项）。"
+   },
+   "title_screen_failed": {
+    "english": "Title screen failed ({0}): it stays original.",
+    "text": "无法生成标题画面（{0}）：保持原样。"
+   },
+   "title_screen_failed_stays": {
+    "english": "Title screen failed ({0}: {1}): it stays original.",
+    "text": "无法生成标题画面（{0}：{1}）：保持原样。"
+   },
+   "title_screen_stays": {
+    "english": "Title screen: it stays original (see the message above).",
+    "text": "标题画面：保持原样（见上方消息）。"
+   },
+   "translated_title_screen_built": {
+    "english": "Translated title screen built (kept for the next steps 3).",
+    "text": "已生成翻译后的标题画面（保留供之后的第3步使用）。"
+   },
+   "script_stopped_code": {
+    "english": "The script stopped (code {0}).",
+    "text": "脚本已停止（代码 {0}）。"
+   },
+   "build_failed": {
+    "english": "Build failed",
+    "text": "无法生成"
+   },
+   "not_enough_memory": {
+    "english": "Not enough memory during the build. Close other programs, or turn off the “logo and title screen” option, then try again.",
+    "text": "生成过程中内存不足。请关闭其他程序，或关闭“标志和标题画面”选项后重试。"
+   },
+   "not_enough_memory_2": {
+    "english": "Not enough memory",
+    "text": "内存不足"
+   },
+   "translated_2": {
+    "english": "translated",
+    "text": "已翻译"
+   },
+   "original_english_2": {
+    "english": "original, in English",
+    "text": "原版，英文"
+   },
+   "next_step_3": {
+    "english": " at the next step 3 (then run step 4 again).",
+    "text": " 将在下次第3步时生效（然后重新执行第4步）。"
+   }
+  },
+  "saves": {
+   "no_save_file": {
+    "english": "No save file (data*.dat) found on the phone in {0}.",
+    "text": "在手机的{0}中找不到存档文件（data*.dat）。"
+   },
+   "no_save_found": {
+    "english": "No save found",
+    "text": "未找到存档"
+   },
+   "no_save_file_data": {
+    "english": "No save file (data*.dat) was found on the phone.\n\nEither the game has never been started, or no save has been recorded on this device (the game's cloud save does not count). So there is nothing to back up.",
+    "text": "在手机上找不到存档文件（data*.dat）。\n\n要么游戏从未启动过，要么此设备上没有保存过存档（游戏的云存档不算）。因此没有需要备份的内容。"
+   },
+   "save_file_s": {
+    "english": "{0} save file(s) found: {1}",
+    "text": "找到{0}个存档文件：{1}"
+   },
+   "these_saves_same": {
+    "english": "These saves have the same size as the previous backup ({0}).",
+    "text": "这些存档与上一次备份大小相同（{0}）。"
+   },
+   "saves_extracted_file": {
+    "english": "Saves extracted: {0} file(s) in {1}",
+    "text": "存档已提取：{0}个文件位于{1}"
+   },
+   "no_backup_found": {
+    "english": "No backup found in {0}.\nClick “Extract saves” (before the installation), or copy a backup folder (containing data0.dat …) into this folder.",
+    "text": "在{0}中找不到备份。\n请点击“提取存档”（在安装前），或将一个备份文件夹（包含data0.dat …）复制到此文件夹中。"
+   },
+   "no_save": {
+    "english": "No save",
+    "text": "没有存档"
+   },
+   "installed_game_not": {
+    "english": "The installed game is not patched",
+    "text": "已安装的游戏未打补丁"
+   },
+   "game_installed_phone": {
+    "english": "The game installed on the phone seems to be the original (English) version and not the translated one. Restoring the saves is possible, but they may be lost when you install the patch.\n\nContinue anyway?",
+    "text": "手机上安装的游戏似乎是原版（英文），而不是翻译版。可以恢复存档，但在您安装补丁时它们可能会丢失。\n\n仍要继续？"
+   },
+   "continue": {
+    "english": "Continue",
+    "text": "继续"
+   },
+   "file_s": {
+    "english": "{0}   ·   {1} file(s)   ·   {2}",
+    "text": "{0}   ·   {1}个文件   ·   {2}"
+   },
+   "most_recent": {
+    "english": "   ·   The most recent",
+    "text": "   ·   最新"
+   },
+   "which_backup_saves": {
+    "english": "Which backup of the saves do you want to restore?",
+    "text": "要恢复哪个存档备份？"
+   },
+   "backups_found_most": {
+    "english": "Backups found in {0}\n(the most recent is preselected):",
+    "text": "在{0}中找到的备份\n（已预选最新的）："
+   },
+   "game_not_created": {
+    "english": "The game has not created its data folder yet",
+    "text": "游戏尚未创建其数据文件夹"
+   },
+   "game_s_data": {
+    "english": "The game's data folder does not exist on the phone yet: the game has probably not been started since the installation.\n\nStart the game once, close it completely, then continue. (You can also let the tool create the folder, but the game may not recognise the saves.)",
+    "text": "手机上还没有游戏的数据文件夹：安装后可能还没有启动过游戏。\n\n请启动一次游戏，完全关闭后再继续。（也可以让工具创建文件夹，但游戏可能无法识别存档。）"
+   },
+   "i_started_game": {
+    "english": "I started the game: try again",
+    "text": "我已启动游戏：重试"
+   },
+   "create_folder_anyway": {
+    "english": "Create the folder anyway",
+    "text": "仍然创建文件夹"
+   },
+   "data_folder_still": {
+    "english": "The data folder still does not exist: start the game, close it completely, then run “Restore saves” again.",
+    "text": "数据文件夹仍不存在：请启动游戏，完全关闭，然后重新执行“恢复存档”。"
+   },
+   "folder_missing": {
+    "english": "Folder missing",
+    "text": "文件夹不存在"
+   },
+   "phone_already_contains": {
+    "english": "The phone already contains {0} save file(s): they will be replaced by the chosen backup.",
+    "text": "手机上已有{0}个存档文件：它们将被所选备份替换。"
+   },
+   "restoring_file_s": {
+    "english": "Restoring {0} file(s) from {1} …",
+    "text": "正在从{1}恢复{0}个文件 …"
+   },
+   "sending": {
+    "english": "Sending {0} …",
+    "text": "正在发送{0} …"
+   },
+   "restored": {
+    "english": "  {0}: restored ({1})",
+    "text": "  {0}：已恢复（{1}）"
+   },
+   "failed": {
+    "english": "  {0}: failed... {1}",
+    "text": "  {0}：失败... {1}"
+   },
+   "different_size_phone": {
+    "english": "(different size on the phone)",
+    "text": "（手机上的大小不同）"
+   },
+   "file_s_restored": {
+    "english": "{0}/{1} file(s) restored.\nIf adb refuses to write: start the game once, close it completely, then run “Restore saves” again.",
+    "text": "已恢复{0}/{1}个文件。\n如果adb拒绝写入：请启动一次游戏，完全关闭，然后重新执行“恢复存档”。"
+   },
+   "incomplete_restore": {
+    "english": "Incomplete restore",
+    "text": "恢复不完整"
+   },
+   "saves_restored_file": {
+    "english": "Saves restored: {0} file(s) restored. Start the game: your saves should appear in “Poursuivre votre aventure” (continue your adventure).",
+    "text": "存档已恢复：已恢复{0}个文件。请启动游戏：您的存档应出现在“Poursuivre votre aventure”（继续冒险）中。"
+   },
+   "saves_restored": {
+    "english": "Saves restored",
+    "text": "存档已恢复"
+   },
+   "file_s_restored_backup": {
+    "english": "{0} file(s) restored from the backup of {1}.\n\nStart the game: your saves should appear in “Poursuivre votre aventure” (continue your adventure).",
+    "text": "已从{1}的备份恢复{0}个文件。\n\n请启动游戏：您的存档应出现在“Poursuivre votre aventure”（继续冒险）中。"
+   }
+  },
+  "install": {
+   "not_enough_space": {
+    "english": "Not enough space on the phone: free up some storage, then run step 4 again.",
+    "text": "手机空间不足：请释放存储空间，然后重新执行第4步。"
+   },
+   "phone_refuses_installation": {
+    "english": "The phone refuses installation over USB. On Xiaomi/Redmi/Poco: enable “Install via USB” in the developer options; on other brands: “Allow installing apps via USB”.",
+    "text": "手机拒绝通过USB安装。小米/红米/Poco：在开发者选项中开启“通过USB安装”；其他品牌：“允许通过USB安装应用”。"
+   },
+   "another_version_game": {
+    "english": "Another version of the game (different signature) is still installed: uninstall the game yourself, then run step 4 again.",
+    "text": "仍安装着另一个版本的游戏（签名不同）：请手动卸载游戏，然后重新执行第4步。"
+   },
+   "game_still_installed": {
+    "english": "The game is still installed: uninstall it yourself, then run step 4 again.",
+    "text": "游戏仍处于安装状态：请手动卸载，然后重新执行第4步。"
+   },
+   "phone_refuses_version": {
+    "english": "The phone refuses a version older than the one installed: uninstall the game, then run step 4 again.",
+    "text": "手机拒绝安装比当前版本更旧的版本：请卸载游戏，然后重新执行第4步。"
+   },
+   "apks_not_signed": {
+    "english": "The APKs are not signed correctly: run step 4 again (signing is redone every time).",
+    "text": "APK签名不正确：请重新执行第4步（每次都会重新签名）。"
+   },
+   "part_apks_missing": {
+    "english": "Part of the APKs is missing: run steps 1, 2 and 3 again.",
+    "text": "缺少部分APK：请重新执行第1、2、3步。"
+   },
+   "phone_blocked_installation": {
+    "english": "The phone blocked the installation (Play Protect/verification). Temporarily turn off “Verify apps over USB” in Play Protect.",
+    "text": "手机阻止了安装（Play 保护机制/验证）。请在Play 保护机制中暂时关闭“通过USB验证应用”。"
+   },
+   "apk_invalid_incomplete": {
+    "english": "An APK is invalid or incomplete: run steps 2 and 3 again.",
+    "text": "某个APK无效或不完整：请重新执行第2步和第3步。"
+   },
+   "translated_version_not": {
+    "english": "The translated version is not built (“patched_apks” folder missing or incomplete).\nRun step 3 first.",
+    "text": "翻译版尚未生成（“patched_apks”文件夹不存在或不完整）。\n请先执行第3步。"
+   },
+   "step_3_first": {
+    "english": "Step 3 first",
+    "text": "请先执行第3步"
+   },
+   "translated_version_not_up": {
+    "english": "Translated version not up to date",
+    "text": "翻译版不是最新的"
+   },
+   "translated_version_patched": {
+    "english": "The translated version in the “patched_apks” folder is older than your latest changes ({0}).\nTo include them, run step 3 again first.",
+    "text": "“patched_apks”文件夹中的翻译版早于您最近的修改（{0}）。\n要包含这些修改，请先重新执行第3步。"
+   },
+   "install_anyway": {
+    "english": "Install anyway",
+    "text": "仍然安装"
+   },
+   "step_cancelled_run": {
+    "english": "Step cancelled: run step 3 again to include your changes.",
+    "text": "步骤已取消：请重新执行第3步以包含您的修改。"
+   },
+   "java_not_found": {
+    "english": "Java not found. Download it from the Dependencies menu.",
+    "text": "找不到Java。请从依赖项菜单下载。"
+   },
+   "java_missing": {
+    "english": "Java missing",
+    "text": "缺少Java"
+   },
+   "uber_apk_signer": {
+    "english": "uber-apk-signer.jar not found. Download it from the Dependencies menu.",
+    "text": "找不到uber-apk-signer.jar。请从依赖项菜单下载。"
+   },
+   "signing_tool_missing": {
+    "english": "Signing tool missing",
+    "text": "缺少签名工具"
+   },
+   "saves_last_backup": {
+    "english": "Your saves: last backup on {0} ({1} file(s), “saves” folder). If you have played since, click “Cancel”, then “Extract saves”.",
+    "text": "您的存档：最近一次备份于{0}（{1}个文件，“saves”文件夹）。如果此后又玩过，请点击“取消”，然后点击“提取存档”。"
+   },
+   "last_backup_saves": {
+    "english": "Last backup of the saves: {0} ({1} file(s)).",
+    "text": "存档的最近一次备份：{0}（{1}个文件）。"
+   },
+   "no_backup_saves": {
+    "english": "No backup of the saves: looking for saves on the phone …",
+    "text": "没有存档备份：正在手机上查找存档 …"
+   },
+   "extract_saves": {
+    "english": "Extract your saves?",
+    "text": "提取您的存档？"
+   },
+   "not_extracted_saves": {
+    "english": "You have not extracted the saves of this game yet, and the phone contains {0} file(s).\n\nThe installation starts by uninstalling the game, which erases its local saves. Do you want to extract them now?",
+    "text": "您还没有提取此游戏的存档，而手机上有{0}个文件。\n\n安装会先卸载游戏，这将删除其本地存档。要现在提取吗？"
+   },
+   "extract_saves_now": {
+    "english": "Extract the saves now",
+    "text": "现在提取存档"
+   },
+   "continue_without_extracting": {
+    "english": "Continue without extracting them",
+    "text": "不提取，继续"
+   },
+   "step_cancelled_nothing": {
+    "english": "Step cancelled: nothing has been changed.",
+    "text": "步骤已取消：未做任何更改。"
+   },
+   "before_installation": {
+    "english": "before installation",
+    "text": "安装前"
+   },
+   "saves_could_not": {
+    "english": "The saves could not be extracted: step cancelled for safety.",
+    "text": "无法提取存档：为安全起见已取消此步骤。"
+   },
+   "backup_failed": {
+    "english": "Backup failed",
+    "text": "无法备份"
+   },
+   "saves_just_extracted": {
+    "english": "Your saves: just extracted ({0} file(s), “saves” folder).",
+    "text": "您的存档：刚刚已提取（{0}个文件，“saves”文件夹）。"
+   },
+   "continuing_without_backup": {
+    "english": "Continuing without a backup of the saves, as you asked.",
+    "text": "按您的要求，在没有存档备份的情况下继续。"
+   },
+   "no_backup_local": {
+    "english": "⚠ No backup: the local saves on the phone will be **lost**.",
+    "text": "⚠ 没有备份：手机上的本地存档将会**丢失**。"
+   },
+   "phone_contains_no": {
+    "english": "The phone contains no local save for this game: nothing to extract.",
+    "text": "手机上没有此游戏的本地存档：无需提取。"
+   },
+   "phone_contains_no_local": {
+    "english": "The phone contains no local save for this game (cloud saves do not work with the patched version).",
+    "text": "手机上没有此游戏的本地存档（云存档在补丁版中无法使用）。"
+   },
+   "signing_apks_uber": {
+    "english": "Signing the APKs (uber-apk-signer) …",
+    "text": "正在为APK签名（uber-apk-signer）…"
+   },
+   "signing": {
+    "english": "Signing …",
+    "text": "正在签名 …"
+   },
+   "signing_failed_see": {
+    "english": "Signing failed (see the log).\n",
+    "text": "签名失败（见日志）。\n"
+   },
+   "signing_failed": {
+    "english": "Signing failed",
+    "text": "无法签名"
+   },
+   "too_few_apks": {
+    "english": "Too few APKs signed ({0}). Check the “patched_apks” folder (step 3).",
+    "text": "已签名的APK太少（{0}）。请检查“patched_apks”文件夹（第3步）。"
+   },
+   "incomplete_signing": {
+    "english": "Incomplete signing",
+    "text": "签名不完整"
+   },
+   "apks_signed": {
+    "english": "{0} APKs signed in {1}",
+    "text": "已为{0}个APK签名，位于{1}"
+   },
+   "uninstall_install": {
+    "english": "Uninstall, then install?",
+    "text": "先卸载再安装？"
+   },
+   "game_currently_installed": {
+    "english": "The game currently installed ({0}) is going to be uninstalled: its signature differs from the patch's.\nIts local saves will be erased from the phone.\n{1}\n\nThe {2} signed APKs will then be installed.\n\nDuring the installation, watch the phone: if Google Play Protect offers to **send the app for scanning**, tap **“Don't send”**.\n\nContinue?",
+    "text": "当前安装的游戏（{0}）将被卸载：其签名与补丁不同。\n其本地存档将从手机上删除。\n{1}\n\n然后将安装{2}个已签名的APK。\n\n安装期间请留意手机：如果Google Play 保护机制建议**发送应用以供扫描**，请点按**“不发送”**。\n\n继续？"
+   },
+   "uninstall_install_2": {
+    "english": "Uninstall and install",
+    "text": "卸载并安装"
+   },
+   "step_cancelled_game": {
+    "english": "Step cancelled: the game was not touched. The signed APKs remain in {0}.",
+    "text": "步骤已取消：未动游戏。已签名的APK仍在{0}中。"
+   },
+   "uninstalling": {
+    "english": "Uninstalling …",
+    "text": "正在卸载 …"
+   },
+   "uninstalling_current_game": {
+    "english": "Uninstalling the current game …",
+    "text": "正在卸载当前游戏 …"
+   },
+   "no_answer": {
+    "english": "(no answer)",
+    "text": "（无响应）"
+   },
+   "installing_several_minutes": {
+    "english": "Installing (several minutes) …",
+    "text": "正在安装（几分钟）…"
+   },
+   "installing_translated_version": {
+    "english": "Installing the translated version (adb install-multiple) …",
+    "text": "正在安装翻译版（adb install-multiple）…"
+   },
+   "phone_if_google": {
+    "english": "On the phone: if Google Play Protect offers to send the app for scanning, tap “Don't send” (if it blocks it: “More details”, then “Install anyway”).",
+    "text": "在手机上：如果Google Play 保护机制建议发送应用以供扫描，请点按“不发送”（如果被阻止：“更多详情”，然后“仍然安装”）。"
+   },
+   "phone_don_t": {
+    "english": "On the phone: “Don't send”",
+    "text": "在手机上：“不发送”"
+   },
+   "installation_starting_watch": {
+    "english": "The installation is starting. Watch the phone screen:\n\n• if Google Play Protect asks to **send the app for scanning**, tap **“Don't send”**;\n• if it shows “App blocked”, tap “More details”, then **“Install anyway”**.\n\nThis is normal: the translated version is not signed by Square Enix.",
+    "text": "安装开始。请留意手机屏幕：\n\n• 如果Google Play 保护机制要求**发送应用以供扫描**，请点按**“不发送”**；\n• 如果显示“应用已被屏蔽”，请点按“更多详情”，然后点按**“仍然安装”**。\n\n这是正常的：翻译版不是由Square Enix签名的。"
+   },
+   "installation_failed": {
+    "english": "The installation failed.\n\n",
+    "text": "安装失败。\n\n"
+   },
+   "adb_answer": {
+    "english": "adb answer: ",
+    "text": "adb的响应："
+   },
+   "empty": {
+    "english": "(empty)",
+    "text": "（空）"
+   },
+   "original_game_uninstalled": {
+    "english": "\n\nThe original game is uninstalled: your saves are in the “saves” folder. Fix the problem, then run step 4 again.",
+    "text": "\n\n原版游戏已卸载：您的存档在“saves”文件夹中。请解决问题后重新执行第4步。"
+   },
+   "installation_failed_2": {
+    "english": "Installation failed",
+    "text": "安装失败"
+   },
+   "step_4_done": {
+    "english": "Step 4 done: the translated version is installed.",
+    "text": "第4步完成：翻译版已安装。"
+   },
+   "translated_version_installed": {
+    "english": "Translated version installed",
+    "text": "翻译版已安装"
+   },
+   "installation_complete_now": {
+    "english": "Installation complete.\n\nNow start the game once, then close it completely (remove it from the recent apps). Then, if you had extracted saves, click “Restore saves” to put them back.\n\nOn first start, the game may ask you to choose a Google account (especially if there are several on the phone): it is not required, skip the screen by tapping outside it, or with “Cancel” or “Continue”.",
+    "text": "安装完成。\n\n现在请启动一次游戏，然后完全关闭（从最近使用的应用中移除）。之后，如果您提取过存档，请点击“恢复存档”把它们放回去。\n\n首次启动时，游戏可能会要求您选择一个Google账号（尤其是手机上有多个账号时）：这不是必需的，可以点按屏幕外侧，或点“取消”或“继续”跳过。"
+   }
+  },
+  "phone": {
+   "phone_unplugged_not": {
+    "english": "Phone unplugged or not detected: plug the USB cable back in, in file transfer mode, and check that USB debugging is enabled.",
+    "text": "手机未连接或未检测到：请以文件传输模式重新连接USB线，并确认已开启USB调试。"
+   },
+   "phone_not_authorised": {
+    "english": "The phone has not authorised this computer: accept the “Allow USB debugging?” request shown on the phone screen.",
+    "text": "手机尚未授权此电脑：请在手机屏幕上接受“允许USB调试吗？”请求。"
+   },
+   "phone_offline_adb": {
+    "english": "The phone is “offline” for adb: unplug and plug the cable back in, and unlock the phone screen.",
+    "text": "手机对adb处于“离线”状态：请拔下再插上数据线，并解锁手机屏幕。"
+   },
+   "several_devices_plugged": {
+    "english": "Several devices are plugged in: choose the right one in the “Phone” list.",
+    "text": "连接了多台设备：请在“手机”列表中选择正确的设备。"
+   },
+   "connection_phone_lost": {
+    "english": "The connection with the phone was lost (cable unplugged?).",
+    "text": "与手机的连接已断开（数据线被拔出？）。"
+   },
+   "adb_not_found": {
+    "english": "adb not found. Download it: Dependencies menu.",
+    "text": "找不到adb。请下载：依赖项菜单。"
+   },
+   "adb_not_found_2": {
+    "english": "adb not found",
+    "text": "找不到adb"
+   },
+   "phone_unplugged": {
+    "english": "Phone unplugged",
+    "text": "手机未连接"
+   },
+   "phone_state_unplug": {
+    "english": "The phone is in the “{0}” state: unplug and plug the cable back in.",
+    "text": "手机处于“{0}”状态：请拔下再插上数据线。"
+   },
+   "phone_not_ready": {
+    "english": "Phone not ready",
+    "text": "手机未就绪"
+   },
+   "several_phones": {
+    "english": "Several phones",
+    "text": "多部手机"
+   },
+   "phone_title": {
+    "english": "Phone: {0} ({1})",
+    "text": "手机：{0}（{1}）"
+   },
+   "phone": {
+    "english": "Phone",
+    "text": "手机"
+   },
+   "not_installed_phone": {
+    "english": "{0} is not installed on this phone (package {1}).\nInstall the game from the Play Store, then try again.",
+    "text": "此手机上未安装{0}（包 {1}）。\n请从Play商店安装游戏后重试。"
+   },
+   "game_not_installed": {
+    "english": "Game not installed",
+    "text": "游戏未安装"
+   },
+   "adb_could_not": {
+    "english": "adb could not copy {0}:\n{1}",
+    "text": "adb无法复制{0}：\n{1}"
+   },
+   "copy_failed": {
+    "english": "Copy failed",
+    "text": "无法复制"
+   },
+   "incomplete_copy_instead": {
+    "english": "{0}: incomplete copy ({1} instead of {2}). Check the USB cable and try again.",
+    "text": "{0}：复制不完整（应为{2}，实为{1}）。请检查USB线后重试。"
+   },
+   "incomplete_copy": {
+    "english": "Incomplete copy",
+    "text": "复制不完整"
+   },
+   "phone_label": {
+    "english": "Phone: ",
+    "text": "手机："
+   },
+   "phone_not_available": {
+    "english": "(phone not available)",
+    "text": "（手机不可用）"
+   },
+   "checking_phone": {
+    "english": "Checking the phone …",
+    "text": "正在检查 …"
+   },
+   "not_installed_phone_2": {
+    "english": "{0} is not installed on this phone.",
+    "text": "此手机上未安装{0}。"
+   },
+   "already_patched": {
+    "english": "already patched ✔",
+    "text": "已打补丁 ✔"
+   },
+   "original_version_not": {
+    "english": "original version (not patched)",
+    "text": "原版（未打补丁）"
+   },
+   "patch_state_cannot": {
+    "english": "patch state cannot be checked",
+    "text": "无法检查补丁状态"
+   },
+   "version": {
+    "english": "Version {0} · {1}",
+    "text": "版本 {0} · {1}"
+   },
+   "phone_unplugged_during": {
+    "english": "The phone was unplugged during the operation: it will fail. Plug it back in, then run the step again.",
+    "text": "操作过程中手机被拔出：操作将会失败。请重新连接，然后重新执行该步骤。"
+   },
+   "phone_detected": {
+    "english": "Phone detected: ",
+    "text": "检测到手机："
+   },
+   "adb_not_installed": {
+    "english": "adb is not installed: the phone cannot be detected (Dependencies menu).",
+    "text": "未安装adb：无法检测手机（依赖项菜单）。"
+   },
+   "no_phone_detected": {
+    "english": "No phone detected: plug in the USB cable (file transfer mode) and enable USB debugging.",
+    "text": "未检测到手机：请连接USB线（文件传输模式）并开启USB调试。"
+   },
+   "phone_state_unplug_plug": {
+    "english": "Phone in the “{0}” state: unplug and plug the cable back in.",
+    "text": "手机处于“{0}”状态：请拔下再插上数据线。"
+   },
+   "devices_plugged_choose": {
+    "english": "  ·  {0} devices plugged in, choose one",
+    "text": "  ·  连接了{0}台设备，请选择一台"
+   }
+  },
+  "rom": {
+   "file_not_found": {
+    "english": "File not found.",
+    "text": "找不到文件。"
+   },
+   "zip_not_contain": {
+    "english": "This zip does not contain any .nds file.",
+    "text": "此zip中没有任何.nds文件。"
+   },
+   "file_too_small": {
+    "english": "File too small: this is not a DS ROM.",
+    "text": "文件太小：不是DS ROM。"
+   },
+   "unreadable_header_not": {
+    "english": "Unreadable header: this is not a DS ROM (.nds).",
+    "text": "无法读取文件头：不是DS ROM（.nds）。"
+   },
+   "valid_european_rom": {
+    "english": "Valid European ROM ({0})",
+    "text": "有效的欧版ROM（{0}）"
+   },
+   "rom_not": {
+    "english": "This ROM is {0} ({1}), not {2}.",
+    "text": "此ROM是{0}（{1}）的，不是{2}的。"
+   },
+   "rom_but_not": {
+    "english": "ROM of {0} but not the European version (code {1}, {2} needed): only the European ROM contains the European languages.",
+    "text": "是{0}的ROM，但不是欧版（代码 {1}，需要 {2}）：只有欧版ROM包含欧洲语言。"
+   },
+   "not_rom_code": {
+    "english": "This is not a ROM of {0} (code {1}, {2} needed).",
+    "text": "这不是{0}的ROM（代码 {1}，需要 {2}）。"
+   },
+   "rom_another_region": {
+    "english": "{0} is the ROM of {1} from another region (code {2}): only the European ROM ({3}) contains the European languages.",
+    "text": "{0}是其他地区的{1} ROM（代码 {2}）：只有欧版ROM（{3}）包含欧洲语言。"
+   },
+   "folder_contains_european": {
+    "english": "Folder that contains your European DS ROMs (DQ IV, V and VI)",
+    "text": "存放您的欧版DS ROM（DQ IV、V、VI）的文件夹"
+   },
+   "rom_folder": {
+    "english": "ROM folder: {0}",
+    "text": "ROM文件夹：{0}"
+   },
+   "rom_found": {
+    "english": "ROM found: {0} ({1})",
+    "text": "找到ROM：{0}（{1}）"
+   },
+   "rom_not_found": {
+    "english": "ROM not found in this folder: the European ROM {0} is needed.",
+    "text": "此文件夹中找不到ROM：需要欧版ROM {0}。"
+   },
+   "rom_folder_not": {
+    "english": "ROM folder not chosen yet: click “Choose the ROM folder…”.",
+    "text": "尚未选择ROM文件夹：请点击“选择ROM文件夹…”。"
+   },
+   "rom_folder_no": {
+    "english": "The ROM folder no longer exists: {0}",
+    "text": "ROM文件夹已不存在：{0}"
+   },
+   "rom_not_found_chosen": {
+    "english": "ROM not found in the chosen folder: the European ROM of {0} ({1}) is needed.",
+    "text": "所选文件夹中找不到ROM：需要{0}的欧版ROM（{1}）。"
+   }
+  },
+  "deps": {
+   "about_mb": {
+    "english": "about {0} MB",
+    "text": "约{0} MB"
+   },
+   "talks_phone_copies": {
+    "english": "talks to the phone (copies the APKs, exports and restores the saves, reinstalls the game).",
+    "text": "与手机通信（获取APK、导出和恢复存档、重新安装游戏）。"
+   },
+   "runs_apk_signing": {
+    "english": "runs the APK signing tool (step 4).",
+    "text": "运行APK签名工具（第4步）。"
+   },
+   "free_tool_signs": {
+    "english": "free tool that signs the modified APKs so the phone accepts to install them (step 4).",
+    "text": "为修改过的APK签名、让手机接受安装的免费工具（第4步）。"
+   },
+   "logo_title_screen": {
+    "english": "logo and title screen modules (UnityPy, Pillow, numpy)",
+    "text": "标志和标题画面模块（UnityPy、Pillow、numpy）"
+   },
+   "only_used_translated": {
+    "english": "only used by the “translated logo and title screen” option of step 3.",
+    "text": "仅用于第3步的“翻译标志和标题画面”选项。"
+   },
+   "unitypy_pillow_numpy": {
+    "english": "UnityPy, pillow and numpy built into the exe",
+    "text": "UnityPy、pillow和numpy已内置于exe"
+   },
+   "missing": {
+    "english": "missing: ",
+    "text": "缺少："
+   },
+   "unitypy_pillow_numpy_loaded": {
+    "english": "UnityPy, pillow and numpy loaded",
+    "text": "UnityPy、pillow和numpy已加载"
+   },
+   "not_load": {
+    "english": "do not load: ",
+    "text": "无法加载："
+   },
+   "disk_space_gb": {
+    "english": "Disk space (≥ {0} GB)",
+    "text": "磁盘空间（≥ {0} GB）"
+   },
+   "free": {
+    "english": "free: ",
+    "text": "可用："
+   },
+   "not_measured": {
+    "english": "not measured",
+    "text": "未测量"
+   },
+   "tool": {
+    "english": "in the tool",
+    "text": "在工具中"
+   },
+   "found_path": {
+    "english": "found in the PATH: {0}",
+    "text": "在PATH中找到：{0}"
+   },
+   "adb_not_start": {
+    "english": "adb does not start: ",
+    "text": "adb无法启动："
+   },
+   "not_found": {
+    "english": "not found",
+    "text": "未找到"
+   },
+   "tool_2": {
+    "english": " · in the tool",
+    "text": " · 在工具中"
+   },
+   "installed_pc": {
+    "english": " · installed on the PC",
+    "text": " · 已安装在电脑上"
+   },
+   "java": {
+    "english": "Java {0}",
+    "text": "Java {0}"
+   },
+   "11_newer_required": {
+    "english": " (11 or newer required)",
+    "text": " （需要11或更高版本）"
+   },
+   "not_answer_within": {
+    "english": "does not answer within {0} s (antivirus scanning it?): try again with “Check again”",
+    "text": "{0}秒内无响应（杀毒软件正在扫描？）：请用“重新检查”再试一次"
+   },
+   "not_start": {
+    "english": "does not start (",
+    "text": "无法启动（"
+   },
+   "code": {
+    "english": "code {0}",
+    "text": "代码 {0}"
+   },
+   "java_apk_signing": {
+    "english": "Java (APK signing)",
+    "text": "Java（APK签名）"
+   },
+   "uber_apk_signer": {
+    "english": "uber-apk-signer (free tool)",
+    "text": "uber-apk-signer（免费工具）"
+   },
+   "logo_title_screen_option": {
+    "english": "Logo and title screen (option)",
+    "text": "标志和标题画面（选项）"
+   },
+   "download_cancelled": {
+    "english": "Download cancelled.",
+    "text": "下载已取消。"
+   },
+   "download_failed_check": {
+    "english": "Download failed ({0}: {1}).\nCheck your Internet connection (or place the file yourself at the root).",
+    "text": "无法下载（{0}：{1}）。\n请检查网络连接（或手动将文件放到根目录）。"
+   },
+   "download_failed": {
+    "english": "Download failed",
+    "text": "无法下载"
+   },
+   "downloaded_archive_corrupted": {
+    "english": "Downloaded archive is corrupted ({0}). Try again.",
+    "text": "下载的压缩包已损坏（{0}）。请重试。"
+   },
+   "corrupted_archive": {
+    "english": "Corrupted archive",
+    "text": "压缩包已损坏"
+   },
+   "nothing_download_all": {
+    "english": "Nothing to download: all dependencies are already there.",
+    "text": "无需下载：所有依赖项都已就绪。"
+   },
+   "destination_folder": {
+    "english": "Destination folder: ",
+    "text": "目标文件夹："
+   },
+   "download": {
+    "english": "Download {0}?",
+    "text": "下载{0}？"
+   },
+   "download_place_portable": {
+    "english": "{0}: {1}\n\nDownload it ({2}) and place it in:\n{3}\n\nThis is a portable version: nothing is installed in Windows.",
+    "text": "{0}：{1}\n\n下载（{2}）并放到：\n{3}\n\n这是便携版：不会在Windows中安装任何东西。"
+   },
+   "download_2": {
+    "english": "Download",
+    "text": "下载"
+   },
+   "skip": {
+    "english": "Skip",
+    "text": "跳过"
+   },
+   "download_declined_can": {
+    "english": "{0}: download declined (you can do it later: Dependencies menu).",
+    "text": "{0}：已拒绝下载（之后可以再下载：依赖项菜单）。"
+   },
+   "dependency_ies_downloaded": {
+    "english": "{0} dependency(ies) downloaded.",
+    "text": "已下载{0}个依赖项。"
+   },
+   "downloading": {
+    "english": "Downloading: {0} …",
+    "text": "下载：{0} …"
+   },
+   "received": {
+    "english": "  {0} received.",
+    "text": "  已接收{0}。"
+   },
+   "unpacking_platform_tools": {
+    "english": "Unpacking platform-tools …",
+    "text": "正在解压platform-tools …"
+   },
+   "unable_set_up": {
+    "english": "Unable to set up platform-tools: {0}\nClose the programs that use adb, then try again.",
+    "text": "无法安装platform-tools：{0}\n请关闭使用adb的程序后重试。"
+   },
+   "platform_tools_placed": {
+    "english": "platform-tools placed in: ",
+    "text": "platform-tools已放到："
+   },
+   "unpacking_java": {
+    "english": "Unpacking Java …",
+    "text": "正在解压Java …"
+   },
+   "downloaded_archive_not": {
+    "english": "The downloaded archive does not contain Java (bin/java). Try again later.",
+    "text": "下载的压缩包中没有Java（bin/java）。请稍后重试。"
+   },
+   "java_2": {
+    "english": "Java",
+    "text": "Java"
+   },
+   "unable_set_up_java": {
+    "english": "Unable to set up Java: {0}",
+    "text": "无法安装Java：{0}"
+   },
+   "portable_java_placed": {
+    "english": "Portable Java placed in: ",
+    "text": "便携版Java已放到："
+   },
+   "nothing_installed_windows": {
+    "english": " (nothing is installed in Windows).",
+    "text": " （不会在Windows中安装任何东西）。"
+   },
+   "first_start_java": {
+    "english": "First start of Java (the antivirus may scan it, up to a minute) …",
+    "text": "首次启动Java（杀毒软件可能会扫描，最多一分钟）…"
+   },
+   "java_answers_correctly": {
+    "english": "Java {0} answers correctly.",
+    "text": "Java {0} 响应正常。"
+   },
+   "java_not_answer": {
+    "english": "Java does not answer yet",
+    "text": "Java尚无响应"
+   },
+   "timeout_antivirus_probably": {
+    "english": " (timeout: the antivirus is probably scanning it, click “Check again” in a moment)",
+    "text": " （超时：可能是杀毒软件正在扫描，请稍后点击“重新检查”）"
+   },
+   "uber_apk_signer_downloaded": {
+    "english": "uber-apk-signer downloaded: ",
+    "text": "uber-apk-signer已下载："
+   },
+   "adb_talks_phone": {
+    "english": "adb talks to the phone through the USB cable: it detects it, copies the original APKs, extracts and restores the saves, uninstalls and installs the game.",
+    "text": "adb通过USB线与手机通信：检测手机、复制原始APK、提取和恢复存档、卸载和安装游戏。"
+   },
+   "essential_phone_detection": {
+    "english": "essential: phone detection, steps 1 and 4, and saves.",
+    "text": "必需：检测手机、第1步和第4步以及存档。"
+   },
+   "java_runs_uber": {
+    "english": "Java runs uber-apk-signer, the tool that signs the APKs. The tool uses the Java already installed on the PC if it is recent enough (11 or newer), otherwise a portable version downloaded into its “dependencies” folder.",
+    "text": "Java用于运行为APK签名的工具uber-apk-signer。如果电脑上已安装的Java足够新（11或更高），工具会直接使用；否则使用下载到其“dependencies”文件夹中的便携版。"
+   },
+   "essential_step_4": {
+    "english": "essential: step 4 (sign and install).",
+    "text": "必需：第4步（签名并安装）。"
+   },
+   "eclipse_adoptium_temurin": {
+    "english": "Eclipse Adoptium (Temurin, free Java)",
+    "text": "Eclipse Adoptium（Temurin，免费Java）"
+   },
+   "uber_apk_signer_apk": {
+    "english": "uber-apk-signer (APK signing)",
+    "text": "uber-apk-signer（APK签名）"
+   },
+   "phone_only_installs": {
+    "english": "A phone only installs signed APKs. The patched APKs lose the Square Enix signature: uber-apk-signer gives them a new one, specific to your PC.",
+    "text": "手机只安装已签名的APK。打过补丁的APK会失去Square Enix的签名：uber-apk-signer会为它们加上属于您电脑的新签名。"
+   },
+   "patrick_favre_free": {
+    "english": "Patrick Favre (free software, Apache 2.0 licence)",
+    "text": "Patrick Favre（自由软件，Apache 2.0许可证）"
+   },
+   "logo_title_screen_modules": {
+    "english": "Logo and title screen modules (optional)",
+    "text": "标志和标题画面模块（可选）"
+   },
+   "unitypy_pillow_numpy_read": {
+    "english": "UnityPy, Pillow and numpy read and modify the game images to translate the logo subtitle and “Tap to Start”.",
+    "text": "UnityPy、Pillow和numpy读取并修改游戏图片，以翻译标志的副标题和“Tap to Start”。"
+   },
+   "optional_only_translated": {
+    "english": "optional: only the “Translated logo and title screen” option (step 3). Without them, the option is greyed out and the rest of the patch works.",
+    "text": "可选：仅用于“翻译标志和标题画面”选项（第3步）。没有它们时，该选项变灰，补丁的其余部分照常工作。"
+   },
+   "free_projects_unitypy": {
+    "english": "free projects UnityPy, Pillow and numpy",
+    "text": "自由项目UnityPy、Pillow和numpy"
+   },
+   "portable_version_downloaded": {
+    "english": "portable version downloaded into the tool: nothing is installed in Windows. “Reinstall” downloads it again (useful if it is damaged).",
+    "text": "下载到工具中的便携版：不会在Windows中安装任何东西。“重新安装”会重新下载（损坏时有用）。"
+   },
+   "program_already_present": {
+    "english": "program already present on the PC: the tool uses it as it is. “Download into the tool” puts its own portable version into the “dependencies” folder (it will then be used).",
+    "text": "电脑上已有的程序：工具直接使用。“下载到工具中”会把它自己的便携版放到“dependencies”文件夹（之后将使用该版本）。"
+   },
+   "built_tool_when": {
+    "english": "built into the tool when it was made: nothing to download.",
+    "text": "生成工具时已内置：无需下载。"
+   },
+   "exe": {
+    "english": "in the exe",
+    "text": "在exe中"
+   },
+   "missing_exe": {
+    "english": "missing from the exe",
+    "text": "exe中缺少"
+   },
+   "downloaded": {
+    "english": "{0}, downloaded from {1} ({2})",
+    "text": "{0}，从{1}下载（{2}）"
+   },
+   "what": {
+    "english": "What it is for",
+    "text": "用途"
+   },
+   "needed": {
+    "english": "Needed for",
+    "text": "用于"
+   },
+   "origin": {
+    "english": "Origin",
+    "text": "来源"
+   },
+   "location": {
+    "english": "Location",
+    "text": "位置"
+   },
+   "installation": {
+    "english": "Installation",
+    "text": "安装"
+   },
+   "check_again": {
+    "english": "Check again",
+    "text": "重新检查"
+   },
+   "built_tool_nothing": {
+    "english": "Built into the tool: nothing to download.",
+    "text": "已内置于工具：无需下载。"
+   },
+   "downloads_again": {
+    "english": "Downloads again",
+    "text": "重新下载"
+   },
+   "downloads": {
+    "english": "Downloads",
+    "text": "下载"
+   },
+   "places_progress_shown": {
+    "english": " {0} ({1}) and places it in {2}. Progress is shown at the bottom of the main window.",
+    "text": " {0}（{1}）并放到{2}。进度显示在主窗口底部。"
+   },
+   "runs_check_again": {
+    "english": "Runs the check again (useful if you have added or moved a program yourself).",
+    "text": "重新检查（手动添加或移动程序后有用）。"
+   },
+   "checking": {
+    "english": "Checking …",
+    "text": "正在检查 …"
+   },
+   "present": {
+    "english": "Present: {0}",
+    "text": "已有：{0}"
+   },
+   "missing_2": {
+    "english": "Missing.",
+    "text": "缺少。"
+   },
+   "missing_label": {
+    "english": "Missing: ",
+    "text": "缺少："
+   },
+   "missing_unusable": {
+    "english": "Missing or unusable: ",
+    "text": "缺少或无法使用："
+   },
+   "check": {
+    "english": "To check: ",
+    "text": "需检查："
+   },
+   "reinstall": {
+    "english": "Reinstall",
+    "text": "重新安装"
+   },
+   "download_tool": {
+    "english": "Download into the tool",
+    "text": "下载到工具中"
+   },
+   "built_tool": {
+    "english": "Built into the tool",
+    "text": "已内置于工具"
+   },
+   "reinstall_all": {
+    "english": "Reinstall all…",
+    "text": "全部重新安装…"
+   },
+   "text": {
+    "english": "   • {0}: {1}",
+    "text": "   • {0}：{1}"
+   },
+   "download_what_s": {
+    "english": "Download what's missing",
+    "text": "下载缺少的项目"
+   },
+   "download_label": {
+    "english": "To download:\n",
+    "text": "需要下载：\n"
+   },
+   "they_stored_folder": {
+    "english": "\n\nThey are stored in the “{0}” folder of the tool (portable versions: nothing is installed in Windows).",
+    "text": "\n\n它们放在工具的“{0}”文件夹中（便携版：不会在Windows中安装任何东西）。"
+   },
+   "reinstall_all_2": {
+    "english": "Reinstall all",
+    "text": "全部重新安装"
+   },
+   "download_again_replace": {
+    "english": "Download again and replace:\n",
+    "text": "重新下载并替换：\n"
+   },
+   "useful_if_program": {
+    "english": "\n\nUseful if a program is damaged or no longer answers. The programs already installed on the PC (Java, adb) and the modules built into the tool are not affected.",
+    "text": "\n\n在程序损坏或不再响应时有用。电脑上已安装的程序（Java、adb）和工具内置的模块不受影响。"
+   },
+   "downloading_dependencies": {
+    "english": "Downloading the dependencies",
+    "text": "下载依赖项"
+   },
+   "missing_programs": {
+    "english": "Missing programs: ",
+    "text": "缺少："
+   },
+   "download_them": {
+    "english": ". Download them",
+    "text": "。请下载它们"
+   },
+   "download_3": {
+    "english": ". Download it",
+    "text": "。请下载它"
+   },
+   "dependencies_download_what": {
+    "english": " with the Dependencies › Download what's missing menu",
+    "text": " （菜单 依赖项 › 下载缺少的项目）"
+   },
+   "required_programs_not": {
+    "english": "Required programs not found",
+    "text": "找不到所需程序"
+   },
+   "check_2": {
+    "english": "Check",
+    "text": "检查"
+   },
+   "technical_info_pc": {
+    "english": "(Technical info: on this PC, the answers of adb and Java are read with the fallback method “{0}”, attempts: {1}.)",
+    "text": "（技术信息：在此电脑上，adb和Java的响应通过备用方法“{0}”读取，尝试：{1}。）"
+   },
+   "answers_programs_adb": {
+    "english": "The answers of the programs (adb, Java) cannot be read on this PC (",
+    "text": "在此电脑上无法读取程序（adb、Java）的响应（"
+   },
+   "copy_log_ask": {
+    "english": "). Copy this log to ask for help.",
+    "text": "）。请复制此日志以寻求帮助。"
+   },
+   "all_required_programs": {
+    "english": "All the required programs are now present.",
+    "text": "所有所需程序现已就绪。"
+   },
+   "steps_stay_greyed": {
+    "english": ".\n\nThe steps stay greyed out as long as they are missing.",
+    "text": "。\n\n缺少它们时，各步骤保持灰色。"
+   },
+   "missing_programs_2": {
+    "english": "Missing programs",
+    "text": "缺少程序"
+   },
+   "optional": {
+    "english": " (optional)",
+    "text": "（可选）"
+   },
+   "work_tool_needs": {
+    "english": "To work, the tool needs free programs that are not there yet:\n",
+    "text": "工具运行需要一些尚未就绪的免费程序：\n"
+   },
+   "allow_tool_download": {
+    "english": "\n\nDo you allow the tool to download them now? They are stored in its “{0}” folder (portable versions: nothing is installed in Windows).\n\nWithout them, the steps stay greyed out; you can also download them later with the Dependencies menu.",
+    "text": "\n\n是否允许工具现在下载？它们会放在工具的“{0}”文件夹中（便携版：不会在Windows中安装任何东西）。\n\n没有它们，各步骤保持灰色；之后也可以通过依赖项菜单下载。"
+   },
+   "programs_download": {
+    "english": "Programs to download",
+    "text": "需要下载的程序"
+   }
+  },
+  "log": {
+   "log": {
+    "english": " Log ",
+    "text": " 日志 "
+   },
+   "log_shared_3": {
+    "english": "Log shared by the 3 games, saved in {0}. At startup, the history is reloaded (in grey), then a separator marks the start of the new session.",
+    "text": "3款游戏共用的日志，保存在{0}中。启动时会重新载入历史记录（灰色），然后用一条分隔线标出新会话的开始。"
+   },
+   "cancel_step": {
+    "english": "Cancel step",
+    "text": "取消步骤"
+   },
+   "copy_log": {
+    "english": "Copy log",
+    "text": "复制日志"
+   },
+   "progress_current_operation": {
+    "english": "Progress of the current operation.",
+    "text": "当前操作的进度。"
+   },
+   "interrupts_current_operation": {
+    "english": "Interrupts the current operation (the adb command or the download is cut off, the build script stops at its next message). Incomplete files are deleted.",
+    "text": "中断当前操作（adb命令或下载会被中止，生成脚本会在下一条消息时停止）。不完整的文件会被删除。"
+   },
+   "copies_whole_displayed": {
+    "english": "Copies the whole displayed log (history included) to the clipboard: handy to ask for help.",
+    "text": "将显示的全部日志（包括历史记录）复制到剪贴板：方便求助。"
+   },
+   "history": {
+    "english": "History ({0})\n",
+    "text": "历史记录（{0}）\n"
+   },
+   "general": {
+    "english": "General",
+    "text": "常规"
+   },
+   "new_session": {
+    "english": "━━━━━━━━━━  New session: {0}  ━━━━━━━━━━",
+    "text": "━━━━━━━━━━  新会话：{0}  ━━━━━━━━━━"
+   },
+   "log_copied": {
+    "english": "Log copied ✔",
+    "text": "日志已复制 ✔"
+   }
+  },
+  "help": {
+   "what_tool_translates": {
+    "english": "# What this tool does\nIt translates into **French** the Android (Google Play) versions of Dragon Quest IV, V and VI, which do not exist in French.\nThe French texts come from **your European DS ROM** of the same game: the tool contains no ROM and no game text. The texts specific to the mobile version (party chat, touch menus…) are translated by the patch.\nUnofficial project, for personal use, not affiliated with Square Enix.\n\n# What you need\n• The game installed from the Google Play Store on an Android phone, **set to English**.\n• The European DS ROM of the same game (.nds file, or a .zip containing it): The Chapters of the Chosen (DQ IV), The Hand of the Heavenly Bride (DQ V) or Realms of Reverie (DQ VI).\n• A USB cable and **USB debugging** enabled in the phone's developer options.\n• A few free programs: the tool downloads them for you at startup (with your consent).\n\n# How to do it (one tab per game)\n1. Choose the **folder that contains your ROMs** (“Checks” area): the ROM of each game is found there automatically.\n2. Plug in the phone and **accept the authorisation** shown on its screen.\n3. Run the 4 steps in order (a greyed-out button is not possible yet, the icon on its right tells whether the step is done):\n   1 · **Extract original APKs**: copies the game from the phone to the PC.\n   2 · **Prepare texts**: a few minutes, without the phone; writes all the game texts into a file you can edit.\n   3 · **Patch APKs**: puts these texts into the game.\n   4 · **Sign and install**: replaces the game with the translated version.\nSeparately, under the steps, the **saves**:\n   **Extract saves**: before step 4, essential because it uninstalls the game.\n   **Restore saves**: after step 4, once the game has been started and then closed.\nEach step becomes available when what it needs is ready: the “Checks” area shows the state of everything, and its “Next” line tells you what to do. Steps 2 and 3 do not need the phone. Next to each step: ✔ done, ✖ not done yet or to run again, ⚠ to check (hover over the icon for details).\n\n# Good to know\n• The game's cloud save **does not work** with the translated version: keep your saves with the “Extract saves” and “Restore saves” buttons.\n• **Turn off automatic updates** of the game in the Play Store, otherwise it will replace the translated version.\n• Hover over a button or an area with the mouse: a tooltip explains what it is for, or why it is greyed out.\n• **Never share** your ROM or the patched APKs.\n",
+    "text": "# 本工具的作用\n将不存在法语版的Dragon Quest IV、V、VI的Android（Google Play）版本变为**法语**。\n法语文本来自同一游戏的**您的欧版DS ROM**：工具本身不包含ROM，也不包含游戏文本。手机版特有的文本（队伍对话、触控菜单等）由补丁翻译。\n非官方项目，仅供个人使用，与Square Enix无关。\n\n# 您需要\n• 一部从Google Play商店安装了游戏、**设置为英文**的Android手机。\n• 同一游戏的欧版DS ROM（.nds文件，或包含它的.zip）：The Chapters of the Chosen（DQ IV）、The Hand of the Heavenly Bride（DQ V）或Realms of Reverie（DQ VI）。\n• 一根USB线，并在手机的开发者选项中开启**USB调试**。\n• 几个免费程序：工具会在启动时为您下载（征得您同意后）。\n\n# 操作方法（每个游戏一个标签页）\n1. 选择**存放ROM的文件夹**（“检查”区域）：会自动找到每个游戏的ROM。\n2. 连接手机，并**接受**屏幕上显示的**授权**。\n3. 按顺序执行4个步骤（灰色按钮表示还不能执行，右侧图标显示步骤是否已完成）：\n   1 · **提取原始APK**：将游戏从手机复制到电脑。\n   2 · **准备文本**：几分钟，无需手机；把游戏的全部文本写入一个可以修改的文件。\n   3 · **修补APK**：把这些文本放进游戏。\n   4 · **签名并安装**：用翻译版替换游戏。\n另外，在步骤下方还有**存档**按钮：\n   **提取存档**：在第4步之前，必须执行，因为第4步会卸载游戏。\n   **恢复存档**：在第4步之后，启动一次游戏并关闭后执行。\n每个步骤在所需条件就绪时才会变为可用：“检查”区域显示所有状态，其中“下一步”一行告诉您该做什么。第2步和第3步不需要手机。每个步骤旁边：✔ 已完成，✖ 尚未完成或需重做，⚠ 需检查（将鼠标悬停在图标上查看详情）。\n\n# 须知\n• 游戏的云存档在翻译版中**无法使用**：请用“提取存档”和“恢复存档”按钮保管您的存档。\n• 请在Play商店中**关闭**游戏的**自动更新**，否则它会替换掉翻译版。\n• 将鼠标悬停在按钮或区域上：会弹出提示，说明其用途或变灰的原因。\n• **切勿分享**您的ROM或打过补丁的APK。\n"
+   },
+   "editing": {
+    "english": "# Before editing\n• Make a **copy** of the DQx_game_texts.json file (menu **File › Open the texts folder**): this is your way back.\n• Open it with **Notepad++** or **VS Code** (free), never with Word or WordPad, and save it as **UTF-8**.\n• Edit **only** the “text” lines. “english” and “origin” are there to help you (the tool does not read them). Do not delete any entry and do not change the numbers.\n\n# Finding the right text\n• Search (Ctrl+F) for 3 or 4 consecutive words, as you see them in the game, **without the punctuation**: in French texts there is a non-breaking space before ! ? : ; » and after «, which the search does not find with a normal space.\n• Names and numbers that change (the hero, an amount of gold…) are **%a** codes followed by 6 digits: do not type them in the search.\n• Several results? Check the “english” line and the neighbouring texts: they are in game order. If the same line exists several times (two moments of the story, two versions of a village), fix them all.\n\n# The file rules (JSON)\n• The text is between straight quotes: **never** press Enter inside it, and do not delete these quotes or the comma that follows.\n• Inside a text, a straight quote is written **\\\"** and a backslash **\\\\**. For dialogues, rather use the French quotes « », which the game already displays.\n• If step 3 reports an error “line X, column Y”, go to that line (Ctrl+G in Notepad++): it is almost always a quote or a comma.\n\n# The game codes: keep them\n• **@a…@b** at the start of a dialogue: the name shown above the bubble is between @a and @b (nothing for an anonymous character, whose line starts with “*: ”). **\\n@c0@** at the end: leave it as it is.\n• **@1…@** surrounds a menu label or a place name: only change the words between them.\n• An item or a spell has the form **@0M@2le @3un @4nom@5les @6des @7pluriel@8N@9N@**: you can change the articles (after @2, @3, @5, @6), the singular name (after @4) and the plural (after @7); M or F after @0 = gender. Do not touch the rest.\n• **%a** + 6 digits = variable name or number: keep it as it is. You can move it within the sentence.\n• **%H…%X** form 1 **%Y** form 2 **%Z** (same principle with %A, %B, %G…) = variants chosen by the game (masculine / feminine, singular / plural…): change the words between the codes, never the codes themselves.\n• The letters я, и, д of some characters (Russian accent, Nimzo) are intended: keep them.\n\n# Line breaks and bubbles\n• **\\n** (backslash + n) **forces a line break**. If the text already contains \\r\\n, use \\r\\n too.\n• Most dialogues have no \\n: the game breaks them by itself according to the bubble width. Only add some for an intended effect or to move a badly placed break.\n• A bubble shows about 3 lines. To **go to a new bubble**, copy the **㈡** character from another text and place it between two sentences; for an anonymous character, the new bubble starts again with “*: ” (“…sentence. ㈡ *: More…”).\n• **㈢** = short pause in the middle of a line (hesitation, sneeze…): the rest appears after a moment, in the same bubble.\n• In labels (menus, places, items), **;** marks where the game may break the line if the label is too long: do not delete it; to move it, imitate the neighbouring labels of the same file.\n\n# Punctuation, characters and length\n• Keep the (invisible) non-breaking space before ! ? : ; » and after «: it prevents an exclamation mark from going alone to the next line. To add one, copy it from another text (or Alt + 0160 on the numeric keypad).\n• Accents, œ, « », ’ and … are in the game font. Avoid other symbols (emojis, rare characters): step 3 reports those the font does not have.\n• Menus: keep a length close to the English; if a label overflows, abbreviate the **same word** (“Carac.”) rather than choosing another one.\n\n# After each change\n• Save, run **step 3** then **step 4** again, and check in game.\n• Read **texts\\step3_report.txt**: refused texts (the step 2 one is kept), lines wider than before, characters missing from the font.\n• Running step 2 again offers to keep your file; if it is recreated, the old one is first copied to “texts\\old”.\n• Do not share this file: it contains the text of your ROM. To suggest a fix for everyone, send the author of the patch the key (for example b0502000.mpt, 615) and the corrected text.\n",
+    "text": "# 修改之前\n• 先**复制**一份DQx_game_texts.json文件（菜单 **文件 › 打开文本文件夹**）：这是您的退路。\n• 用 **Notepad++** 或 **VS Code**（免费）打开，切勿用Word或写字板，并以 **UTF-8** 保存。\n• **只**修改“text”行。“english”和“origin”仅供参考（工具不读取）。不要删除任何条目，也不要更改编号。\n\n# 找到要改的文本\n• 按游戏中看到的样子搜索（Ctrl+F）连续的3到4个词，**不要带标点**：法语文本中 ! ? : ; » 之前和 « 之后有一个不换行空格，用普通空格搜索不到。\n• 会变化的名字和数字（主角、金币数额等）是 **%a** 后跟6位数字的代码：不要输入到搜索中。\n• 找到多个结果？请查看“english”行和相邻的文本：它们按游戏顺序排列。如果同一句话出现多次（故事中的两个时刻、村庄的两个版本），请全部修改。\n\n# 文件（JSON）规则\n• 文本位于直引号之间：**切勿**在其中按回车键，也不要删除这些引号或其后的逗号。\n• 在文本中，直引号写作 **\\\"**，反斜杠写作 **\\\\**。对话中最好使用游戏已经能显示的法式引号 « »。\n• 如果第3步报告“第X行，第Y列”的错误，请转到该行（Notepad++中按Ctrl+G）：几乎总是引号或逗号的问题。\n\n# 游戏代码：必须保留\n• 对话开头的 **@a…@b**：显示在对话框上方的名字位于 @a 和 @b 之间（无名角色则没有，其台词以“*: ”开头）。结尾的 **\\n@c0@**：保持原样。\n• **@1…@** 包围菜单项或地名：只修改中间的词。\n• 物品或咒文的形式为 **@0M@2le @3un @4nom@5les @6des @7pluriel@8N@9N@**：可以修改冠词（@2、@3、@5、@6之后）、单数名称（@4之后）和复数（@7之后）；@0之后的M或F = 阴阳性。其余部分不要动。\n• **%a** + 6位数字 = 可变的名字或数字：保持原样。可以在句中移动位置。\n• **%H…%X** 形式1 **%Y** 形式2 **%Z**（%A、%B、%G等同理）= 游戏选择的变体（阳性 / 阴性、单数 / 复数等）：修改代码之间的词，切勿修改代码本身。\n• 某些角色（俄语口音、尼姆佐）的字母 я、и、д 是有意为之：请保留。\n\n# 换行与对话框\n• **\\n**（反斜杠 + n）**强制换行**。如果文本中已有 \\r\\n，请同样使用 \\r\\n。\n• 大多数对话没有 \\n：游戏会根据对话框宽度自动换行。只有为了特定效果或移动位置不当的换行时才添加。\n• 一个对话框约显示3行。要**换到新的对话框**，请从其他文本中复制 **㈡** 字符，放在两句之间；对于无名角色，新对话框要重新以“*: ”开头（“…句子。 ㈡ *: 后续…”）。\n• **㈢** = 台词中间的短暂停顿（犹豫、打喷嚏等）：后面的内容稍后显示在同一个对话框中。\n• 在名称（菜单、地点、物品）中，**;** 标记名称过长时游戏可以换行的位置：不要删除；要移动它，请模仿同一文件中相邻的名称。\n\n# 标点、字符与长度\n• 保留 ! ? : ; » 之前和 « 之后（看不见的）不换行空格：它能避免感叹号单独跑到下一行。要添加时，请从其他文本复制（或在数字小键盘上按 Alt + 0160）。\n• 重音符号、œ、« »、’ 和 … 都在游戏字体中。避免使用其他符号（表情符号、罕见字符）：字体中没有的字符第3步会报告。\n• 菜单：保持与英文相近的长度；如果名称超出，请缩写**同一个词**（“Carac.”），而不是换成别的词。\n\n# 每次修改之后\n• 保存，重新执行**第3步**，再执行**第4步**，然后在游戏中检查。\n• 阅读 **texts\\step3_report.txt**：被拒绝的文本（保留第2步的文本）、比以前宽的行、字体中没有的字符。\n• 重新执行第2步时会询问是否保留您的文件；如果重新创建，旧文件会先复制到“texts\\old”。\n• 不要分享此文件：其中包含您ROM的文本。如果想为所有人提出修正，请把键（例如 b0502000.mpt, 615）和修正后的文本发给补丁作者。\n"
+   },
+   "todo": {
+    "english": "# Where is the patch at?\nThe tool works from start to finish and the 3 games are playable in French. But there is still work left for the patch to be really finished: here is what is missing. **Any help is welcome.**\n# 1. Translate the party chat of Dragon Quest IV\n• The mobile version of DQ4 adds about 7,800 lines of “party chat” that do not exist on DS: so they have no official translation.\n• The patch contains a first, unofficial translation of them: it needs to be reworked, line by line, to match the tone of each character.\n# 2. Review the item descriptions\n• The descriptions of items, weapons and equipment are those of the DS: often vague, and almost identical between all the items of the same type.\n• Wanted: a description specific to each item, saying clearly what it does.\n# 3. Check how place names are displayed\n• Places shown on screen with a detail (floor, basement, room…) need checking in game, and the form needs choosing:\n   “Pic des Tisseurs : Taverne”;\n   “à la taverne”, then “Pic des Tisseurs” on the next line;\n   “Pic des Tisseurs”, then “à la taverne” on the next line.\n# 4. Report all text problems\nWhile playing, note everything that is wrong:\n• a text that goes past or touches the edges of a window (bubble, menu, button);\n• a typo or spelling mistake, a wrong agreement (he / she, singular / plural);\n• a text left in English, or a translation that does not match the scene;\n• an item that does not have the right description;\n• a dialogue in the wrong place: a line that does not fit the scene or the character, lines out of order;\n• the same text different from one game to another: item description, menu, item, spell or monster name…;\n• the same name (character, place, item, spell, monster) written in two ways in the same game;\n• a character who changes their way of speaking (formal / informal, accent, verbal tics);\n• a wrong name displayed (one character instead of another);\n• a text that still talks about the DS (stylus, buttons, top screen…) instead of the phone;\n• a better translation you suggest.\nFor each problem, give if possible: the game, the place (town, scene, menu), the text as it is displayed, a **screenshot** and your suggestion. If you found the text in the text file (menu **File › Open the texts folder**), also give its file and number (e.g. b0012000.mpt, 34).\n# Contact\nSend your remarks, fixes and suggestions to: **[CONTACT]**\nFor a problem with the tool itself (a step that fails…), attach the log: **“Copy log”** button, then paste it into your message.\n",
+    "text": "# 补丁的进度\n工具从头到尾都能正常运行，3款游戏都可以用法语游玩。但要让补丁真正完成，还有工作要做：以下是缺少的部分。**欢迎任何帮助。**\n# 1. 翻译Dragon Quest IV的队伍对话\n• DQ4手机版新增了约7,800句DS版没有的“队伍对话”：因此没有官方翻译。\n• 补丁中包含了初步的非官方翻译：需要逐句重新修改，以符合每个角色的语气。\n# 2. 审核物品说明\n• 物品、武器和装备的说明沿用DS版：往往含糊，同类物品之间几乎相同。\n• 征集：每件物品各自的说明，清楚说明其作用。\n# 3. 检查地名的显示\n• 屏幕上带有细节（楼层、地下、房间等）的地名需要在游戏中检查，并选择形式：\n   “Pic des Tisseurs : Taverne”；\n   “à la taverne”，下一行“Pic des Tisseurs”；\n   “Pic des Tisseurs”，下一行“à la taverne”。\n# 4. 报告所有文本问题\n游玩时，请记下所有不对劲的地方：\n• 超出或贴住窗口（对话框、菜单、按钮）边缘的文本；\n• 错别字或拼写错误，搭配错误（他 / 她，单数 / 复数）；\n• 仍为英文的文本，或与场景不符的翻译；\n• 说明不正确的物品；\n• 位置错误的对话：与场景或角色不符的台词，顺序错乱的台词；\n• 在不同游戏间不一致的同一文本：物品说明、菜单、物品、咒文或怪物的名称等；\n• 在同一游戏中有两种写法的同一名称（角色、地点、物品、咒文、怪物）；\n• 说话方式发生变化的角色（随意 / 礼貌的语气、口音、口头禅）；\n• 显示错误的名字（一个角色显示成另一个）；\n• 仍在说DS（触控笔、按键、上屏等）而不是手机的文本；\n• 您建议的更好的翻译。\n对于每个问题，请尽量提供：游戏、地点（城镇、场景、菜单）、显示的原文、**截图**以及您的建议。如果您在文本文件中找到了该文本（菜单 **文件 › 打开文本文件夹**），也请注明其文件和编号（例如 b0012000.mpt, 34）。\n# 联系方式\n请将您的意见、修正和建议发送至：**[CONTACT]**\n如果是工具本身的问题（某个步骤失败等），请附上日志：点击 **“复制日志”** 按钮，然后粘贴到您的消息中。\n"
+   },
+   "address_not_provided": {
+    "english": "(address not provided)",
+    "text": "（未填写地址）"
+   },
+   "folders_troubleshooting": {
+    "english": "# The folders\nNext to DQ456_Tool.exe, the tool puts everything in three folders:\n• **games**: one folder per game (**DQ4**, **DQ5**, **DQ6**), which contains:\n   apks: the original APKs copied from the phone.\n   texts: **DQx_game_texts.json**, all the game texts (step 2), the step 3 report and, in “old”, the replaced files.\n   build: the basic translated version (step 2), before your texts.\n   patched_apks: the translated APKs (step 3).\n   title_screen: the translated logo and “Tap to Start”, kept by step 3 (“FR title screen” option).\n   signed: the APKs ready to install.\n   saves: your backups of the saves, one folder per date.\n• **dependencies**: the tool itself (installed by DQ456_Tool.exe), its settings, **log.txt** (the log, shared by the 3 games) and the downloaded programs (platform-tools, java…).\n• **languages**: the texts of the tool, one file per language (xx-xx.json, menu **Language**).\n**File** menu: opens the folder of the displayed game or that of its texts.\n\n# The “Checks” area\nOn the left of each tab, the tool shows everything it checks (green dot: ready; red: to fix; grey: in progress):\n• **DS ROM**: the ROM folder chosen with the “Choose the ROM folder…” button (the same for the 3 games) and the European ROM of the game found in it (or in one of its subfolders).\n• **Programs**: the dependencies (details in the **Dependencies** menu); the “Download what's missing…” button appears if some are missing.\n• **Phone** and **Installed game**: the USB link, the game version and whether it is already patched.\n• **Texts**: the text file of step 2, and whether you have edited it since.\n• **Next**: the step (or the saves button) to run, or what prevents it.\nAt the end of each step, the log also tells you which one is next and when it is available.\n\n# The dependencies\nThe tool needs a few free programs. At startup, if some are missing, it asks for your consent once, then downloads them all into its “dependencies” folder. The **Dependencies** menu lists them with their state (✔ present, ✖ missing): click one to find out what it is for, where it comes from and where it is stored, and to download or reinstall it. “Download what's missing…” and “Reinstall all…” act on all of them at once. These are portable versions: **nothing is installed in Windows**.\n• adb: talks to the phone over USB.\n• Java and uber-apk-signer: sign the patched APKs so they can be installed.\n• Logo and title screen modules: only for the option of the same name.\n\n# The option\nOn the right of the step 3 button, the **FR title screen** box (ticked = on): also translates the logo subtitle and “Tap to Start”, with images redrawn in high definition, built into the tool. When off, they stay in English.\nChanging this option requires running steps 3 and 4 again. The first step 3 with the option takes several minutes; the result is kept in the game's “title_screen” folder.\n\n# Editing the game texts\nStep 2 writes **all** the game texts, as the patch puts them, into **texts\\DQx_game_texts.json** (menu **File › Open the texts folder**). It is sorted by file and by number: neighbouring texts are in game order, with the English next to them. To fix a text (a word, a “\\n” line break…), only edit its “text” line while keeping the codes, save, then run steps 3 and 4 again. Keep copies of the file to go back. All the details (codes, line breaks, bubbles…): menu **Help › How to edit the texts**. Running step 2 again offers to keep your file; if it is recreated, the old one is first copied to “texts\\old”. This file contains the text of your ROM: do not share it.\n\n# If something goes wrong\n• **Phone not detected**: cable in file transfer mode, USB debugging enabled, authorisation accepted on the phone. Unplug and plug it back in.\n• **Play Protect during the installation**: if it offers to send the app for scanning, tap “Don't send”; if it blocks it: “More details”, then “Install anyway”.\n• **The game crashes at startup** with the logo and title screen option: turn it off (“FR title screen” box of step 3), run steps 3 and 4 again.\n• **The game opens in Japanese**: choose English in the game.\n• **Choosing a Google account when the game opens**: the game may ask for it on first start, especially if there are several accounts on the phone. It is not required: skip the screen by tapping outside it, or with “Cancel” or “Continue”.\n• **Need help**: the “Copy log” button copies everything that happened, to attach to your message.\n",
+    "text": "# 文件夹\n工具会把所有内容放在DQ456_Tool.exe旁边的三个文件夹中：\n• **games**：每个游戏一个文件夹（**DQ4**、**DQ5**、**DQ6**），其中包含：\n   apks：从手机复制的原始APK。\n   texts：**DQx_game_texts.json**（游戏的全部文本，第2步）、第3步的报告，以及“old”中被替换的文件。\n   build：放入您的文本之前的翻译版基础（第2步）。\n   patched_apks：翻译版APK（第3步）。\n   title_screen：第3步保存的翻译后标志和“Tap to Start”（“标题画面FR”选项）。\n   signed：可直接安装的APK。\n   saves：您的存档备份，每个日期一个文件夹。\n• **dependencies**：工具本身（由DQ456_Tool.exe安装）、其设置、**log.txt**（3款游戏共用的日志）以及下载的程序（platform-tools、java等）。\n• **languages**：工具的文本，每种语言一个文件（xx-xx.json，**语言**菜单）。\n**文件**菜单：打开当前显示的游戏文件夹或其文本文件夹。\n\n# “检查”区域\n在每个标签页左侧，工具会显示它检查的所有内容（绿点：就绪；红色：需处理；灰色：进行中）：\n• **DS ROM**：用“选择ROM文件夹…”按钮选择的ROM文件夹（3款游戏共用），以及在其中（或其子文件夹中）找到的该游戏欧版ROM。\n• **程序**：依赖项（详情见**依赖项**菜单）；缺少时会出现“下载缺少的项目…”按钮。\n• **手机**和**已安装的游戏**：USB连接、游戏版本以及是否已打补丁。\n• **文本**：第2步的文本文件，以及此后您是否修改过。\n• **下一步**：需要执行的步骤（或存档按钮），或阻止它的原因。\n日志也会在每一步结束时告诉您下一步是什么以及何时可用。\n\n# 依赖项\n工具需要几个免费程序。启动时如果缺少，会只征求一次您的同意，然后把它们全部下载到“dependencies”文件夹中。**依赖项**菜单会列出它们及其状态（✔ 已有，✖ 缺少）：点击其中一项可查看其用途、来源和存放位置，并可下载或重新安装。“下载缺少的项目…”和“全部重新安装…”会一次作用于全部项目。它们都是便携版：**不会在Windows中安装任何东西**。\n• adb：通过USB与手机通信。\n• Java和uber-apk-signer：为打过补丁的APK签名，使其可以安装。\n• 标志和标题画面模块：仅用于同名选项。\n\n# 选项\n第3步按钮右侧的 **标题画面FR** 复选框（勾选 = 开启）：用工具内置的高清重绘图片，同时翻译标志的副标题和“Tap to Start”。关闭时它们保持英文。\n更改此选项后需要重新执行第3步和第4步。开启该选项的第一次第3步需要几分钟；结果会保存在游戏的“title_screen”文件夹中。\n\n# 修改游戏文本\n第2步会把游戏的**全部**文本按补丁放入的样子写入 **texts\\DQx_game_texts.json**（菜单 **文件 › 打开文本文件夹**）。它按文件和编号排序：相邻文本按游戏顺序排列，旁边附有英文。要修正某条文本（一个词、一个“\\n”换行等），请保留代码，只修改其“text”行，保存后重新执行第3步和第4步。请保留文件的副本以便回退。全部详情（代码、换行、对话框等）：菜单 **帮助 › 如何修改文本**。重新执行第2步时会询问是否保留您的文件；如果重新创建，旧文件会先复制到“texts\\old”。此文件包含您ROM的文本：请勿分享。\n\n# 遇到问题时\n• **检测不到手机**：数据线使用文件传输模式，开启USB调试，在手机上接受授权。拔下再插上。\n• **安装时出现Play 保护机制**：如果建议发送应用以供扫描，请点按“不发送”；如果被阻止：“更多详情”，然后“仍然安装”。\n• 开启标志和标题画面选项后**游戏启动即崩溃**：关闭该选项（第3步的“标题画面FR”复选框），重新执行第3步和第4步。\n• **游戏以日文打开**：请在游戏中选择英文。\n• **打开游戏时要求选择Google账号**：首次启动时可能会要求，尤其是手机上有多个账号时。这不是必需的：点按屏幕外侧，或点“取消”或“继续”跳过。\n• **需要帮助**：“复制日志”按钮会复制发生的一切，可附在您的消息中。\n"
+   },
+   "address_copied": {
+    "english": "Address copied: {0}",
+    "text": "地址已复制：{0}"
+   },
+   "copy_e_mail": {
+    "english": "Copy the e-mail address",
+    "text": "复制电子邮件地址"
+   },
+   "dragon_quest_iv": {
+    "english": "Dragon Quest IV-V-VI - DQ456 Tool (experimental)\nBeta version of the tool\n\nUnofficial French patches for the Android versions of Dragon Quest IV, V and VI, for personal use.\nNot affiliated with Square Enix. The tool contains no ROM and no game text.\n\nDependencies: SDK Platform-Tools (Google), Java Temurin (Eclipse Adoptium), uber-apk-signer (P. Favre, Apache 2.0 licence).",
+    "text": "Dragon Quest IV-V-VI - DQ456 Tool（实验版）\n工具测试版\n\nDragon Quest IV、V、VI Android版的非官方法语补丁，仅供个人使用。\n与Square Enix无关。工具不包含ROM，也不包含游戏文本。\n\n依赖项：SDK Platform-Tools（Google）、Java Temurin（Eclipse Adoptium）、uber-apk-signer（P. Favre，Apache 2.0许可证）。"
+   },
+   "included_exe_python": {
+    "english": "\n\nIncluded in the exe: Python, Tcl/Tk, PyInstaller, UnityPy, Pillow, NumPy, each under its own licence. Details: THIRD_PARTY_NOTICES.md file, github.com/Sylfried/dq456-translate-prd",
+    "text": "\n\nexe中包含：Python、Tcl/Tk、PyInstaller、UnityPy、Pillow、NumPy，各自遵循其许可证。详情：THIRD_PARTY_NOTICES.md文件，github.com/Sylfried/dq456-translate-prd"
+   }
+  },
+  "game": {
+   "chapters_chosen": {
+    "english": "The Chapters of the Chosen",
+    "text": "被引导的人们"
+   },
+   "hand_heavenly_bride": {
+    "english": "The Hand of the Heavenly Bride",
+    "text": "天空的新娘"
+   },
+   "realms_reverie": {
+    "english": "Realms of Reverie",
+    "text": "幻之大地"
+   }
+  },
+  "app": {
+   "looking_phone": {
+    "english": "Looking for the phone …",
+    "text": "正在查找手机 …"
+   },
+   "folders_tidied_up": {
+    "english": "Folders tidied up (new layout): ",
+    "text": "文件夹已整理（新结构）："
+   },
+   "folders_next_tool": {
+    "english": " → “{0}” and “{1}” folders next to the tool.",
+    "text": " → 工具旁边的“{0}”和“{1}”文件夹。"
+   },
+   "not_moved_file": {
+    "english": "Not moved (file open in another program?): ",
+    "text": "未移动（文件在其他程序中打开？）："
+   },
+   "new_attempt_next": {
+    "english": ". New attempt at the next start.",
+    "text": "。下次启动时重试。"
+   },
+   "cancellation_requested": {
+    "english": "Cancellation requested …",
+    "text": "已请求取消 …"
+   },
+   "operation_progress": {
+    "english": "Operation in progress",
+    "text": "操作进行中"
+   },
+   "progress_quitting_interrupts": {
+    "english": "“{0}” is in progress.\nQuitting interrupts it and may leave incomplete files (cleaned up at the next attempt).\n\nQuit anyway?",
+    "text": "“{0}”正在进行。\n退出会中断它，并可能留下不完整的文件（下次尝试时会清理）。\n\n仍要退出？"
+   },
+   "reading_answers_programs": {
+    "english": "reading the answers of the programs",
+    "text": "读取程序的响应"
+   },
+   "dragon_quest_iv": {
+    "english": "Dragon Quest IV-V-VI - DQ456 Tool (experimental)",
+    "text": "Dragon Quest IV-V-VI - DQ456 Tool（实验版）"
+   },
+   "tkinter_not_found": {
+    "english": "tkinter not found: reinstall Python, ticking “tcl/tk and IDLE”.",
+    "text": "找不到tkinter：请重新安装Python，并勾选“tcl/tk and IDLE”。"
+   },
+   "folder_not_writable": {
+    "english": "Folder not writable",
+    "text": "文件夹不可写"
+   },
+   "tool_must_able": {
+    "english": "The tool must be able to write in its folder (it stores its “dependencies” and “games” folders there), but this folder is protected:\n{0}\n\nMove it to a normal folder (Desktop, Documents, a folder of your own), then start it again.",
+    "text": "工具必须能写入自己的文件夹（它在那里存放“dependencies”和“games”文件夹），但此文件夹受保护：\n{0}\n\n请把它移到普通文件夹（桌面、文档、您自己的文件夹）中，然后重新启动。"
+   },
+   "interface_error": {
+    "english": "Interface error: ",
+    "text": "界面错误："
+   }
+  },
+  "common": {
+   "step_interrupted": {
+    "english": "Step interrupted",
+    "text": "步骤已中断"
+   },
+   "tool_closing": {
+    "english": "The tool is closing.",
+    "text": "工具正在关闭。"
+   },
+   "program_not_found": {
+    "english": "Program not found: {0}",
+    "text": "找不到程序：{0}"
+   },
+   "unable_run_command": {
+    "english": "Unable to run the command: {0}",
+    "text": "无法运行命令：{0}"
+   },
+   "step_cancelled": {
+    "english": "Step cancelled.",
+    "text": "步骤已取消。"
+   },
+   "cancelled": {
+    "english": "Cancelled",
+    "text": "已取消"
+   },
+   "text_received": {
+    "english": "text received",
+    "text": "已收到文本"
+   },
+   "nothing_received": {
+    "english": "nothing received",
+    "text": "未收到任何内容"
+   },
+   "label_value": {
+    "english": "{0}: {1}",
+    "text": "{0}：{1}"
+   },
+   "cancel": {
+    "english": "Cancel",
+    "text": "取消"
+   },
+   "disk_full": {
+    "english": "Disk full",
+    "text": "磁盘已满"
+   },
+   "not_enough_disk": {
+    "english": "Not enough disk space: about {0} needed, {1} free.",
+    "text": "磁盘空间不足：约需{0}，剩余{1}。"
+   },
+   "close": {
+    "english": "Close",
+    "text": "关闭"
+   },
+   "open_folder": {
+    "english": "Open the folder",
+    "text": "打开文件夹"
+   },
+   "restore_backup": {
+    "english": "Restore this backup",
+    "text": "恢复此备份"
+   },
+   "unable_open_folder": {
+    "english": "Unable to open the folder: {0}",
+    "text": "无法打开文件夹：{0}"
+   },
+   "later": {
+    "english": "Later",
+    "text": "稍后"
+   }
+  }
+ }
+}

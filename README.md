@@ -1,6 +1,6 @@
 # Dragon Quest IV, V and VI (Android): French patch
 
-`DQ_Patch_FR.exe` is a Windows tool that translates the Android (Google Play) versions of Dragon Quest IV, V and VI into French.
+`DQ456_Tool.exe` is a Windows tool that translates the Android (Google Play) versions of Dragon Quest IV, V and VI into French.
 
 It reads the official French text from the European DS ROM of each game. Texts that only exist in the mobile versions are translated by the patch. The patched game is then installed on the phone over USB.
 
@@ -10,9 +10,9 @@ The tool's interface is available in English, French, German, Spanish, Italian, 
 
 | Item | Purpose |
 |---|---|
-| `DQ_Patch_FR.exe` | The tool |
+| `DQ456_Tool.exe` | The tool |
 | `THIRD_PARTY_NOTICES.md` | Third-party components and their licenses |
-| `languages/` | Interface texts of the tool, one file per language (`tool_texts_<code>.json`) |
+| `languages/` | Interface texts of the tool, one file per language (`<code>.json`, for example `fr-fr.json`) |
 | `roms/` | Folder for your DS ROMs (`.nds`, or a `.zip` containing them) |
 | `dependencies/` | Filled by the tool: the installed tool, settings, log and downloaded programs |
 | `games/DQ4/`, `games/DQ5/`, `games/DQ6/` | Filled by the tool, one folder per game: `apks`, `texts`, `build`, `patched_apks`, `title_screen`, `signed`, `saves` |
@@ -38,7 +38,7 @@ Empty folders only contain a `.gitkeep` file, which keeps them in the repository
 
 1. Download the repository (**Code** button, then **Download ZIP**) and extract it to a folder of your own, not inside "Program Files".
 2. Copy your DS ROMs into `roms`.
-3. Run `DQ_Patch_FR.exe`. On first launch it installs itself into `dependencies`, then offers to download any missing programs.
+3. Run `DQ456_Tool.exe`. On first launch it installs itself into `dependencies`, then offers to download any missing programs.
 4. The `roms` folder is used by default; another folder can be chosen with "Choose the ROM folder…".
 5. Follow the steps in the game's tab: 1 (copy the game from the phone), 2 (prepare the texts), 3 (patch), 4 (install).
 
@@ -46,13 +46,13 @@ Each step, the options and troubleshooting are described in the tool's Help menu
 
 ## Updating
 
-Close the tool, replace `DQ_Patch_FR.exe` and the files of the `languages` folder with those of the new version (keep the language files you added yourself), then run the tool again. Settings, downloaded programs and the `games` folder are kept (folders of older versions are renamed automatically).
+Close the tool, replace `DQ456_Tool.exe` (called `DQ_Patch_FR.exe` up to version 1.29: the new version removes the old file) and the files of the `languages` folder with those of the new version (keep the language files you added yourself), then run the tool again. Settings, downloaded programs and the `games` folder are kept (folders of older versions are renamed automatically).
 
 The interface languages are read from the `languages` folder: without it, the tool opens in English.
 
 ## Translating the tool
 
-1. In the tool, menu **Language › Add a language…**: enter the language code (`xx-xx` form, for example `pt-br`) and the name shown in the menu. The tool creates `languages/tool_texts_<code>.json` from the English texts.
+1. In the tool, menu **Language › Add a language…**: enter the language code (`xx-xx` form, for example `pt-br`) and the name shown in the menu. The tool creates `languages/<code>.json` from the English texts.
 2. Open this file with a text editor (Notepad++, VS Code) and fill in the `"text"` lines; the `"english"` line above each one gives the original text. An empty `"text"` shows the English. Keep `{0}`, `{1}`… and the codes as they are, and save the file as UTF-8.
 3. Menu **Language › Reload the texts** shows your changes in the tool.
 4. To offer the language to everyone: fork this repository, add your file to `languages/` and open a pull request. Once accepted, the file is in the `languages` folder of this repository, for everyone.
