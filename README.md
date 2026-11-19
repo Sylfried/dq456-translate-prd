@@ -4,13 +4,14 @@
 
 It reads the official French text from the European DS ROM of each game. Texts that only exist in the mobile versions are translated by the patch. The patched game is then installed on the phone over USB.
 
-The tool's interface is available in English, French, German, Spanish, Italian, Japanese, Chinese and Korean.
+The tool's interface is available in English, French, German, Spanish, Italian, Japanese, Chinese and Korean. In English, Japanese, Korean and Chinese, languages that the mobile games already contain, the tool only copies the original APKs and the saves from the phone (for example to use them with a PC port); the French patch is available with the French interface.
 
 ## Contents
 
 | Item | Purpose |
 |---|---|
 | `DQ_Patch_FR.exe` | The tool |
+| `THIRD_PARTY_NOTICES.md` | Third-party components and their licenses |
 | `roms/` | Folder for your DS ROMs (`.nds`, or a `.zip` containing them) |
 | `dependencies/` | Filled by the tool: the installed tool, settings, log and downloaded programs |
 | `games/DQ4/`, `games/DQ5/`, `games/DQ6/` | Filled by the tool, one folder per game: `apks`, `texts`, `build`, `patched_apks`, `title_screen`, `signed`, `saves` |
@@ -37,7 +38,7 @@ Empty folders only contain a `.gitkeep` file, which keeps them in the repository
 1. Download the repository (**Code** button, then **Download ZIP**) and extract it to a folder of your own, not inside "Program Files".
 2. Copy your DS ROMs into `roms`.
 3. Run `DQ_Patch_FR.exe`. On first launch it installs itself into `dependencies`, then offers to download any missing programs.
-4. Click "Choose the ROM folder…" and select `roms`.
+4. The `roms` folder is used by default; another folder can be chosen with "Choose the ROM folder…".
 5. Follow the steps in the game's tab: 1 (copy the game from the phone), 2 (prepare the texts), 3 (patch), 4 (install).
 
 Each step, the options and troubleshooting are described in the tool's Help menu.
@@ -56,4 +57,4 @@ Unofficial project, not affiliated with Square Enix, Armor Project, Bird Studio,
 
 The tool is provided as is, without warranty, for personal use with games and cartridges you legally own.
 
-Programs downloaded by the tool, each under its own license: SDK Platform-Tools (Google), Java Temurin (Eclipse Adoptium), uber-apk-signer (Apache 2.0 license).
+Programs downloaded by the tool, each under its own license: SDK Platform-Tools (Google), Java Temurin (Eclipse Adoptium), uber-apk-signer (Apache 2.0 license). The components included in the exe and all the licenses are listed in `THIRD_PARTY_NOTICES.md`.
