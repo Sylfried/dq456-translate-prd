@@ -2,6 +2,7 @@
  "readme": [
   "Texts of the DQ_Patch_FR tool for one language: file tool_texts_<code>.json of the languages folder, code in the xx-xx form (fr-fr, en-us, pt-br...).",
   "language = name shown in the Language menu. texts = the texts, by part of the tool: only change the \"text\" lines; \"english\" = original English text (reference, the tool does not read it). An empty \"text\" shows the English.",
+  "The texts used to translate the tool (Language menu: Add a language, Reload the texts...) stay in English: they are only in tool_texts_en-us.json (\"translating\" part).",
   "Keep {0}, {1}... and the codes as they are: \\n = line break, **...** = bold, # at the start of a line = title. A double quote in a text is written \\\".",
   "Save the file (UTF-8), then menu Language > Reload the texts. To create a new language: menu Language > Add a language."
  ],
@@ -15,26 +16,6 @@
    "other_english_interface": {
     "english": "Other (English interface)",
     "text": "Other (English interface)"
-   },
-   "add_language": {
-    "english": "Add a language…",
-    "text": "Add a language…"
-   },
-   "open_languages_folder": {
-    "english": "Open the languages folder",
-    "text": "Open the languages folder"
-   },
-   "reload_texts": {
-    "english": "Reload the texts",
-    "text": "Reload the texts"
-   },
-   "reload_texts_restart": {
-    "english": "The texts of the “languages” folder are read when the tool starts.\n\nRestart now to see your changes?",
-    "text": "The texts of the “languages” folder are read when the tool starts.\n\nRestart now to see your changes?"
-   },
-   "reload_busy": {
-    "english": "An operation is in progress: the texts will be reloaded the next time the tool starts.",
-    "text": "An operation is in progress: the texts will be reloaded the next time the tool starts."
    },
    "language": {
     "english": "Language",
@@ -63,6 +44,28 @@
    "unable_restart_tool": {
     "english": "Unable to restart the tool ({0}): close it and start it again.",
     "text": "Unable to restart the tool ({0}): close it and start it again."
+   }
+  },
+  "translating": {
+   "add_language": {
+    "english": "Add a language…",
+    "text": "Add a language…"
+   },
+   "open_languages_folder": {
+    "english": "Open the languages folder",
+    "text": "Open the languages folder"
+   },
+   "reload_texts": {
+    "english": "Reload the texts",
+    "text": "Reload the texts"
+   },
+   "reload_texts_restart": {
+    "english": "The texts of the “languages” folder are read when the tool starts.\n\nRestart now to see your changes?",
+    "text": "The texts of the “languages” folder are read when the tool starts.\n\nRestart now to see your changes?"
+   },
+   "reload_busy": {
+    "english": "An operation is in progress: the texts will be reloaded the next time the tool starts.",
+    "text": "An operation is in progress: the texts will be reloaded the next time the tool starts."
    },
    "new_language": {
     "english": "New language",

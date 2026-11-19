@@ -2,6 +2,7 @@
  "readme": [
   "Texts of the DQ_Patch_FR tool for one language: file tool_texts_<code>.json of the languages folder, code in the xx-xx form (fr-fr, en-us, pt-br...).",
   "language = name shown in the Language menu. texts = the texts, by part of the tool: only change the \"text\" lines; \"english\" = original English text (reference, the tool does not read it). An empty \"text\" shows the English.",
+  "The texts used to translate the tool (Language menu: Add a language, Reload the texts...) stay in English: they are only in tool_texts_en-us.json (\"translating\" part).",
   "Keep {0}, {1}... and the codes as they are: \\n = line break, **...** = bold, # at the start of a line = title. A double quote in a text is written \\\".",
   "Save the file (UTF-8), then menu Language > Reload the texts. To create a new language: menu Language > Add a language."
  ],
@@ -15,26 +16,6 @@
    "other_english_interface": {
     "english": "Other (English interface)",
     "text": "その他（英語のインターフェース）"
-   },
-   "add_language": {
-    "english": "Add a language…",
-    "text": "言語を追加…"
-   },
-   "open_languages_folder": {
-    "english": "Open the languages folder",
-    "text": "言語フォルダーを開く"
-   },
-   "reload_texts": {
-    "english": "Reload the texts",
-    "text": "テキストを再読み込み"
-   },
-   "reload_texts_restart": {
-    "english": "The texts of the “languages” folder are read when the tool starts.\n\nRestart now to see your changes?",
-    "text": "「languages」フォルダーのテキストは、ツールの起動時に読み込まれます。\n\n今すぐ再起動して変更を確認しますか？"
-   },
-   "reload_busy": {
-    "english": "An operation is in progress: the texts will be reloaded the next time the tool starts.",
-    "text": "処理中です：テキストは次回ツールを起動したときに再読み込みされます。"
    },
    "language": {
     "english": "Language",
@@ -63,54 +44,6 @@
    "unable_restart_tool": {
     "english": "Unable to restart the tool ({0}): close it and start it again.",
     "text": "ツールを再起動できません（{0}）：閉じてから起動し直してください。"
-   },
-   "new_language": {
-    "english": "New language",
-    "text": "新しい言語"
-   },
-   "unable_create_file": {
-    "english": "Unable to create the file: {0}",
-    "text": "ファイルを作成できません：{0}"
-   },
-   "language_file_created": {
-    "english": "Language file created ({0}): {1}",
-    "text": "言語ファイルを作成しました（{0}）：{1}"
-   },
-   "file_created_translate": {
-    "english": "File created:\n{0}\n\nTo translate the tool into this language:\n• Open this file with **Notepad++** or **VS Code** (never Word) and save it as **UTF-8**.\n• Only fill in the **“text”** lines: the “english” line just above gives the original English text. An empty “text” shows the English.\n• Keep {{0}}, {{1}}… and the codes (\\n…) as they are.\n• To see your texts in the tool: menu **Language › Reload the texts**.\n\nThe English file ({1}) is in the same folder. To offer this language to everyone: propose the file on the project page, github.com/Sylfried/dq456-translate-prd.",
-    "text": "ファイルを作成しました：\n{0}\n\nツールをこの言語に翻訳するには：\n• このファイルを **Notepad++** または **VS Code** で開き（Word は使わないでください）、**UTF-8** で保存します。\n• **「text」**の行だけを入力します：すぐ上の「english」の行に英語の原文があります。空の「text」は英語で表示されます。\n• {{0}}、{{1}}… やコード（\\n…）はそのまま残してください。\n• ツールでテキストを確認するには：メニュー **言語 › テキストを再読み込み**。\n\n英語のファイル（{1}）は同じフォルダーにあります。この言語をみんなに提供するには：プロジェクトのページ github.com/Sylfried/dq456-translate-prd でファイルを提案してください。"
-   },
-   "use_language_now": {
-    "english": "Use this language now",
-    "text": "今すぐこの言語を使う"
-   },
-   "creates_new_language": {
-    "english": "Creates the file of a new language in the “languages” folder next to the tool, from the English texts. You then translate the texts directly in this file.",
-    "text": "ツールの横の「languages」フォルダーに、英語のテキストをもとに新しい言語のファイルを作成します。その後、このファイルで直接テキストを翻訳します。"
-   },
-   "language_code": {
-    "english": "Language code (xx-xx, for example pt-br):",
-    "text": "言語コード（xx-xx、例：pt-br）："
-   },
-   "name_language_menu": {
-    "english": "Name in the Language menu (for example Português):",
-    "text": "言語メニューでの名前（例：Português）："
-   },
-   "create": {
-    "english": "Create",
-    "text": "作成"
-   },
-   "code_must_have": {
-    "english": "The code must have the xx-xx form: 2 letters, a dash, 2 letters (for example pt-br).",
-    "text": "コードは xx-xx の形式にしてください：英字2文字、ハイフン、英字2文字（例：pt-br）。"
-   },
-   "language_already_exists": {
-    "english": "The language {0} already exists: choose another code, or edit its file in the “languages” folder.",
-    "text": "言語 {0} はすでにあります：別のコードを選ぶか、「languages」フォルダーにあるそのファイルを編集してください。"
-   },
-   "enter_name_shown": {
-    "english": "Enter the name shown in the Language menu.",
-    "text": "言語メニューに表示する名前を入力してください。"
    }
   },
   "menu": {

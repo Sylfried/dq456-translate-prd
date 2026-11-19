@@ -2,6 +2,7 @@
  "readme": [
   "Texts of the DQ_Patch_FR tool for one language: file tool_texts_<code>.json of the languages folder, code in the xx-xx form (fr-fr, en-us, pt-br...).",
   "language = name shown in the Language menu. texts = the texts, by part of the tool: only change the \"text\" lines; \"english\" = original English text (reference, the tool does not read it). An empty \"text\" shows the English.",
+  "The texts used to translate the tool (Language menu: Add a language, Reload the texts...) stay in English: they are only in tool_texts_en-us.json (\"translating\" part).",
   "Keep {0}, {1}... and the codes as they are: \\n = line break, **...** = bold, # at the start of a line = title. A double quote in a text is written \\\".",
   "Save the file (UTF-8), then menu Language > Reload the texts. To create a new language: menu Language > Add a language."
  ],
@@ -15,26 +16,6 @@
    "other_english_interface": {
     "english": "Other (English interface)",
     "text": "Otro (interfaz en inglés)"
-   },
-   "add_language": {
-    "english": "Add a language…",
-    "text": "Añadir un idioma…"
-   },
-   "open_languages_folder": {
-    "english": "Open the languages folder",
-    "text": "Abrir la carpeta de idiomas"
-   },
-   "reload_texts": {
-    "english": "Reload the texts",
-    "text": "Volver a cargar los textos"
-   },
-   "reload_texts_restart": {
-    "english": "The texts of the “languages” folder are read when the tool starts.\n\nRestart now to see your changes?",
-    "text": "Los textos de la carpeta «languages» se leen al iniciar la herramienta.\n\n¿Reiniciar ahora para ver sus cambios?"
-   },
-   "reload_busy": {
-    "english": "An operation is in progress: the texts will be reloaded the next time the tool starts.",
-    "text": "Hay una operación en curso: los textos se volverán a cargar la próxima vez que se inicie la herramienta."
    },
    "language": {
     "english": "Language",
@@ -63,54 +44,6 @@
    "unable_restart_tool": {
     "english": "Unable to restart the tool ({0}): close it and start it again.",
     "text": "No se puede reiniciar la herramienta ({0}): ciérrela y vuelva a abrirla."
-   },
-   "new_language": {
-    "english": "New language",
-    "text": "Nuevo idioma"
-   },
-   "unable_create_file": {
-    "english": "Unable to create the file: {0}",
-    "text": "No se puede crear el archivo: {0}"
-   },
-   "language_file_created": {
-    "english": "Language file created ({0}): {1}",
-    "text": "Archivo de idioma creado ({0}): {1}"
-   },
-   "file_created_translate": {
-    "english": "File created:\n{0}\n\nTo translate the tool into this language:\n• Open this file with **Notepad++** or **VS Code** (never Word) and save it as **UTF-8**.\n• Only fill in the **“text”** lines: the “english” line just above gives the original English text. An empty “text” shows the English.\n• Keep {{0}}, {{1}}… and the codes (\\n…) as they are.\n• To see your texts in the tool: menu **Language › Reload the texts**.\n\nThe English file ({1}) is in the same folder. To offer this language to everyone: propose the file on the project page, github.com/Sylfried/dq456-translate-prd.",
-    "text": "Archivo creado:\n{0}\n\nPara traducir la herramienta a este idioma:\n• Abra este archivo con **Notepad++** o **VS Code** (nunca Word) y guárdelo en **UTF-8**.\n• Rellene solo las líneas **«text»**: la línea «english» justo encima da el texto original en inglés. Un «text» vacío muestra el inglés.\n• Conserve {{0}}, {{1}}… y los códigos (\\n…) tal cual.\n• Para ver sus textos en la herramienta: menú **Idioma › Volver a cargar los textos**.\n\nEl archivo inglés ({1}) está en la misma carpeta. Para ofrecer este idioma a todos: proponga el archivo en la página del proyecto, github.com/Sylfried/dq456-translate-prd."
-   },
-   "use_language_now": {
-    "english": "Use this language now",
-    "text": "Usar este idioma ahora"
-   },
-   "creates_new_language": {
-    "english": "Creates the file of a new language in the “languages” folder next to the tool, from the English texts. You then translate the texts directly in this file.",
-    "text": "Crea el archivo de un nuevo idioma en la carpeta «languages», junto a la herramienta, a partir de los textos en inglés. Después traduce los textos directamente en ese archivo."
-   },
-   "language_code": {
-    "english": "Language code (xx-xx, for example pt-br):",
-    "text": "Código del idioma (xx-xx, por ejemplo pt-br):"
-   },
-   "name_language_menu": {
-    "english": "Name in the Language menu (for example Português):",
-    "text": "Nombre en el menú Idioma (por ejemplo Português):"
-   },
-   "create": {
-    "english": "Create",
-    "text": "Crear"
-   },
-   "code_must_have": {
-    "english": "The code must have the xx-xx form: 2 letters, a dash, 2 letters (for example pt-br).",
-    "text": "El código debe tener la forma xx-xx: 2 letras, un guion y 2 letras (por ejemplo pt-br)."
-   },
-   "language_already_exists": {
-    "english": "The language {0} already exists: choose another code, or edit its file in the “languages” folder.",
-    "text": "El idioma {0} ya existe: elija otro código o modifique su archivo en la carpeta «languages»."
-   },
-   "enter_name_shown": {
-    "english": "Enter the name shown in the Language menu.",
-    "text": "Indique el nombre que se mostrará en el menú Idioma."
    }
   },
   "menu": {
