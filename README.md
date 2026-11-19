@@ -4,14 +4,13 @@
 
 It reads the official French text from the European DS ROM of each game. Texts that only exist in the mobile versions are translated by the patch. The patched game is then installed on the phone over USB.
 
-The tool's interface is available in English, French, German, Spanish, Italian, Japanese, Chinese and Korean. The full user guide (`readme.txt`) is in French.
+The tool's interface is available in English, French, German, Spanish, Italian, Japanese, Chinese and Korean.
 
 ## Contents
 
 | Item | Purpose |
 |---|---|
 | `DQ_Patch_FR.exe` | The tool |
-| `readme.txt` | Full user guide (French) |
 | `roms/` | Folder for your DS ROMs (`.nds`, or a `.zip` containing them) |
 | `dépendances/` | Filled by the tool: the installed tool, settings, log and downloaded programs |
 | `jeux/DQ4/`, `jeux/DQ5/`, `jeux/DQ6/` | Filled by the tool, one folder per game: `apks`, `textes`, `fabrication`, `patched_apks`, `ecran_titre`, `signes`, `saves` |
@@ -41,7 +40,7 @@ Empty folders only contain a `.gitkeep` file, which keeps them in the repository
 4. Click "Choose the ROM folder…" and select `roms`.
 5. Follow the steps in the game's tab: 1 (copy the game from the phone), 2 (prepare the texts), 3 (patch), 4 (install).
 
-Each step, the options and troubleshooting are described in `readme.txt` and in the tool's Help menu.
+Each step, the options and troubleshooting are described in the tool's Help menu.
 
 ## Updating
 
