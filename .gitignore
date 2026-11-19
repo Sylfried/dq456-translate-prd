@@ -1,0 +1,14 @@
+# Fichiers personnels et fichiers créés par l'outil : jamais dans le dépôt
+*.nds
+*.zip
+*.apk
+*.idsig
+*.obb
+roms/*
+!roms/.gitkeep
+dépendances/*
+!dépendances/.gitkeep
+jeux/*/*
+!jeux/*/*/
+jeux/*/*/*
+!jeux/*/*/.gitkeep
